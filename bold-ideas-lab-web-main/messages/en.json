@@ -1,0 +1,1052 @@
+{
+  "meta": {
+    "siteName": "Bold Ideas Lab",
+    "description": "Premium youth creativity and AI education for international families."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "programmes": "Programmes",
+    "work": "Student Work",
+    "eduos": "EduOS",
+    "insights": "Insights",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "language": {
+    "label": "Language",
+    "english": "EN",
+    "chinese": "中文"
+  },
+  "actions": {
+    "programmes": "Explore programmes",
+    "about": "Meet the lab",
+    "work": "View student work",
+    "contact": "Start a conversation",
+    "eduos": "Explore EduOS",
+    "insights": "Read insights",
+    "apply": "Ask about enrolment",
+    "email": "Email the lab",
+    "partners": "Discuss partnership"
+  },
+  "common": {
+    "nowOpen": "Now enrolling",
+    "forParents": "For families",
+    "forStudents": "For young creators",
+    "forPartners": "For partners",
+    "sectionMarker": "Bold Ideas Lab",
+    "comingSoon": "Coming soon",
+    "launchPreview": "Launch preview",
+    "selected": "Selected"
+  },
+  "footer": {
+    "tagline": "Thoughtful AI education for young people with bold ideas.",
+    "copyright": "© 2026 Bold Ideas Lab. All rights reserved.",
+    "ctaTitle": "A calmer way to begin with AI.",
+    "ctaText": "Tell us about the student, their interests, and the kind of project they would be proud to share."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Youth holistic growth + AI creativity education",
+      "positioning": "",
+      "title": "\"Dare to Think\" is where every possibility begins.",
+      "titleAccent": "\"Dare to Think\"",
+      "lead": "Built for young people who think actively and are brave enough to bring their ideas into conversation with the world. This is where creators begin.",
+      "primary": "Explore programmes",
+      "secondary": "About Bold Ideas Lab",
+      "beliefLabel": "",
+      "beliefText": "Tools change.\nCreators remain.",
+      "beliefNote": ""
+    },
+    "intro": {
+      "eyebrow": "About",
+      "title": "About Bold Ideas Lab",
+      "subtitle": "Where young creators begin.",
+      "paragraphs": [
+        "Bold Ideas Lab began in London, serving young people from the UK, Europe, Asia, and North America.",
+        "\"Dare to think\" is about agency: active thinking, creating, and refusing to only absorb passively or follow the crowd.",
+        "Bold Ideas Lab is not simply a classroom. It is a space where we work with young people to practise imagination, creativity, and possibility."
+      ],
+      "pillLabel": "Holistic education framework",
+      "pills": ["Agency", "Thinking", "Creativity", "Expression", "Social awareness", "Digital literacy"],
+      "foundersLabel": "Founders",
+      "founders": [
+        {
+          "name": "Guiru (Lynn) Lin",
+          "role": "Co-Founder",
+          "blurb": "Music education and digital humanities — bridging creativity and how young people learn."
+        },
+        {
+          "name": "Jujie (Jacky) Yang",
+          "role": "Co-Founder",
+          "blurb": "AI and product — turning emerging tools into projects young people can ship."
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "Track record",
+      "title": "What we have built so far",
+      "subtitle": "From workshops to courses and public showcases.",
+      "records": [
+        {
+          "number": "01",
+          "title": "Offline workshops",
+          "text": "Creativity workshops for UK Chinese young people in London and Manchester."
+        },
+        {
+          "number": "02",
+          "title": "Two works selected for AI Youth Spring Festival",
+          "text": "Student AI animation works were selected for the AI Youth Spring Festival hosted by WaytoAGI."
+        },
+        {
+          "number": "03",
+          "title": "Youth AI × holistic education course",
+          "text": "The first online spring course served young learners from the UK, Asia, and North America."
+        },
+        {
+          "number": "04",
+          "title": "Invited community sharing",
+          "text": "Invited to share with the Beijing AI community for young people on AI creation and education."
+        }
+      ],
+      "galleryTitle": "Selected student work",
+      "galleryText": "This site highlights projects and moments from our programmes; richer portfolios live on the learning platform.",
+      "galleryCta": "View student work"
+    },
+    "programme": {
+      "eyebrow": "Programmes",
+      "title": "Open for enquiry this season",
+      "subtitle": "Small-group projects for ages 8-14.",
+      "tag": "Featured programme",
+      "cardTitle": "Youth AI creativity small-group project course",
+      "details": ["Online small group", "Ages 8-14", "Question finding, technical making, design refinement, expression and publishing", "Built toward a real work and international showcase"],
+      "narrativeTitle": "From one idea to an AI work ready for an international showcase.",
+      "body": "In project-based learning, students ship ideas as work and practise expressing them clearly. Full pathway, modules, and pricing are on the programme page."
+    },
+    "voice": {
+      "eyebrow": "Testimonials",
+      "title": "Real voices",
+      "subtitle": "From students, parents, and community partners.",
+      "items": [
+        {
+          "quote": "Your course is genuinely strong. I don't think there are many similar courses. We really hope children can find their own interests and ideas, and practise more.",
+          "source": "Parent · Online course"
+        },
+        {
+          "quote": "Thank you for the detailed project feedback. We are very grateful for the course you organised; both adults and children gained a lot from it.",
+          "source": "Parent · Workshop"
+        },
+        {
+          "quote": "The teacher explained everything so comprehensively. It felt like all the scattered things I knew before were connected. I found it useful and fun, so I drew Teacher Lynn afterwards.",
+          "source": "Student · Online course"
+        },
+        {
+          "quote": "The perspective of integrating personal experience into AI creation gave us a lot of inspiration. Human work plus AI, thinking before generation, is a rare creative state right now.",
+          "source": "Parent · Beijing AI community sharing"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "Get started",
+      "title": "Ready to begin?",
+      "body": "Start with the programmes, or reach out and we'll find the right entry point together."
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About",
+      "title": "About Bold Ideas Lab",
+      "subtitle": "Where young creators begin.",
+      "lead": "After working with young people from Asia, the UK, Europe, and North America, we noticed that their voices and ideas are often overlooked under labels like \"rebellious\" or \"immature.\"",
+      "imageLabel": "Lab imagery",
+      "note": "Yet in long-term educational work, their creativity and ideas have surprised us again and again."
+    },
+    "story": {
+      "eyebrow": "Brand story",
+      "title": "Why Bold Ideas Lab exists",
+      "timelineHint": "Four beats, light to firm: where we began, what we saw, what we believe, what we are building.",
+      "paragraphs": [
+        "Bold Ideas Lab began in London. After working with young people from Asia, the UK, Europe, and North America, we noticed that their voices and ideas are often overlooked under labels like \"rebellious\" or \"immature.\"",
+        "In longer-term accompaniment, we care even more about whether their voices are heard — and taken seriously.",
+        "\"Dare to think\" is about one's own courage to think and create: a kind of agency that refuses passive absorption and simply going with the flow.",
+        "So Bold Ideas Lab is not simply a classroom. It is a space where we want to practise imagination, creativity, and possibility together with young people."
+      ]
+    },
+    "philosophy": {
+      "eyebrow": "Philosophy",
+      "title": "Holistic Education Framework",
+      "subtitle": "In the AI age, education still begins with the person",
+      "lead": "Six areas of growth work together — judgement, creativity, and expression included — so young people can keep growing with clarity.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Agency",
+          "en": "主体性",
+          "tags": ["Confidence", "Self-knowledge", "Emotional regulation", "Inner drive", "Active choice"]
+        },
+        {
+          "number": "02",
+          "title": "Thinking",
+          "en": "思维力",
+          "tags": ["Analysis", "Reasoning", "Problem solving", "Critical thinking", "Logic"]
+        },
+        {
+          "number": "03",
+          "title": "Creativity",
+          "en": "创造力",
+          "tags": ["Imagination", "Making", "Experimentation", "Interdisciplinary integration", "Originality"]
+        },
+        {
+          "number": "04",
+          "title": "Expression",
+          "en": "表达力",
+          "tags": ["Communication", "Speaking", "Influence", "Narrative", "Public expression"]
+        },
+        {
+          "number": "05",
+          "title": "Social",
+          "en": "社会力",
+          "tags": ["Empathy", "Collaboration", "Cross-cultural understanding", "Leadership", "Teamwork"]
+        },
+        {
+          "number": "06",
+          "title": "Digital Literacy",
+          "en": "数字素养",
+          "tags": ["AI tools", "Computational thinking", "Technical practice", "Data understanding", "Digital creation"]
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "Our approach",
+      "title": "Not tool-driven, but driven by a real question.",
+      "body": "What truly drives a person to learn and create is never the tool itself, but a question that genuinely relates to them. The work is learning how to call on one's thinking, skills, and personal qualities to create a solution of one's own.",
+      "items": [
+        "Start from a question that genuinely relates to the student",
+        "Call on thinking, skills, and personal qualities",
+        "Create a solution of one's own"
+      ]
+    },
+    "founders": {
+      "eyebrow": "Founders",
+      "title": "Our Founders",
+      "subtitle": "The people behind Bold Ideas Lab",
+      "lynn": {
+        "initial": "L",
+        "name": "Guiru (Lynn) Lin",
+        "role": "Co-Founder",
+        "story": [
+          "An educator with eight years of music education experience, Lynn entered the Gemini Hackathon with no programming background, then won runner-up at a Notion Hackathon. That process took 12 days.",
+          "That experience confirmed something for her: what truly drives a person to learn and create is never the tool itself, but a question that genuinely relates to them, and how they call on their thinking, skills, and personal qualities to create their own solution."
+        ],
+        "points": [
+          "Bold Ideas Lab Co-Founder & Founder of Echo Music Education in London",
+          "Cross-disciplinary background: Kingston music education, Oxford digital humanities, Copenhagen Business School AI business",
+          "Participated in Gemini, Claude, Notion and other AI hackathons; runner-up at the Notion hackathon; Tech London Advocates Best Creative Award",
+          "Mentored students who won youth hackathon awards; two animation works selected for AI Youth Spring Festival",
+          "Invited speaker at the Royal College of Music (RCM) and Royal College of Art (RCA)"
+        ]
+      },
+      "jacky": {
+        "initial": "J",
+        "name": "Jujie (Jacky) Yang",
+        "role": "Co-Founder",
+        "story": [
+          "With 6 years of experience in AI — from algorithm research to high-frequency creation and project building — I've come to believe that what truly matters is not how early someone learns a tool, but how early they start asking their own questions and turning ideas into real projects.",
+          "This is why I co-founded Bold Ideas Lab — not to teach AI as a tool, but to guide young creators through the full process of creating, thinking, expressing, and sharing their work."
+        ],
+        "points": [
+          "Founder of CoAI & Co-Founder of Bold Ideas Lab",
+          "MSc in AI & Machine Learning, Imperial College London; BSc in Computer Science, Durham University",
+          "Experience across AI research, product development, and creative project building; actively uses AI in real-world workflows",
+          "Participated in multiple hackathons hosted by Google, Cursor, Notion and others; 2nd Place — UK AI Agent Hackathon 2026; 1st Place — Crypto Quant Hackathon (AlgoWars 2025)",
+          "Kaggle Competitions Expert (1 Silver, 1 Bronze): Google LLM Prompt Recovery — Silver Medal (Top 1%); LMSYS Chatbot Arena Human Preference — Bronze Medal",
+          "Focused on translating cutting-edge AI into project-based, real-world learning experiences for young creators"
+        ]
+      }
+    },
+    "whyNow": {
+      "eyebrow": "Why now",
+      "title": "The AI age needs whole people.",
+      "body": "As tools become more powerful, education needs to return to the person: whether a student can ask their own question, make an idea real, understand their choices, and express them to the world."
+    },
+    "cta": {
+      "title": "See how this philosophy becomes a programme.",
+      "body": "Our programmes connect real questions, creative process, and public expression, helping students move from ideas to finished work."
+    }
+  },
+  "programmes": {
+    "hero": {
+      "eyebrow": "Programmes · Course System",
+      "accent": "creators",
+      "title": "A learning path designed for creators.",
+      "lead": "From first experience to international stage. A complete learning path for every stage of the young creator's journey."
+    },
+    "pathway": {
+      "eyebrow": "The learning system",
+      "title": "A pathway for every stage.",
+      "lead": "From first exploration to showcase sprint, students level up through one coherent method.",
+      "layers": [
+        {
+          "tier": "Immerse · 沉浸层",
+          "title": "Immersive Summer Camp",
+          "desc": "Multi-day immersive creative experience with deep project development",
+          "badge": "Coming soon",
+          "open": false,
+          "featured": false
+        },
+        {
+          "tier": "Compete · 竞技层",
+          "title": "AI Category preparation · Coolest Projects 5-week intensive sprint",
+          "desc": "Real international competition as the target — high-intensity practical training",
+          "badge": "Featured · Open",
+          "open": true,
+          "featured": true
+        },
+        {
+          "tier": "Build · 项目层",
+          "title": "Long-term Project Course · 8–12 weeks",
+          "desc": "A longer guided build from idea to complete project",
+          "badge": "Coming soon",
+          "open": false,
+          "featured": false
+        },
+        {
+          "tier": "Explore · 体验层",
+          "title": "Workshop · Mini Hackathon",
+          "desc": "2–3 hour experience · zero-barrier entry to creativity",
+          "badge": "Open",
+          "open": true,
+          "featured": false
+        }
+      ]
+    },
+    "course": {
+      "eyebrow": "Featured Course",
+      "badge": "Now enrolling",
+      "languageBadge": "English Taught",
+      "title": "5 weeks. From one idea to an AI project ready for international showcase.",
+      "leadEn": "",
+      "meta": [
+        { "label": "Age", "value": "Ages 8-14 · no coding required" },
+        { "label": "Format", "value": "Online small group · 5–10 students" },
+        { "label": "Sessions", "value": "2 sessions per week · approx. 1 hour each · 10 hours total" },
+        { "label": "Dates", "value": "25 April–23 May 2026" },
+        { "label": "Outcomes", "value": "Coolest Projects AI Category submission · public project page and certificate" }
+      ]
+    },
+    "coolest": {
+      "eyebrow": "Why Coolest Projects",
+      "title": "Not just classwork — a public global showcase.",
+      "body": "Coolest Projects, run by the Raspberry Pi Foundation, is an annual technology showcase for young digital creators worldwide. Our pathway maps directly to its AI Category so students can place their work in a real public context.",
+      "highlightsLabel": "What matters most here",
+      "highlights": [
+        "A worldwide online showcase plus in-person events in multiple countries",
+        "Artificial Intelligence is now an official category",
+        "Projects are moderated and published in a public gallery"
+      ],
+      "linkLabel": "Visit the Coolest Projects website",
+      "url": "https://online.coolestprojects.org/"
+    },
+    "arc": {
+      "eyebrow": "Featured Course",
+      "title": "Four learning modules",
+      "lead": "Four learning modules · 8 core sessions in weeks 1-4 + week 5 for sprint polish and submission",
+      "phases": [
+        {
+          "num": "01",
+          "tag": "Sessions 1–2",
+          "title": "Discover the question",
+          "lead": "Train your child to ask a good question: what do I want to solve, and why is this worth doing.",
+          "text": "This is the starting point for the whole project. An insightful question is rarer than any technical skill — and makes the biggest difference. Rather than rushing to build, we spend time finding a direction that is truly worth pursuing.",
+          "itemsLabel": "Students will",
+          "items": [
+            "Start from their own life, interests, or learning — and find a real problem",
+            "Turn a vague idea into a clear project direction",
+            "Complete a project proposal explaining what they want to solve and why it's worth doing"
+          ],
+          "note": ""
+        },
+        {
+          "num": "02",
+          "tag": "Sessions 3–4",
+          "title": "Build with technology",
+          "lead": "Understand machine learning principles — and use AI tools to turn an idea into something that actually works.",
+          "text": "Two sessions moving from \"gets it running\" to \"going deeper\" — building confidence first, then adding complexity. Tools are chosen for accessibility so that technology never blocks creativity.",
+          "itemsLabel": "Students will",
+          "items": [
+            "Understand the basic principles and logic of machine learning",
+            "Choose the right AI tools (no-code / Google AI Studio / vibe coding)",
+            "Complete the first working version of the project"
+          ],
+          "note": ""
+        },
+        {
+          "num": "03",
+          "tag": "Sessions 5–6",
+          "title": "Design and refine",
+          "lead": "Make the work beautiful, usable, and something people genuinely want to use.",
+          "text": "This module is easiest to overlook, but has the biggest impact on the final quality of the work. We dedicate two full sessions to it — because a project that real users can engage with is far more convincing than one that is technically complex but hard to use.",
+          "itemsLabel": "Students will",
+          "items": [
+            "Learn basic UI/UX design and aesthetic principles",
+            "Test with real users and collect feedback",
+            "Iterate based on feedback so the work communicates clearly and holds up to scrutiny"
+          ],
+          "note": "Good design isn't about making the project \"look nice\" — it's about letting someone understand at a glance what problem you're solving."
+        },
+        {
+          "num": "04",
+          "tag": "Sessions 7–8",
+          "title": "Present and publish",
+          "lead": "Present the work publicly — stand up and explain the problem, the solution, and the highlights.",
+          "text": "The final session is a small showcase modelled on a Silicon Valley product launch. Each student presents their project for a few minutes, witnessed by parents and classmates. This experience transfers directly to future university applications, interviews, and collaborative work.",
+          "itemsLabel": "Students will",
+          "items": [
+            "Prepare and deliver a mini project showcase presentation",
+            "Compile submission materials for the Coolest Projects online gallery",
+            "Receive a public project page, participation certificate, and reviewer feedback"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "endorsement": {
+      "quote": "\"This AI project-based learning programme is highly valuable. It offers practical experience, produces tangible outcomes, and generates clear evidence of growth that can be well articulated in future university applications.\"",
+      "attribution": "—— Vision Academy admissions counsellor",
+      "logoAlt": "Vision Academy Logo"
+    },
+    "pricing": {
+      "eyebrow": "Choose your pathway",
+      "title": "Three pathways. One programme arc.",
+      "lead": "All three pathways follow the same four-phase learning arc. The difference is depth of support, pacing, and whether the final sprint toward a public outcome is included.",
+      "cohortNote": "Current flagship sprint: starts 25 April, with the project showcase on 23 May. Places are limited, so early confirmation is recommended.",
+      "promoBadge": "Promotional rate active",
+      "promoMessage": "A private programme rate is active. Original and promotional prices are shown together.",
+      "invalidPromo": "We could not apply a rate from this link. Standard prices are shown.",
+      "originalLabel": "Original",
+      "promoLabel": "Promo rate",
+      "saveLabel": "Save",
+      "showcaseCta": "Choose Showcase Sprint",
+      "includedLabel": "What's included",
+      "showcaseIncluded": "Final showcase sprint included",
+      "showcaseNotIncluded": "Final showcase sprint not included",
+      "mostPopular": "Most complete",
+      "plans": [
+        {
+          "id": "starter",
+          "name": "Starter",
+          "subtitle": "A low-risk first step for curious families.",
+          "duration": "Introductory experience",
+          "forWhom": "Best for students exploring whether creative AI project work is right for them.",
+          "originalPrice": "£59",
+          "promoPrice": "£49",
+          "features": [
+            "Guided creative AI taster session",
+            "Idea direction and tool orientation",
+            "A small starter artifact to discuss at home",
+            "Parent-facing next-step recommendation"
+          ],
+          "showcase": false
+        },
+        {
+          "id": "builder",
+          "name": "Builder",
+          "subtitle": "The core four-phase project programme.",
+          "duration": "Full core programme",
+          "forWhom": "Best for students ready to develop a substantial project with feedback and structure.",
+          "originalPrice": "£299",
+          "promoPrice": "£279",
+          "features": [
+            "Project brief and creative direction",
+            "AI-assisted research, prototyping, and iteration",
+            "Mentor feedback across the full build process",
+            "Final project artifact and reflection"
+          ],
+          "showcase": false
+        },
+        {
+          "id": "showcase",
+          "name": "Showcase Sprint",
+          "subtitle": "The most complete pathway — from idea to public outcome.",
+          "duration": "Full programme plus final sprint",
+          "forWhom": "Best for families who want a polished project, a stronger presentation, and guided preparation for showcases or submissions.",
+          "originalPrice": "£399",
+          "promoPrice": "£349",
+          "features": [
+            "Everything in Builder",
+            "Final sprint: polish, narrative, and presentation",
+            "Showcase or submission preparation support",
+            "Parent-ready project summary and next-step guidance"
+          ],
+          "showcase": true
+        }
+      ]
+    },
+    "outcomes": {
+      "eyebrow": "Outcomes",
+      "title": "What your child walks away with",
+      "lead": "",
+      "items": [
+        {
+          "title": "An AI project to showcase",
+          "text": "Structurally complete, ready to submit to the Coolest Projects AI Category — with a public project page and participation certificate."
+        },
+        {
+          "title": "Three transferable skills",
+          "text": "Creative confidence, critical thinking, and the ability to communicate ideas — skills that transfer directly to future university applications, interviews, and collaborative work."
+        },
+        {
+          "title": "A clear record of growth",
+          "text": "The project process compiled into content usable for activity profiles and application materials — turning these five weeks into a visible record of development."
+        },
+        {
+          "title": "An international showcase opportunity",
+          "text": "The project submitted to Coolest Projects — the global technology creativity platform with young participants from nearly 50 countries."
+        }
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Key timeline",
+      "title": "From first session to submission, key moments are clear.",
+      "lead": "Weeks 1-4 complete the core build; week 5 focuses on polish and submission.",
+      "phaseLabel": "Phase",
+      "pointLabel": "Milestone",
+      "items": [
+        {
+          "date": "25 April",
+          "label": "5-week sprint begins",
+          "kind": "point"
+        },
+        {
+          "date": "25 April–16 May",
+          "label": "Four modules · online small group",
+          "kind": "phase"
+        },
+        {
+          "date": "17–23 May",
+          "label": "Week 5 · project showcase",
+          "kind": "phase"
+        },
+        {
+          "date": "Before 27 May",
+          "label": "Coolest Projects submission deadline",
+          "kind": "point"
+        }
+      ]
+    },
+    "fit": {
+      "eyebrow": "Who it's for",
+      "title": "Best for students ready to make real work.",
+      "lead": "This programme creates the most value when students want to turn ideas into showcase-ready projects.",
+      "items": [
+        "Students with genuine curiosity who aren't yet sure where to start",
+        "Young people who enjoy writing, design, storytelling, research, or making",
+        "Families who want evidence of growth richer than a participation certificate",
+        "Students aged 8-14, comfortable working in small online groups"
+      ],
+      "context": "No prior coding background is required. Technical depth is adjusted to match each student's starting point."
+    },
+    "faq": {
+      "eyebrow": "Practical questions",
+      "title": "Frequently Asked Questions (Q&A)",
+      "lead": "Start with the key questions, then contact us for student-specific advice.",
+      "questionLabel": "Question",
+      "answerLabel": "Answer",
+      "items": [
+        {
+          "q": "Does my child need coding experience?",
+          "a": "No. We adjust the technical depth to match each student's background. Curiosity and willingness to revise matter more than prior programming experience."
+        },
+        {
+          "q": "What age range is this designed for?",
+          "a": "Primarily for students aged 8-14. We adjust pacing and project complexity within that range — enquire to discuss your child's specific context."
+        },
+        {
+          "q": "Is this only about learning AI tools?",
+          "a": "No. Tools are part of the process. The core focus is creative thinking, project judgment, and the ability to communicate ideas clearly. AI is the medium, not the subject."
+        },
+        {
+          "q": "What is the difference between Builder and Showcase Sprint?",
+          "a": "Builder completes the full four-phase project arc. Showcase Sprint adds a dedicated final phase: polishing the project, preparing a presentation, and receiving guidance for public-facing outcomes like submissions or portfolios."
+        },
+        {
+          "q": "Which tier should we start with?",
+          "a": "Starter is a low-risk first step. Builder is the core programme for families ready to commit. Showcase Sprint is for families who want the most complete pathway and a submission-ready outcome."
+        },
+        {
+          "q": "How is the programme delivered?",
+          "a": "Sessions are delivered online in small groups with mentor guidance throughout. The specific schedule, format, and cohort size are confirmed at enrolment — enquire for current details."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Get Started",
+      "title": "Ready to begin?",
+      "body": "Places are limited for the 5-week intensive sprint. The course starts on 25 April, with the project showcase on 23 May. Tell us about the student's interests and starting point, and we will suggest the right tier and timing."
+    }
+  },
+  "work": {
+    "hero": {
+      "eyebrow": "Student Work",
+      "title": "What they made",
+      "accent": "made",
+      "subtitle": "Real projects built by young creators",
+      "lead": "Every project starts from an idea and becomes something students dared to make.",
+      "stats": [
+        {
+          "number": "50+",
+          "label": "Student AI projects completed",
+          "text": "Combined total from online courses and offline workshops"
+        },
+        {
+          "number": "2",
+          "label": "Selected for AI Children's Spring Gala",
+          "text": "Hosted by WaytoAGI · source notes cite 9M+ members"
+        },
+        {
+          "number": "∞",
+          "label": "A growing work gallery",
+          "text": "Each cohort's work can be collected and displayed"
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Student projects",
+      "title": "What they built with AI",
+      "subtitle": "Real projects built by young people",
+      "screenshotLabel": "Project preview",
+      "linkLabel": "View project",
+      "items": [
+        {
+          "visualTitle": "Color Theory",
+          "tag": "Interactive learning",
+          "title": "Color Theory",
+          "description": "An interactive game that helps young people learn color theory, making abstract art knowledge playful, learnable, and usable.",
+          "tool": "Google AI Studio",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/af59f5f8-363a-40f1-bc4b-f72fb6718ffd"
+        },
+        {
+          "visualTitle": "PUMPKIN DREAD",
+          "tag": "Game development",
+          "title": "Pumpkin Dread",
+          "description": "A survival farm game made with AI: planting, harvesting, building a boat, and escaping. An idea became a game people can actually play.",
+          "tool": "Google AI Studio",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+        },
+        {
+          "visualTitle": "Magic Story Box",
+          "tag": "Creative writing",
+          "title": "Magic Story Box",
+          "description": "An AI story-idea generator by an eight-year-old creator, helping children who want to write books find their next big adventure.",
+          "tool": "Google AI Studio",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+        },
+        {
+          "visualTitle": "Everyday Magic",
+          "tag": "Interactive tutorial",
+          "title": "Everyday Magic",
+          "description": "An AI interactive tutorial for learning magic tricks with everyday objects: coins, playing cards, and rubber bands all become materials for wonder.",
+          "tool": "Google AI Studio",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+        }
+      ]
+    },
+    "recognition": {
+      "badge": "Selected recognition",
+      "workBadge": "Selected work",
+      "title": "Two animation works selected for AI Children's Spring Gala",
+      "subtitle": "Selected AI Children's Spring Gala works",
+      "description": "Student AI animation works were selected for the annual AI Children's Spring Gala hosted by WaytoAGI. Being shown on that stage is a concrete and public form of recognition for young creators.",
+      "platformName": "WaytoAGI",
+      "platformStat": "9M+ members",
+      "platformText": "9M+ members · one of China's largest AI communities",
+      "screenshotLabel": "Selected work still",
+      "films": [
+        {
+          "title": "Yulun Spring Gala Story",
+          "author": "Yulun · age 8"
+        },
+        {
+          "title": "Interstellar Rescue",
+          "author": "Nicole · age 8"
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "Online showcase",
+      "title": "Young Creators AI Workshop · Digital Exhibition",
+      "subtitle": "Real student projects, updated continuously",
+      "description": "This exhibition is continuously updated with student work. Each project can be viewed and shared, and remains part of a student's longer-term growth record.",
+      "cta": "Enter the Work Gallery",
+      "url": "https://workshop-gallery-peach.vercel.app/gallery",
+      "previewTitle": "Tools change.\nCreators remain.",
+      "previewSub": "Young Creators AI Creativity Workshop"
+    },
+    "feedback": {
+      "eyebrow": "Feedback",
+      "title": "What parents and students said",
+      "subtitle": "Extracts from people who were there",
+      "screenshotLabel": "",
+      "items": [
+        {
+          "tag": "Online course",
+          "quote": "Your course is really excellent. There should not be many comparable courses. We definitely hope children can find their own interests and ideas, and practise more.",
+          "author": "Parent",
+          "context": "Online course"
+        },
+        {
+          "tag": "Online course",
+          "quote": "The teacher explained everything so comprehensively. It felt like all the scattered knowledge I had before was connected together. I am really, really grateful, so I drew Teacher Lynn.",
+          "author": "Student",
+          "context": "Online course"
+        },
+        {
+          "tag": "Online course",
+          "quote": "It was not just learning an AI skill. In the process, the child was also learning a new way to learn. The materials were researched during the process. In just two weeks, the experience and gains were significant.",
+          "author": "Parent",
+          "context": "During AI Children's Spring Gala preparation"
+        },
+        {
+          "tag": "Online course",
+          "quote": "This learning process was truly rewarding.",
+          "author": "Student",
+          "context": "Online course"
+        },
+        {
+          "tag": "Workshop",
+          "quote": "Thank you for the detailed project feedback. We are very grateful for the course you organised. Both adults and children gained a lot.",
+          "author": "Parent",
+          "context": "Workshop"
+        },
+        {
+          "tag": "Community talk",
+          "quote": "The perspective you shared about bringing personal experience into AI creation gave us a lot of inspiration. Manual work plus AI, thinking first and generating after, really is one of the rarest creative states right now.",
+          "author": "Parent",
+          "context": "Beijing AI for Youth community sharing"
+        }
+      ]
+    },
+    "photos": {
+      "eyebrow": "Photos",
+      "title": "Where the work happened",
+      "subtitle": "What it looks like when young people make things",
+      "groups": [
+        {
+          "title": "Workshop moments",
+          "items": [
+            "Mentor coaching students to build small AI tools",
+            "Students documenting and structuring their thinking",
+            "Students building hands-on in Google AI Studio"
+          ]
+        },
+        {
+          "title": "Online course",
+          "items": [
+            "Group discussion: students compare drawing and AI image-generation experiences",
+            "Student sharing reflections on composing with and without AI"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Join us",
+      "title": "Your child can make something real too.",
+      "body": "From one idea to an AI project ready for international showcase.",
+      "primary": "Explore programmes",
+      "secondary": "Enter the Work Gallery"
+    }
+  },
+  "eduos": {
+    "hero": {
+      "eyebrow": "EduOS",
+      "accent": "education operating system",
+      "title": "An education operating system for project-based learning.",
+      "subtitle": "Learning infrastructure for the AI era.",
+      "lead": "EduOS connects the core layers of project-based learning: project process, reflection, mentor feedback, and parent visibility on one continuous path, so schools, partners, and families can align around learning evidence.",
+      "badge": "System in active development",
+      "primary": "Why it exists",
+      "secondary": "Discuss the vision"
+    },
+    "notice": {
+      "title": "A framework designed for real collaboration",
+      "body": "We are steadily refining EduOS learning flows, evidence structures, and collaboration mechanisms to make project-based learning trackable, communicable, and scalable."
+    },
+    "why": {
+      "eyebrow": "Why this exists",
+      "title": "Project-based learning needs continuity, not just delivery.",
+      "body": "A single class can spark an idea, but meaningful creative growth depends on what happens around that class: how a student records choices, how mentors give feedback, how parents understand progress, and how finished work becomes part of a longer story.",
+      "points": [
+        "Students need a place to see how an idea changed, not just whether the final file works.",
+        "Parents need language for progress that is richer than attendance, grades, or tool names.",
+        "Mentors need context, so feedback can build from one project moment to the next.",
+        "Partners need evidence of learning that feels human, not just administrative."
+      ]
+    },
+    "layers": {
+      "eyebrow": "System layers",
+      "title": "Which layers the architecture needs to connect.",
+      "lead": "A unified system that connects teaching, feedback, family communication, and showcase pathways around the learning journey.",
+      "items": [
+        {
+          "kicker": "Journey",
+          "title": "Student learning path",
+          "text": "A way to keep each project connected to curiosity, decisions, experiments, and next steps."
+        },
+        {
+          "kicker": "Evidence",
+          "title": "Project archive",
+          "text": "A thoughtful record of artifacts, drafts, reflections, and showcase-ready outcomes."
+        },
+        {
+          "kicker": "Guidance",
+          "title": "Mentor feedback loop",
+          "text": "Structured feedback that helps students improve judgement, craft, and presentation over time."
+        },
+        {
+          "kicker": "Family",
+          "title": "Parent visibility",
+          "text": "Calm updates that translate creative progress into language families can understand and trust."
+        },
+        {
+          "kicker": "Expression",
+          "title": "Showcase pathway",
+          "text": "Support for public sharing, submissions, portfolios, and the confidence to explain the work."
+        }
+      ]
+    },
+    "flow": {
+      "eyebrow": "Relationship flow",
+      "title": "The system begins with relationships.",
+      "caption": "This relationship-and-evidence map shows how project evidence keeps students, parents, and mentors aligned over time.",
+      "centerTitle": "Project evidence",
+      "centerText": "The work, choices, drafts, and reflection around one student project.",
+      "nodes": [
+        {
+          "label": "Student",
+          "text": "Builds, reflects, revises, and learns to explain decisions."
+        },
+        {
+          "label": "Mentor",
+          "text": "Guides the next move without taking ownership away from the student."
+        },
+        {
+          "label": "Parent",
+          "text": "Sees progress in clear language, not only finished outputs."
+        }
+      ],
+      "steps": [
+        "Idea becomes project",
+        "Project becomes evidence",
+        "Evidence becomes reflection",
+        "Reflection informs the next project"
+      ]
+    },
+    "future": {
+      "eyebrow": "Future direction",
+      "title": "From individual courses toward learning infrastructure.",
+      "body": "EduOS turns course experience into long-term learning infrastructure: stable systems for teaching process, reflection, and multi-party collaboration.",
+      "items": [
+        {
+          "title": "Operational now",
+          "text": "Project-based teaching, mentor feedback, student reflection, and visible work families can discuss."
+        },
+        {
+          "title": "Actively improving",
+          "text": "More integrated learning records, clearer collaboration workflows, and stronger continuity across projects."
+        },
+        {
+          "title": "Partner value",
+          "text": "A connectable framework for growth tracking and learning evidence across schools and organisations."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Lower-pressure next step",
+      "title": "Interested in the system behind the courses?",
+      "body": "Families can start with the current programmes. Partners can contact us for a grounded conversation about project-based AI learning and future infrastructure.",
+      "primary": "Explore programmes",
+      "secondary": "Contact the lab"
+    }
+  },
+  "insights": {
+    "hero": {
+      "eyebrow": "Insights",
+      "title": "Bold Ideas Insight",
+      "subtitle": "Good education deserves serious thought.",
+      "lead": "We believe good education deserves serious discussion. Here we collect founder essays, conversations with scholars, educators, and founders, and the voices of young creators themselves.",
+      "beliefLabel": "We believe",
+      "beliefTitle": "Good education deserves serious thought.",
+      "beliefSubtitle": "Think carefully. Write slowly.",
+      "types": [
+        {
+          "label": "Founder essays",
+          "description": "Our thinking on education and AI technology"
+        },
+        {
+          "label": "Conversations",
+          "description": "Deeper dialogues with scholars, educators, and founders"
+        },
+        {
+          "label": "Student voices",
+          "description": "Ideas and perspectives from young creators",
+          "status": "Coming soon"
+        }
+      ]
+    },
+    "articles": {
+      "eyebrow": "Founder essays",
+      "title": "Our thinking and writing",
+      "subtitle": "Education, AI, and creativity",
+      "items": [
+        {
+          "category": "Founder essay",
+          "title": "When AI can do everything, what is left for education?",
+          "description": "The biggest problem with systematic education is not what it teaches, but the hidden message it sends: life has standard answers. In the real world, there are no standard answers, and often it is not even clear what the question is.",
+          "author": "Lynn",
+          "initial": "L",
+          "status": "Read on WeChat",
+          "href": "https://mp.weixin.qq.com/s/vw2Kv6NsNu7bf4CyT_zyjw"
+        },
+        {
+          "category": "Founder essay",
+          "title": "The things algorithms cannot see in education",
+          "description": "The goal of education should be debated, not standardised. Different educational ideas should criticise and compete with one another, rather than using one standard to erase diversity. Once everyone optimises toward one metric, the things that cannot be measured are systematically ignored.",
+          "author": "Lynn",
+          "initial": "L",
+          "status": "Read on WeChat",
+          "href": "https://mp.weixin.qq.com/s/28g9xlJ8u0-KCrHv9Ob5Vg"
+        },
+        {
+          "category": "Founder essay",
+          "title": "When the barrier to execution falls to zero",
+          "description": "As technology drives the cost of execution toward zero, human value is no longer about how many tools you master. Judgment becomes the new code, and expression becomes the new means of production. Machines cannot create something from nothing—what stays scarce is the ability to ask a good question.",
+          "author": "Jacky",
+          "initial": "J",
+          "status": "View on Xiaohongshu",
+          "href": "http://xhslink.com/o/1p3DoRzQ1KQ"
+        }
+      ]
+    },
+    "conversations": {
+      "eyebrow": "Conversations",
+      "title": "Deep conversations",
+      "subtitle": "With scholars, educators and founders",
+      "coverLabel": "Conversation cover",
+      "items": [
+        {
+          "category": "Bold Ideas Dialogue · Oxford PhD interview",
+          "title": "Oxford Engineering PhD Dialogue | What is university still for?",
+          "description": "A deep conversation on the value of university and the relationship between academia and business.",
+          "status": "Watch conversation",
+          "href": "http://xhslink.com/o/ABhvRnRpE9a",
+          "coverImage": "/media/insights/conversations/covers/oxford-phd-interview.webp"
+        },
+        {
+          "category": "Podcast · Jacky in conversation",
+          "title": "Conversation coming soon",
+          "description": "Jacky's podcast conversation series will be released later.",
+          "status": "Coming soon",
+          "pending": true
+        }
+      ]
+    },
+    "studentVoices": {
+      "eyebrow": "Student voices",
+      "title": "Ideas and perspectives from young creators",
+      "body": "This section will gradually collect students' own reflections, reviews, and observations. For now, it remains a future content entry point.",
+      "status": "Coming soon"
+    },
+    "follow": {
+      "eyebrow": "Follow",
+      "title": "Receive new work first",
+      "subtitle": "Follow us to stay updated",
+      "description": "For Lynn's WeChat Official Account and Video Account, search the same profile name in WeChat. The official Bold Ideas Lab account is still being set up.",
+      "channels": [
+        {
+          "avatar": "jacky",
+          "label": "Xiaohongshu",
+          "description": "Jacky学AI",
+          "href": "https://xhslink.com/m/3x9I1pirNEv",
+          "status": "Visit profile"
+        },
+        {
+          "avatar": "lynn",
+          "label": "Xiaohongshu",
+          "description": "Lynn的敢想实验室",
+          "href": "https://xhslink.com/m/6SgM2srKEMm",
+          "status": "Visit profile"
+        },
+        {
+          "avatar": "lynn",
+          "label": "WeChat Official Account · Video Account",
+          "description": "Updates under the same name; follow by searching “Lynn的敢想实验室” in WeChat (no standalone web link).",
+          "status": ""
+        },
+        {
+          "avatar": "none",
+          "label": "Bold Ideas Lab (official)",
+          "description": "Substack · Xiaohongshu · WeChat Official Account",
+          "pending": true,
+          "status": "Coming soon"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Stay close to the thinking.",
+      "body": "For programme questions, partnerships, or future essay collaborations, contact the lab."
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "Contact",
+      "accent": "Contact",
+      "title": "Contact us",
+      "subtitle": "Programmes, enrolment, and partnerships—we read every message.",
+      "lead": "Use one enquiry form and we will respond with the right next step for your context.",
+      "primary": "Open the enquiry form",
+      "secondary": "Explore programmes"
+    },
+    "enquiry": {
+      "eyebrow": "Enquiry",
+      "title": "Submit online",
+      "lead": "Use the button below to open the Google Form. We usually reply on UK working days.",
+      "audiencesIntro": "Who this form is for:",
+      "audiences": [
+        "Students and families (including international families)",
+        "Schools and education organisations",
+        "Corporate and social-impact partners",
+        "Media and content collaborators"
+      ],
+      "formLabel": "Google Form",
+      "formStatus": "Single entry point · open enquiries",
+      "formUrl": "https://forms.gle/tHuY94cyJVd7JkxM9",
+      "button": "Open form",
+      "tipsTitle": "Helpful details to include",
+      "tips": [
+        "The learner's age and rough background",
+        "Creative interests or project direction",
+        "Timing constraints",
+        "Whether showcases, submissions, or portfolio outcomes matter to you"
+      ],
+      "emailLead": "Or email us at"
+    },
+    "guidance": {
+      "eyebrow": "Programme notes",
+      "title": "Quick facts before you write",
+      "items": [
+        "Coolest Projects is a five-week intensive sprint; the latest start date is confirmed on the programme page.",
+        "Online small group · ages 8-14 · no programming background required.",
+        "Pricing and workshop offers follow the latest information on the programme page.",
+        "Places are limited; after you submit, we can confirm whether seats remain."
+      ]
+    },
+    "cta": {
+      "eyebrow": "Get started",
+      "title": "Ready to begin?",
+      "body": "Leave a short note in the form, or review the programme page for the latest pathway and fees.",
+      "primary": "Explore programmes",
+      "secondary": "Open enquiry form"
+    }
+  }
+}
