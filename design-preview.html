@@ -109,12 +109,18 @@
   .m-pill{width:48px;height:20px;background:var(--blue);border-radius:999px}
 
   /* ── stance demo (blue panel) ── */
-  .stance{background:var(--blue);border-radius:var(--r-lg);padding:64px 48px;color:var(--cream)}
-  @media(max-width:640px){.stance{padding:40px 24px}}
-  .stance p{font-family:var(--font-display);font-weight:500;font-size:clamp(1.25rem,2.4vw,1.7rem);
-            line-height:1.6;max-width:34ch}
+  .stance{position:relative;background:#fff;border:1px solid rgba(26,26,26,.1);
+          border-radius:var(--r-lg);padding:72px 56px;overflow:hidden}
+  @media(max-width:640px){.stance{padding:44px 24px}}
+  .stance p{font-family:var(--font-display);font-weight:500;color:var(--blue);
+            font-size:clamp(1.3rem,2.6vw,1.85rem);line-height:1.6;max-width:34ch;position:relative}
   .stance p+p{margin-top:1.2em}
   .stance .end{color:var(--gold)}
+  .stance .deco{position:absolute;transition:transform .25s cubic-bezier(.2,0,0,1)}
+  .stance:hover .deco{transform:rotate(6deg)}
+  .deco-half{right:48px;top:56px;width:64px;height:32px;background:var(--gold);border-radius:64px 64px 0 0}
+  .deco-pill{right:84px;bottom:52px;width:64px;height:26px;background:var(--blue);border-radius:999px}
+  .deco-dot{right:40px;bottom:64px;width:12px;height:12px;background:var(--red);border-radius:50%}
 
   /* ── footer ── */
   footer{border-top:1px solid rgba(26,26,26,.1);padding:40px 24px;max-width:1152px;margin:0 auto;
@@ -260,9 +266,12 @@
 <hr class="rule">
 
 <section>
-  <p class="eyebrow">7 · 深色面板示例（首页第 2 屏立场陈述的形态）</p>
-  <h2>蓝底，cream 文字，金色收尾</h2>
+  <p class="eyebrow">7 · 立场陈述屏的形态（2026-06-10 修订：蓝不做大底）</p>
+  <h2>浅底，克莱因蓝大字，金色收尾，形状做呼吸点</h2>
   <div class="stance" style="margin-top:26px">
+    <span class="deco deco-half"></span>
+    <span class="deco deco-pill"></span>
+    <span class="deco deco-dot"></span>
     <p>三件事同时发生：AI 进入了课堂，学校还没想好规则，孩子已经每天在用。</p>
     <p>禁止和全面引入，回答的是同一个问题：该不该让孩子用 AI。还有一个更早的问题没被回答：孩子知不知道 AI 在做什么。</p>
     <p class="end">我们的课从这个问题开始。</p>
