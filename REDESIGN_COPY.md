@@ -1,6 +1,6 @@
 # 阶段 2 定稿 — 信息架构与文案（owner 已确认部分 + 待确认小项）
 
-日期：2026-06-10 ｜ 状态：首页文案与导航已经 owner 确认；EduOS 导航问句与页面骨架待最终点头
+日期：2026-06-10 ｜ 状态：全部经 owner 确认，阶段 2 收尾
 约束：本文档内所有文案均已过 CLAUDE.md 第二节禁用清单。中英两版各自独立成文，不是互译。
 
 ---
@@ -14,7 +14,7 @@
 | `/about` | 为什么是第三种声音 | Why a third voice? |
 | `/programmes` | 怎么教 | How do you teach? |
 | `/work` | 学生做出了什么 | What do students make? |
-| `/eduos` | 课程背后是什么（待确认；备选：EduOS） | What's behind the courses?（备选：EduOS） |
+| `/eduos` | EduOS | EduOS |
 | `/insights` | 最近在想什么 | What are we thinking? |
 | `/contact` | 聊聊 | Shall we talk? |
 
@@ -38,13 +38,17 @@ EduOS 保留独立页（owner 决定，暂不并入课程页）。
 
 > 三件事同时发生：AI 进入了课堂，学校还没想好规则，孩子已经每天在用。
 >
-> 一部分学校选择禁止，一部分机构选择全面引入。我们在这两者之间工作：教青少年知道 AI 在做什么、不能做什么，然后用它做出属于自己的作品。
+> 禁止和全面引入，回答的是同一个问题：该不该让孩子用 AI。还有一个更早的问题没被回答：孩子知不知道 AI 在做什么。
+>
+> 我们的课从这个问题开始。
 
 英：
 
 > Three things are happening at once. AI has arrived in the classroom. Schools are still writing the rules. Children are already using it every day.
 >
-> Some schools ban it. Some companies sell it as the answer. We work in the space between: teaching young people what AI is actually doing, before they make anything with it.
+> Banning it and embracing it answer the same question: should children use AI. There is an earlier question, and it is still open: do they understand what it is doing?
+>
+> Our teaching starts there.
 
 安静文字链接 → /about。
 
@@ -127,9 +131,11 @@ EN: Localised from UNESCO (2024), OECD and EU DigComp frameworks.
 
 ---
 
-## 四、遗留待 owner 的小项
+## 四、owner 决议记录（2026-06-10）
 
-1. EduOS 导航问句：「课程背后是什么 / What's behind the courses?」还是直接用「EduOS」
-2. EduOS 页骨架（上面第三节）是否认可
-3. （前置遗留）唯寻 Vision Academy 背书是否继续用——影响课程页案例展示区
-4. （前置遗留）"Tools change. Creators remain." 不再出现在首页；是否彻底弃用，还是留作某处引文
+1. EduOS 导航项用名词「EduOS」（问句导航中唯一的产品专名锚点）
+2. EduOS 页骨架认可（连续性判断 → 实际怎么记录学习 → 在搭建什么·如实 → 合作入口）
+3. 唯寻 Vision Academy 背书继续使用，放在课程页已完成课程案例区
+4. "Tools change. Creators remain." 不再做首页视觉主角，降为引文保留；具体位置（About 结尾或 /work 在线展览卡）在阶段 5 铺开时定
+5. 旧 5 周冲刺营转为已完成课程展示，全站无招生表述
+6. 备忘：Insights 文章选题素材「我们问 AI 自己：孩子该怎么学你」（Claude 视角谈"信比用危险/说错时语气一样/判断力只能在工具之外长出来"），是否成文由 owner 决定
