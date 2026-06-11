@@ -36,7 +36,7 @@
              color:rgba(0,47,167,.55);font-size:clamp(1rem,1.6vw,1.2rem)}
   .hero-cta{margin-top:34px;display:flex;justify-content:center;gap:14px}
   .hero-word{position:relative;text-align:center;white-space:nowrap;
-             padding:0 2vw;margin-bottom:-0.04em;
+             padding:0 2vw 2.6vw;margin-bottom:-0.04em;
              font-family:"Fraunces",serif;font-weight:600;
              font-size:clamp(2rem,9.8vw,11.5rem);line-height:.92;user-select:none}
   .hero-word .letters{position:relative;z-index:1}
@@ -46,15 +46,15 @@
   .c-blue{color:var(--blue)} .c-gold{color:var(--gold)} .c-red{color:var(--red)}
   /* 几何垫层：垫在字母行下方/身后 */
   .hero-shapes{position:absolute;inset:0;z-index:0;pointer-events:none}
-  .hero-shapes .wshape{position:absolute;bottom:-0.5vw;
+  .hero-shapes .wshape{position:absolute;bottom:0;
                        transition:transform 1s cubic-bezier(.2,0,0,1),opacity 1s}
   .pre .wch,.pre .wshape{opacity:0}
-  .ws-half{width:6.2vw;height:3.1vw;background:var(--gold);border-radius:6.2vw 6.2vw 0 0}
-  .ws-pill{width:6.4vw;height:2.5vw;background:var(--blue);border-radius:999px}
-  .ws-block{width:3.4vw;height:3.4vw;background:var(--gold);border-radius:.6vw}
-  .ws-quad{width:4.2vw;height:4.2vw;background:var(--blue);border-radius:0 100% 0 .6vw}
-  .ws-dot{width:1.2vw;height:1.2vw;background:var(--red);border-radius:50%}
-  .ws-deca{width:4.6vw;height:4.6vw}
+  .ws-half{width:7vw;height:3.5vw;background:var(--gold);border-radius:7vw 7vw 0 0}
+  .ws-pill{width:7vw;height:2.7vw;background:var(--blue);border-radius:999px}
+  .ws-block{width:3.8vw;height:3.8vw;background:var(--gold);border-radius:.6vw}
+  .ws-quad{width:4.6vw;height:4.6vw;background:var(--blue);border-radius:0 100% 0 .6vw}
+  .ws-dot{width:1.3vw;height:1.3vw;background:var(--red);border-radius:50%}
+  .ws-deca{width:5vw;height:5vw}
 
   /* ── palette ── */
   .swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
@@ -298,10 +298,10 @@
 
 <script>
   (function(){
-    // BOLD IDEAS LAB：一行，三色字母（蓝主、金点缀、红只给最窄的 I），几何垫在字母下层
+    // BOLD IDEAS LAB：一行，词级三色（BOLD 红 / IDEAS 蓝 / LAB 金），几何整排垫在字母正下方
     var word = "BOLD IDEAS LAB";
     //            B    O    L    D         I    D    E    A    S         L    A    B
-    var colors = ["b","g","b","b",null,"r","b","g","b","b",null,"b","g","b"];
+    var colors = ["r","r","r","r",null,"b","b","b","b","b",null,"g","g","g"];
     var cls = {b:"c-blue",g:"c-gold",r:"c-red"};
     var host = document.getElementById("brandword");
     function rnd(a,b){return (Math.random()*(b-a)+a).toFixed(1)}
@@ -318,14 +318,14 @@
     html += '</span>';
 
     // 几何垫层：沿宽度分布在字母行下缘
-    var deca = '<svg class="wshape ws-deca" viewBox="0 0 100 100" fill="none" style="left:62%"><polygon points="50,3 79,12 97,37 97,63 79,88 50,97 21,88 3,63 3,37 21,12" stroke="#C9A84C" stroke-width="7" stroke-linejoin="round" fill="none"/></svg>';
+    var deca = '<svg class="wshape ws-deca" viewBox="0 0 100 100" fill="none" style="left:60%"><polygon points="50,3 79,12 97,37 97,63 79,88 50,97 21,88 3,63 3,37 21,12" stroke="#C9A84C" stroke-width="7" stroke-linejoin="round" fill="none"/></svg>';
     var shapes = [
-      '<span class="wshape ws-half"  style="left:7%"></span>',
-      '<span class="wshape ws-quad"  style="left:24%"></span>',
-      '<span class="wshape ws-block" style="left:41%"></span>',
+      '<span class="wshape ws-half"  style="left:9%"></span>',
+      '<span class="wshape ws-quad"  style="left:26%"></span>',
+      '<span class="wshape ws-block" style="left:43%"></span>',
       deca,
-      '<span class="wshape ws-pill"  style="left:80%"></span>',
-      '<span class="wshape ws-dot"   style="left:95%;bottom:.6vw"></span>'
+      '<span class="wshape ws-pill"  style="left:77%"></span>',
+      '<span class="wshape ws-dot"   style="left:93%;bottom:.5vw"></span>'
     ];
     var sh = '<span class="hero-shapes">';
     for (var k=0;k<shapes.length;k++){
