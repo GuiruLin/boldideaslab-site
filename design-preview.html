@@ -6,12 +6,14 @@
 <title>BIL 设计系统预览 — 阶段 3</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Lora:wght@400;500&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Lora:wght@400;500&family=Noto+Serif+SC:wght@500;600&family=Noto+Sans+SC:wght@400;500&family=Shantell+Sans:wght@500;700&family=Caveat:wght@600&family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
 <style>
   :root{
     --cream:#F5F2EA; --blue:#002FA7; --gold:#C9A84C; --red:#CC2936; --ink:#1A1A1A;
     --r-sm:10px; --r-md:18px; --r-lg:28px;
-    --font-display:"Fraunces","Noto Serif SC",serif;
+    --font-display:"Shantell Sans","ZCOOL KuaiLe",cursive;
+    --font-display-serif:"Fraunces","Noto Serif SC",serif;
+    --font-hand:"Caveat","Ma Shan Zheng",cursive;
     --font-body:"Lora","Noto Sans SC",sans-serif;
   }
   *{box-sizing:border-box;margin:0}
@@ -37,8 +39,8 @@
   .hero-cta{margin-top:34px;display:flex;justify-content:center;gap:14px}
   .hero-word{position:relative;text-align:center;white-space:nowrap;
              padding:0 2vw 2.6vw;margin-bottom:-0.04em;
-             font-family:"Fraunces",serif;font-weight:600;
-             font-size:clamp(2rem,9.8vw,11.5rem);line-height:.92;user-select:none}
+             font-family:"Shantell Sans",cursive;font-weight:700;
+             font-size:clamp(2rem,9.2vw,11rem);line-height:.92;user-select:none}
   .hero-word .letters{position:relative;z-index:1}
   .hero-word .wch{display:inline-block;
                   transition:transform .8s cubic-bezier(.2,0,0,1),opacity .8s}
@@ -122,16 +124,16 @@
   .m-pill{width:48px;height:20px;background:var(--blue);border-radius:999px}
 
   /* ── stance demo（浅底蓝字，2026-06-10 修订） ── */
-  .stance{position:relative;background:#fff;border:1px solid rgba(26,26,26,.1);
+  .stance{position:relative;background:var(--gold);
           border-radius:var(--r-lg);padding:72px 56px;overflow:hidden}
   @media(max-width:640px){.stance{padding:44px 24px}}
-  .stance p{font-family:var(--font-display);font-weight:500;color:var(--blue);
-            font-size:clamp(1.3rem,2.6vw,1.85rem);line-height:1.6;max-width:34ch;position:relative}
+  .stance p{font-family:var(--font-display);font-weight:500;color:#fff;
+            font-size:clamp(1.3rem,2.6vw,1.85rem);line-height:1.7;max-width:34ch;position:relative}
   .stance p+p{margin-top:1.2em}
-  .stance .end{color:var(--gold)}
+  .stance .end{color:var(--blue)}
   .stance .deco{position:absolute;transition:transform .25s cubic-bezier(.2,0,0,1)}
   .stance:hover .deco{transform:rotate(6deg)}
-  .deco-half{right:48px;top:56px;width:64px;height:32px;background:var(--gold);border-radius:64px 64px 0 0}
+  .deco-half{right:48px;top:56px;width:64px;height:32px;background:#fff;border-radius:64px 64px 0 0}
   .deco-pill{right:84px;bottom:52px;width:64px;height:26px;background:var(--blue);border-radius:999px}
   .deco-dot{right:40px;bottom:64px;width:12px;height:12px;background:var(--red);border-radius:50%}
 
@@ -174,16 +176,23 @@
 <hr class="rule">
 
 <section>
-  <p class="eyebrow">2 · 字体 tokens</p>
-  <h2>Fraunces + Lora ／ Noto Serif SC + Noto Sans SC</h2>
+  <p class="eyebrow">2 · 字体候选（标题字，正文不变）</p>
+  <h2>选一组：A 童趣 ／ B 手写 ／ C 原衬线</h2>
   <div class="spec">
     <div>
-      <p class="label">display · Fraunces 600</p>
-      <p class="display">The third voice on AI in education.</p>
+      <p class="label">A · Shantell Sans + 站酷快乐体（当前预览默认）</p>
+      <p class="display" style="font-family:'Shantell Sans','ZCOOL KuaiLe',cursive">The third voice on AI in education.</p>
+      <p class="display" style="font-family:'ZCOOL KuaiLe',cursive">AI 在教育里的第三种声音。</p>
     </div>
     <div>
-      <p class="label">display · Noto Serif SC 600</p>
-      <p class="display">AI 在教育里的第三种声音。</p>
+      <p class="label">B · Caveat + 马善政楷体（更手写）</p>
+      <p class="display" style="font-family:'Caveat',cursive">The third voice on AI in education.</p>
+      <p class="display" style="font-family:'Ma Shan Zheng',cursive">AI 在教育里的第三种声音。</p>
+    </div>
+    <div>
+      <p class="label">C · Fraunces + Noto Serif SC（原方案，对照）</p>
+      <p class="display" style="font-family:'Fraunces','Noto Serif SC',serif">The third voice on AI in education.</p>
+      <p class="display" style="font-family:'Noto Serif SC',serif">AI 在教育里的第三种声音。</p>
     </div>
     <div>
       <p class="label">body · Lora 400 · 行长 65ch · 行高 1.8</p>
@@ -280,8 +289,8 @@
 <hr class="rule">
 
 <section>
-  <p class="eyebrow">7 · 立场陈述屏的形态（蓝不做大底）</p>
-  <h2>浅底，克莱因蓝大字，金色收尾，形状做呼吸点</h2>
+  <p class="eyebrow">7 · 立场陈述屏的形态（2026-06-11 修订：金底白字）</p>
+  <h2>金色面板，白字，蓝色收尾，形状做呼吸点</h2>
   <div class="stance" style="margin-top:26px">
     <span class="deco deco-half"></span>
     <span class="deco deco-pill"></span>
