@@ -24,13 +24,12 @@ EduOS 保留独立页（owner 决定，暂不并入课程页）。
 
 ## 二、首页文案（六屏，已确认）
 
-### 第 1 屏 · Hero（动态字母 + 圆角几何块）
+### 第 1 屏 · Hero（2026-06-10 修订：品牌名大字母 + slogan 在上）
 
-- 中标题：**AI 在教育里的第三种声音。**
-- 英标题：**The third voice on AI in education.**
-- 中副句：在禁止和全面引入之间，伦敦的青少年教育实验室。
-- 英副句：A London lab for young people, working between the ban and the bandwagon.
-- 动作：一个按钮 → /programmes（文字随导航词：中「怎么教」/ 英 "How do you teach?"）
+- 视觉主体：**BOLD IDEAS LAB** 超大字母坐在首屏底边，蓝色 Fraunces，形状穿插（Streamtime 首屏转译，幅度收敛）
+- slogan（居中在字母上方） 中：**AI 在教育里的第三种声音。** 英：**The third voice on AI in education.**
+- 副句（小一号，slogan 下） 中：在禁止和全面引入之间，伦敦的青少年教育实验室。 英：A London lab for young people, working between the ban and the bandwagon.
+- 动作：主按钮 → /programmes（「怎么教」/ "How do you teach?"），次按钮 → /work
 
 ### 第 2 屏 · 立场陈述（纯文字屏，已确认）
 

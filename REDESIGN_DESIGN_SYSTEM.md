@@ -73,10 +73,12 @@ CSS 即可实现 1 以外的全部（border-radius 配方写进组件库）；�
 
 ## 5. 微交互规范
 
+**Hero 形态（2026-06-10 owner 定稿，Streamtime 首屏转译）**：slogan（定稿标题「AI 在教育里的第三种声音。/ The third voice on AI in education.」）居中在上；品牌名 BOLD IDEAS LAB 做成超大 Fraunces 字母坐在首屏底边，字母只用克莱因蓝一色，词间与收尾穿插金拱、蓝 pill、金描边十边与红点；落位后字母保留 ±3.5° 微旋转与轻微基线起伏——比 Streamtime 收敛，静谧极简但有趣味。
+
 | 对象 | 行为 | 参数 |
 | --- | --- | --- |
-| hero 字符 | 载入时从散落（±40px、±8°）聚合到位 | 700ms，逐字 stagger 35ms，只播一次 |
-| hero 几何块 | 同上稍慢落位 | 900ms |
+| hero 品牌字母 | 载入时从散落（±70px、±14°）聚合到位，落位后保留微姿态 | 800ms，逐字 stagger 40ms，只播一次 |
+| hero 几何块 | 同上稍慢落位 | 1000ms |
 | 卡片 hover | 上浮 3px + 边框转 `blue/30` + 一档轻投影 | 200ms ease-out |
 | 形状标记 hover | 位移 3px 或旋转 6° | 250ms cubic-bezier(0.2,0,0,1) |
 | 链接 hover | 下划线由 30% 透明度变实 | 150ms |
