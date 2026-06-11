@@ -27,8 +27,9 @@ EduOS 保留独立页（owner 决定，暂不并入课程页）。
 ### 第 1 屏 · Hero（2026-06-10 修订：品牌名大字母 + slogan 在上）
 
 - 视觉主体：**BOLD IDEAS LAB** 超大字母坐在首屏底边，蓝色 Fraunces，形状穿插（Streamtime 首屏转译，幅度收敛）
-- slogan（居中在字母上方） 中：**AI 在教育里的第三种声音。** 英：**The third voice on AI in education.**
-- 副句（小一号，slogan 下） 中：在禁止和全面引入之间，伦敦的青少年教育实验室。 英：A London lab for young people, working between the ban and the bandwagon.
+- slogan（居中在字母上方，2026-06-11 owner 改定） 中：**一切可能，始于敢想。**（备选长版：每一种可能，都始于一个敢想的念头。） 英：**Every possibility begins with one bold idea.**
+- 「第三种声音」从 hero 退位，由第 2 屏立场陈述与导航「为什么是第三种声音」承载
+- 副句（小一号，slogan 下） 中：伦敦的青少年 AI 教育实验室。 英：A London lab for young people and AI.
 - 动作：主按钮 → /programmes（「怎么教」/ "How do you teach?"），次按钮 → /work
 
 ### 第 2 屏 · 立场陈述（纯文字屏，已确认）
