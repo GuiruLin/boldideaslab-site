@@ -1,11 +1,28 @@
 import type { Metadata } from "next";
+import { Fraunces, Lora, Shantell_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
 import { LanguageProvider } from "@/components/providers/LanguageProvider";
 import en from "@/messages/en.json";
 import "./globals.css";
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  variable: "--font-fraunces"
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-lora"
+});
+
+const shantell = Shantell_Sans({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-shantell"
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.boldideaslab.com"),
@@ -61,12 +78,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html data-scroll-behavior="smooth" lang="en" suppressHydrationWarning>
-      <body suppressHydrationWarning>
-        <LanguageProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </LanguageProvider>
+      <body
+        className={`${fraunces.variable} ${lora.variable} ${shantell.variable}`}
+        suppressHydrationWarning
+      >
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );

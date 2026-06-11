@@ -21,11 +21,7 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  background:
-    linear-gradient(rgba(0, 47, 167, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 47, 167, 0.035) 1px, transparent 1px),
-    #f5f2ea;
-  background-size: 56px 56px;
+  background: #f5f2ea;
   font-family: var(--font-sans);
 }
 

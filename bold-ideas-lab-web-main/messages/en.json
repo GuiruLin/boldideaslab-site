@@ -69,7 +69,14 @@
         "Bold Ideas Lab is not simply a classroom. It is a space where we work with young people to practise imagination, creativity, and possibility."
       ],
       "pillLabel": "Holistic education framework",
-      "pills": ["Agency", "Thinking", "Creativity", "Expression", "Social awareness", "Digital literacy"],
+      "pills": [
+        "Agency",
+        "Thinking",
+        "Creativity",
+        "Expression",
+        "Social awareness",
+        "Digital literacy"
+      ],
       "foundersLabel": "Founders",
       "founders": [
         {
@@ -120,7 +127,12 @@
       "subtitle": "Small-group projects for ages 8-14.",
       "tag": "Featured programme",
       "cardTitle": "Youth AI creativity small-group project course",
-      "details": ["Online small group", "Ages 8-14", "Question finding, technical making, design refinement, expression and publishing", "Built toward a real work and international showcase"],
+      "details": [
+        "Online small group",
+        "Ages 8-14",
+        "Question finding, technical making, design refinement, expression and publishing",
+        "Built toward a real work and international showcase"
+      ],
       "narrativeTitle": "From one idea to an AI work ready for an international showcase.",
       "body": "In project-based learning, students ship ideas as work and practise expressing them clearly. Full pathway, modules, and pricing are on the programme page."
     },
@@ -183,37 +195,73 @@
           "number": "01",
           "title": "Agency",
           "en": "主体性",
-          "tags": ["Confidence", "Self-knowledge", "Emotional regulation", "Inner drive", "Active choice"]
+          "tags": [
+            "Confidence",
+            "Self-knowledge",
+            "Emotional regulation",
+            "Inner drive",
+            "Active choice"
+          ]
         },
         {
           "number": "02",
           "title": "Thinking",
           "en": "思维力",
-          "tags": ["Analysis", "Reasoning", "Problem solving", "Critical thinking", "Logic"]
+          "tags": [
+            "Analysis",
+            "Reasoning",
+            "Problem solving",
+            "Critical thinking",
+            "Logic"
+          ]
         },
         {
           "number": "03",
           "title": "Creativity",
           "en": "创造力",
-          "tags": ["Imagination", "Making", "Experimentation", "Interdisciplinary integration", "Originality"]
+          "tags": [
+            "Imagination",
+            "Making",
+            "Experimentation",
+            "Interdisciplinary integration",
+            "Originality"
+          ]
         },
         {
           "number": "04",
           "title": "Expression",
           "en": "表达力",
-          "tags": ["Communication", "Speaking", "Influence", "Narrative", "Public expression"]
+          "tags": [
+            "Communication",
+            "Speaking",
+            "Influence",
+            "Narrative",
+            "Public expression"
+          ]
         },
         {
           "number": "05",
           "title": "Social",
           "en": "社会力",
-          "tags": ["Empathy", "Collaboration", "Cross-cultural understanding", "Leadership", "Teamwork"]
+          "tags": [
+            "Empathy",
+            "Collaboration",
+            "Cross-cultural understanding",
+            "Leadership",
+            "Teamwork"
+          ]
         },
         {
           "number": "06",
           "title": "Digital Literacy",
           "en": "数字素养",
-          "tags": ["AI tools", "Computational thinking", "Technical practice", "Data understanding", "Digital creation"]
+          "tags": [
+            "AI tools",
+            "Computational thinking",
+            "Technical practice",
+            "Data understanding",
+            "Digital creation"
+          ]
         }
       ]
     },
@@ -328,11 +376,26 @@
       "title": "5 weeks. From one idea to an AI project ready for international showcase.",
       "leadEn": "",
       "meta": [
-        { "label": "Age", "value": "Ages 8-14 · no coding required" },
-        { "label": "Format", "value": "Online small group · 5–10 students" },
-        { "label": "Sessions", "value": "2 sessions per week · approx. 1 hour each · 10 hours total" },
-        { "label": "Dates", "value": "25 April–23 May 2026" },
-        { "label": "Outcomes", "value": "Coolest Projects AI Category submission · public project page and certificate" }
+        {
+          "label": "Age",
+          "value": "Ages 8-14 · no coding required"
+        },
+        {
+          "label": "Format",
+          "value": "Online small group · 5–10 students"
+        },
+        {
+          "label": "Sessions",
+          "value": "2 sessions per week · approx. 1 hour each · 10 hours total"
+        },
+        {
+          "label": "Dates",
+          "value": "25 April–23 May 2026"
+        },
+        {
+          "label": "Outcomes",
+          "value": "Coolest Projects AI Category submission · public project page and certificate"
+        }
       ]
     },
     "coolest": {
@@ -1047,6 +1110,85 @@
       "body": "Leave a short note in the form, or review the programme page for the latest pathway and fees.",
       "primary": "Explore programmes",
       "secondary": "Open enquiry form"
+    }
+  },
+  "redesign": {
+    "nav": {
+      "about": "Why a third voice?",
+      "programmes": "How do you teach?",
+      "work": "What do students make?",
+      "eduos": "EduOS",
+      "insights": "What are we thinking?",
+      "contact": "Shall we talk?",
+      "menu": "Menu",
+      "close": "Close"
+    },
+    "hero": {
+      "slogan": "Every possibility begins with one bold idea.",
+      "sub": "The third voice on AI in education.",
+      "primary": "How do you teach?",
+      "secondary": "What do students make?"
+    },
+    "stance": {
+      "p1": "Three things are happening at once. AI has arrived in the classroom. Schools are still writing the rules. Children are already using it every day.",
+      "p2": "Banning it and embracing it answer the same question: should children use AI. There is an earlier question, and it is still open: do they understand what it is doing?",
+      "end": "Our teaching starts there.",
+      "link": "Why a third voice?"
+    },
+    "forces": {
+      "title": "What we teach",
+      "items": [
+        {
+          "name": "Thinking",
+          "text": "Knowing what AI can do, and where it stops."
+        },
+        {
+          "name": "Making",
+          "text": "Turning an idea into a finished piece of work, draft by draft."
+        },
+        {
+          "name": "Explaining",
+          "text": "Explaining the work, and standing up to questions about it."
+        }
+      ],
+      "footnote": "Localised from UNESCO (2024), OECD and EU DigComp frameworks."
+    },
+    "evidence": {
+      "title": "What students have made",
+      "numbers": [
+        {
+          "value": "50+",
+          "label": "student projects"
+        },
+        {
+          "value": "2",
+          "label": "films selected for the AI Youth Spring Festival, hosted by WaytoAGI"
+        }
+      ],
+      "featuredName": "Study Compass",
+      "featuredText": "Exhibited on Coolest Projects, the Raspberry Pi Foundation's global showcase for young digital makers.",
+      "featuredCta": "See it on Coolest Projects",
+      "featuredUrl": "https://online.coolestprojects.org/projects/24694",
+      "cohort": "Our first five-week sprint has finished; students submitted their projects to Coolest Projects.",
+      "link": "What do students make?"
+    },
+    "thinking": {
+      "eyebrow": "What are we thinking?",
+      "title": "When AI can do everything, what is left for education?",
+      "excerpt": "The biggest problem with systematic education is not what it teaches, but the hidden message it sends: life has standard answers.",
+      "note": "Essay by Lynn, written in Chinese.",
+      "read": "Read the essay",
+      "url": "https://mp.weixin.qq.com/s/vw2Kv6NsNu7bf4CyT_zyjw",
+      "more": "More notes and conversations"
+    },
+    "endcta": {
+      "text": "If you want to talk about a student, or a school, write to us.",
+      "button": "Shall we talk?"
+    },
+    "footer": {
+      "tagline": "A London lab for young people and AI.",
+      "colophon": "How AI was used on this site: it helped write the code. Every photo is real. Every word was decided by a person.",
+      "copyright": "© 2026 Bold Ideas Lab."
     }
   }
 }

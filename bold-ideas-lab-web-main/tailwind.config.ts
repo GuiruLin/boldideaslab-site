@@ -16,6 +16,14 @@ const config: Config = {
         red: "#CC2936"
       },
       fontFamily: {
+        display: [
+          "var(--font-fraunces)",
+          "LXGW WenKai",
+          "Georgia",
+          "serif"
+        ],
+        body: ["var(--font-lora)", "LXGW WenKai", "Georgia", "serif"],
+        playful: ["var(--font-shantell)", "ZCOOL KuaiLe", "cursive"],
         sans: [
           "var(--font-sans)",
           "Inter",
