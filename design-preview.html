@@ -35,21 +35,26 @@
   .slogan-en{margin-top:10px;font-family:var(--font-display);font-weight:500;
              color:rgba(0,47,167,.55);font-size:clamp(1rem,1.6vw,1.2rem)}
   .hero-cta{margin-top:34px;display:flex;justify-content:center;gap:14px}
-  .hero-word{display:flex;align-items:flex-end;justify-content:center;flex-wrap:wrap;
-             column-gap:.05em;padding:0 12px;margin-bottom:-0.06em;
-             font-family:"Fraunces",serif;font-weight:600;color:var(--blue);
-             font-size:clamp(3rem,10.2vw,10.5rem);line-height:.92;user-select:none}
+  .hero-word{position:relative;text-align:center;white-space:nowrap;
+             padding:0 2vw;margin-bottom:-0.04em;
+             font-family:"Fraunces",serif;font-weight:600;
+             font-size:clamp(2rem,9.8vw,11.5rem);line-height:.92;user-select:none}
+  .hero-word .letters{position:relative;z-index:1}
   .hero-word .wch{display:inline-block;
                   transition:transform .8s cubic-bezier(.2,0,0,1),opacity .8s}
-  .hero-word .wgap{width:.18em}
-  .hero-word .wshape{display:inline-block;margin:0 .06em;
-                     transition:transform 1s cubic-bezier(.2,0,0,1),opacity 1s}
+  .hero-word .wgap{display:inline-block;width:.22em}
+  .c-blue{color:var(--blue)} .c-gold{color:var(--gold)} .c-red{color:var(--red)}
+  /* 几何垫层：垫在字母行下方/身后 */
+  .hero-shapes{position:absolute;inset:0;z-index:0;pointer-events:none}
+  .hero-shapes .wshape{position:absolute;bottom:-0.5vw;
+                       transition:transform 1s cubic-bezier(.2,0,0,1),opacity 1s}
   .pre .wch,.pre .wshape{opacity:0}
-  .ws-half{width:.52em;height:.26em;background:var(--gold);border-radius:.52em .52em 0 0}
-  .ws-pill{width:.55em;height:.22em;background:var(--blue);border-radius:999px}
-  .ws-block{width:.3em;height:.3em;background:var(--gold);border-radius:.06em}
-  .ws-dot{width:.11em;height:.11em;background:var(--red);border-radius:50%}
-  .ws-deca{width:.34em;height:.34em}
+  .ws-half{width:6.2vw;height:3.1vw;background:var(--gold);border-radius:6.2vw 6.2vw 0 0}
+  .ws-pill{width:6.4vw;height:2.5vw;background:var(--blue);border-radius:999px}
+  .ws-block{width:3.4vw;height:3.4vw;background:var(--gold);border-radius:.6vw}
+  .ws-quad{width:4.2vw;height:4.2vw;background:var(--blue);border-radius:0 100% 0 .6vw}
+  .ws-dot{width:1.2vw;height:1.2vw;background:var(--red);border-radius:50%}
+  .ws-deca{width:4.6vw;height:4.6vw}
 
   /* ── palette ── */
   .swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
@@ -293,35 +298,41 @@
 
 <script>
   (function(){
-    // BOLD IDEAS LAB：字母散落聚合，形状穿插字母之间（Streamtime 转译，幅度收小）
-    var words = ["BOLD","IDEAS","LAB"];
-    // 形状插槽：词与词之间 + 收尾红点
-    var sep = ['<span class="wshape ws-half"></span>',
-               '<span class="wshape ws-pill"></span>'];
-    var deca = '<svg class="wshape ws-deca" viewBox="0 0 100 100" fill="none"><polygon points="50,3 79,12 97,37 97,63 79,88 50,97 21,88 3,63 3,37 21,12" stroke="#C9A84C" stroke-width="7" stroke-linejoin="round" fill="none"/></svg>';
+    // BOLD IDEAS LAB：一行，三色字母（蓝主、金点缀、红只给最窄的 I），几何垫在字母下层
+    var word = "BOLD IDEAS LAB";
+    //            B    O    L    D         I    D    E    A    S         L    A    B
+    var colors = ["b","g","b","b",null,"r","b","g","b","b",null,"b","g","b"];
+    var cls = {b:"c-blue",g:"c-gold",r:"c-red"};
     var host = document.getElementById("brandword");
-    var html = "", idx = 0;
     function rnd(a,b){return (Math.random()*(b-a)+a).toFixed(1)}
     function scatter(){return "translate("+rnd(-70,70)+"px,"+rnd(-50,30)+"px) rotate("+rnd(-14,14)+"deg)"}
-    for (var w=0; w<words.length; w++){
-      for (var i=0;i<words[w].length;i++){
-        // 落位后的微姿态：轻微旋转与基线起伏，比 Streamtime 收敛
-        var fr = rnd(-3.5,3.5), fy = rnd(-0.02,0.05);
-        html += '<span class="wch" data-final="rotate('+fr+'deg) translateY('+fy+'em)"'
-              + ' style="transform:'+scatter()+';transition-delay:'+(idx*40)+'ms">'
-              + words[w][i] + '</span>';
-        idx++;
-      }
-      if (w < words.length-1){
-        html += '<span class="wgap"></span>'
-              + sep[w].replace('class="','style="transform:'+scatter()+';transition-delay:'+(idx*40)+'ms" data-final="rotate('+rnd(-8,8)+'deg)" class="')
-              + '<span class="wgap"></span>';
-        idx++;
-      }
+
+    var html = '<span class="letters">', idx = 0;
+    for (var i=0;i<word.length;i++){
+      if (word[i]===" "){ html += '<span class="wgap"></span>'; continue; }
+      var fr = rnd(-3.5,3.5), fy = rnd(-0.02,0.05);
+      html += '<span class="wch '+cls[colors[i]]+'" data-final="rotate('+fr+'deg) translateY('+fy+'em)"'
+            + ' style="transform:'+scatter()+';transition-delay:'+(idx*40)+'ms">'+word[i]+'</span>';
+      idx++;
     }
-    html += deca.replace('class="','style="transform:'+scatter()+';transition-delay:'+(idx*40+60)+'ms" data-final="rotate('+rnd(-8,8)+'deg) translateY(-0.04em)" class="');
-    html += '<span class="wshape ws-dot" style="transform:'+scatter()+';transition-delay:'+(idx*40+140)+'ms" data-final="none"></span>';
-    host.innerHTML = html;
+    html += '</span>';
+
+    // 几何垫层：沿宽度分布在字母行下缘
+    var deca = '<svg class="wshape ws-deca" viewBox="0 0 100 100" fill="none" style="left:62%"><polygon points="50,3 79,12 97,37 97,63 79,88 50,97 21,88 3,63 3,37 21,12" stroke="#C9A84C" stroke-width="7" stroke-linejoin="round" fill="none"/></svg>';
+    var shapes = [
+      '<span class="wshape ws-half"  style="left:7%"></span>',
+      '<span class="wshape ws-quad"  style="left:24%"></span>',
+      '<span class="wshape ws-block" style="left:41%"></span>',
+      deca,
+      '<span class="wshape ws-pill"  style="left:80%"></span>',
+      '<span class="wshape ws-dot"   style="left:95%;bottom:.6vw"></span>'
+    ];
+    var sh = '<span class="hero-shapes">';
+    for (var k=0;k<shapes.length;k++){
+      sh += shapes[k].replace('style="','data-final="rotate('+rnd(-8,8)+'deg)" style="transform:'+scatter()+';transition-delay:'+(idx*40+k*70)+'ms;');
+    }
+    sh += '</span>';
+    host.innerHTML = sh + html;
 
     var hero = document.getElementById("hero");
     var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -334,7 +345,7 @@
         els[j].style.opacity = "1";
       }
     });});
-  })();
+    })();
 </script>
 </body>
 </html>
