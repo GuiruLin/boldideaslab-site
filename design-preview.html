@@ -11,9 +11,8 @@
   :root{
     --cream:#F5F2EA; --blue:#002FA7; --gold:#C9A84C; --red:#CC2936; --ink:#1A1A1A;
     --r-sm:10px; --r-md:18px; --r-lg:28px;
-    --font-display:"Shantell Sans","ZCOOL KuaiLe",cursive;
-    --font-display-serif:"Fraunces","Noto Serif SC",serif;
-    --font-hand:"Caveat","Ma Shan Zheng",cursive;
+    --font-display:"Fraunces","Noto Serif SC",serif;
+    --font-playful:"Shantell Sans","ZCOOL KuaiLe",cursive;
     --font-body:"Lora","Noto Sans SC",sans-serif;
   }
   *{box-sizing:border-box;margin:0}
@@ -39,8 +38,8 @@
   .hero-cta{margin-top:34px;display:flex;justify-content:center;gap:14px}
   .hero-word{position:relative;text-align:center;white-space:nowrap;
              padding:0 2vw 2.6vw;margin-bottom:-0.04em;
-             font-family:"Shantell Sans",cursive;font-weight:700;
-             font-size:clamp(2rem,9.2vw,11rem);line-height:.92;user-select:none}
+             font-family:"Fraunces",serif;font-weight:600;
+             font-size:clamp(2rem,9.8vw,11.5rem);line-height:.92;user-select:none}
   .hero-word .letters{position:relative;z-index:1}
   .hero-word .wch{display:inline-block;
                   transition:transform .8s cubic-bezier(.2,0,0,1),opacity .8s}
@@ -127,7 +126,7 @@
   .stance{position:relative;background:var(--gold);
           border-radius:var(--r-lg);padding:72px 56px;overflow:hidden}
   @media(max-width:640px){.stance{padding:44px 24px}}
-  .stance p{font-family:var(--font-display);font-weight:500;color:#fff;
+  .stance p{font-family:var(--font-playful);font-weight:500;color:#fff;
             font-size:clamp(1.3rem,2.6vw,1.85rem);line-height:1.7;max-width:34ch;position:relative}
   .stance p+p{margin-top:1.2em}
   .stance .end{color:var(--blue)}
@@ -176,23 +175,16 @@
 <hr class="rule">
 
 <section>
-  <p class="eyebrow">2 · 字体候选（标题字，正文不变）</p>
-  <h2>选一组：A 童趣 ／ B 手写 ／ C 原衬线</h2>
+  <p class="eyebrow">2 · 字体 tokens</p>
+  <h2>Fraunces + Lora ／ Noto Serif SC + Noto Sans SC</h2>
   <div class="spec">
     <div>
-      <p class="label">A · Shantell Sans + 站酷快乐体（当前预览默认）</p>
-      <p class="display" style="font-family:'Shantell Sans','ZCOOL KuaiLe',cursive">The third voice on AI in education.</p>
-      <p class="display" style="font-family:'ZCOOL KuaiLe',cursive">AI 在教育里的第三种声音。</p>
+      <p class="label">display · Fraunces 600</p>
+      <p class="display">The third voice on AI in education.</p>
     </div>
     <div>
-      <p class="label">B · Caveat + 马善政楷体（更手写）</p>
-      <p class="display" style="font-family:'Caveat',cursive">The third voice on AI in education.</p>
-      <p class="display" style="font-family:'Ma Shan Zheng',cursive">AI 在教育里的第三种声音。</p>
-    </div>
-    <div>
-      <p class="label">C · Fraunces + Noto Serif SC（原方案，对照）</p>
-      <p class="display" style="font-family:'Fraunces','Noto Serif SC',serif">The third voice on AI in education.</p>
-      <p class="display" style="font-family:'Noto Serif SC',serif">AI 在教育里的第三种声音。</p>
+      <p class="label">display · Noto Serif SC 600</p>
+      <p class="display">AI 在教育里的第三种声音。</p>
     </div>
     <div>
       <p class="label">body · Lora 400 · 行长 65ch · 行高 1.8</p>
@@ -289,7 +281,7 @@
 <hr class="rule">
 
 <section>
-  <p class="eyebrow">7 · 立场陈述屏的形态（2026-06-11 修订：金底白字）</p>
+  <p class="eyebrow">7 · 立场陈述屏的形态（金底白字 + 童趣字体，仅此一屏）</p>
   <h2>金色面板，白字，蓝色收尾，形状做呼吸点</h2>
   <div class="stance" style="margin-top:26px">
     <span class="deco deco-half"></span>
