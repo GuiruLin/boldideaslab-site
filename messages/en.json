@@ -1188,7 +1188,34 @@
     "footer": {
       "tagline": "A London lab for young people and AI.",
       "colophon": "How AI was used on this site: it helped write the code. Every photo is real. Every word was decided by a person.",
-      "copyright": "© 2026 Bold Ideas Lab."
+      "copyright": "© 2026 Bold Ideas Lab.",
+      "ideasTitle": "Ideas that became real things",
+      "ideas": [
+        {
+          "label": "Color Theory",
+          "href": "/work"
+        },
+        {
+          "label": "Pumpkin Dread",
+          "href": "/work"
+        },
+        {
+          "label": "Magic Story Box",
+          "href": "/work"
+        },
+        {
+          "label": "Everyday Magic",
+          "href": "/work"
+        },
+        {
+          "label": "Study Compass",
+          "href": "https://online.coolestprojects.org/projects/24694"
+        }
+      ],
+      "more": {
+        "label": "+ 50 more bold ideas",
+        "href": "/work"
+      }
     }
   }
 }

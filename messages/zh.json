@@ -1188,7 +1188,34 @@
     "footer": {
       "tagline": "伦敦的青少年 AI 教育实验室。",
       "colophon": "这个网站如何使用 AI：代码有 AI 参与，照片全部真实，每一句话由人定稿。",
-      "copyright": "© 2026 敢想实验室。"
+      "copyright": "© 2026 敢想实验室。",
+      "ideasTitle": "被做出来的想法",
+      "ideas": [
+        {
+          "label": "Color Theory",
+          "href": "/work"
+        },
+        {
+          "label": "Pumpkin Dread",
+          "href": "/work"
+        },
+        {
+          "label": "Magic Story Box",
+          "href": "/work"
+        },
+        {
+          "label": "Everyday Magic",
+          "href": "/work"
+        },
+        {
+          "label": "Study Compass",
+          "href": "https://online.coolestprojects.org/projects/24694"
+        }
+      ],
+      "more": {
+        "label": "还有 50 多个",
+        "href": "/work"
+      }
     }
   }
 }

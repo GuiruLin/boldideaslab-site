@@ -62,3 +62,18 @@ a {
 @media (prefers-reduced-motion: reduce) {
   .reveal { transition: none; opacity: 1; transform: none; }
 }
+
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+.squiggle path {
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+}
+.squiggle-show path {
+  transition: stroke-dashoffset 1.4s ease-out;
+  stroke-dashoffset: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .squiggle path { stroke-dashoffset: 0; }
+}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Lora } from "next/font/google";
+import { Fraunces, Lora, Shantell_Sans } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { LanguageProvider } from "@/components/providers/LanguageProvider";
@@ -16,6 +16,12 @@ const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-lora"
+});
+
+const shantell = Shantell_Sans({
+  subsets: ["latin"],
+  weight: ["500"],
+  variable: "--font-shantell"
 });
 
 export const metadata: Metadata = {
@@ -73,7 +79,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html data-scroll-behavior="smooth" lang="en" suppressHydrationWarning>
       <body
-        className={`${fraunces.variable} ${lora.variable}`}
+        className={`${fraunces.variable} ${lora.variable} ${shantell.variable}`}
         suppressHydrationWarning
       >
         <LanguageProvider>{children}</LanguageProvider>
