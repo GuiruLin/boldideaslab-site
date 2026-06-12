@@ -1189,6 +1189,28 @@
       "tagline": "A London lab for young people and AI.",
       "colophon": "How AI was used on this site: it helped write the code. Every photo is real. Every word was decided by a person.",
       "copyright": "© 2026 Bold Ideas Lab."
+    },
+    "about": {
+      "title": "Why a third voice?",
+      "stance": [
+        "Three things are happening at once. AI has arrived in the classroom. Schools are still writing the rules. Children are already using it every day.",
+        "One answer is to ban it: keep a technology nobody fully understands out of childhood. Another is to bring it in everywhere: new tools, new prompts, new subject. Both are serious positions, and both answer the same question: should children use AI.",
+        "There is an earlier question, and it is still open. Do children understand what AI is doing? Where its answers come from. Why it sounds just as confident when it is wrong. What it cannot know about them.",
+        "Our teaching starts there."
+      ],
+      "flatten": {
+        "title": "Education cannot be flattened.",
+        "body": "When every learner is optimised toward the same metric, whatever the metric cannot see is quietly dropped: curiosity, judgement, the nerve to ask an unusual question. AI makes that kind of optimisation cheaper than it has ever been. We use AI in our teaching, and we refuse to use it that way."
+      },
+      "forcesTitle": "Three capabilities hold the teaching together.",
+      "foundersTitle": "Who is behind this?",
+      "foundersLead": "Bold Ideas Lab is two people.",
+      "quote": "Tools change. Creators remain.",
+      "schools": {
+        "title": "For schools and researchers",
+        "body": "If you are writing an AI policy, questioning one, or studying how children actually use these tools, we are glad to compare notes. We teach, we keep records of how learning happens, and we publish what we see.",
+        "cta": "Shall we talk?"
+      }
     }
   }
 }
