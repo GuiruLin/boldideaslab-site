@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 
-import { Btn } from "@/components/redesign/Btn";
 import en from "@/messages/en.json";
 
 const hero = en.redesign.hero;
@@ -63,17 +62,10 @@ export function Hero() {
 
   return (
     <section className="flex min-h-[calc(100vh-4.5rem)] flex-col justify-between overflow-hidden bg-cream">
-      <div className="mx-auto max-w-4xl px-6 pt-[14vh] text-center">
-        <h1 className="font-display text-[clamp(1.7rem,3.4vw,2.7rem)] font-semibold leading-snug text-blue text-balance">
+      <div className="mx-auto max-w-4xl px-6 pt-[20vh] text-center">
+        <h1 className="font-display text-[clamp(1.9rem,3.8vw,3rem)] font-semibold leading-snug text-blue text-balance">
           {hero.slogan}
         </h1>
-        <p className="mt-3 text-[clamp(0.95rem,1.4vw,1.1rem)] text-ink/60">{hero.sub}</p>
-        <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <Btn href="/programmes">{hero.primary}</Btn>
-          <Btn href="/work" variant="secondary">
-            {hero.secondary}
-          </Btn>
-        </div>
       </div>
 
       <div

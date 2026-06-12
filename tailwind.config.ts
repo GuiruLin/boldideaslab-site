@@ -23,7 +23,6 @@ const config: Config = {
           "serif"
         ],
         body: ["var(--font-lora)", "LXGW WenKai", "Georgia", "serif"],
-        playful: ["var(--font-shantell)", "ZCOOL KuaiLe", "cursive"],
         sans: [
           "var(--font-sans)",
           "Inter",
