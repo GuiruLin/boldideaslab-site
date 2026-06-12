@@ -32,24 +32,30 @@ export function Header() {
           </span>
         </Link>
 
-        {/* 桌面：可见问句导航；hover 时小金拱从字底升起（教育站逻辑：全貌可见，不藏盲盒） */}
-        <nav className="hidden items-center gap-1 lg:flex">
-          {items.map((item) => (
-            <Link
-              className={`group relative px-3.5 py-2 text-sm transition-colors duration-150 ${
-                "accent" in item ? "font-medium text-blue" : "text-ink/75 hover:text-blue"
-              }`}
-              href={item.href}
-              key={item.href}
-            >
-              {item.label}
-              <span
-                aria-hidden
-                className="absolute -bottom-px left-1/2 h-[9px] w-[18px] -translate-x-1/2 origin-bottom scale-y-0 bg-gold transition-transform duration-200 ease-out group-hover:scale-y-100 motion-reduce:transition-none"
-                style={{ borderRadius: "18px 18px 0 0" }}
-              />
-            </Link>
-          ))}
+        {/* 桌面：问句积木导航——形状块紧贴成排，像搭好的积木天际线 */}
+        <nav className="hidden items-end lg:flex">
+          {(
+            [
+              { style: "bg-gold/20 text-ink hover:bg-gold/30", radius: "999px 999px 0 0", pt: "pt-3.5" },
+              { style: "bg-blue/10 text-blue hover:bg-blue/15", radius: "10px 10px 0 0", pt: "pt-2.5" },
+              { style: "border border-b-0 border-ink/15 bg-white text-ink hover:text-blue", radius: "999px 999px 0 0", pt: "pt-3.5" },
+              { style: "bg-gold text-ink hover:bg-gold/90", radius: "10px 10px 0 0", pt: "pt-2.5" },
+              { style: "bg-blue/10 text-blue hover:bg-blue/15", radius: "0 999px 0 0", pt: "pt-3" },
+              { style: "bg-blue text-cream", radius: "999px 999px 0 0", pt: "pt-3.5" }
+            ] as const
+          ).map((variant, index) => {
+            const item = items[index];
+            return (
+              <Link
+                className={`${variant.style} ${variant.pt} inline-flex items-end px-4 pb-2.5 text-sm font-medium transition-all duration-200 hover:-translate-y-1 motion-reduce:transition-none`}
+                href={item.href}
+                key={item.href}
+                style={{ borderRadius: variant.radius }}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* 移动：Menu 药丸 + 问句瀑布 */}

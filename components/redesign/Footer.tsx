@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { IdeasStrip, Squiggle } from "@/components/redesign/footerFun";
+import { Squiggle } from "@/components/redesign/footerFun";
 import en from "@/messages/en.json";
 
 const nav = en.redesign.nav;
@@ -40,11 +40,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl">
         <Squiggle />
 
-        <div className="mt-12">
-          <IdeasStrip />
-        </div>
-
-        <div className="mt-14 grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-start">
+        <div className="mt-12 grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-start">
           <div>
             <p className="font-display text-2xl font-medium text-ink">Bold Ideas Lab</p>
             <p className="mt-3 max-w-md text-sm leading-6 text-ink/65">{footer.tagline}</p>
