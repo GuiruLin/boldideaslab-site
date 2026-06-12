@@ -61,7 +61,7 @@ export function Hero() {
   );
 
   return (
-    <section className="flex min-h-[calc(100vh-4.5rem)] flex-col justify-between overflow-hidden bg-cream">
+    <section className="flex min-h-[calc(100vh-5rem)] flex-col justify-between overflow-hidden bg-cream">
       <div className="mx-auto max-w-4xl px-6 pt-[20vh] text-center">
         <h1 className="font-display text-[clamp(1.9rem,3.8vw,3rem)] font-semibold leading-snug text-blue text-balance">
           {hero.slogan}

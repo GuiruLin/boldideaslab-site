@@ -85,6 +85,10 @@ CSS 即可实现 1 以外的全部（border-radius 配方写进组件库）；�
 | 按钮 hover | 上浮 2px，色块加 8% ink 叠加 | 200ms |
 | 全局 | `prefers-reduced-motion: reduce` 时全部动画关闭 | — |
 
+| Menu 瀑布 | 顶栏 Menu 点开后，问句药丸逐个下落成竖列（白丸为主 + 一金一蓝，队尾金拱 + 红点） | 300ms/项，stagger 55ms |
+
+**顶栏形态（2026-06-12 owner 定稿，Streamtime 顶栏转译）**：无通栏底色，浮动芯片——白圆片 logo + 蓝色 Menu 丸在左，白底描边 "Shall we talk?" 丸在右；横排导航取消，问句导航全部收进 Menu 瀑布，桌面与移动同构。
+
 不做：视差、粒子、光效、marquee、滚动劫持。
 
 ## 6. Tailwind 配置映射（阶段 4 实装）
