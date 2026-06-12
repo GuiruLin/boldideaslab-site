@@ -77,22 +77,35 @@ export function Header() {
         aria-hidden={!open}
         className="absolute right-4 top-[4.25rem] z-50 flex flex-col items-end gap-2 lg:hidden"
       >
-        {items.map((item, index) => (
-          <Link
-            className={`inline-flex items-center rounded-full px-5 py-2.5 font-display text-base font-medium transition-all duration-300 ease-out motion-reduce:transition-none ${
-              "accent" in item
-                ? "bg-blue text-cream"
-                : "border border-ink/10 bg-white text-ink"
-            } ${open ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-3 opacity-0"}`}
-            href={item.href}
-            key={item.href}
-            onClick={() => setOpen(false)}
-            style={{ transitionDelay: open ? `${index * 50}ms` : "0ms" }}
-            tabIndex={open ? 0 : -1}
-          >
-            {item.label}
-          </Link>
-        ))}
+        {items.map((item, index) => {
+          // 积木语言：与 footer 想法展架同一套形状（拱窗/块/翻角/单边拱）
+          const radii = [
+            "999px 999px 10px 10px",
+            "10px",
+            "10px 10px 28px 10px",
+            "0 999px 10px 10px",
+            "10px",
+            "999px 999px 10px 10px"
+          ];
+          return (
+            <Link
+              className={`inline-flex items-center px-6 py-3 font-display text-base font-medium transition-all duration-300 ease-out motion-reduce:transition-none ${
+                "accent" in item
+                  ? "bg-blue text-cream"
+                  : index === 1
+                    ? "bg-gold text-white"
+                    : "border border-ink/15 bg-white text-ink"
+              } ${open ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-3 opacity-0"}`}
+              href={item.href}
+              key={item.href}
+              onClick={() => setOpen(false)}
+              style={{ borderRadius: radii[index], transitionDelay: open ? `${index * 50}ms` : "0ms" }}
+              tabIndex={open ? 0 : -1}
+            >
+              {item.label}
+            </Link>
+          );
+        })}
         <span
           aria-hidden
           className={`mr-6 mt-1 flex items-end gap-2.5 transition-all duration-300 ${
