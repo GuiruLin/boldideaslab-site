@@ -7,16 +7,14 @@ import en from "@/messages/en.json";
 
 const footer = en.redesign.footer;
 
-// 想法带：真实学生作品名做成贴纸药丸，可横向拖动，hover 摆正浮起
-const pillStyles = [
-  "border border-ink/10 bg-white text-ink",
-  "bg-blue text-cream",
-  "border border-ink/10 bg-white text-ink",
-  "bg-gold text-white",
-  "border border-ink/10 bg-white text-ink"
+// 想法积木：每个学生作品名装进一个品牌形状，高矮不一立在展架线上（不是药丸）
+const blockStyles = [
+  { cls: "bg-blue text-cream", radius: "999px 999px 10px 10px", h: "h-28", tilt: 0 },
+  { cls: "border border-ink/15 bg-white text-ink", radius: "10px", h: "h-20", tilt: 0 },
+  { cls: "bg-gold text-white", radius: "10px 10px 28px 10px", h: "h-24", tilt: -2 },
+  { cls: "border border-ink/15 bg-white text-ink", radius: "0 999px 10px 10px", h: "h-24", tilt: 0 },
+  { cls: "border-2 border-blue bg-white text-blue", radius: "999px 999px 10px 10px", h: "h-28", tilt: 0 }
 ] as const;
-
-const tilts = [-2.5, 1.8, -1.6, 2.4, -2.0] as const;
 
 export function IdeasStrip() {
   return (
@@ -24,10 +22,15 @@ export function IdeasStrip() {
       <h2 className="font-display text-xl font-semibold text-blue sm:text-2xl">
         {footer.ideasTitle}
       </h2>
-      <div className="no-scrollbar -mx-1 mt-6 flex cursor-grab gap-3 overflow-x-auto px-1 pb-4 active:cursor-grabbing">
+      <div className="no-scrollbar -mx-1 mt-8 flex cursor-grab items-end gap-4 overflow-x-auto border-b-2 border-ink/15 px-1 active:cursor-grabbing">
         {footer.ideas.map((idea, index) => {
-          const classes = `${pillStyles[index % pillStyles.length]} inline-flex shrink-0 items-center rounded-full px-6 py-3 font-display text-base font-medium transition-transform duration-200 hover:-translate-y-1 hover:rotate-0 motion-reduce:transition-none`;
-          const style = { transform: `rotate(${tilts[index % tilts.length]}deg)` };
+          const variant = blockStyles[index % blockStyles.length];
+          const classes = `${variant.cls} ${variant.h} inline-flex shrink-0 items-end px-6 pb-4 font-display text-base font-medium transition-transform duration-200 hover:-translate-y-2 hover:rotate-1 motion-reduce:transition-none`;
+          const style = {
+            borderRadius: variant.radius,
+            transform: variant.tilt ? `rotate(${variant.tilt}deg)` : undefined,
+            transformOrigin: "bottom left"
+          };
           return idea.href.startsWith("http") ? (
             <a className={classes} href={idea.href} key={idea.label} rel="noopener" style={style} target="_blank">
               {idea.label}
@@ -39,9 +42,8 @@ export function IdeasStrip() {
           );
         })}
         <Link
-          className="inline-flex shrink-0 items-center rounded-full border border-blue/30 px-6 py-3 font-display text-base font-medium text-blue transition-transform duration-200 hover:-translate-y-1 motion-reduce:transition-none"
+          className="inline-flex shrink-0 items-end pb-4 pl-2 pr-1 text-sm text-blue underline decoration-blue/30 underline-offset-[6px] transition hover:decoration-blue"
           href={footer.more.href}
-          style={{ transform: "rotate(1.6deg)" }}
         >
           {footer.more.label}
         </Link>
