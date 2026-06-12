@@ -49,3 +49,16 @@ a {
     linear-gradient(rgba(0, 47, 167, 0.12) 1px, transparent 1px);
   background-size: 24px 24px;
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.2, 0, 0, 1);
+}
+.reveal-show {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: none; opacity: 1; transform: none; }
+}

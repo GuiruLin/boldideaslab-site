@@ -4,15 +4,17 @@ import { Btn } from "@/components/redesign/Btn";
 import { Footer } from "@/components/redesign/Footer";
 import { Header } from "@/components/redesign/Header";
 import { Hero } from "@/components/redesign/Hero";
+import { CountUp, Reveal } from "@/components/redesign/motion";
 import { Arch, Decagon, Dot, Pill, Quad } from "@/components/redesign/shapes";
 import en from "@/messages/en.json";
 
 const t = en.redesign;
 
+// 含义驱动的微交互：思维在转、作品在升、表达在伸
 const forceMarkers = [
-  <Decagon className="h-10 w-10" key="thinking" />,
-  <Arch className="h-6 w-12" key="making" />,
-  <Pill className="h-5 w-12" key="explaining" />
+  <Decagon className="h-10 w-10 transition-transform duration-500 group-hover:rotate-[18deg]" key="thinking" />,
+  <Arch className="h-6 w-12 transition-transform duration-300 group-hover:-translate-y-1" key="making" />,
+  <Pill className="h-5 w-12 origin-left transition-transform duration-300 group-hover:scale-x-110" key="explaining" />
 ];
 
 export default function Page() {
@@ -24,7 +26,7 @@ export default function Page() {
 
         {/* 立场陈述：金底白字，童趣体，蓝色收尾 */}
         <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl">
+          <Reveal className="mx-auto max-w-6xl">
             <div className="relative overflow-hidden rounded-[28px] bg-gold px-7 py-14 sm:px-14 sm:py-[4.5rem]">
               <span
                 aria-hidden
@@ -45,12 +47,12 @@ export default function Page() {
                 {t.stance.link}
               </Link>
             </div>
-          </div>
+          </Reveal>
         </section>
 
         {/* 三力：我们教什么 */}
         <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl">
+          <Reveal className="mx-auto max-w-6xl">
             <h2 className="font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-semibold leading-tight text-blue">
               {t.forces.title}
             </h2>
@@ -60,21 +62,19 @@ export default function Page() {
                   className="group rounded-[18px] border border-ink/10 bg-cream/60 p-8 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)]"
                   key={item.name}
                 >
-                  <div className="mb-6 flex h-11 items-end transition-transform duration-200 group-hover:translate-x-1 group-hover:rotate-3">
-                    {forceMarkers[index]}
-                  </div>
+                  <div className="mb-6 flex h-11 items-end">{forceMarkers[index]}</div>
                   <h3 className="font-display text-xl font-semibold text-blue">{item.name}</h3>
                   <p className="mt-2.5 leading-7 text-ink/70">{item.text}</p>
                 </article>
               ))}
             </div>
             <p className="mt-8 text-sm text-ink/45">{t.forces.footnote}</p>
-          </div>
+          </Reveal>
         </section>
 
         {/* 真实证据带：金色大数字 + Study Compass 主推卡 */}
         <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl">
+          <Reveal className="mx-auto max-w-6xl">
             <h2 className="font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-semibold leading-tight text-blue">
               {t.evidence.title}
             </h2>
@@ -83,7 +83,10 @@ export default function Page() {
               {t.evidence.numbers.map((item) => (
                 <div key={item.value}>
                   <p className="font-display text-[clamp(4.5rem,10vw,8rem)] font-semibold leading-none text-gold">
-                    {item.value}
+                    <CountUp
+                      suffix={item.value.replace(/^\d+/, "")}
+                      value={Number.parseInt(item.value, 10)}
+                    />
                   </p>
                   <p className="mt-3 max-w-[24ch] text-sm leading-6 text-ink/65">{item.label}</p>
                 </div>
@@ -113,12 +116,12 @@ export default function Page() {
             >
               {t.evidence.link}
             </Link>
-          </div>
+          </Reveal>
         </section>
 
         {/* 思考的入口：一篇创始人文章 */}
         <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-6xl">
+          <Reveal className="mx-auto max-w-6xl">
             <p className="mb-5 text-[13px] font-semibold uppercase tracking-[0.14em] text-gold">
               {t.thinking.eyebrow}
             </p>
@@ -143,19 +146,19 @@ export default function Page() {
                 {t.thinking.more}
               </Link>
             </div>
-          </div>
+          </Reveal>
         </section>
 
         {/* 结尾 */}
         <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
+          <Reveal className="mx-auto max-w-3xl text-center">
             <p className="font-display text-[clamp(1.4rem,2.6vw,2rem)] font-medium leading-snug text-ink text-balance">
               {t.endcta.text}
             </p>
             <Btn className="mt-8" href="/contact">
               {t.endcta.button}
             </Btn>
-          </div>
+          </Reveal>
         </section>
       </main>
       <Footer />
