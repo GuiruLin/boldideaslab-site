@@ -129,6 +129,12 @@ EN: Localised from UNESCO (2024), OECD and EU DigComp frameworks.
 
 ---
 
+## 阶段进度（2026-06-12）
+
+- **首页（home）已 owner 定稿满意**。定稿要点：积木式问句导航（顶栏紧贴成排、多色、hover 抽起；移动端积木瀑布）、slogan + 三色大字母 hero、金面板立场陈述、三力含义微交互、金色大数字计数、文章入口、手写波浪 + 形状标记 footer + 手写体彩蛋。设计语言全部源自品牌形状库与"搭建作品"隐喻，已脱离 Streamtime 表层相似。
+- 待做（阶段 5 逐页，owner 逐页确认）：/about、/programmes、/work、/eduos、/insights、/contact；之后中文版 + 修 CSR + 双语 SEO。
+- 备注：/about 英文初稿已写过并 revert，存于 git 历史 commit 6952784，可一键恢复。
+
 ## 四、owner 决议记录（2026-06-10）
 
 1. EduOS 导航项用名词「EduOS」（问句导航中唯一的产品专名锚点）
