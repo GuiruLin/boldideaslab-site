@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 import { Footer } from "@/components/redesign/Footer";
 import { Header } from "@/components/redesign/Header";
@@ -129,12 +128,6 @@ export default function Page() {
                 {t.schools.title}
               </h2>
               <p className="mt-5 max-w-[60ch] leading-8 text-ink/75">{t.schools.body}</p>
-              <Link
-                className="mt-7 inline-block text-blue underline decoration-blue/30 underline-offset-[6px] transition hover:decoration-blue"
-                href="/contact"
-              >
-                {t.schools.cta}
-              </Link>
             </div>
           </Reveal>
         </section>
