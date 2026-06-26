@@ -45,6 +45,9 @@ export default function Page() {
                 {t.story[3]}
               </p>
             </div>
+            <p className="mt-12 max-w-[44ch] border-l-2 border-gold/50 pl-5 leading-8 text-ink/65">
+              {t.nameLine}
+            </p>
           </div>
         </section>
 

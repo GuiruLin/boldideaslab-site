@@ -1220,7 +1220,7 @@
     "about": {
       "title": "Why a third voice?",
       "story": [
-        "Bold Ideas Lab began in London. Working with young people across the UK, Europe, Asia and North America, we kept seeing the same thing: they arrive with bold ideas, and the ideas get waved off — too young, too rebellious, not ready yet. We started the lab to take those ideas seriously.",
+        "Bold Ideas Lab began in London. Working with young people across the UK, Europe, Asia and North America, we kept seeing the same thing: they arrive with bold ideas, and the ideas get waved off — too young, too rebellious, not ready yet. And again and again, their ideas surprised us. We started the lab to take those ideas seriously.",
         "Then AI arrived in the classroom, and adults did it again. One side says keep it away from children; the other says give it to them everywhere. Both argue about young people without asking them, and both skip the question a child actually faces.",
         "The argument misses the young person standing in the middle of it. A bold idea becomes real only when someone learns to think it through: to make choices, to defend them, to keep going when it gets hard. That thinking is what we teach. No tool hands it to a child.",
         "So we start with the young person and the idea, and teach the thinking that builds it."
@@ -1237,7 +1237,8 @@
         "title": "For schools and researchers",
         "body": "If you are writing an AI policy, questioning one, or studying how children actually use these tools, we are glad to compare notes. We teach, we keep records of how learning happens, and we publish what we see.",
         "cta": "Shall we talk?"
-      }
+      },
+      "nameLine": "It is in the name. Bold ideas: a young person who thinks for themselves and makes something of their own, instead of drifting with the crowd."
     }
   }
 }
