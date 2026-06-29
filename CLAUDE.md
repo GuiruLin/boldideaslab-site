@@ -83,7 +83,7 @@ AI 生成配图、促销感排版、过度装饰。真实照片只用学生真�
 
 参考 https://streamtime.net/ 的手法，转译成 BIL 的语言：
 
-1. **问句导航**：导航项是用户脑中真实问题的顺序，不是机构视角的页面名
+1. **导航（2026-06-30 owner 改定为方案一）**：导航用清晰常规名（About/Programmes/Student Work/EduOS/Insights/Contact ／ 关于/课程/学生作品/EduOS/敢想观察/联系），不再用全问句导航（问句两套与页面对应不上、易混）。趣味留在积木形状与动效里。"第三种声音"只在首页立场段保留一处点题，不做导航、不做页面大标题；品牌主线是 Bold Ideas。
 2. **动态字母 hero**（已定稿）：slogan "Every possibility begins with one bold idea." +
    副句 "The third voice on AI in education." 居中在上；品牌名 BOLD IDEAS LAB 超大
    Fraunces 字母单行坐在首屏底边（BOLD 红/IDEAS 蓝/LAB 金），几何形状整排垫在字母正下方，

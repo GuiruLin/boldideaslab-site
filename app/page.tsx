@@ -35,6 +35,9 @@ export default function Page() {
               />
               <Pill className="absolute bottom-12 right-20 hidden h-6 w-16 sm:block" />
               <Dot className="absolute bottom-[4.2rem] right-10 hidden h-3 w-3 sm:block" />
+              <p className="relative mb-7 text-[13px] font-semibold uppercase tracking-[0.14em] text-white/75">
+                {t.stance.eyebrow}
+              </p>
               <div className="relative max-w-[34ch] space-y-7 font-display text-[clamp(1.3rem,2.6vw,1.85rem)] font-medium leading-relaxed text-white">
                 <p>{t.stance.p1}</p>
                 <p>{t.stance.p2}</p>

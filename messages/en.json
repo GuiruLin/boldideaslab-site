@@ -1114,12 +1114,12 @@
   },
   "redesign": {
     "nav": {
-      "about": "Why a third voice?",
-      "programmes": "How do we teach?",
-      "work": "What do students make?",
+      "about": "About",
+      "programmes": "Programmes",
+      "work": "Student Work",
       "eduos": "EduOS",
-      "insights": "What are we thinking?",
-      "contact": "Shall we talk?",
+      "insights": "Insights",
+      "contact": "Contact",
       "menu": "Menu",
       "close": "Close"
     },
@@ -1133,7 +1133,8 @@
       "p1": "Three things are happening at once. AI has arrived in the classroom. Schools are still writing the rules. Children are already using it every day.",
       "p2": "Banning it and embracing it answer the same question: should children use AI. There is an earlier question, and it is still open: do they understand what it is doing?",
       "end": "Our teaching starts there.",
-      "link": "Why a third voice?"
+      "link": "Why we're called Bold Ideas",
+      "eyebrow": "The third voice on AI in education"
     },
     "forces": {
       "title": "What we teach",
@@ -1218,7 +1219,7 @@
       }
     },
     "about": {
-      "title": "Why a third voice?",
+      "title": "Why we're called Bold Ideas",
       "story": [
         "Bold Ideas Lab began in London. Working with young people across the UK, Europe, Asia and North America, we kept seeing the same thing: they arrive with bold ideas, and the ideas get waved off as too young, too rebellious, not ready yet. And again and again, their ideas surprised us. We started the lab to take those ideas seriously.",
         "Then AI arrived in the classroom, and adults did it again. One side says keep it away from children; the other says give it to them everywhere. Both argue about young people without asking them, and both skip the question a child actually faces.",

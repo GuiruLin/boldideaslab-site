@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+import { LogoMark } from "@/components/redesign/LogoMark";
 import en from "@/messages/en.json";
 
 const nav = en.redesign.nav;
@@ -24,9 +24,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-md">
       <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link className="flex items-center gap-2.5" href="/">
-          <span className="relative h-9 w-9 shrink-0">
-            <Image alt="Bold Ideas Lab" className="object-contain" fill priority sizes="36px" src="/brand/logo-full.png" />
-          </span>
+          <LogoMark className="h-9 w-auto shrink-0" />
           <span className="hidden font-display text-lg font-medium text-ink sm:inline">
             Bold Ideas Lab
           </span>
