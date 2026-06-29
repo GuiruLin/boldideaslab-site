@@ -35,14 +35,19 @@ export default function Page() {
             <p className="mt-8 max-w-[46ch] border-l-2 border-gold pl-5 t-lead text-blue">
               {t.nameLine}
             </p>
-            <div className="mt-10 space-y-5">
-              {t.story.map((paragraph) => (
-                <p
-                  className="max-w-[62ch] leading-8 text-ink/75"
+            <div className="mt-12 space-y-4">
+              {t.story.map((paragraph, i) => (
+                <article
+                  className="grid grid-cols-[auto_1fr] items-start gap-5 rounded-[18px] border border-ink/10 bg-cream/50 p-6 transition-colors duration-200 hover:border-gold/40 sm:gap-8 sm:p-8"
                   key={paragraph.slice(0, 24)}
                 >
-                  {paragraph}
-                </p>
+                  <span className="font-display text-[2.25rem] font-semibold leading-none text-gold sm:text-[3rem]">
+                    {`0${i + 1}`}
+                  </span>
+                  <p className="self-center text-[0.95rem] leading-7 text-ink/75 sm:text-base">
+                    {paragraph}
+                  </p>
+                </article>
               ))}
             </div>
           </div>
