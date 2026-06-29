@@ -21,6 +21,23 @@ const founderPeople = [
   { data: founders.jacky, photo: "/media/about/founders/jacky/profile.webp" }
 ] as const;
 
+// 三段故事的几何标记：三个不同形状、三个品牌色（金拱 / 蓝十边 / 红块）
+const storyMarks = [
+  <span
+    aria-hidden
+    className="block h-7 w-12 bg-gold"
+    key="arch"
+    style={{ borderRadius: "999px 999px 8px 8px" }}
+  />,
+  <svg aria-hidden className="h-12 w-12" key="deca" viewBox="0 0 100 100">
+    <polygon
+      points="50,4 79,13 96,38 96,62 79,87 50,96 21,87 4,62 4,38 21,13"
+      fill="#002FA7"
+    />
+  </svg>,
+  <span aria-hidden className="block h-10 w-10 bg-red" key="block" style={{ borderRadius: "10px" }} />
+];
+
 export default function Page() {
   return (
     <>
@@ -38,11 +55,11 @@ export default function Page() {
             <div className="mt-12 space-y-4">
               {t.story.map((paragraph, i) => (
                 <article
-                  className="grid grid-cols-[auto_1fr] items-start gap-5 rounded-[18px] border border-ink/10 bg-cream/50 p-6 transition-colors duration-200 hover:border-gold/40 sm:gap-8 sm:p-8"
+                  className="group grid grid-cols-[auto_1fr] items-start gap-5 rounded-[18px] border border-ink/10 bg-cream/50 p-6 transition-colors duration-200 hover:border-gold/40 sm:gap-8 sm:p-8"
                   key={paragraph.slice(0, 24)}
                 >
-                  <span className="font-display text-[2.25rem] font-semibold leading-none text-gold sm:text-[3rem]">
-                    {`0${i + 1}`}
+                  <span className="flex h-12 w-12 items-center justify-center transition-transform duration-300 group-hover:rotate-6">
+                    {storyMarks[i]}
                   </span>
                   <p className="self-center text-[0.95rem] leading-7 text-ink/75 sm:text-base">
                     {paragraph}
