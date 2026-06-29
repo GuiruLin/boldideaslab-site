@@ -35,10 +35,10 @@ export default function Page() {
               />
               <Pill className="absolute bottom-12 right-20 hidden h-6 w-16 sm:block" />
               <Dot className="absolute bottom-[4.2rem] right-10 hidden h-3 w-3 sm:block" />
-              <p className="relative mb-7 text-[13px] font-semibold uppercase tracking-[0.14em] text-white/75">
+              <p className="relative mb-7 t-eyebrow text-white/75">
                 {t.stance.eyebrow}
               </p>
-              <div className="relative max-w-[34ch] space-y-7 font-display text-[clamp(1.3rem,2.6vw,1.85rem)] font-medium leading-relaxed text-white">
+              <div className="relative max-w-[34ch] space-y-7 t-lead text-white">
                 <p>{t.stance.p1}</p>
                 <p>{t.stance.p2}</p>
                 <p className="text-blue">{t.stance.end}</p>
@@ -56,7 +56,7 @@ export default function Page() {
         {/* 三力：我们教什么 */}
         <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-6xl">
-            <h2 className="font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-semibold leading-tight text-blue">
+            <h2 className="t-h2 text-blue">
               {t.forces.title}
             </h2>
             <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -66,7 +66,7 @@ export default function Page() {
                   key={item.name}
                 >
                   <div className="mb-6 flex h-11 items-end">{forceMarkers[index]}</div>
-                  <h3 className="font-display text-xl font-semibold text-blue">{item.name}</h3>
+                  <h3 className="t-h3 text-blue">{item.name}</h3>
                   <p className="mt-2.5 leading-7 text-ink/70">{item.text}</p>
                 </article>
               ))}
@@ -78,14 +78,14 @@ export default function Page() {
         {/* 真实证据带：金色大数字 + Study Compass 主推卡 */}
         <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-6xl">
-            <h2 className="font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-semibold leading-tight text-blue">
+            <h2 className="t-h2 text-blue">
               {t.evidence.title}
             </h2>
 
             <div className="mt-12 flex flex-wrap items-end gap-x-[8vw] gap-y-10">
               {t.evidence.numbers.map((item) => (
                 <div key={item.value}>
-                  <p className="font-display text-[clamp(4.5rem,10vw,8rem)] font-semibold leading-none text-gold">
+                  <p className="t-num text-gold">
                     <CountUp
                       suffix={item.value.replace(/^\d+/, "")}
                       value={Number.parseInt(item.value, 10)}
@@ -103,7 +103,7 @@ export default function Page() {
               target="_blank"
             >
               <Quad className="absolute -right-px -top-px h-12 w-12 opacity-90 transition-transform duration-200 group-hover:rotate-6" />
-              <p className="font-display text-2xl font-semibold text-blue sm:text-3xl">
+              <p className="t-h3 text-blue">
                 {t.evidence.featuredName}
               </p>
               <p className="mt-3 max-w-2xl leading-7 text-ink/70">{t.evidence.featuredText}</p>
@@ -125,10 +125,10 @@ export default function Page() {
         {/* 思考的入口：一篇创始人文章 */}
         <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-6xl">
-            <p className="mb-5 text-[13px] font-semibold uppercase tracking-[0.14em] text-gold">
+            <p className="mb-5 t-eyebrow text-gold">
               {t.thinking.eyebrow}
             </p>
-            <h2 className="max-w-3xl font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-semibold leading-tight text-blue text-balance">
+            <h2 className="max-w-3xl t-h2 text-blue text-balance">
               {t.thinking.title}
             </h2>
             <p className="mt-5 max-w-2xl leading-8 text-ink/70">{t.thinking.excerpt}</p>
@@ -155,7 +155,7 @@ export default function Page() {
         {/* 结尾 */}
         <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-3xl text-center">
-            <p className="font-display text-[clamp(1.4rem,2.6vw,2rem)] font-medium leading-snug text-ink text-balance">
+            <p className="t-lead text-ink text-balance">
               {t.endcta.text}
             </p>
             <Btn className="mt-8" href="/contact">

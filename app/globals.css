@@ -38,6 +38,16 @@ a {
   text-wrap: balance;
 }
 
+/* ── 全站字号体系（type scale，以首页为基准；所有页面统一套用） ── */
+@layer components {
+  .t-display { @apply font-display font-semibold; font-size: clamp(1.9rem, 3.8vw, 3rem); line-height: 1.08; }
+  .t-h2      { @apply font-display font-semibold; font-size: clamp(1.875rem, 3.5vw, 2.75rem); line-height: 1.15; }
+  .t-lead    { @apply font-display font-medium; font-size: clamp(1.3rem, 2.6vw, 1.85rem); line-height: 1.6; }
+  .t-h3      { @apply font-display font-semibold; font-size: 1.375rem; line-height: 1.3; }
+  .t-num     { @apply font-display font-semibold; font-size: clamp(4.5rem, 10vw, 8rem); line-height: 1; }
+  .t-eyebrow { @apply font-semibold uppercase; font-size: 0.8125rem; letter-spacing: 0.14em; }
+}
+
 .dotted-panel {
   background-image: radial-gradient(rgba(26, 26, 26, 0.18) 1px, transparent 1px);
   background-size: 18px 18px;

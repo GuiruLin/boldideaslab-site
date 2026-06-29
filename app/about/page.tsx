@@ -29,16 +29,16 @@ export default function Page() {
         {/* 品牌故事：起源 + 第三种声音合一，主角是青少年的大胆想法 */}
         <section className="bg-cream px-5 pb-24 pt-16 sm:px-6 lg:px-8 lg:pt-24">
           <div className="mx-auto max-w-4xl">
-            <h1 className="font-display text-[clamp(2.5rem,5vw,4rem)] font-semibold leading-[1.1] text-blue">
+            <h1 className="t-display text-blue">
               {t.title}
             </h1>
-            <p className="mt-8 max-w-[46ch] border-l-2 border-gold pl-5 font-display text-[clamp(1.15rem,2vw,1.5rem)] font-medium leading-[1.55] text-blue">
+            <p className="mt-8 max-w-[46ch] border-l-2 border-gold pl-5 t-lead text-blue">
               {t.nameLine}
             </p>
-            <div className="mt-12 space-y-8">
+            <div className="mt-10 space-y-5">
               {t.story.map((paragraph) => (
                 <p
-                  className="max-w-[40ch] font-display text-[clamp(1.3rem,2.6vw,1.85rem)] font-medium leading-[1.6] text-ink/85"
+                  className="max-w-[62ch] leading-8 text-ink/75"
                   key={paragraph.slice(0, 24)}
                 >
                   {paragraph}
@@ -58,7 +58,7 @@ export default function Page() {
                 style={{ borderRadius: "999px 999px 0 0" }}
               />
               <Dot className="absolute bottom-12 right-12 hidden h-3 w-3 sm:block" />
-              <h2 className="relative max-w-[28ch] font-display text-[clamp(1.6rem,3vw,2.4rem)] font-semibold leading-snug text-white">
+              <h2 className="relative max-w-[28ch] t-h2 text-white">
                 {t.flatten.title}
               </h2>
               <p className="relative mt-6 max-w-[58ch] leading-8 text-white/95">{t.flatten.body}</p>
@@ -69,7 +69,7 @@ export default function Page() {
         {/* 两位创始人：about 的核心 */}
         <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-6xl">
-            <h2 className="font-display text-[clamp(1.875rem,3.5vw,2.75rem)] font-semibold leading-tight text-blue">
+            <h2 className="t-h2 text-blue">
               {t.foundersTitle}
             </h2>
             <p className="mt-4 max-w-[48ch] text-lg leading-8 text-ink/70">
@@ -89,7 +89,7 @@ export default function Page() {
                       <Image alt={data.name} className="object-cover" fill sizes="80px" src={photo} />
                     </span>
                     <div>
-                      <h3 className="font-display text-2xl font-semibold text-blue">{data.name}</h3>
+                      <h3 className="t-h3 text-blue">{data.name}</h3>
                       <p className="mt-1 text-sm text-ink/55">{data.role}</p>
                     </div>
                   </div>
@@ -124,7 +124,7 @@ export default function Page() {
           <Reveal className="mx-auto max-w-4xl">
             <div className="relative overflow-hidden rounded-[18px] border border-ink/10 bg-white p-8 sm:p-12">
               <Pill className="absolute right-8 top-8 hidden h-5 w-12 sm:block" />
-              <h2 className="font-display text-2xl font-semibold text-blue sm:text-3xl">
+              <h2 className="t-h2 text-blue">
                 {t.schools.title}
               </h2>
               <p className="mt-5 max-w-[60ch] leading-8 text-ink/75">{t.schools.body}</p>
