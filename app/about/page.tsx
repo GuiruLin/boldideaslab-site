@@ -32,8 +32,11 @@ export default function Page() {
             <h1 className="font-display text-[clamp(2.5rem,5vw,4rem)] font-semibold leading-[1.1] text-blue">
               {t.title}
             </h1>
+            <p className="mt-8 max-w-[46ch] border-l-2 border-gold pl-5 font-display text-[clamp(1.15rem,2vw,1.5rem)] font-medium leading-[1.55] text-blue">
+              {t.nameLine}
+            </p>
             <div className="mt-12 space-y-8">
-              {t.story.slice(0, 3).map((paragraph) => (
+              {t.story.map((paragraph) => (
                 <p
                   className="max-w-[40ch] font-display text-[clamp(1.3rem,2.6vw,1.85rem)] font-medium leading-[1.6] text-ink/85"
                   key={paragraph.slice(0, 24)}
@@ -41,13 +44,7 @@ export default function Page() {
                   {paragraph}
                 </p>
               ))}
-              <p className="font-display text-[clamp(1.3rem,2.6vw,1.85rem)] font-medium leading-[1.6] text-gold">
-                {t.story[3]}
-              </p>
             </div>
-            <p className="mt-12 max-w-[44ch] border-l-2 border-gold/50 pl-5 leading-8 text-ink/65">
-              {t.nameLine}
-            </p>
           </div>
         </section>
 
