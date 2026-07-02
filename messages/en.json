@@ -658,7 +658,7 @@
       "lead": "Every project starts from an idea and becomes something students dared to make.",
       "stats": [
         {
-          "number": "50+",
+          "number": "65+",
           "label": "Student AI projects completed",
           "text": "Combined total from online courses and offline workshops"
         },
@@ -1154,24 +1154,103 @@
       ],
       "footnote": "Localised from UNESCO (2024), OECD and EU DigComp frameworks."
     },
-    "evidence": {
-      "title": "What students have made",
+    "gallery": {
+      "title": "Student Gallery",
+      "cards": [
+        {
+          "name": "Bullying Reporter",
+          "student": "Lexi · Plymouth",
+          "quote": "built an app to help year 7 or all pupils report problems and bullying to their class teacher in a safe non scary way",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
+        },
+        {
+          "name": "MotionLab",
+          "student": "owen · Manchester",
+          "quote": "I think that animations are hard to make, so I tried to make it easier (did'nt go as planned though)",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
+        },
+        {
+          "name": "Music Theory Visualiser",
+          "student": "Summer · Manchester",
+          "quote": "To visualization of scales and chords",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
+        },
+        {
+          "name": "Magic Story Box",
+          "student": "Rachel · London",
+          "quote": "giving me book ideas",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/london"
+        }
+      ],
       "numbers": [
         {
-          "value": "55+",
+          "value": "65+",
           "label": "student projects"
         },
         {
-          "value": "2",
-          "label": "films selected for the AI Youth Spring Festival, hosted by WaytoAGI"
+          "value": "3",
+          "label": "cities"
+        },
+        {
+          "value": "4",
+          "label": "programme formats"
         }
       ],
-      "featuredName": "Study Compass",
-      "featuredText": "Exhibited on Coolest Projects, the Raspberry Pi Foundation's global showcase for young digital makers.",
-      "featuredCta": "See it on Coolest Projects",
-      "featuredUrl": "https://online.coolestprojects.org/projects/24694",
-      "cohort": "Our first five-week sprint has finished; students submitted their projects to Coolest Projects.",
-      "link": "What do students make?"
+      "cta": "Enter the full gallery",
+      "ctaUrl": "https://workshop-gallery-peach.vercel.app/gallery"
+    },
+    "programmes": {
+      "title": "Our Programmes",
+      "cards": [
+        {
+          "label": "Independent school partnership",
+          "title": "Plymouth College · Year 9 AI Workshop",
+          "text": [
+            {
+              "t": "One afternoon, 22 AI prototypes, briefs drawn from real school problems.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "In-person workshops",
+          "title": "Youth Creator Workshop · Manchester / London",
+          "text": [
+            {
+              "t": "31 projects, ages 8 to 15, from first idea to something you can play with.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "Online competition programme",
+          "title": "Coolest Projects preparation",
+          "text": [
+            {
+              "t": "Featured project: Study Compass, by Grolia.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "Online course",
+          "title": "AI for Art",
+          "text": [
+            {
+              "t": "Two animated films ",
+              "red": false
+            },
+            {
+              "t": "selected",
+              "red": true
+            },
+            {
+              "t": " for the AI Youth Spring Festival, hosted by WaytoAGI.",
+              "red": false
+            }
+          ]
+        }
+      ]
     },
     "thinking": {
       "eyebrow": "What are we thinking?",

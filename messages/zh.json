@@ -658,7 +658,7 @@
       "lead": "每一个从「想」出发，并从「敢」做出来的作品。",
       "stats": [
         {
-          "number": "50+",
+          "number": "65+",
           "label": "学生 AI 项目",
           "text": "线上课程与线下工作坊累计真实项目"
         },
@@ -1154,24 +1154,103 @@
       ],
       "footnote": "基于 UNESCO（2024）、OECD 与 EU DigComp 框架本地化。"
     },
-    "evidence": {
-      "title": "学生做出了什么",
+    "gallery": {
+      "title": "学生作品画廊",
+      "cards": [
+        {
+          "name": "Bullying Reporter",
+          "student": "Lexi · 普利茅斯",
+          "quote": "built an app to help year 7 or all pupils report problems and bullying to their class teacher in a safe non scary way",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
+        },
+        {
+          "name": "MotionLab",
+          "student": "owen · 曼彻斯特",
+          "quote": "I think that animations are hard to make, so I tried to make it easier (did'nt go as planned though)",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
+        },
+        {
+          "name": "Music Theory Visualiser",
+          "student": "Summer · 曼彻斯特",
+          "quote": "To visualization of scales and chords",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
+        },
+        {
+          "name": "Magic Story Box",
+          "student": "Rachel · 伦敦",
+          "quote": "giving me book ideas",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/london"
+        }
+      ],
       "numbers": [
         {
-          "value": "55+",
+          "value": "65+",
           "label": "学生作品"
         },
         {
-          "value": "2",
-          "label": "部入选「AI 少儿春晚」（WaytoAGI 主办）"
+          "value": "3",
+          "label": "座城市"
+        },
+        {
+          "value": "4",
+          "label": "种课程形态"
         }
       ],
-      "featuredName": "Study Compass",
-      "featuredText": "在 Coolest Projects（Raspberry Pi Foundation 发起的全球青少年数字创作展示）公开展出。",
-      "featuredCta": "在 Coolest Projects 查看",
-      "featuredUrl": "https://online.coolestprojects.org/projects/24694",
-      "cohort": "首期 5 周冲刺营已结课，学生作品提交至 Coolest Projects。",
-      "link": "学生做出了什么"
+      "cta": "进入完整画廊",
+      "ctaUrl": "https://workshop-gallery-peach.vercel.app/gallery"
+    },
+    "programmes": {
+      "title": "我们做过的项目",
+      "cards": [
+        {
+          "label": "私校合作",
+          "title": "Plymouth College · Year 9 AI Workshop",
+          "text": [
+            {
+              "t": "一个下午，22 个 AI 原型，命题来自真实校园问题。",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "线下工作坊",
+          "title": "Youth Creator Workshop · 曼彻斯特 / 伦敦",
+          "text": [
+            {
+              "t": "31 件作品，8-15 岁，从想法到可玩的成品。",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "线上竞技课程",
+          "title": "Coolest Projects 备赛",
+          "text": [
+            {
+              "t": "代表作品：Study Compass（Grolia）。",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "线上课程",
+          "title": "AI for Art",
+          "text": [
+            {
+              "t": "两部动画电影",
+              "red": false
+            },
+            {
+              "t": "入选",
+              "red": true
+            },
+            {
+              "t": "「AI 少儿春晚」。",
+              "red": false
+            }
+          ]
+        }
+      ]
     },
     "thinking": {
       "eyebrow": "最近在想什么",

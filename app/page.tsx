@@ -5,7 +5,7 @@ import { Footer } from "@/components/redesign/Footer";
 import { Header } from "@/components/redesign/Header";
 import { Hero } from "@/components/redesign/Hero";
 import { CountUp, Reveal } from "@/components/redesign/motion";
-import { Arch, Decagon, Dot, Pill, Quad } from "@/components/redesign/shapes";
+import { Arch, Decagon, Dot, Pill } from "@/components/redesign/shapes";
 import en from "@/messages/en.json";
 
 const t = en.redesign;
@@ -75,50 +75,82 @@ export default function Page() {
           </Reveal>
         </section>
 
-        {/* 真实证据带：金色大数字 + Study Compass 主推卡 */}
+        {/* 学生作品画廊：4 件精选 + 金色大数字一行 + 完整画廊入口 */}
         <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-6xl">
             <h2 className="t-h2 text-blue">
-              {t.evidence.title}
+              {t.gallery.title}
             </h2>
 
-            <div className="mt-12 flex flex-wrap items-end gap-x-[8vw] gap-y-10">
-              {t.evidence.numbers.map((item) => (
-                <div key={item.value}>
-                  <p className="t-num text-gold">
+            <div className="mt-10 grid gap-4 sm:grid-cols-2">
+              {t.gallery.cards.map((card) => (
+                <a
+                  className="group block rounded-[18px] border border-ink/10 bg-white p-8 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)]"
+                  href={card.url}
+                  key={card.name}
+                  rel="noopener"
+                  target="_blank"
+                >
+                  <h3 className="t-h3 text-blue">{card.name}</h3>
+                  <p className="mt-1.5 text-sm text-ink/55">{card.student}</p>
+                  <p className="mt-5 font-serif italic leading-7 text-ink/70">
+                    “{card.quote}”
+                  </p>
+                </a>
+              ))}
+            </div>
+
+            <div className="mt-14 flex flex-wrap items-baseline gap-x-12 gap-y-8">
+              {t.gallery.numbers.map((item) => (
+                <p className="flex items-baseline gap-3" key={item.label}>
+                  <span className="t-num text-gold">
                     <CountUp
                       suffix={item.value.replace(/^\d+/, "")}
                       value={Number.parseInt(item.value, 10)}
                     />
-                  </p>
-                  <p className="mt-3 max-w-[24ch] text-sm leading-6 text-ink/65">{item.label}</p>
-                </div>
+                  </span>
+                  <span className="text-sm leading-6 text-ink/65">{item.label}</span>
+                </p>
               ))}
             </div>
 
-            <a
-              className="group relative mt-14 block overflow-hidden rounded-[18px] border border-ink/10 bg-white p-8 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)] sm:p-10"
-              href={t.evidence.featuredUrl}
-              rel="noopener"
-              target="_blank"
-            >
-              <Quad className="absolute -right-px -top-px h-12 w-12 opacity-90 transition-transform duration-200 group-hover:rotate-6" />
-              <p className="t-h3 text-blue">
-                {t.evidence.featuredName}
-              </p>
-              <p className="mt-3 max-w-2xl leading-7 text-ink/70">{t.evidence.featuredText}</p>
-              <span className="mt-5 inline-block text-sm text-blue underline decoration-blue/30 underline-offset-[6px] transition group-hover:decoration-blue">
-                {t.evidence.featuredCta}
-              </span>
-            </a>
+            <Btn className="mt-12" href={t.gallery.ctaUrl}>
+              {t.gallery.cta}
+            </Btn>
+          </Reveal>
+        </section>
 
-            <p className="mt-8 text-sm text-ink/55">{t.evidence.cohort}</p>
-            <Link
-              className="mt-2 inline-block text-sm text-blue underline decoration-blue/30 underline-offset-[6px] transition hover:decoration-blue"
-              href="/work"
-            >
-              {t.evidence.link}
-            </Link>
+        {/* 我们做过的项目：4 张横条卡片，金色小标签标类型 */}
+        <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
+          <Reveal className="mx-auto max-w-6xl">
+            <h2 className="t-h2 text-blue">
+              {t.programmes.title}
+            </h2>
+
+            <div className="mt-10 space-y-4">
+              {t.programmes.cards.map((card) => (
+                <article
+                  className="rounded-[18px] border border-ink/10 bg-cream/60 p-7 sm:flex sm:items-baseline sm:gap-8 sm:p-8"
+                  key={card.title}
+                >
+                  <p className="t-eyebrow text-gold sm:w-48 sm:shrink-0">{card.label}</p>
+                  <div className="mt-3 sm:mt-0">
+                    <h3 className="t-h3 text-blue">{card.title}</h3>
+                    <p className="mt-2 leading-7 text-ink/70">
+                      {card.text.map((seg) =>
+                        seg.red ? (
+                          <span className="text-red" key={seg.t}>
+                            {seg.t}
+                          </span>
+                        ) : (
+                          <span key={seg.t}>{seg.t}</span>
+                        )
+                      )}
+                    </p>
+                  </div>
+                </article>
+              ))}
+            </div>
           </Reveal>
         </section>
 
