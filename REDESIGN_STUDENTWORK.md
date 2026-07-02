@@ -1,94 +1,73 @@
-# Student Work 选片名单（gallery 55 件，待 owner 勾选）
+# Student Work 选片名单 v2（基于逐件源码精读，2026-07-02）
 
-数据来源：workshop-gallery-peach.vercel.app，2026-07-02 抓取，已发布 **55 件**。
-分档：**FEATURE**=精选置顶 / **KEEP**=常规展示 / **CUT**=建议删或隐藏（带原因）。
-说明：成品页面本身在 blob 域名（未在白名单），暂未逐个看界面；本表基于标题/问题描述/主题/featured 标记。
+数据：gallery 已发布 55 件。本版结论来自**逐个下载并精读每件作品的成品文件**（31 件真实文件全部读完；Plymouth 22 件的成品在 ai.studio，白名单未开，暂缺）。
 
 ---
 
-## Plymouth Year 9 · 6/19（22 件）—— 最强一批，主题已归类
+## 〇、最重要的发现（先读这个）
 
-主题分布：Homework & routines 8 · Finding your way 6 · Making friends 5 · Wellbeing & more 3。
-> 提醒：同主题作品很多（多个 friend-finder、多个 homework helper、多个导航）。上站不必 22 件全放，**每个主题挑 1–2 件最好的**即可。
+**gallery 里挂的"作品文件"，绝大多数不是能用的 app，是 AI Studio 生成的静态"海报"（Visual Poster）**——零 JavaScript、按钮全是死的、数据全是假的，很多文件标题里自己就写着 "Visual Poster / Visual Preview"。
 
-| 档 | 学生 | 作品 | 备注 |
-|---|---|---|---|
-| **FEATURE** | lexi ★ | Bullying Reporter | 安全、不吓人地上报霸凌——最佳品牌契合（同理+判断） |
-| **FEATURE** | mia ★ | Year 7 空教室预约 | "被压垮时可以躲一间房"，情绪觉察 |
-| **FEATURE** | Bella ★ | Year 7 School Companion | 装备+作业提醒，务实、范围清楚 |
-| **FEATURE** | Jayden | Campus Compass | 导航+课表+装备三合一，完成度最高 |
-| **FEATURE** | britta | School Pocket Buddy | 导航+"不知所措时帮你" |
-| KEEP | Frederick ★ | Year 7 First Week（记名字 Guess Who） | 你标了 featured，可留可换 |
-| KEEP | Arabella Fabian | Homework Timetable（晚间计划） | homework 主题代表 |
-| KEEP | Rory | Revision Helper（针对弱科） | 有针对性 |
-| KEEP | Isla | SchoolNav | 导航主题备选 |
-| KEEP | Tomas | Year 7 Community Directory | 交友主题里较有想法 |
-| KEEP | Harry | Friend Finder | 交友主题代表（二选一） |
-| KEEP | Rafferty | Friend Finder | 与 Harry 重复主题 |
-| KEEP | Maki | Club Finder | 交友/社团 |
-| KEEP | will | Year 7 Connect | 交友 |
-| KEEP | Seb | School Help（到课导航） | 导航 |
-| KEEP | Blake | Map Help | 导航 |
-| KEEP | Bradley | Homework Helper | homework |
-| KEEP | jamie | Yr7 Companion | homework/综合 |
-| KEEP | George Flowers | Yr7 Homework Manager | homework |
-| KEEP | Ella | Year 7 App（清单） | routines |
-| KEEP | Felix | Task Reminder | routines |
-| **CUT** | toby | School Help App | 描述 "idk" |
+这直接影响网站文案的措辞红线：
+- ❌ 不能写 "apps students built"（一查源码就穿帮，恰好是私校受众会做的事）
+- ✅ 诚实写法："product concepts / interface designs students created with AI"（概念设计/产品原型），对真正能跑的少数作品再单独说 "working app"
+- 学生的**真 app 都在 ai.studio 的 demo 链接里**（每件都有 externalDemoLink）；blob 文件只是展示海报。要最终判断"谁的 app 是真的能跑"，必须开 `ai.studio` + `aistudio.google.com` 白名单。
 
-## Manchester · 4/18（25 件）—— 偏游戏，参差最大
-
-| 档 | 学生 | 作品 | 备注 |
-|---|---|---|---|
-| **FEATURE** | Summer l | 乐理可视化 app | 生成音阶/和弦可视化，偏教育、有想法 |
-| **FEATURE** | Boaz | Sync Runner | 为"训练记忆"做的节奏游戏，有认知动机 |
-| **FEATURE** | wenyu du | UniVerse: Global Play & Learn | 有野心、玩中学 |
-| KEEP | owen | neurofit（脑力训练） | "锻炼大脑很酷" |
-| KEEP | owen | cogniquest | 同上，二选一 |
-| KEEP | Gloria | Found It!（找丢失物） | 有真实问题 |
-| KEEP | lizzie liang | Dream Box（设计自己的家） | 有个人动机 |
-| KEEP | Patrick | GeoGuide（地理） | 教育相关 |
-| KEEP | Henry | The Maths Wall of Doom | "帮我学习" |
-| KEEP | Naomi Yu Morris | Catch a Fish | 一般小游戏，可留 |
-| KEEP | Boaz | The ACTUAL Sync Runner | 与 Sync Runner 同源，二选一 |
-| **CUT** | Oliver | Cosmic Wave | 太空侵略者克隆 + 重复两份 |
-| **CUT** | Zach | Clash of Empires | 皇室战争克隆 + 重复两份 |
-| **CUT** | Angela | GeoDash Lite | 几何冲刺克隆 |
-| **CUT** | Harry Pollitt | BLOXCRAFT | Roblox 套壳 |
-| **CUT** | Oscar Sun | OmniStudio | Roblox 套壳 |
-| **CUT** | Henry | Defend It | 动机单薄（"觉得好玩"） |
-| **CUT** | Catherine | Squishie Unboxing | 兴趣小品，弱 |
-| **CUT** | Grace Liu | Meow Jokes | 太单薄（"I like cats"） |
-| **CUT** | Terence | Terence | 太单薄（"把 siri 搬到 windows"） |
-| **CUT** | owen | MotionLab | 本人说"没做成" |
-| **CUT** | h | pythontype | 描述 "idk" |
-| **CUT** | Jacky YANG | The AI Graph | 创始人作品 + 与 London 重复 → 归到亲子共创 |
-
-## London · 3/28（8 件）—— 亲子共创 / 成人 · 创始人
-
-> 定位为"亲子共创"。成人有亮点的照放，但**如实标注是谁做的**（创始人 demo 就写创始人，别当成随机学生/家长作品——符合品牌不虚构原则）。
-
-| 档 | 作者 | 作品 | 备注 |
-|---|---|---|---|
-| **FEATURE** | Jacky YANG（联创） | The AI Graph | AI 不该只是一问一答的单向工具——把 AI 当成非线性图谱。思考型亮点 |
-| **FEATURE** | Lynn（创始人） | Gapseeker | "看完 YouTube 什么都没留下"，弥合观看与理解之间的鸿沟 |
-| KEEP | PAUL（credit to Jacky） | AI Colleague Circle | 让 ChatGPT 和 Claude 互相改稿，不用复制粘贴 |
-| KEEP | Shelly | AAT Courses | 成人会计学员，结构化学习计划 |
-| KEEP | Rachel | Magic Story Box | 生成书本创意 |
-| KEEP | Veronica | Everyday Magic | 兴趣小品 |
-| KEEP | April | Color Theory | 兴趣小品 |
-| **CUT** | April | Pumpkin Hunt | 没跑起来（"unable to build"） |
+**31 件里唯一在浏览器里真正能跑的交互作品：Jacky（联创）的 The AI Graph。**
+另有 3 份"真代码但跑不起来"的 React 源码（Boaz、Zach×2——文件是 TSX 源码存成 .html，直接打开是一墙代码文字）。
 
 ---
 
-## 汇总
+## 一、Manchester（25 件 → 有效 21 件）
 
-- **FEATURE 10 件**：Plymouth 5 + Manchester 3 + 亲子共创 2
-- **KEEP 约 30 件**：常规展示，同主题可再收窄
-- **CUT 15 件**：重复 3 组、坏档 1、idk 2、纯套壳/单薄若干
+### 值得放前面（按序）
+| # | 学生 | 作品 | 实际是什么 | 分 |
+|---|---|---|---|---|
+| 1 | Boaz | Sync Runner（97fb0855 版） | **真游戏逻辑**：四人轮流的记忆接力赛（Simon Says 竞速），完整状态机、淘汰/胜利条件、难度递增。但文件是 React 源码，展示需用 ai.studio demo 链接 | 4 |
+| 2 | owen | neurofit | 静态海报，但内容扎实：认知训练仪表盘（三段论找错、3D 旋转、决策日志）——真实认知科学素材，**与 BIL 的 Critical Thinking/Metacognition 最对味** | 3 |
+| 3 | owen | cogniquest | 同上风格：Hermann 栅格错觉、bat-and-ball 经典 CRT 题、记忆组块演示。二选一或并为一条 | 3 |
+| 4 | lizzie liang | Dream Box | 静态海报，纯 CSS 3D 房间投影有技术亮点；"设计自己的家"+三语切换，非游戏、个人动机，家长秒懂 | 3 |
+| 5 | Gloria | Found It! | 静态海报，但"按步回溯找丢失物（Step 1 of 10）"的 UX 构思是真问题真洞察 | 3 |
+| 6 | wenyu du | UniVerse | 海报最精致之一（bento 布局、分龄难度），但是平台幻想不是解决问题 | 3 |
 
-## 需要 owner 定的
+### 可留在 gallery、不上官网
+Naomi（Catch a fish 海报，有系统设计感）、Henry ×2（数学墙/塔防海报）、Patrick（GeoGuide 海报，内容与本人陈述对不上）、h（pythontype 海报）、Terence（语音助手海报）、Catherine（盲盒海报）——全部零 JS。
 
-1. 精选 10 件 + 排序，是否照此？要加/换哪几件？
-2. gallery 后台清理（删 3 组重复、隐藏 idk/坏档）——你自己改，还是我把 CUT 清单整理成删除操作给你？
-3. 首页数字：净掉重复/成人 demo 后学生作品约 47 件，写 "47 student projects across three UK cities" 还是保守 "50+"？
+### 建议下架/隐藏（gallery 层面）
+| 学生 | 作品 | 原因 |
+|---|---|---|
+| Oliver | Cosmic wave ×2 | **两份字节级相同**，删一份；CSS 里粘着一句没删的日文垃圾字符；太空侵略者克隆静态图 |
+| Zach | clash of empires（09a1e40c 版） | ⚠️ **隐私**：源码里硬编码了一个真实私人邮箱当作弊后门（无限金币）。删这版，留 872fd0df 干净版（同样的真游戏逻辑，无邮箱无后门） |
+| Grace Liu | Meow Jokes | 一个硬编码笑话+死按钮+满屏 emoji |
+| Harry Pollitt | BLOXCRAFT | Roblox 工具幻想海报，3D 视口是空水印 |
+| Oscar Sun | OmniStudio | Roblox Studio 静态临摹 |
+| Angela | GeoDash Lite | **坏档**：上传的是一行 URL 不是文件 |
+| Summer l | 乐理可视化 | **坏档**：同上（此前我按标题把它列为精选，撤回，待看 ai.studio 真身再定） |
+
+## 二、London 亲子共创（8 件）
+
+全部为静态概念设计（零 JS），Jacky 的除外。
+
+| # | 作者 | 作品 | 实际是什么 | 分 |
+|---|---|---|---|---|
+| 1 | **Jacky YANG（联创，需标注）** | The AI Graph（London 版 da915e7a） | **全场唯一真交互 app**：可点击的五层"人机协作"概念图（从"你问它答"到"让两个 AI 互搏"），自研缩放/拖拽/双指触控，零外部依赖、手机可用。内容本身就是 BIL 的元认知主张 | 5 |
+| 2 | **Lynn（创始人，需标注）** | Gapseeker | 概念设计：弥合"看完视频"与"真正理解"的学习工具首屏，配色即克莱因蓝，产品思考完整 | 4 |
+| 3 | PAUL（credit Jacky） | AI Colleague Circle | 概念设计：多 AI 互评工作流（Visionary→Editor→Synthesis），示例对话真的演示了"批评→融合"，概念先进 | 4 |
+| 4 | April | Color theory | 概念设计：调色匹配游戏，克制的编辑风排版，页脚真的在教配色原理——**与 BIL 审美最合** | 4 |
+| 5 | Veronica | Everyday magic | 概念设计：魔术教学库，全场视觉完成度最高之一 | 4 |
+| 6 | Rachel | Magic story box | 概念设计：儿童故事题材选择屏，一屏、无逻辑 | 3 |
+| 7 | Shelly | AAT courses | 概念设计：会计学习仪表盘，题材真实（成人学员），视觉普通 | 3 |
+| — | April | Pumpkin hunt | 下架：没做出来（本人注明 unable to build），纯 CSS 假游戏截图，放着有误导风险 | 2 |
+
+Manchester 的 Jacky AI Graph（8b6cded7，D3 版）与 London 版是同一作品两次迭代——London 版更完整。gallery 保留一份即可（或作为"同一想法两次重构"的过程故事）。
+
+## 三、Plymouth Year 9（22 件）——待补
+
+blob 文件全部是 220 字节占位壳（"hosted on Google AI Studio"），**真身全部在 ai.studio**。这批是主力（私校 Year 9、真实校园问题、你的 4 个 featured 都在），很可能是真正能跑的 app——**待 `ai.studio` + `aistudio.google.com` 加入白名单后逐个验证**，再出 Plymouth 的最终排序。
+
+## 四、给 owner 的行动清单
+
+1. **gallery 清理**：删 Oliver 重复份、Zach 带邮箱版（隐私！）、Angela/Summer 坏档、April Pumpkin hunt；Grace/BLOXCRAFT/OmniStudio 建议隐藏。
+2. **白名单**：让 Chat 端 Claude 把 `ai.studio`、`aistudio.google.com` 加进环境 Lynn.G 的 Allowed domains（补 Plymouth 真身 + 全员 live demo 验证）。
+3. **网站措辞**：概念设计与真 app 分开说；创始人作品必须标注创始人身份。
+4. Summer 的乐理 app 让她重新上传文件，或直接用她的 aistudio 链接。
