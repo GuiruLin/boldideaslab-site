@@ -358,7 +358,7 @@
           "title": "Coolest Projects 备赛",
           "text": [
             {
-              "t": "代表作品：Study Compass（Grolia）。",
+              "t": "代表作品：Study Compass（Gloria）。",
               "red": false
             }
           ]
@@ -1218,7 +1218,7 @@
         },
         {
           "name": "MotionLab",
-          "student": "owen · 曼彻斯特",
+          "student": "Owen · 曼彻斯特",
           "quote": "I think that animations are hard to make, so I tried to make it easier (did'nt go as planned though)",
           "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
         },
@@ -1237,14 +1237,14 @@
       ],
       "featured": {
         "name": "Study Compass",
-        "student": "Grolia · 线上冲刺营",
+        "student": "Gloria · 线上冲刺营",
         "text": "在 Coolest Projects（Raspberry Pi Foundation 发起的全球青少年数字创作展示）公开展出。",
         "cta": "在 Coolest Projects 查看",
         "url": "https://online.coolestprojects.org/projects/24694"
       },
       "numbers": [
         {
-          "value": "65+",
+          "value": "50+",
           "label": "学生作品"
         },
         {
@@ -1261,7 +1261,7 @@
     },
     "endcta": {
       "text": "想聊聊孩子的情况，或者学校的合作，写信给我们。",
-      "button": "聊聊"
+      "button": "给我们写信"
     },
     "footer": {
       "tagline": "伦敦的青少年 AI 教育实验室。",

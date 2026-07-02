@@ -358,7 +358,7 @@
           "title": "Coolest Projects preparation",
           "text": [
             {
-              "t": "Featured project: Study Compass, by Grolia.",
+              "t": "Featured project: Study Compass, by Gloria.",
               "red": false
             }
           ]
@@ -1218,7 +1218,7 @@
         },
         {
           "name": "MotionLab",
-          "student": "owen · Manchester",
+          "student": "Owen · Manchester",
           "quote": "I think that animations are hard to make, so I tried to make it easier (did'nt go as planned though)",
           "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
         },
@@ -1237,14 +1237,14 @@
       ],
       "featured": {
         "name": "Study Compass",
-        "student": "Grolia · Online sprint",
+        "student": "Gloria · Online sprint",
         "text": "Exhibited on Coolest Projects, the Raspberry Pi Foundation's global showcase for young digital makers.",
         "cta": "See it on Coolest Projects",
         "url": "https://online.coolestprojects.org/projects/24694"
       },
       "numbers": [
         {
-          "value": "65+",
+          "value": "50+",
           "label": "student projects"
         },
         {
@@ -1261,7 +1261,7 @@
     },
     "endcta": {
       "text": "If you want to talk about a student, or a school, write to us.",
-      "button": "Shall we talk?"
+      "button": "Write to us"
     },
     "footer": {
       "tagline": "A London lab for young people and AI.",
