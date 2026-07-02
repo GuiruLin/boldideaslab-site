@@ -325,10 +325,11 @@
   },
   "programmes": {
     "hero": {
-      "eyebrow": "Programmes · Course System",
-      "accent": "creators",
-      "title": "A learning path designed for creators.",
-      "lead": "From first experience to international stage. A complete learning path for every stage of the young creator's journey."
+      "eyebrow": "Programmes",
+      "accent": "real work",
+      "title": "Every programme starts from a real problem and ends in real work.",
+      "lead": "Our teaching is built on three capacities: thinking, making, explaining. School workshops, community workshops and online project courses are the same method in different rooms.",
+      "note": "No new cohort is currently open. If you want to talk about a student or a school, write to us."
     },
     "trackRecord": {
       "title": "Our Programmes",
@@ -341,7 +342,8 @@
               "t": "One morning, 22 AI prototypes, briefs drawn from real school problems.",
               "red": false
             }
-          ]
+          ],
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
         },
         {
           "label": "In-person workshops",
@@ -351,7 +353,8 @@
               "t": "31 projects, ages 8 to 15, from first idea to something you can play with.",
               "red": false
             }
-          ]
+          ],
+          "url": "https://workshop-gallery-peach.vercel.app/gallery"
         },
         {
           "label": "Online competition programme",
@@ -361,7 +364,8 @@
               "t": "Featured project: Study Compass, by Gloria.",
               "red": false
             }
-          ]
+          ],
+          "url": "https://online.coolestprojects.org/projects/24694"
         },
         {
           "label": "Online course",
@@ -379,95 +383,32 @@
               "t": " for the AI Youth Spring Festival, hosted by WaytoAGI.",
               "red": false
             }
-          ]
+          ],
+          "url": ""
         }
       ]
     },
-    "pathway": {
-      "eyebrow": "The learning system",
-      "title": "A pathway for every stage.",
-      "lead": "From first exploration to showcase sprint, students level up through one coherent method.",
-      "layers": [
-        {
-          "tier": "Immerse · 沉浸层",
-          "title": "Immersive Summer Camp",
-          "desc": "Multi-day immersive creative experience with deep project development",
-          "badge": "Coming soon",
-          "open": false,
-          "featured": false
-        },
-        {
-          "tier": "Compete · 竞技层",
-          "title": "AI Category preparation · Coolest Projects 5-week intensive sprint",
-          "desc": "Real international competition as the target — high-intensity practical training",
-          "badge": "Featured · Open",
-          "open": true,
-          "featured": true
-        },
-        {
-          "tier": "Build · 项目层",
-          "title": "Long-term Project Course · 8–12 weeks",
-          "desc": "A longer guided build from idea to complete project",
-          "badge": "Coming soon",
-          "open": false,
-          "featured": false
-        },
-        {
-          "tier": "Explore · 体验层",
-          "title": "Workshop · Mini Hackathon",
-          "desc": "2–3 hour experience · zero-barrier entry to creativity",
-          "badge": "Open",
-          "open": true,
-          "featured": false
-        }
-      ]
-    },
-    "course": {
-      "eyebrow": "Featured Course",
-      "badge": "Now enrolling",
-      "languageBadge": "English Taught",
-      "title": "5 weeks. From one idea to an AI project ready for international showcase.",
-      "leadEn": "",
-      "meta": [
-        {
-          "label": "Age",
-          "value": "Ages 8-14 · no coding required"
-        },
-        {
-          "label": "Format",
-          "value": "Online small group · 5–10 students"
-        },
-        {
-          "label": "Sessions",
-          "value": "2 sessions per week · approx. 1 hour each · 10 hours total"
-        },
-        {
-          "label": "Dates",
-          "value": "25 April–23 May 2026"
-        },
-        {
-          "label": "Outcomes",
-          "value": "Coolest Projects AI Category submission · public project page and certificate"
-        }
-      ]
-    },
-    "coolest": {
-      "eyebrow": "Why Coolest Projects",
-      "title": "Not just classwork — a public global showcase.",
-      "body": "Coolest Projects, run by the Raspberry Pi Foundation, is an annual technology showcase for young digital creators worldwide. Our pathway maps directly to its AI Category so students can place their work in a real public context.",
-      "highlightsLabel": "What matters most here",
-      "highlights": [
-        "A worldwide online showcase plus in-person events in multiple countries",
-        "Artificial Intelligence is now an official category",
-        "Projects are moderated and published in a public gallery"
+    "schools": {
+      "eyebrow": "School partnership",
+      "title": "Working with schools",
+      "paragraphs": [
+        "One morning in June 2026, around thirty Year 9 pupils at Plymouth College built 22 working AI prototypes in two hours. The brief: design a digital product to help a new Year 7 through their first week.",
+        "Pupils wrote down their own memories before touching AI, then compared them with the general answer AI gave. Judgement began in that gap: they corrected AI's colours, cut irrelevant features, questioned answers that were too generic.",
+        "Afterwards, the school asked to run it again, and to extend the training to staff."
       ],
-      "linkLabel": "Visit the Coolest Projects website",
-      "url": "https://online.coolestprojects.org/"
+      "formatLabel": "Format",
+      "formats": [
+        "a half-day workshop, two groups in parallel",
+        "built around the unit the school is already teaching",
+        "school staff present throughout",
+        "optional teacher CPD"
+      ],
+      "cta": "Discuss a partnership"
     },
     "arc": {
-      "eyebrow": "Featured Course",
-      "title": "Four learning modules",
-      "lead": "Four learning modules · 8 core sessions in weeks 1-4 + week 5 for sprint polish and submission",
+      "eyebrow": "Method",
+      "title": "Four stages",
+      "lead": "Four stages run through every format we teach. In a school they compress into one morning; online they unfold across five weeks.",
       "phases": [
         {
           "num": "01",
@@ -527,127 +468,20 @@
         }
       ]
     },
-    "endorsement": {
-      "quote": "\"This AI project-based learning programme is highly valuable. It offers practical experience, produces tangible outcomes, and generates clear evidence of growth that can be well articulated in future university applications.\"",
-      "attribution": "—— Vision Academy admissions counsellor",
-      "logoAlt": "Vision Academy Logo"
-    },
-    "pricing": {
-      "eyebrow": "Choose your pathway",
-      "title": "Three pathways. One programme arc.",
-      "lead": "All three pathways follow the same four-phase learning arc. The difference is depth of support, pacing, and whether the final sprint toward a public outcome is included.",
-      "cohortNote": "Current flagship sprint: starts 25 April, with the project showcase on 23 May. Places are limited, so early confirmation is recommended.",
-      "promoBadge": "Promotional rate active",
-      "promoMessage": "A private programme rate is active. Original and promotional prices are shown together.",
-      "invalidPromo": "We could not apply a rate from this link. Standard prices are shown.",
-      "originalLabel": "Original",
-      "promoLabel": "Promo rate",
-      "saveLabel": "Save",
-      "showcaseCta": "Choose Showcase Sprint",
-      "includedLabel": "What's included",
-      "showcaseIncluded": "Final showcase sprint included",
-      "showcaseNotIncluded": "Final showcase sprint not included",
-      "mostPopular": "Most complete",
-      "plans": [
+    "online": {
+      "title": "Online courses",
+      "cohorts": [
         {
-          "id": "starter",
-          "name": "Starter",
-          "subtitle": "A low-risk first step for curious families.",
-          "duration": "Introductory experience",
-          "forWhom": "Best for students exploring whether creative AI project work is right for them.",
-          "originalPrice": "£59",
-          "promoPrice": "£49",
-          "features": [
-            "Guided creative AI taster session",
-            "Idea direction and tool orientation",
-            "A small starter artifact to discuss at home",
-            "Parent-facing next-step recommendation"
-          ],
-          "showcase": false
+          "tag": "Cohort one · AI for Art",
+          "text": "Eight students submitted ten works; two animated films were selected for the AI Youth Spring Festival, hosted by WaytoAGI.",
+          "linkLabel": "",
+          "url": ""
         },
         {
-          "id": "builder",
-          "name": "Builder",
-          "subtitle": "The core four-phase project programme.",
-          "duration": "Full core programme",
-          "forWhom": "Best for students ready to develop a substantial project with feedback and structure.",
-          "originalPrice": "£299",
-          "promoPrice": "£279",
-          "features": [
-            "Project brief and creative direction",
-            "AI-assisted research, prototyping, and iteration",
-            "Mentor feedback across the full build process",
-            "Final project artifact and reflection"
-          ],
-          "showcase": false
-        },
-        {
-          "id": "showcase",
-          "name": "Showcase Sprint",
-          "subtitle": "The most complete pathway — from idea to public outcome.",
-          "duration": "Full programme plus final sprint",
-          "forWhom": "Best for families who want a polished project, a stronger presentation, and guided preparation for showcases or submissions.",
-          "originalPrice": "£399",
-          "promoPrice": "£349",
-          "features": [
-            "Everything in Builder",
-            "Final sprint: polish, narrative, and presentation",
-            "Showcase or submission preparation support",
-            "Parent-ready project summary and next-step guidance"
-          ],
-          "showcase": true
-        }
-      ]
-    },
-    "outcomes": {
-      "eyebrow": "Outcomes",
-      "title": "What your child walks away with",
-      "lead": "",
-      "items": [
-        {
-          "title": "An AI project to showcase",
-          "text": "Structurally complete, ready to submit to the Coolest Projects AI Category — with a public project page and participation certificate."
-        },
-        {
-          "title": "Three transferable skills",
-          "text": "Creative confidence, critical thinking, and the ability to communicate ideas — skills that transfer directly to future university applications, interviews, and collaborative work."
-        },
-        {
-          "title": "A clear record of growth",
-          "text": "The project process compiled into content usable for activity profiles and application materials — turning these five weeks into a visible record of development."
-        },
-        {
-          "title": "An international showcase opportunity",
-          "text": "The project submitted to Coolest Projects — the global technology creativity platform with young participants from nearly 50 countries."
-        }
-      ]
-    },
-    "timeline": {
-      "eyebrow": "Key timeline",
-      "title": "From first session to submission, key moments are clear.",
-      "lead": "Weeks 1-4 complete the core build; week 5 focuses on polish and submission.",
-      "phaseLabel": "Phase",
-      "pointLabel": "Milestone",
-      "items": [
-        {
-          "date": "25 April",
-          "label": "5-week sprint begins",
-          "kind": "point"
-        },
-        {
-          "date": "25 April–16 May",
-          "label": "Four modules · online small group",
-          "kind": "phase"
-        },
-        {
-          "date": "17–23 May",
-          "label": "Week 5 · project showcase",
-          "kind": "phase"
-        },
-        {
-          "date": "Before 27 May",
-          "label": "Coolest Projects submission deadline",
-          "kind": "point"
+          "tag": "Cohort two · Coolest Projects preparation",
+          "text": "Two students completed the five-week sprint and submitted to the AI category. Study Compass, by Gloria, is exhibited in the public gallery.",
+          "linkLabel": "See it on Coolest Projects",
+          "url": "https://online.coolestprojects.org/projects/24694"
         }
       ]
     },
@@ -676,30 +510,23 @@
         },
         {
           "q": "What age range is this designed for?",
-          "a": "Primarily for students aged 8-14. We adjust pacing and project complexity within that range — enquire to discuss your child's specific context."
+          "a": "Primarily for students aged 8-14. We adjust pacing and project complexity within that range. Write to us to discuss your child's specific context."
         },
         {
           "q": "Is this only about learning AI tools?",
           "a": "No. Tools are part of the process. The core focus is creative thinking, project judgment, and the ability to communicate ideas clearly. AI is the medium, not the subject."
         },
         {
-          "q": "What is the difference between Builder and Showcase Sprint?",
-          "a": "Builder completes the full four-phase project arc. Showcase Sprint adds a dedicated final phase: polishing the project, preparing a presentation, and receiving guidance for public-facing outcomes like submissions or portfolios."
-        },
-        {
-          "q": "Which tier should we start with?",
-          "a": "Starter is a low-risk first step. Builder is the core programme for families ready to commit. Showcase Sprint is for families who want the most complete pathway and a submission-ready outcome."
-        },
-        {
-          "q": "How is the programme delivered?",
-          "a": "Sessions are delivered online in small groups with mentor guidance throughout. The specific schedule, format, and cohort size are confirmed at enrolment — enquire for current details."
+          "q": "How are fees set?",
+          "a": "Fees depend on the format and the group. Write to us and we will set them out clearly."
         }
       ]
     },
     "cta": {
-      "eyebrow": "Get Started",
-      "title": "Ready to begin?",
-      "body": "Places are limited for the 5-week intensive sprint. The course starts on 25 April, with the project showcase on 23 May. Tell us about the student's interests and starting point, and we will suggest the right tier and timing."
+      "eyebrow": "Contact",
+      "title": "Talk to us about a student, or a school.",
+      "body": "The next cohort has no date yet. Write and tell us about the student's interests, or your school's context.",
+      "button": "Write to us"
     }
   },
   "work": {

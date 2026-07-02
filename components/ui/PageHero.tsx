@@ -5,6 +5,7 @@ type PageHeroProps = {
   title: string;
   accent?: string;
   lead: string;
+  note?: string;
   primary?: {
     href: string;
     label: string;
@@ -22,6 +23,7 @@ export function PageHero({
   title,
   accent,
   lead,
+  note,
   primary,
   secondary,
   imageLabel,
@@ -66,6 +68,11 @@ export function PageHero({
                 </ButtonLink>
               )}
             </div>
+          )}
+          {note && (
+            <p className="mt-7 max-w-2xl text-sm leading-7 text-ink/55">
+              {note}
+            </p>
           )}
         </div>
 

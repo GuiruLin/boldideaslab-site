@@ -325,10 +325,11 @@
   },
   "programmes": {
     "hero": {
-      "eyebrow": "课程 · 课程体系",
-      "accent": "创造者",
-      "title": "一套为创造者而设计的学习路径",
-      "lead": "从第一次体验，到站上国际舞台。我们的课程体系为每个阶段的青少年提供刚好合适的入口。"
+      "eyebrow": "课程",
+      "accent": "真实作品",
+      "title": "课程从真实问题开始，以真实作品结束。",
+      "lead": "敢想实验室的课程建立在三力框架上：思维力、创作力、表达力。学校工作坊、线下工作坊和线上项目课，是同一套方法在不同场景的展开。",
+      "note": "下一期课程时间未定，想了解适合孩子或学校的开始方式，写信给我们。"
     },
     "trackRecord": {
       "title": "我们做过的项目",
@@ -341,7 +342,8 @@
               "t": "一个上午，22 个 AI 原型，命题来自真实校园问题。",
               "red": false
             }
-          ]
+          ],
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
         },
         {
           "label": "线下工作坊",
@@ -351,7 +353,8 @@
               "t": "31 件作品，8-15 岁，从想法到可玩的成品。",
               "red": false
             }
-          ]
+          ],
+          "url": "https://workshop-gallery-peach.vercel.app/gallery"
         },
         {
           "label": "线上竞技课程",
@@ -361,7 +364,8 @@
               "t": "代表作品：Study Compass（Gloria）。",
               "red": false
             }
-          ]
+          ],
+          "url": "https://online.coolestprojects.org/projects/24694"
         },
         {
           "label": "线上课程",
@@ -379,95 +383,32 @@
               "t": "「AI 少儿春晚」。",
               "red": false
             }
-          ]
+          ],
+          "url": ""
         }
       ]
     },
-    "pathway": {
-      "eyebrow": "学习体系",
-      "title": "为每个阶段提供合适的入口。",
-      "lead": "从体验、建造到冲刺展示，学生会在同一套方法里逐步升级。",
-      "layers": [
-        {
-          "tier": "沉浸层 · Immerse",
-          "title": "沉浸式夏令营",
-          "desc": "多日沉浸式创作体验，深度项目开发",
-          "badge": "即将推出",
-          "open": false,
-          "featured": false
-        },
-        {
-          "tier": "竞技层 · Compete",
-          "title": "AI 类别备赛 · Coolest Projects 5 周密集冲刺营",
-          "desc": "以真实国际比赛为目标，高强度实战训练",
-          "badge": "主推开放",
-          "open": true,
-          "featured": true
-        },
-        {
-          "tier": "项目层 · Build",
-          "title": "长期项目课 · 8–12 周",
-          "desc": "更长周期的陪跑式建造，从想法走到完整项目",
-          "badge": "即将推出",
-          "open": false,
-          "featured": false
-        },
-        {
-          "tier": "体验层 · Explore",
-          "title": "工作坊 · Mini 黑客松",
-          "desc": "2–3 小时体验，零门槛创造力入口",
-          "badge": "开放报名",
-          "open": true,
-          "featured": false
-        }
-      ]
-    },
-    "course": {
-      "eyebrow": "主推课程",
-      "badge": "现已开放报名",
-      "languageBadge": "英文授课",
-      "title": "5 周密集冲刺，从一个想法到一个可以参加国际展示的 AI 作品。",
-      "leadEn": "",
-      "meta": [
-        {
-          "label": "适合年龄",
-          "value": "8-14 岁，无需编程基础"
-        },
-        {
-          "label": "上课形式",
-          "value": "线上小班 · 5–10 人"
-        },
-        {
-          "label": "课时安排",
-          "value": "每周 2 节 · 每节约 1 小时 · 共 10 小时"
-        },
-        {
-          "label": "开课时间",
-          "value": "2026 年 4 月 25 日–5 月 23 日"
-        },
-        {
-          "label": "课程成果",
-          "value": "提交 Coolest Projects AI 类别 · 获公开作品页面及证书"
-        }
-      ]
-    },
-    "coolest": {
-      "eyebrow": "为什么是 Coolest Projects",
-      "title": "不是课堂作业，而是面向全球的公开展示。",
-      "body": "Coolest Projects 由 Raspberry Pi Foundation 发起，是面向全球青少年数字创作者的年度技术展示。我们的项目路径直接对接其 AI 类别，让学生把作品放到真实社区语境里被看见。",
-      "highlightsLabel": "页面里最重要的三件事",
-      "highlights": [
-        "全球线上展示 + 多国线下活动并行",
-        "官方已设立 Artificial Intelligence（AI）类别",
-        "提交后会审核并进入公开 gallery，形成真实作品记录"
+    "schools": {
+      "eyebrow": "私校合作",
+      "title": "和学校一起做",
+      "paragraphs": [
+        "2026 年 6 月的一个上午，Plymouth College 约 30 名 Year 9 学生用两小时做出 22 个可以点开的 AI 原型。命题只有一个：为新 Year 7 的第一周设计一个数字产品。",
+        "学生先不碰 AI，写下自己两年前入学的真实记忆，再对照 AI 给出的普遍答案。判断从这个落差开始：他们改掉 AI 不对的颜色，删掉无关的功能，质疑太普遍的方案。",
+        "课后，学校提出再做一次，并把培训扩展到教职工。"
       ],
-      "linkLabel": "查看 Coolest Projects 官网",
-      "url": "https://online.coolestprojects.org/"
+      "formatLabel": "形态",
+      "formats": [
+        "半天工作坊，两组并行",
+        "贴合学校正在教的单元",
+        "校方教职员全程在场",
+        "可附加教师培训（CPD）"
+      ],
+      "cta": "合作咨询"
     },
     "arc": {
-      "eyebrow": "主推课程",
-      "title": "四个学习模块",
-      "lead": "四个学习模块 · 前四周 8 节核心课 + 第五周冲刺与提交",
+      "eyebrow": "方法",
+      "title": "四个阶段",
+      "lead": "四个阶段是所有课程形态共用的骨架。在学校里压缩成一个上午，在线上展开为五周。",
       "phases": [
         {
           "num": "01",
@@ -527,127 +468,20 @@
         }
       ]
     },
-    "endorsement": {
-      "quote": "“从大学申请视角看，这类 AI 项目制学习对学生很有价值：过程真实、成果可展示，也能形成有说服力的成长记录。”",
-      "attribution": "—— 唯寻 Vision Academy 升学规划师",
-      "logoAlt": "唯寻 Vision Academy Logo"
-    },
-    "pricing": {
-      "eyebrow": "选择你的路径",
-      "title": "三条路径。同一段学习弧线。",
-      "lead": "三条路径都遵循相同的四阶段学习弧线。区别在于支持深度、节奏，以及是否包含面向公开成果的最终冲刺阶段。",
-      "cohortNote": "当前主推 5 周密集冲刺营：4 月 25 日开课，5 月 23 日项目发布会。名额有限，建议尽早确认。",
-      "promoBadge": "优惠价格已启用",
-      "promoMessage": "当前页面已启用专属优惠价，原价与优惠价已同时展示。",
-      "invalidPromo": "未能通过此链接识别优惠，页面显示为常规价格。",
-      "originalLabel": "原价",
-      "promoLabel": "优惠价",
-      "saveLabel": "立省",
-      "showcaseCta": "选择冲刺展示",
-      "includedLabel": "包含内容",
-      "showcaseIncluded": "包含最终展示冲刺",
-      "showcaseNotIncluded": "不包含最终展示冲刺",
-      "mostPopular": "最完整",
-      "plans": [
+    "online": {
+      "title": "线上课程",
+      "cohorts": [
         {
-          "id": "starter",
-          "name": "启航体验",
-          "subtitle": "适合谨慎家庭的低风险第一步。",
-          "duration": "入门体验",
-          "forWhom": "适合正在判断创意 AI 项目学习是否合适的学生。",
-          "originalPrice": "£59",
-          "promoPrice": "£49",
-          "features": [
-            "导师引导的创意 AI 体验",
-            "想法方向与工具入门",
-            "一个可在家讨论的小型起步成果",
-            "面向家长的下一步建议"
-          ],
-          "showcase": false
+          "tag": "第一期 · AI for Art",
+          "text": "8 名学生提交 10 件作品，两部动画入选「AI 少儿春晚」（WaytoAGI 主办）。",
+          "linkLabel": "",
+          "url": ""
         },
         {
-          "id": "builder",
-          "name": "项目建造",
-          "subtitle": "完整的四阶段核心项目课程。",
-          "duration": "完整核心课程",
-          "forWhom": "适合准备在结构化反馈中发展完整项目的学生。",
-          "originalPrice": "£299",
-          "promoPrice": "£279",
-          "features": [
-            "项目简报与创作方向",
-            "AI 辅助研究、原型与迭代",
-            "贯穿全程的导师反馈",
-            "最终项目成果与学习反思"
-          ],
-          "showcase": false
-        },
-        {
-          "id": "showcase",
-          "name": "冲刺展示",
-          "subtitle": "最完整的路径——从想法到公开成果。",
-          "duration": "完整课程 + 最终冲刺",
-          "forWhom": "适合希望获得更成熟作品、清晰展示和提交支持的家庭。",
-          "originalPrice": "£399",
-          "promoPrice": "£349",
-          "features": [
-            "包含项目建造全部内容",
-            "最终冲刺：打磨、叙事与展示",
-            "展示或提交准备支持",
-            "面向家长的项目总结与下一步建议"
-          ],
-          "showcase": true
-        }
-      ]
-    },
-    "outcomes": {
-      "eyebrow": "学习成果",
-      "title": "完成课程，你的孩子会得到",
-      "lead": "",
-      "items": [
-        {
-          "title": "一件可以展示的 AI 作品",
-          "text": "结构完整，可提交至 Coolest Projects 的 AI 类别，获得公开作品页面和参与证书。"
-        },
-        {
-          "title": "三种可迁移能力",
-          "text": "创作力、思维力、表达力，直接迁移到日后的大学申请、面试和团队合作中。"
-        },
-        {
-          "title": "一条清晰的履历记录",
-          "text": "项目过程整理成可用于活动展示和申请材料的内容，让这 5 周变成看得见的成长记录。"
-        },
-        {
-          "title": "国际展示机会",
-          "text": "作品提交至 Coolest Projects，来自近 50 个国家青少年参与的全球科技创作展示平台。"
-        }
-      ]
-    },
-    "timeline": {
-      "eyebrow": "关键时间线",
-      "title": "从开课到提交，时间点一目了然。",
-      "lead": "前四周完成核心学习，第五周集中打磨与提交。",
-      "phaseLabel": "阶段",
-      "pointLabel": "时间点",
-      "items": [
-        {
-          "date": "4 月 25 日",
-          "label": "5 周冲刺营开课",
-          "kind": "point"
-        },
-        {
-          "date": "4 月 25 日–5 月 16 日",
-          "label": "四个模块 · 线上小班",
-          "kind": "phase"
-        },
-        {
-          "date": "5 月 17–23 日",
-          "label": "第五周 · 项目发布会",
-          "kind": "phase"
-        },
-        {
-          "date": "5 月 27 日前",
-          "label": "Coolest Projects 截止提交",
-          "kind": "point"
+          "tag": "第二期 · Coolest Projects 备赛",
+          "text": "两名学生完成五周冲刺，作品提交至 Coolest Projects 的 AI 类别。Study Compass（Gloria）在公开画廊展出。",
+          "linkLabel": "在 Coolest Projects 查看",
+          "url": "https://online.coolestprojects.org/projects/24694"
         }
       ]
     },
@@ -676,30 +510,23 @@
         },
         {
           "q": "适合哪个年龄段？",
-          "a": "主要面向 8-14 岁。节奏和项目复杂度会在这个范围内调整——可以联系我们讨论孩子的具体情况。"
+          "a": "主要面向 8-14 岁。节奏和项目复杂度会在这个范围内调整，可以来信讨论孩子的具体情况。"
         },
         {
           "q": "这只是学 AI 工具吗？",
           "a": "不是。工具只是过程的一部分。核心重点是创意思维、项目判断力和清晰表达想法的能力。AI 是媒介，不是主题。"
         },
         {
-          "q": "项目建造和冲刺展示有什么区别？",
-          "a": "项目建造完成完整的四阶段项目弧线。冲刺展示额外增加最终冲刺阶段：打磨作品、准备展示，并获得面向公开成果（如提交或作品集）的专项指导。"
-        },
-        {
-          "q": "应该从哪个层级开始？",
-          "a": "启航体验是低风险的第一步。项目建造是准备好投入的家庭的核心课程。冲刺展示适合希望获得最完整路径和可提交成果的家庭。"
-        },
-        {
-          "q": "课程如何进行？",
-          "a": "课程以线上小班形式进行，全程配有导师指导。具体时间安排、课时和班级规模在报名时确认——可以联系我们了解当前详情。"
+          "q": "费用怎么算？",
+          "a": "按形态和人数来信商定，学校合作与家庭课程分开报价。"
         }
       ]
     },
     "cta": {
-      "eyebrow": "开始行动",
-      "title": "准备好开始了吗？",
-      "body": "名额有限，现在报名 5 周密集冲刺营。4 月 25 日开课，5 月 23 日项目发布会。告诉我们学生的兴趣和起点，我们会建议合适的层级和时间安排。"
+      "eyebrow": "联系",
+      "title": "聊聊孩子，或者你的学校。",
+      "body": "下一期课程时间未定。来信告诉我们学生的兴趣，或学校的情况。",
+      "button": "给我们写信"
     }
   },
   "work": {
