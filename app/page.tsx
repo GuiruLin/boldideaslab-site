@@ -5,7 +5,7 @@ import { Footer } from "@/components/redesign/Footer";
 import { Header } from "@/components/redesign/Header";
 import { Hero } from "@/components/redesign/Hero";
 import { CountUp, Reveal } from "@/components/redesign/motion";
-import { Arch, Decagon, Dot, Pill } from "@/components/redesign/shapes";
+import { Arch, Decagon, Dot, Pill, Quad } from "@/components/redesign/shapes";
 import en from "@/messages/en.json";
 
 const t = en.redesign;
@@ -100,6 +100,21 @@ export default function Page() {
               ))}
             </div>
 
+            <a
+              className="group relative mt-4 block overflow-hidden rounded-[18px] border border-ink/10 bg-white p-8 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)] sm:p-10"
+              href={t.gallery.featured.url}
+              rel="noopener"
+              target="_blank"
+            >
+              <Quad className="absolute -right-px -top-px h-12 w-12 opacity-90 transition-transform duration-200 group-hover:rotate-6" />
+              <h3 className="t-h3 text-blue">{t.gallery.featured.name}</h3>
+              <p className="mt-1.5 text-sm text-ink/55">{t.gallery.featured.student}</p>
+              <p className="mt-3 max-w-2xl leading-7 text-ink/70">{t.gallery.featured.text}</p>
+              <span className="mt-5 inline-block text-sm text-blue underline decoration-blue/30 underline-offset-[6px] transition group-hover:decoration-blue">
+                {t.gallery.featured.cta}
+              </span>
+            </a>
+
             <div className="mt-14 flex flex-wrap items-baseline gap-x-12 gap-y-8">
               {t.gallery.numbers.map((item) => (
                 <p className="flex items-baseline gap-3" key={item.label}>
@@ -120,72 +135,8 @@ export default function Page() {
           </Reveal>
         </section>
 
-        {/* 我们做过的项目：4 张横条卡片，金色小标签标类型 */}
-        <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
-          <Reveal className="mx-auto max-w-6xl">
-            <h2 className="t-h2 text-blue">
-              {t.programmes.title}
-            </h2>
-
-            <div className="mt-10 space-y-4">
-              {t.programmes.cards.map((card) => (
-                <article
-                  className="rounded-[18px] border border-ink/10 bg-cream/60 p-7 sm:flex sm:items-baseline sm:gap-8 sm:p-8"
-                  key={card.title}
-                >
-                  <p className="t-eyebrow text-gold sm:w-48 sm:shrink-0">{card.label}</p>
-                  <div className="mt-3 sm:mt-0">
-                    <h3 className="t-h3 text-blue">{card.title}</h3>
-                    <p className="mt-2 leading-7 text-ink/70">
-                      {card.text.map((seg) =>
-                        seg.red ? (
-                          <span className="text-red" key={seg.t}>
-                            {seg.t}
-                          </span>
-                        ) : (
-                          <span key={seg.t}>{seg.t}</span>
-                        )
-                      )}
-                    </p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </Reveal>
-        </section>
-
-        {/* 思考的入口：一篇创始人文章 */}
-        <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
-          <Reveal className="mx-auto max-w-6xl">
-            <p className="mb-5 t-eyebrow text-gold">
-              {t.thinking.eyebrow}
-            </p>
-            <h2 className="max-w-3xl t-h2 text-blue text-balance">
-              {t.thinking.title}
-            </h2>
-            <p className="mt-5 max-w-2xl leading-8 text-ink/70">{t.thinking.excerpt}</p>
-            <p className="mt-3 text-sm text-ink/45">{t.thinking.note}</p>
-            <div className="mt-7 flex flex-wrap items-center gap-6 text-sm">
-              <a
-                className="text-blue underline decoration-blue/30 underline-offset-[6px] transition hover:decoration-blue"
-                href={t.thinking.url}
-                rel="noopener"
-                target="_blank"
-              >
-                {t.thinking.read}
-              </a>
-              <Link
-                className="text-ink/60 underline decoration-ink/20 underline-offset-[6px] transition hover:text-blue hover:decoration-blue"
-                href="/insights"
-              >
-                {t.thinking.more}
-              </Link>
-            </div>
-          </Reveal>
-        </section>
-
         {/* 结尾 */}
-        <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
+        <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
           <Reveal className="mx-auto max-w-3xl text-center">
             <p className="t-lead text-ink text-balance">
               {t.endcta.text}

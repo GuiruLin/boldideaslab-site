@@ -330,6 +330,59 @@
       "title": "A learning path designed for creators.",
       "lead": "From first experience to international stage. A complete learning path for every stage of the young creator's journey."
     },
+    "trackRecord": {
+      "title": "Our Programmes",
+      "cards": [
+        {
+          "label": "Independent school partnership",
+          "title": "Plymouth College · Year 9 AI Workshop",
+          "text": [
+            {
+              "t": "One afternoon, 22 AI prototypes, briefs drawn from real school problems.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "In-person workshops",
+          "title": "Youth Creator Workshop · Manchester / London",
+          "text": [
+            {
+              "t": "31 projects, ages 8 to 15, from first idea to something you can play with.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "Online competition programme",
+          "title": "Coolest Projects preparation",
+          "text": [
+            {
+              "t": "Featured project: Study Compass, by Grolia.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "Online course",
+          "title": "AI for Art",
+          "text": [
+            {
+              "t": "Two animated films ",
+              "red": false
+            },
+            {
+              "t": "selected",
+              "red": true
+            },
+            {
+              "t": " for the AI Youth Spring Festival, hosted by WaytoAGI.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
     "pathway": {
       "eyebrow": "The learning system",
       "title": "A pathway for every stage.",
@@ -1182,6 +1235,13 @@
           "url": "https://workshop-gallery-peach.vercel.app/gallery/london"
         }
       ],
+      "featured": {
+        "name": "Study Compass",
+        "student": "Grolia · Online sprint",
+        "text": "Exhibited on Coolest Projects, the Raspberry Pi Foundation's global showcase for young digital makers.",
+        "cta": "See it on Coolest Projects",
+        "url": "https://online.coolestprojects.org/projects/24694"
+      },
       "numbers": [
         {
           "value": "65+",
@@ -1198,68 +1258,6 @@
       ],
       "cta": "Enter the full gallery",
       "ctaUrl": "https://workshop-gallery-peach.vercel.app/gallery"
-    },
-    "programmes": {
-      "title": "Our Programmes",
-      "cards": [
-        {
-          "label": "Independent school partnership",
-          "title": "Plymouth College · Year 9 AI Workshop",
-          "text": [
-            {
-              "t": "One afternoon, 22 AI prototypes, briefs drawn from real school problems.",
-              "red": false
-            }
-          ]
-        },
-        {
-          "label": "In-person workshops",
-          "title": "Youth Creator Workshop · Manchester / London",
-          "text": [
-            {
-              "t": "31 projects, ages 8 to 15, from first idea to something you can play with.",
-              "red": false
-            }
-          ]
-        },
-        {
-          "label": "Online competition programme",
-          "title": "Coolest Projects preparation",
-          "text": [
-            {
-              "t": "Featured project: Study Compass, by Grolia.",
-              "red": false
-            }
-          ]
-        },
-        {
-          "label": "Online course",
-          "title": "AI for Art",
-          "text": [
-            {
-              "t": "Two animated films ",
-              "red": false
-            },
-            {
-              "t": "selected",
-              "red": true
-            },
-            {
-              "t": " for the AI Youth Spring Festival, hosted by WaytoAGI.",
-              "red": false
-            }
-          ]
-        }
-      ]
-    },
-    "thinking": {
-      "eyebrow": "What are we thinking?",
-      "title": "When AI can do everything, what is left for education?",
-      "excerpt": "The biggest problem with systematic education is not what it teaches, but the hidden message it sends: life has standard answers.",
-      "note": "Essay by Lynn, written in Chinese.",
-      "read": "Read the essay",
-      "url": "https://mp.weixin.qq.com/s/vw2Kv6NsNu7bf4CyT_zyjw",
-      "more": "More notes and conversations"
     },
     "endcta": {
       "text": "If you want to talk about a student, or a school, write to us.",

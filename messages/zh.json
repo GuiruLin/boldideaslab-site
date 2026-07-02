@@ -330,6 +330,59 @@
       "title": "一套为创造者而设计的学习路径",
       "lead": "从第一次体验，到站上国际舞台。我们的课程体系为每个阶段的青少年提供刚好合适的入口。"
     },
+    "trackRecord": {
+      "title": "我们做过的项目",
+      "cards": [
+        {
+          "label": "私校合作",
+          "title": "Plymouth College · Year 9 AI Workshop",
+          "text": [
+            {
+              "t": "一个下午，22 个 AI 原型，命题来自真实校园问题。",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "线下工作坊",
+          "title": "Youth Creator Workshop · 曼彻斯特 / 伦敦",
+          "text": [
+            {
+              "t": "31 件作品，8-15 岁，从想法到可玩的成品。",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "线上竞技课程",
+          "title": "Coolest Projects 备赛",
+          "text": [
+            {
+              "t": "代表作品：Study Compass（Grolia）。",
+              "red": false
+            }
+          ]
+        },
+        {
+          "label": "线上课程",
+          "title": "AI for Art",
+          "text": [
+            {
+              "t": "两部动画电影",
+              "red": false
+            },
+            {
+              "t": "入选",
+              "red": true
+            },
+            {
+              "t": "「AI 少儿春晚」。",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
     "pathway": {
       "eyebrow": "学习体系",
       "title": "为每个阶段提供合适的入口。",
@@ -1182,6 +1235,13 @@
           "url": "https://workshop-gallery-peach.vercel.app/gallery/london"
         }
       ],
+      "featured": {
+        "name": "Study Compass",
+        "student": "Grolia · 线上冲刺营",
+        "text": "在 Coolest Projects（Raspberry Pi Foundation 发起的全球青少年数字创作展示）公开展出。",
+        "cta": "在 Coolest Projects 查看",
+        "url": "https://online.coolestprojects.org/projects/24694"
+      },
       "numbers": [
         {
           "value": "65+",
@@ -1198,68 +1258,6 @@
       ],
       "cta": "进入完整画廊",
       "ctaUrl": "https://workshop-gallery-peach.vercel.app/gallery"
-    },
-    "programmes": {
-      "title": "我们做过的项目",
-      "cards": [
-        {
-          "label": "私校合作",
-          "title": "Plymouth College · Year 9 AI Workshop",
-          "text": [
-            {
-              "t": "一个下午，22 个 AI 原型，命题来自真实校园问题。",
-              "red": false
-            }
-          ]
-        },
-        {
-          "label": "线下工作坊",
-          "title": "Youth Creator Workshop · 曼彻斯特 / 伦敦",
-          "text": [
-            {
-              "t": "31 件作品，8-15 岁，从想法到可玩的成品。",
-              "red": false
-            }
-          ]
-        },
-        {
-          "label": "线上竞技课程",
-          "title": "Coolest Projects 备赛",
-          "text": [
-            {
-              "t": "代表作品：Study Compass（Grolia）。",
-              "red": false
-            }
-          ]
-        },
-        {
-          "label": "线上课程",
-          "title": "AI for Art",
-          "text": [
-            {
-              "t": "两部动画电影",
-              "red": false
-            },
-            {
-              "t": "入选",
-              "red": true
-            },
-            {
-              "t": "「AI 少儿春晚」。",
-              "red": false
-            }
-          ]
-        }
-      ]
-    },
-    "thinking": {
-      "eyebrow": "最近在想什么",
-      "title": "当 AI 什么都会，教育还剩什么",
-      "excerpt": "系统教育最大的问题不是它教的内容，而是它传递的隐含信息：人生有标准答案。",
-      "note": "创始人文章 · Lynn",
-      "read": "在公众号阅读全文",
-      "url": "https://mp.weixin.qq.com/s/vw2Kv6NsNu7bf4CyT_zyjw",
-      "more": "更多文章与对谈"
     },
     "endcta": {
       "text": "想聊聊孩子的情况，或者学校的合作，写信给我们。",

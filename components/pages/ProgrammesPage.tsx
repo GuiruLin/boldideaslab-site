@@ -67,6 +67,38 @@ export function ProgrammesPage() {
         secondary={{ href: "/work", label: dictionary.actions.work }}
       />
 
+      {/* ── Track record (我们做过的项目) ──────────────────────────────────── */}
+      <Section title={programmes.trackRecord.title} tone="white">
+        <div className="space-y-3">
+          {programmes.trackRecord.cards.map((card) => (
+            <article
+              className="rounded-lg border border-blue/10 bg-cream/60 p-6 transition duration-200 hover:translate-x-1 hover:border-blue/25 sm:flex sm:items-baseline sm:gap-8 sm:p-7"
+              key={card.title}
+            >
+              <p className="text-xs font-semibold uppercase tracking-widest text-gold sm:w-48 sm:shrink-0">
+                {card.label}
+              </p>
+              <div className="mt-2 sm:mt-0">
+                <h3 className="font-serif text-xl font-medium leading-snug text-blue">
+                  {card.title}
+                </h3>
+                <p className="mt-1.5 text-sm leading-7 text-ink/60">
+                  {card.text.map((seg) =>
+                    seg.red ? (
+                      <span className="text-red" key={seg.t}>
+                        {seg.t}
+                      </span>
+                    ) : (
+                      <span key={seg.t}>{seg.t}</span>
+                    )
+                  )}
+                </p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </Section>
+
       {/* ── Pathway (system map) ─────────────────────────────────────────── */}
       <Section
         eyebrow={programmes.pathway.eyebrow}
