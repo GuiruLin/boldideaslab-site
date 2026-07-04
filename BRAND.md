@@ -1,4 +1,4 @@
-# CLAUDE.md — Bold Ideas Lab 品牌与工作规范
+# BRAND.md — Bold Ideas Lab 品牌与工作规范
 
 本文件是所有 AI 会话与人工协作者的最高约束。任何代码、文案、设计决策与本文件冲突时，以本文件为准。
 项目代码位于仓库根目录（Next.js App Router + Tailwind，双语词典在 `messages/en.json` / `messages/zh.json`；2026-06-11 起应用从 `bold-ideas-lab-web-main/` 子目录提升到根目录）。
