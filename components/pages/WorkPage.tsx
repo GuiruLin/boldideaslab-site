@@ -264,25 +264,43 @@ export function WorkPage() {
             const go = (delta: number) =>
               setFeedbackPage((p) => (p + delta + total) % total);
             return (
-              <div className="relative mt-10">
-                {/* 书页堆叠错层 */}
-                <div className="absolute inset-x-4 -bottom-2 h-full rounded-[22px] bg-blue/15" />
-                <div className="absolute inset-x-2 -bottom-1 h-full rounded-[22px] bg-blue/25" />
-                {/* 书本封面 */}
-                <div className="relative rounded-[22px] bg-blue p-2.5 shadow-[0_30px_70px_rgba(0,47,167,0.22)]">
+              <div className="relative mt-10 max-w-2xl">
+                {/* 书签丝带 */}
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute right-12 -top-2 z-20 h-14 w-4 bg-red/85"
+                  style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 50% 78%, 0 100%)" }}
+                />
+                {/* 硬封面（莫兰迪黄）+ 左侧书脊 */}
+                <div
+                  className="relative overflow-hidden bg-[#C9B27C] py-3 pl-7 pr-3 shadow-[0_28px_60px_rgba(150,130,70,0.32)]"
+                  style={{ borderRadius: "6px 22px 22px 6px" }}
+                >
+                  <span
+                    aria-hidden
+                    className="pointer-events-none absolute left-0 top-0 h-full w-6 bg-[#B79E62]"
+                  />
+                  <span
+                    aria-hidden
+                    className="pointer-events-none absolute left-[7px] top-4 bottom-4 w-px bg-black/15"
+                  />
                   {/* 书页 */}
-                  <div className="relative min-h-[300px] overflow-hidden rounded-[16px] bg-cream px-7 py-12 sm:px-16 sm:py-16">
+                  <div
+                    className="relative min-h-[300px] bg-[#FBF9F1] px-7 py-12 shadow-[inset_5px_0_12px_rgba(0,0,0,0.05)] sm:px-14 sm:py-16"
+                    style={{ borderRadius: "3px 16px 16px 3px" }}
+                  >
+                    {/* 右侧页缘 */}
                     <span
                       aria-hidden
-                      className="absolute left-0 top-0 h-full w-8 bg-gradient-to-r from-ink/[0.09] to-transparent"
+                      className="pointer-events-none absolute -right-1.5 top-2 bottom-2 w-1.5 rounded-r-[3px] bg-gradient-to-l from-[#e7e1cd] to-[#FBF9F1]"
                     />
-                    <span aria-hidden className="font-display text-6xl leading-none text-gold/40">
+                    <span aria-hidden className="font-display text-6xl leading-none text-[#C9B27C]">
                       &ldquo;
                     </span>
-                    <blockquote className="-mt-4 font-serif text-xl italic leading-relaxed text-blue/90 sm:text-[1.6rem]">
+                    <blockquote className="-mt-4 font-serif text-xl italic leading-relaxed text-ink/85 sm:text-[1.6rem]">
                       {item.quote}
                     </blockquote>
-                    <p className="mt-6 text-sm font-medium text-ink/60">
+                    <p className="mt-6 text-sm font-medium text-ink/55">
                       {item.author}
                       <span className="font-normal text-ink/40"> · {item.context}</span>
                     </p>
@@ -295,10 +313,10 @@ export function WorkPage() {
                   </div>
                 </div>
                 {/* 翻页 */}
-                <div className="mt-6 flex items-center justify-center gap-5">
+                <div className="mt-7 flex items-center justify-center gap-5">
                   <button
                     aria-label="Previous"
-                    className="grid h-11 w-11 place-items-center rounded-full border border-blue/20 text-blue transition hover:bg-blue hover:text-cream"
+                    className="grid h-11 w-11 place-items-center rounded-full border border-[#C9B27C] text-ink/70 transition hover:bg-[#C9B27C] hover:text-white"
                     onClick={() => go(-1)}
                     type="button"
                   >
@@ -309,7 +327,9 @@ export function WorkPage() {
                       <button
                         aria-label={`Page ${i + 1}`}
                         className={`h-2 rounded-full transition-all ${
-                          i === feedbackPage ? "w-6 bg-blue" : "w-2 bg-blue/25 hover:bg-blue/40"
+                          i === feedbackPage
+                            ? "w-6 bg-[#C9B27C]"
+                            : "w-2 bg-black/20 hover:bg-black/35"
                         }`}
                         key={entry.quote}
                         onClick={() => setFeedbackPage(i)}
@@ -319,7 +339,7 @@ export function WorkPage() {
                   </div>
                   <button
                     aria-label="Next"
-                    className="grid h-11 w-11 place-items-center rounded-full border border-blue/20 text-blue transition hover:bg-blue hover:text-cream"
+                    className="grid h-11 w-11 place-items-center rounded-full border border-[#C9B27C] text-ink/70 transition hover:bg-[#C9B27C] hover:text-white"
                     onClick={() => go(1)}
                     type="button"
                   >
