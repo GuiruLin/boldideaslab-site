@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Btn } from "@/components/redesign/Btn";
 import { Reveal } from "@/components/redesign/motion";
-import { Decagon, Dot } from "@/components/redesign/shapes";
+import { Arch, Decagon, Dot } from "@/components/redesign/shapes";
 
 function withAccent(title: string, accent?: string): ReactNode {
   if (!accent) return title;
@@ -55,14 +55,13 @@ export function EduosPage() {
       {/* ── 开场陈述：金色面板 ─────────────────────────────────────────────── */}
       <section className="bg-cream px-5 pb-24 pt-8 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-6xl">
-          <div className="relative overflow-hidden rounded-[28px] bg-gold px-7 py-14 sm:px-14 sm:py-[4.5rem]">
-            <span
-              aria-hidden
-              className="absolute right-12 top-12 hidden h-10 w-20 bg-white sm:block"
-              style={{ borderRadius: "999px 999px 0 0" }}
-            />
+          <div
+            className="relative overflow-hidden bg-blue px-7 py-14 sm:px-14 sm:py-[4.5rem]"
+            style={{ borderRadius: "6px 28px 28px 28px" }}
+          >
+            <Arch className="absolute right-12 top-12 hidden h-10 w-20 sm:block" />
             <Dot className="absolute bottom-12 right-14 hidden h-3 w-3 sm:block" />
-            <p className="relative mb-6 t-eyebrow text-white/75">{eduos.hero.badge}</p>
+            <p className="relative mb-6 t-eyebrow text-cream/70">{eduos.hero.badge}</p>
             <p className="relative max-w-[48ch] t-lead text-white">{eduos.hero.lead}</p>
           </div>
         </Reveal>
@@ -129,15 +128,15 @@ export function EduosPage() {
             ))}
           </div>
 
-          {/* 中心：项目证据（蓝面板，非黑） */}
-          <div className="relative mt-4 overflow-hidden rounded-[28px] bg-blue px-7 py-12 text-white sm:px-14">
-            <Decagon
-              className="pointer-events-none absolute -right-8 -top-10 h-40 w-40 opacity-[0.12]"
-              stroke="#F5F2EA"
-            />
-            <p className="relative t-h3">{eduos.flow.centerTitle}</p>
-            <p className="relative mt-3 max-w-xl leading-7 text-white/75">{eduos.flow.centerText}</p>
-            <ol className="relative mt-8 flex flex-wrap gap-x-3 gap-y-2 text-sm text-white/80">
+          {/* 中心：项目证据（描边款，避免一页两块大蓝） */}
+          <div
+            className="relative mt-4 overflow-hidden border-2 border-blue/25 bg-cream/50 px-7 py-12 sm:px-14"
+            style={{ borderRadius: "28px 28px 28px 6px" }}
+          >
+            <Decagon className="pointer-events-none absolute -right-8 -top-10 h-40 w-40 opacity-[0.1]" />
+            <p className="relative t-h3 text-blue">{eduos.flow.centerTitle}</p>
+            <p className="relative mt-3 max-w-xl leading-7 text-ink/70">{eduos.flow.centerText}</p>
+            <ol className="relative mt-8 flex flex-wrap gap-x-3 gap-y-2 text-sm text-ink/70">
               {eduos.flow.steps.map((step, index) => (
                 <li className="flex items-center gap-3" key={step}>
                   {index > 0 && <span aria-hidden className="text-gold">→</span>}
