@@ -16,6 +16,8 @@ const recognitionImagePaths = [
 ] as const;
 
 const workshopPhotoPaths = [
+  "/media/work/photos/workshop/workshop-mentor-support.webp",
+  "/media/work/photos/workshop/workshop-showcase.webp",
   "/media/work/photos/workshop/workshop-ai-tool-coaching.webp",
   "/media/work/photos/workshop/workshop-students-thinking.webp",
   "/media/work/photos/workshop/workshop-google-ai-studio.webp"
