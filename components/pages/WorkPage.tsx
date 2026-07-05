@@ -53,6 +53,7 @@ export function WorkPage() {
   const { dictionary } = useLanguage();
   const work = dictionary.work;
   const [photoIndexes, setPhotoIndexes] = useState<[number, number]>([0, 0]);
+  const [feedbackPage, setFeedbackPage] = useState(0);
 
   const updatePhotoIndex = (groupIndex: number, direction: "prev" | "next") => {
     const itemsCount = work.photos.groups[groupIndex]?.items.length ?? 0;
@@ -248,35 +249,84 @@ export function WorkPage() {
         </Reveal>
       </section>
 
-      {/* ── 家长与学生反馈：统一对话框（译自微信原文） ─────────────────────── */}
+      {/* ── 家长与学生反馈：翻页书（克莱因蓝封面 + 米白书页） ─────────────────── */}
       <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto max-w-2xl">
+        <Reveal className="mx-auto max-w-3xl">
           <p className="mb-5 t-eyebrow text-gold">{work.feedback.eyebrow}</p>
           <h2 className="t-h2 text-blue">{work.feedback.title}</h2>
           <p className="mt-3 leading-8 text-ink/60">{work.feedback.subtitle}</p>
-          <div className="mt-10 space-y-5">
-            {work.feedback.items.map((item) => (
-              <div className="flex gap-3" key={item.quote}>
-                <span
-                  aria-hidden
-                  className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue/10 font-display text-sm font-semibold text-blue"
-                >
-                  {item.author.charAt(0)}
-                </span>
-                <div className="min-w-0 flex-1">
-                  <div
-                    className="border border-ink/10 bg-white p-5 leading-7 text-ink/80 shadow-[0_6px_20px_rgba(26,26,26,0.04)]"
-                    style={{ borderRadius: "4px 18px 18px 18px" }}
-                  >
-                    {item.quote}
+
+          {(() => {
+            const total = work.feedback.items.length;
+            const item = work.feedback.items[feedbackPage];
+            const go = (delta: number) =>
+              setFeedbackPage((p) => (p + delta + total) % total);
+            return (
+              <div className="relative mt-10">
+                {/* 书页堆叠错层 */}
+                <div className="absolute inset-x-4 -bottom-2 h-full rounded-[22px] bg-blue/15" />
+                <div className="absolute inset-x-2 -bottom-1 h-full rounded-[22px] bg-blue/25" />
+                {/* 书本封面 */}
+                <div className="relative rounded-[22px] bg-blue p-2.5 shadow-[0_30px_70px_rgba(0,47,167,0.22)]">
+                  {/* 书页 */}
+                  <div className="relative min-h-[300px] overflow-hidden rounded-[16px] bg-cream px-7 py-12 sm:px-16 sm:py-16">
+                    <span
+                      aria-hidden
+                      className="absolute left-0 top-0 h-full w-8 bg-gradient-to-r from-ink/[0.09] to-transparent"
+                    />
+                    <span aria-hidden className="font-display text-6xl leading-none text-gold/40">
+                      &ldquo;
+                    </span>
+                    <blockquote className="-mt-4 font-serif text-xl italic leading-relaxed text-blue/90 sm:text-[1.6rem]">
+                      {item.quote}
+                    </blockquote>
+                    <p className="mt-6 text-sm font-medium text-ink/60">
+                      {item.author}
+                      <span className="font-normal text-ink/40"> · {item.context}</span>
+                    </p>
+                    <p
+                      aria-hidden
+                      className="absolute bottom-5 right-7 font-display text-sm text-ink/30"
+                    >
+                      {feedbackPage + 1} / {total}
+                    </p>
                   </div>
-                  <p className="ml-1 mt-1.5 text-xs text-ink/45">
-                    {item.author} · {item.context}
-                  </p>
+                </div>
+                {/* 翻页 */}
+                <div className="mt-6 flex items-center justify-center gap-5">
+                  <button
+                    aria-label="Previous"
+                    className="grid h-11 w-11 place-items-center rounded-full border border-blue/20 text-blue transition hover:bg-blue hover:text-cream"
+                    onClick={() => go(-1)}
+                    type="button"
+                  >
+                    <ChevronLeft aria-hidden size={18} />
+                  </button>
+                  <div className="flex items-center gap-2">
+                    {work.feedback.items.map((entry, i) => (
+                      <button
+                        aria-label={`Page ${i + 1}`}
+                        className={`h-2 rounded-full transition-all ${
+                          i === feedbackPage ? "w-6 bg-blue" : "w-2 bg-blue/25 hover:bg-blue/40"
+                        }`}
+                        key={entry.quote}
+                        onClick={() => setFeedbackPage(i)}
+                        type="button"
+                      />
+                    ))}
+                  </div>
+                  <button
+                    aria-label="Next"
+                    className="grid h-11 w-11 place-items-center rounded-full border border-blue/20 text-blue transition hover:bg-blue hover:text-cream"
+                    onClick={() => go(1)}
+                    type="button"
+                  >
+                    <ChevronRight aria-hidden size={18} />
+                  </button>
                 </div>
               </div>
-            ))}
-          </div>
+            );
+          })()}
         </Reveal>
       </section>
 
