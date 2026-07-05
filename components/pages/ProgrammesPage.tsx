@@ -5,7 +5,7 @@ import type { ReactNode } from "react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Btn } from "@/components/redesign/Btn";
 import { Reveal } from "@/components/redesign/motion";
-import { Decagon } from "@/components/redesign/shapes";
+import { Decagon, Dot } from "@/components/redesign/shapes";
 
 // 标题里的强调词染成马蒂斯红（与主页 hero 同一手法）
 function withAccent(title: string, accent?: string): ReactNode {
@@ -30,14 +30,13 @@ export function ProgrammesPage() {
 
   return (
     <>
-      {/* ── Hero：主页那种干净大字开头，米白底，无装饰面板 ──────────────────── */}
-      <section className="bg-cream px-5 pb-16 pt-20 sm:px-6 lg:px-8 lg:pb-24 lg:pt-28">
+      {/* ── Hero：干净大字开头，米白底 ─────────────────────────────────────── */}
+      <section className="bg-cream px-5 pb-8 pt-20 sm:px-6 lg:px-8 lg:pt-28">
         <Reveal className="mx-auto max-w-6xl">
           <p className="mb-5 t-eyebrow text-gold">{programmes.hero.eyebrow}</p>
           <h1 className="max-w-4xl t-display text-blue text-balance">
             {withAccent(programmes.hero.title, programmes.hero.accent)}
           </h1>
-          <p className="mt-7 max-w-2xl t-lead text-ink/70">{programmes.hero.lead}</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Btn href="/contact">{programmes.cta.button}</Btn>
             <Btn href="/work" variant="secondary">
@@ -49,6 +48,23 @@ export function ProgrammesPage() {
               {programmes.hero.note}
             </p>
           )}
+        </Reveal>
+      </section>
+
+      {/* ── 开场陈述：金色面板（与主页 stance 同一设计语言） ────────────────── */}
+      <section className="bg-cream px-5 pb-24 pt-8 sm:px-6 lg:px-8">
+        <Reveal className="mx-auto max-w-6xl">
+          <div className="relative overflow-hidden rounded-[28px] bg-gold px-7 py-14 sm:px-14 sm:py-[4.5rem]">
+            <span
+              aria-hidden
+              className="absolute right-12 top-12 hidden h-10 w-20 bg-white sm:block"
+              style={{ borderRadius: "999px 999px 0 0" }}
+            />
+            <Dot className="absolute bottom-12 right-14 hidden h-3 w-3 sm:block" />
+            <p className="relative max-w-[46ch] t-lead text-white">
+              {programmes.hero.lead}
+            </p>
+          </div>
         </Reveal>
       </section>
 
