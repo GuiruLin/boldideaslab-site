@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Btn } from "@/components/redesign/Btn";
 import { Reveal } from "@/components/redesign/motion";
-import { Decagon } from "@/components/redesign/shapes";
+import { Arch, Block, Decagon, Dot, Pill, Quad } from "@/components/redesign/shapes";
 
 const recognitionImagePaths = [
   "/media/work/recognition/spring-gala/yulun-selected-work.webp",
@@ -86,34 +86,52 @@ export function WorkPage() {
 
   return (
     <>
-      {/* ── Hero：干净大字 + 金色数字，作品当主角 ─────────────────────────── */}
-      <section className="relative overflow-hidden bg-cream px-5 pb-16 pt-20 sm:px-6 lg:px-8 lg:pt-28">
-        <Decagon className="pointer-events-none absolute -right-16 top-10 hidden h-64 w-64 opacity-[0.06] lg:block" />
-        <Reveal className="relative mx-auto max-w-6xl">
-          <p className="mb-5 t-eyebrow text-gold">{work.hero.eyebrow}</p>
-          <h1 className="max-w-4xl t-display text-blue text-balance">
-            {withAccent(work.hero.title, work.hero.accent)}
-          </h1>
-          <p className="mt-6 max-w-2xl leading-8 text-ink/70">{work.hero.lead}</p>
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Btn href="#projects">{work.projects.linkLabel}</Btn>
-            <Btn href="/programmes" variant="secondary">
-              {dictionary.actions.programmes}
-            </Btn>
+      {/* ── Hero：大字 + 俏皮几何造型艺术（呼应首页活泼感） ─────────────────── */}
+      <section className="relative overflow-hidden bg-cream px-5 pb-16 pt-20 sm:px-6 lg:px-8 lg:pt-24">
+        <Reveal className="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+          <div>
+            <p className="mb-5 t-eyebrow text-gold">{work.hero.eyebrow}</p>
+            <h1 className="max-w-3xl t-display text-blue text-balance">
+              {withAccent(work.hero.title, work.hero.accent)}
+            </h1>
+            <p className="mt-6 max-w-xl leading-8 text-ink/70">{work.hero.lead}</p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <Btn href="#projects">{work.projects.linkLabel}</Btn>
+              <Btn href="/programmes" variant="secondary">
+                {dictionary.actions.programmes}
+              </Btn>
+            </div>
+            <div className="mt-14 flex flex-wrap items-baseline gap-x-12 gap-y-8">
+              {work.hero.stats.map((stat, index) => (
+                <p className="flex items-baseline gap-3" key={stat.label}>
+                  <span
+                    className={`font-display text-5xl font-semibold leading-none ${
+                      index === 1 ? "text-red" : "text-gold"
+                    }`}
+                  >
+                    {renderStatNumber(stat.number)}
+                  </span>
+                  <span className="max-w-[18ch] text-sm leading-6 text-ink/60">{stat.label}</span>
+                </p>
+              ))}
+            </div>
           </div>
-          <div className="mt-14 flex flex-wrap items-baseline gap-x-12 gap-y-8">
-            {work.hero.stats.map((stat, index) => (
-              <p className="flex items-baseline gap-3" key={stat.label}>
-                <span
-                  className={`font-display text-5xl font-semibold leading-none ${
-                    index === 1 ? "text-red" : "text-gold"
-                  }`}
-                >
-                  {renderStatNumber(stat.number)}
-                </span>
-                <span className="max-w-[18ch] text-sm leading-6 text-ink/60">{stat.label}</span>
-              </p>
-            ))}
+
+          {/* 俏皮几何造型：品牌形状拼出一个有点物像的小构成 */}
+          <div aria-hidden className="relative hidden min-h-[440px] lg:block">
+            {/* 拱冠 */}
+            <Arch className="absolute left-1/2 top-4 h-16 w-40 -translate-x-1/2 -rotate-[5deg]" />
+            {/* 十边形“头” */}
+            <Decagon className="absolute left-1/2 top-[16%] h-44 w-44 -translate-x-1/2" />
+            {/* 红点“眼” */}
+            <Dot className="absolute left-[47%] top-[36%] h-4 w-4" />
+            {/* 蓝胶囊“笑” */}
+            <Pill className="absolute left-1/2 top-[52%] h-4 w-24 -translate-x-1/2 rotate-[3deg]" />
+            {/* 四周俏皮散件 */}
+            <Quad className="absolute left-[6%] top-[26%] h-20 w-20 rotate-[8deg]" />
+            <Block className="absolute right-[8%] top-[58%] h-14 w-14 -rotate-[12deg]" />
+            <Arch className="absolute right-[14%] top-[22%] h-9 w-16 rotate-[12deg]" />
+            <Pill className="absolute left-[14%] bottom-[16%] h-6 w-20 -rotate-[10deg]" />
           </div>
         </Reveal>
       </section>
@@ -124,39 +142,49 @@ export function WorkPage() {
           <p className="mb-5 t-eyebrow text-gold">{work.projects.eyebrow}</p>
           <h2 className="t-h2 text-blue">{work.projects.title}</h2>
           <p className="mt-3 max-w-2xl leading-8 text-ink/60">{work.projects.subtitle}</p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
-            {work.projects.items.map((project) => (
-              <a
-                className="group flex flex-col overflow-hidden rounded-[18px] border border-ink/10 bg-cream/60 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)]"
-                href={project.url}
-                key={project.name}
-                rel="noopener"
-                target="_blank"
-              >
-                {project.image && (
-                  <div className="relative aspect-[16/10] overflow-hidden border-b border-ink/10">
-                    <Image
-                      alt={project.name}
-                      className="object-cover transition duration-300 group-hover:scale-[1.03]"
-                      fill
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                      src={project.image}
-                    />
-                  </div>
-                )}
-                <div className="flex flex-1 flex-col p-7 sm:p-8">
-                  <p className="t-eyebrow text-gold">{project.tag}</p>
-                  <h3 className="mt-2 t-h3 text-blue">{project.name}</h3>
-                  <p className="mt-1 text-sm text-ink/55">{project.student}</p>
-                  <p className="mt-4 flex-1 font-serif italic leading-7 text-ink/70">
-                    “{project.quote}”
-                  </p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-sm text-blue underline decoration-blue/30 underline-offset-4 transition group-hover:decoration-blue">
-                    {work.projects.linkLabel}
-                    <ExternalLink aria-hidden size={14} />
-                  </span>
+          <div className="mt-12 space-y-14">
+            {work.projects.groups.map((group) => (
+              <div key={group.label}>
+                <div className="mb-6 flex items-center gap-4">
+                  <h3 className="t-eyebrow text-blue">{group.label}</h3>
+                  <span aria-hidden className="h-px flex-1 bg-ink/12" />
                 </div>
-              </a>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  {group.items.map((project) => (
+                    <a
+                      className="group flex flex-col overflow-hidden rounded-[18px] border border-ink/10 bg-cream/60 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)]"
+                      href={project.url}
+                      key={project.name}
+                      rel="noopener"
+                      target="_blank"
+                    >
+                      {project.image && (
+                        <div className="relative aspect-[16/10] overflow-hidden border-b border-ink/10">
+                          <Image
+                            alt={project.name}
+                            className="object-cover transition duration-300 group-hover:scale-[1.03]"
+                            fill
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                            src={project.image}
+                          />
+                        </div>
+                      )}
+                      <div className="flex flex-1 flex-col p-7 sm:p-8">
+                        <p className="t-eyebrow text-gold">{project.tag}</p>
+                        <h3 className="mt-2 t-h3 text-blue">{project.name}</h3>
+                        <p className="mt-1 text-sm text-ink/55">{project.student}</p>
+                        <p className="mt-4 flex-1 font-serif italic leading-7 text-ink/70">
+                          “{project.quote}”
+                        </p>
+                        <span className="mt-5 inline-flex items-center gap-2 text-sm text-blue underline decoration-blue/30 underline-offset-4 transition group-hover:decoration-blue">
+                          {work.projects.linkLabel}
+                          <ExternalLink aria-hidden size={14} />
+                        </span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
 

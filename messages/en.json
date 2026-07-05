@@ -560,38 +560,53 @@
       "subtitle": "Real projects built by young people",
       "screenshotLabel": "Project preview",
       "linkLabel": "Open the project",
-      "items": [
+      "groups": [
         {
-          "name": "Guess Who",
-          "student": "Frederick · Plymouth",
-          "tag": "First week game",
-          "quote": "A first-week Guess Who game for learning everyone's names.",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
-          "image": "/media/work/projects/guess-who.png"
+          "label": "Plymouth College · School partnership",
+          "items": [
+            {
+              "name": "Bullying Reporter",
+              "student": "Lexi · Plymouth",
+              "tag": "School wellbeing",
+              "quote": "An app to help Year 7 pupils report problems and bullying to their teacher in a safe, non scary way.",
+              "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
+              "image": "/media/work/projects/bullying-reporter.png"
+            },
+            {
+              "name": "Guess Who",
+              "student": "Frederick · Plymouth",
+              "tag": "First week game",
+              "quote": "A first-week Guess Who game for learning everyone's names.",
+              "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
+              "image": "/media/work/projects/guess-who.png"
+            }
+          ]
         },
         {
-          "name": "Pumpkin Dread",
-          "student": "April · London",
-          "tag": "Survival game",
-          "quote": "A survival farm game: plant, harvest, build a boat, and escape.",
-          "url": "https://workshop-gallery-peach.vercel.app/projects/19df993c-8984-4ebc-94ae-80a98a4dd3a3",
-          "image": "/media/work/projects/pumpkin-dread/cover.webp"
+          "label": "Manchester · Workshop",
+          "items": [
+            {
+              "name": "CogniQuest",
+              "student": "Owen · Manchester",
+              "tag": "Brain lab",
+              "quote": "A cognitive agility lab: optical illusions, logic puzzles, and memory challenges.",
+              "url": "https://workshop-gallery-peach.vercel.app/projects/37400f1a-6969-400f-958a-cd48baf7712a",
+              "image": ""
+            }
+          ]
         },
         {
-          "name": "Bullying Reporter",
-          "student": "Lexi · Plymouth",
-          "tag": "School wellbeing",
-          "quote": "An app to help Year 7 pupils report problems and bullying to their teacher in a safe, non scary way.",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
-          "image": "/media/work/projects/bullying-reporter.png"
-        },
-        {
-          "name": "Magic Story Box",
-          "student": "Rachel · London",
-          "tag": "Creative writing",
-          "quote": "An eight year old's story idea generator, for children who want to write books.",
-          "url": "https://workshop-gallery-peach.vercel.app/projects/472f22c8-dd0f-4d1f-b1d8-36e08c7e0e4b",
-          "image": "/media/work/projects/magic-story-box/cover.webp"
+          "label": "London · Workshop",
+          "items": [
+            {
+              "name": "Pumpkin Dread",
+              "student": "April · London",
+              "tag": "Survival game",
+              "quote": "A survival farm game: plant, harvest, build a boat, and escape.",
+              "url": "https://workshop-gallery-peach.vercel.app/projects/19df993c-8984-4ebc-94ae-80a98a4dd3a3",
+              "image": "/media/work/projects/pumpkin-dread/cover.webp"
+            }
+          ]
         }
       ]
     },
