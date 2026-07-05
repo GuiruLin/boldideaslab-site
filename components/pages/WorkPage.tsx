@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Btn } from "@/components/redesign/Btn";
 import { Reveal } from "@/components/redesign/motion";
-import { Arch, Block, Decagon, Dot, Pill, Quad } from "@/components/redesign/shapes";
+import { Arch, Decagon } from "@/components/redesign/shapes";
 
 const recognitionImagePaths = [
   "/media/work/recognition/spring-gala/yulun-selected-work.webp",
@@ -86,15 +86,22 @@ export function WorkPage() {
 
   return (
     <>
-      {/* ── Hero：画框（内容在框内，俏皮几何点缀，呼应首页） ─────────────────── */}
-      <section className="bg-cream px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
+      {/* ── Hero：火车造型（车厢装内容，车顶黄拱，下方红黄双轮） ───────────────── */}
+      <section className="bg-cream px-5 pb-24 pt-20 sm:px-6 lg:px-8 lg:pt-24">
         <Reveal className="relative mx-auto max-w-5xl">
-          {/* 画框 */}
-          <div className="relative rounded-[34px] border-[3px] border-blue bg-white px-7 py-12 shadow-[0_30px_70px_rgba(26,26,26,0.07)] sm:px-16 sm:py-16">
-            {/* 卡纸内衬线 */}
+          {/* 车顶：黄色拱（驾驶室）+ 烟囱 */}
+          <span
+            aria-hidden
+            className="absolute left-[12%] -top-9 z-10 h-10 w-10 rounded-t-[4px] bg-gold sm:h-12 sm:w-12"
+          />
+          <Arch aria-hidden className="absolute left-1/2 -top-8 z-10 h-16 w-52 -translate-x-1/2 sm:h-20 sm:w-72" />
+
+          {/* 车厢：主体框，内容在里面 */}
+          <div className="relative rounded-[30px] border-[3px] border-blue bg-white px-7 py-12 shadow-[0_30px_70px_rgba(26,26,26,0.07)] sm:px-16 sm:py-16">
+            {/* 车窗内衬线 */}
             <span
               aria-hidden
-              className="pointer-events-none absolute inset-[10px] rounded-[26px] border border-blue/15"
+              className="pointer-events-none absolute inset-[10px] rounded-[22px] border border-blue/15"
             />
             <div className="relative">
               <p className="mb-5 t-eyebrow text-gold">{work.hero.eyebrow}</p>
@@ -127,12 +134,20 @@ export function WorkPage() {
             </div>
           </div>
 
-          {/* 画框上的俏皮几何点缀（呼应首页积木语言）*/}
-          <Arch aria-hidden className="absolute left-1/2 -top-7 z-10 h-14 w-40 -translate-x-1/2" />
-          <Dot aria-hidden className="absolute right-8 top-8 z-10 h-4 w-4" />
-          <Block aria-hidden className="absolute left-[10%] -top-3 z-10 h-8 w-8 rotate-[12deg]" />
-          <Pill aria-hidden className="absolute right-[16%] -bottom-3 z-10 h-6 w-24 -rotate-[6deg]" />
-          <Quad aria-hidden className="absolute left-[8%] -bottom-4 z-10 h-12 w-12 rotate-[8deg]" />
+          {/* 车轮：红 + 黄，坐在车厢下沿 */}
+          <span
+            aria-hidden
+            className="absolute -bottom-7 left-[24%] z-10 h-14 w-14 rounded-full border-4 border-white bg-red shadow-[0_6px_16px_rgba(26,26,26,0.15)] sm:h-16 sm:w-16"
+          />
+          <span
+            aria-hidden
+            className="absolute -bottom-7 right-[24%] z-10 h-14 w-14 rounded-full border-4 border-white bg-gold shadow-[0_6px_16px_rgba(26,26,26,0.15)] sm:h-16 sm:w-16"
+          />
+          {/* 轨道 */}
+          <span
+            aria-hidden
+            className="absolute -bottom-[3px] left-[6%] right-[6%] z-0 h-[3px] rounded-full bg-ink/15"
+          />
         </Reveal>
       </section>
 
