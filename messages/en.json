@@ -583,7 +583,7 @@
           ]
         },
         {
-          "label": "Manchester · Workshop",
+          "label": "In-person workshops · Manchester and London",
           "items": [
             {
               "name": "CogniQuest",
@@ -592,12 +592,7 @@
               "quote": "A cognitive agility lab: optical illusions, logic puzzles, and memory challenges.",
               "url": "https://workshop-gallery-peach.vercel.app/projects/37400f1a-6969-400f-958a-cd48baf7712a",
               "image": "/media/work/projects/cogniquest.webp"
-            }
-          ]
-        },
-        {
-          "label": "London · Workshop",
-          "items": [
+            },
             {
               "name": "Pumpkin Dread",
               "student": "April · London",

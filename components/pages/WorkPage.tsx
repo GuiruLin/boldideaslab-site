@@ -86,53 +86,53 @@ export function WorkPage() {
 
   return (
     <>
-      {/* ── Hero：大字 + 俏皮几何造型艺术（呼应首页活泼感） ─────────────────── */}
-      <section className="relative overflow-hidden bg-cream px-5 pb-16 pt-20 sm:px-6 lg:px-8 lg:pt-24">
-        <Reveal className="relative mx-auto grid max-w-6xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-          <div>
-            <p className="mb-5 t-eyebrow text-gold">{work.hero.eyebrow}</p>
-            <h1 className="max-w-3xl t-display text-blue text-balance">
-              {withAccent(work.hero.title, work.hero.accent)}
-            </h1>
-            <p className="mt-6 max-w-xl leading-8 text-ink/70">{work.hero.lead}</p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Btn href="#projects">{work.projects.linkLabel}</Btn>
-              <Btn href="/programmes" variant="secondary">
-                {dictionary.actions.programmes}
-              </Btn>
-            </div>
-            <div className="mt-14 flex flex-wrap items-baseline gap-x-12 gap-y-8">
-              {work.hero.stats.map((stat, index) => (
-                <p className="flex items-baseline gap-3" key={stat.label}>
-                  <span
-                    className={`font-display text-5xl font-semibold leading-none ${
-                      index === 1 ? "text-red" : "text-gold"
-                    }`}
-                  >
-                    {renderStatNumber(stat.number)}
-                  </span>
-                  <span className="max-w-[18ch] text-sm leading-6 text-ink/60">{stat.label}</span>
-                </p>
-              ))}
+      {/* ── Hero：画框（内容在框内，俏皮几何点缀，呼应首页） ─────────────────── */}
+      <section className="bg-cream px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <Reveal className="relative mx-auto max-w-5xl">
+          {/* 画框 */}
+          <div className="relative rounded-[34px] border-[3px] border-blue bg-white px-7 py-12 shadow-[0_30px_70px_rgba(26,26,26,0.07)] sm:px-16 sm:py-16">
+            {/* 卡纸内衬线 */}
+            <span
+              aria-hidden
+              className="pointer-events-none absolute inset-[10px] rounded-[26px] border border-blue/15"
+            />
+            <div className="relative">
+              <p className="mb-5 t-eyebrow text-gold">{work.hero.eyebrow}</p>
+              <h1 className="max-w-3xl t-display text-blue text-balance">
+                {withAccent(work.hero.title, work.hero.accent)}
+              </h1>
+              <p className="mt-6 max-w-2xl leading-8 text-ink/70">{work.hero.lead}</p>
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+                <Btn href="#projects">{work.projects.linkLabel}</Btn>
+                <Btn href="/programmes" variant="secondary">
+                  {dictionary.actions.programmes}
+                </Btn>
+              </div>
+              <div className="mt-12 flex flex-wrap items-baseline gap-x-12 gap-y-8">
+                {work.hero.stats.map((stat, index) => (
+                  <p className="flex items-baseline gap-3" key={stat.label}>
+                    <span
+                      className={`font-display text-5xl font-semibold leading-none ${
+                        index === 1 ? "text-red" : "text-gold"
+                      }`}
+                    >
+                      {renderStatNumber(stat.number)}
+                    </span>
+                    <span className="max-w-[18ch] text-sm leading-6 text-ink/60">
+                      {stat.label}
+                    </span>
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
 
-          {/* 俏皮几何造型：品牌形状拼出一个有点物像的小构成 */}
-          <div aria-hidden className="relative hidden min-h-[440px] lg:block">
-            {/* 拱冠 */}
-            <Arch className="absolute left-1/2 top-4 h-16 w-40 -translate-x-1/2 -rotate-[5deg]" />
-            {/* 十边形“头” */}
-            <Decagon className="absolute left-1/2 top-[16%] h-44 w-44 -translate-x-1/2" />
-            {/* 红点“眼” */}
-            <Dot className="absolute left-[47%] top-[36%] h-4 w-4" />
-            {/* 蓝胶囊“笑” */}
-            <Pill className="absolute left-1/2 top-[52%] h-4 w-24 -translate-x-1/2 rotate-[3deg]" />
-            {/* 四周俏皮散件 */}
-            <Quad className="absolute left-[6%] top-[26%] h-20 w-20 rotate-[8deg]" />
-            <Block className="absolute right-[8%] top-[58%] h-14 w-14 -rotate-[12deg]" />
-            <Arch className="absolute right-[14%] top-[22%] h-9 w-16 rotate-[12deg]" />
-            <Pill className="absolute left-[14%] bottom-[16%] h-6 w-20 -rotate-[10deg]" />
-          </div>
+          {/* 画框上的俏皮几何点缀（呼应首页积木语言）*/}
+          <Arch aria-hidden className="absolute left-1/2 -top-7 z-10 h-14 w-40 -translate-x-1/2" />
+          <Dot aria-hidden className="absolute right-8 top-8 z-10 h-4 w-4" />
+          <Block aria-hidden className="absolute left-[10%] -top-3 z-10 h-8 w-8 rotate-[12deg]" />
+          <Pill aria-hidden className="absolute right-[16%] -bottom-3 z-10 h-6 w-24 -rotate-[6deg]" />
+          <Quad aria-hidden className="absolute left-[8%] -bottom-4 z-10 h-12 w-12 rotate-[8deg]" />
         </Reveal>
       </section>
 
