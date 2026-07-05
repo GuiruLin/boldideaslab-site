@@ -538,7 +538,7 @@
       "lead": "每一个从「想」出发，并从「敢」做出来的作品。",
       "stats": [
         {
-          "number": "65+",
+          "number": "50+",
           "label": "学生 AI 项目",
           "text": "线上课程与线下工作坊累计真实项目"
         },
@@ -559,39 +559,42 @@
       "title": "他们用 AI 做出了这些",
       "subtitle": "年轻人真正做出来的项目",
       "screenshotLabel": "作品预览",
-      "linkLabel": "查看作品",
+      "linkLabel": "打开作品",
       "items": [
         {
-          "visualTitle": "Color Theory",
-          "tag": "互动教育",
-          "title": "Color Theory · 色彩理论游戏",
-          "description": "用互动游戏帮助青少年学习色彩理论，让抽象的艺术知识变得好玩、好学、真正能用。",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/projects/af59f5f8-363a-40f1-bc4b-f72fb6718ffd"
+          "name": "GeoGuide",
+          "student": "Patrick · 曼彻斯特",
+          "tag": "AI 工具",
+          "quote": "To help people with geographical problems.",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/5aedcc34-433b-4141-a270-826d224ebd44"
         },
         {
-          "visualTitle": "PUMPKIN DREAD",
-          "tag": "游戏开发",
-          "title": "Pumpkin Dread · 南瓜农场生存游戏",
-          "description": "用 AI 做出一个生存农场游戏，种植、收割、建造船只逃离，把一个想法变成一个真正可以玩的游戏。",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+          "name": "BLOXCRAFT",
+          "student": "Harry · 曼彻斯特",
+          "tag": "游戏制作",
+          "quote": "I liked playing Roblox, so I built an app to make Roblox games.",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/ecf667b1-deac-4a59-acc8-fe31f8dcd783"
         },
         {
-          "visualTitle": "Magic Story Box",
+          "name": "Bullying Reporter",
+          "student": "Lexi · 普利茅斯",
+          "tag": "校园关怀",
+          "quote": "An app to help Year 7 pupils report problems and bullying to their teacher in a safe, non scary way.",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
+        },
+        {
+          "name": "Magic Story Box",
+          "student": "Rachel · 伦敦",
           "tag": "创意写作",
-          "title": "Magic Story Box · 故事灵感生成器",
-          "description": "8 岁创作者做的 AI 故事灵感生成器，帮助想写书却没有想法的孩子找到下一个大冒险。",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+          "quote": "An eight year old's story idea generator, for children who want to write books.",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/472f22c8-dd0f-4d1f-b1d8-36e08c7e0e4b"
         },
         {
-          "visualTitle": "Everyday Magic",
-          "tag": "互动教程",
-          "title": "Everyday Magic · 日常魔术教程",
-          "description": "用日常物品学习魔术技巧的 AI 互动教程，硬币、扑克、橡皮筋都能变魔术。",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+          "name": "Study Compass",
+          "student": "Gloria · Coolest Projects",
+          "tag": "国际展示",
+          "quote": "在 Coolest Projects（全球青少年数字创作展示）公开展出的学习助手。",
+          "url": "https://online.coolestprojects.org/projects/24694"
         }
       ]
     },

@@ -538,7 +538,7 @@
       "lead": "Every project starts from an idea and becomes something students dared to make.",
       "stats": [
         {
-          "number": "65+",
+          "number": "50+",
           "label": "Student AI projects completed",
           "text": "Combined total from online courses and offline workshops"
         },
@@ -559,39 +559,42 @@
       "title": "What they built with AI",
       "subtitle": "Real projects built by young people",
       "screenshotLabel": "Project preview",
-      "linkLabel": "View project",
+      "linkLabel": "Open the project",
       "items": [
         {
-          "visualTitle": "Color Theory",
-          "tag": "Interactive learning",
-          "title": "Color Theory",
-          "description": "An interactive game that helps young people learn color theory, making abstract art knowledge playful, learnable, and usable.",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/projects/af59f5f8-363a-40f1-bc4b-f72fb6718ffd"
+          "name": "GeoGuide",
+          "student": "Patrick · Manchester",
+          "tag": "AI tool",
+          "quote": "To help people with geographical problems.",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/5aedcc34-433b-4141-a270-826d224ebd44"
         },
         {
-          "visualTitle": "PUMPKIN DREAD",
-          "tag": "Game development",
-          "title": "Pumpkin Dread",
-          "description": "A survival farm game made with AI: planting, harvesting, building a boat, and escaping. An idea became a game people can actually play.",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+          "name": "BLOXCRAFT",
+          "student": "Harry · Manchester",
+          "tag": "Game maker",
+          "quote": "I liked playing Roblox, so I built an app to make Roblox games.",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/ecf667b1-deac-4a59-acc8-fe31f8dcd783"
         },
         {
-          "visualTitle": "Magic Story Box",
+          "name": "Bullying Reporter",
+          "student": "Lexi · Plymouth",
+          "tag": "School wellbeing",
+          "quote": "An app to help Year 7 pupils report problems and bullying to their teacher in a safe, non scary way.",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
+        },
+        {
+          "name": "Magic Story Box",
+          "student": "Rachel · London",
           "tag": "Creative writing",
-          "title": "Magic Story Box",
-          "description": "An AI story-idea generator by an eight-year-old creator, helping children who want to write books find their next big adventure.",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+          "quote": "An eight year old's story idea generator, for children who want to write books.",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/472f22c8-dd0f-4d1f-b1d8-36e08c7e0e4b"
         },
         {
-          "visualTitle": "Everyday Magic",
-          "tag": "Interactive tutorial",
-          "title": "Everyday Magic",
-          "description": "An AI interactive tutorial for learning magic tricks with everyday objects: coins, playing cards, and rubber bands all become materials for wonder.",
-          "tool": "Google AI Studio",
-          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+          "name": "Study Compass",
+          "student": "Gloria · Coolest Projects",
+          "tag": "International showcase",
+          "quote": "A study companion, exhibited on Coolest Projects, the global showcase for young digital makers.",
+          "url": "https://online.coolestprojects.org/projects/24694"
         }
       ]
     },
