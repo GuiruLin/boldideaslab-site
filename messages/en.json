@@ -761,7 +761,7 @@
     "flow": {
       "eyebrow": "Relationship flow",
       "title": "The system begins with relationships.",
-      "caption": "This relationship-and-evidence map shows how project evidence keeps students, parents, and mentors aligned over time.",
+      "caption": "Project evidence is what keeps students, parents, and mentors aligned over time.",
       "centerTitle": "Project evidence",
       "centerText": "The work, choices, drafts, and reflection around one student project.",
       "nodes": [
@@ -788,6 +788,7 @@
     "future": {
       "eyebrow": "Future direction",
       "title": "From individual courses toward learning infrastructure.",
+      "presentLabel": "Real today",
       "body": "EduOS turns course experience into long-term learning infrastructure: stable systems for teaching process, reflection, and multi-party collaboration.",
       "items": [
         {
