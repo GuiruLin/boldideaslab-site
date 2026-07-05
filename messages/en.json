@@ -567,7 +567,7 @@
           "tag": "First week game",
           "quote": "A first-week Guess Who game for learning everyone's names.",
           "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
-          "image": ""
+          "image": "/media/work/projects/guess-who.png"
         },
         {
           "name": "Pumpkin Dread",
@@ -583,7 +583,7 @@
           "tag": "School wellbeing",
           "quote": "An app to help Year 7 pupils report problems and bullying to their teacher in a safe, non scary way.",
           "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
-          "image": ""
+          "image": "/media/work/projects/bullying-reporter.png"
         },
         {
           "name": "Magic Story Box",
