@@ -15,15 +15,6 @@ const recognitionImagePaths = [
   "/media/work/recognition/spring-gala/niuniu-selected-work.webp"
 ] as const;
 
-const feedbackImagePaths = [
-  "/media/work/feedback/online-course-parent-feedback-01.webp",
-  "/media/work/feedback/online-course-student-feedback-01.webp",
-  "/media/work/feedback/online-course-parent-feedback-02.webp",
-  "/media/work/feedback/online-course-student-feedback-02.webp",
-  "/media/work/feedback/workshop-feedback-01.webp",
-  "/media/work/feedback/beijing-ai-community-parent-feedback.webp"
-] as const;
-
 const workshopPhotoPaths = [
   "/media/work/photos/workshop/workshop-ai-tool-coaching.webp",
   "/media/work/photos/workshop/workshop-students-thinking.webp",
@@ -130,7 +121,7 @@ export function WorkPage() {
           <p className="mb-5 t-eyebrow text-gold">{work.projects.eyebrow}</p>
           <h2 className="t-h2 text-blue">{work.projects.title}</h2>
           <p className="mt-3 max-w-2xl leading-8 text-ink/60">{work.projects.subtitle}</p>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {work.projects.items.map((project) => (
               <a
                 className="group flex flex-col rounded-[18px] border border-ink/10 bg-cream/60 p-7 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)] sm:p-8"
@@ -152,6 +143,29 @@ export function WorkPage() {
               </a>
             ))}
           </div>
+
+          {/* Study Compass：独立国际展示块（Coolest Projects） */}
+          <a
+            className="group relative mt-4 block overflow-hidden border border-gold/40 bg-gold/[0.07] p-8 transition duration-200 hover:-translate-y-1 hover:border-gold/60 sm:flex sm:items-center sm:justify-between sm:gap-10 sm:p-10"
+            href={work.showcase.url}
+            rel="noopener"
+            style={{ borderRadius: "28px 28px 28px 6px" }}
+            target="_blank"
+          >
+            <Decagon className="pointer-events-none absolute -right-6 -top-8 h-32 w-32 opacity-[0.1]" />
+            <div className="relative">
+              <p className="t-eyebrow text-red">{work.showcase.badge}</p>
+              <h3 className="mt-2 t-h3 text-blue">
+                {work.showcase.name}
+                <span className="ml-2 text-base font-normal text-ink/45">· {work.showcase.student}</span>
+              </h3>
+              <p className="mt-3 max-w-xl leading-7 text-ink/70">{work.showcase.text}</p>
+            </div>
+            <span className="relative mt-5 inline-flex shrink-0 items-center gap-2 text-sm font-medium text-blue underline decoration-blue/30 underline-offset-4 transition group-hover:decoration-blue sm:mt-0">
+              {work.showcase.cta}
+              <ExternalLink aria-hidden size={14} />
+            </span>
+          </a>
         </Reveal>
       </section>
 
@@ -221,42 +235,33 @@ export function WorkPage() {
         </Reveal>
       </section>
 
-      {/* ── 家长与学生反馈 ───────────────────────────────────────────────── */}
+      {/* ── 家长与学生反馈：统一对话框（译自微信原文） ─────────────────────── */}
       <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto max-w-6xl">
+        <Reveal className="mx-auto max-w-2xl">
           <p className="mb-5 t-eyebrow text-gold">{work.feedback.eyebrow}</p>
           <h2 className="t-h2 text-blue">{work.feedback.title}</h2>
-          <p className="mt-3 max-w-2xl leading-8 text-ink/60">{work.feedback.subtitle}</p>
-          <div className="-mx-1 mt-10 flex snap-x snap-mandatory gap-4 overflow-x-auto px-1 pb-2">
-            {work.feedback.items.map((item, index) => (
-              <article
-                className="flex min-w-[82%] snap-start flex-col overflow-hidden rounded-[18px] border border-ink/10 bg-white shadow-[0_10px_30px_rgba(26,26,26,0.05)] sm:min-w-[45%] lg:min-w-[31%]"
-                key={item.quote}
-              >
-                <div className="relative aspect-[4/3] overflow-hidden bg-cream">
-                  <Image
-                    alt={`${item.author} · ${item.context}`}
-                    className="object-cover"
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"
-                    src={feedbackImagePaths[index]}
-                  />
-                  <span className="absolute left-3 top-3 rounded-full bg-white/95 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-blue shadow-sm">
-                    {item.tag}
-                  </span>
-                </div>
-                <div className="flex flex-1 flex-col p-6">
-                  <blockquote className="flex-1 border-l-2 border-gold/35 pl-4 text-[15px] leading-relaxed text-ink/80">
+          <p className="mt-3 leading-8 text-ink/60">{work.feedback.subtitle}</p>
+          <div className="mt-10 space-y-5">
+            {work.feedback.items.map((item) => (
+              <div className="flex gap-3" key={item.quote}>
+                <span
+                  aria-hidden
+                  className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-blue/10 font-display text-sm font-semibold text-blue"
+                >
+                  {item.author.charAt(0)}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <div
+                    className="border border-ink/10 bg-white p-5 leading-7 text-ink/80 shadow-[0_6px_20px_rgba(26,26,26,0.04)]"
+                    style={{ borderRadius: "4px 18px 18px 18px" }}
+                  >
                     {item.quote}
-                  </blockquote>
-                  <div className="mt-5 border-t border-ink/8 pt-4">
-                    <p className="text-sm font-medium text-ink">
-                      {item.author}
-                      <span className="font-normal text-ink/45"> · {item.context}</span>
-                    </p>
                   </div>
+                  <p className="ml-1 mt-1.5 text-xs text-ink/45">
+                    {item.author} · {item.context}
+                  </p>
                 </div>
-              </article>
+              </div>
             ))}
           </div>
         </Reveal>

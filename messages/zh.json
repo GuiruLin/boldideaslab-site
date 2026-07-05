@@ -588,13 +588,6 @@
           "tag": "创意写作",
           "quote": "An eight year old's story idea generator, for children who want to write books.",
           "url": "https://workshop-gallery-peach.vercel.app/projects/472f22c8-dd0f-4d1f-b1d8-36e08c7e0e4b"
-        },
-        {
-          "name": "Study Compass",
-          "student": "Gloria · Coolest Projects",
-          "tag": "国际展示",
-          "quote": "在 Coolest Projects（全球青少年数字创作展示）公开展出的学习助手。",
-          "url": "https://online.coolestprojects.org/projects/24694"
         }
       ]
     },
@@ -701,6 +694,14 @@
       "body": "从一个想法到一个可以参加国际展示的 AI 作品。",
       "primary": "了解课程",
       "secondary": "进入作品集"
+    },
+    "showcase": {
+      "badge": "国际展示",
+      "name": "Study Compass",
+      "student": "Gloria",
+      "text": "在 Coolest Projects（Raspberry Pi Foundation 发起的全球青少年数字创作展示）公开展出的学习助手。",
+      "cta": "在 Coolest Projects 查看",
+      "url": "https://online.coolestprojects.org/projects/24694"
     }
   },
   "eduos": {

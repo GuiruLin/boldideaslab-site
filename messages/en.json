@@ -588,13 +588,6 @@
           "tag": "Creative writing",
           "quote": "An eight year old's story idea generator, for children who want to write books.",
           "url": "https://workshop-gallery-peach.vercel.app/projects/472f22c8-dd0f-4d1f-b1d8-36e08c7e0e4b"
-        },
-        {
-          "name": "Study Compass",
-          "student": "Gloria · Coolest Projects",
-          "tag": "International showcase",
-          "quote": "A study companion, exhibited on Coolest Projects, the global showcase for young digital makers.",
-          "url": "https://online.coolestprojects.org/projects/24694"
         }
       ]
     },
@@ -701,6 +694,14 @@
       "body": "From one idea to an AI project ready for international showcase.",
       "primary": "Explore programmes",
       "secondary": "Enter the Work Gallery"
+    },
+    "showcase": {
+      "badge": "International showcase",
+      "name": "Study Compass",
+      "student": "Gloria",
+      "text": "A study companion, exhibited on Coolest Projects, the Raspberry Pi Foundation's global showcase for young digital makers.",
+      "cta": "See it on Coolest Projects",
+      "url": "https://online.coolestprojects.org/projects/24694"
     }
   },
   "eduos": {
