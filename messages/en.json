@@ -358,7 +358,7 @@
         },
         {
           "label": "Online competition programme",
-          "title": "Coolest Projects preparation",
+          "title": "Coolest Projects sprint course",
           "text": [
             {
               "t": "Featured project: Study Compass, by Gloria.",
@@ -412,13 +412,13 @@
       "phases": [
         {
           "num": "01",
-          "tag": "Sessions 1–2",
+          "tag": "Sessions 1-2",
           "title": "Discover the question",
           "lead": "Train your child to ask a good question: what do I want to solve, and why is this worth doing.",
-          "text": "This is the starting point for the whole project. An insightful question is rarer than any technical skill — and makes the biggest difference. Rather than rushing to build, we spend time finding a direction that is truly worth pursuing.",
+          "text": "This is the starting point for the whole project. An insightful question is rarer than any technical skill, and it makes the biggest difference. Rather than rushing to build, we spend time finding a direction that is truly worth pursuing.",
           "itemsLabel": "Students will",
           "items": [
-            "Start from their own life, interests, or learning — and find a real problem",
+            "Start from their own life, interests, or learning, and find a real problem",
             "Turn a vague idea into a clear project direction",
             "Complete a project proposal explaining what they want to solve and why it's worth doing"
           ],
@@ -426,10 +426,10 @@
         },
         {
           "num": "02",
-          "tag": "Sessions 3–4",
+          "tag": "Sessions 3-4",
           "title": "Build with technology",
-          "lead": "Understand machine learning principles — and use AI tools to turn an idea into something that actually works.",
-          "text": "Two sessions moving from \"gets it running\" to \"going deeper\" — building confidence first, then adding complexity. Tools are chosen for accessibility so that technology never blocks creativity.",
+          "lead": "Understand machine learning principles, then use AI tools to turn an idea into something that actually works.",
+          "text": "Two sessions moving from \"gets it running\" to \"going deeper\", building confidence first, then adding complexity. Tools are chosen for accessibility so that technology never blocks creativity.",
           "itemsLabel": "Students will",
           "items": [
             "Understand the basic principles and logic of machine learning",
@@ -440,23 +440,23 @@
         },
         {
           "num": "03",
-          "tag": "Sessions 5–6",
+          "tag": "Sessions 5-6",
           "title": "Design and refine",
           "lead": "Make the work beautiful, usable, and something people genuinely want to use.",
-          "text": "This module is easiest to overlook, but has the biggest impact on the final quality of the work. We dedicate two full sessions to it — because a project that real users can engage with is far more convincing than one that is technically complex but hard to use.",
+          "text": "This module is easiest to overlook, but has the biggest impact on the final quality of the work. We dedicate two full sessions to it, because a project that real users can engage with is far more convincing than one that is technically complex but hard to use.",
           "itemsLabel": "Students will",
           "items": [
             "Learn basic UI/UX design and aesthetic principles",
             "Test with real users and collect feedback",
             "Iterate based on feedback so the work communicates clearly and holds up to scrutiny"
           ],
-          "note": "Good design isn't about making the project \"look nice\" — it's about letting someone understand at a glance what problem you're solving."
+          "note": "Good design isn't about making the project \"look nice\". It's about letting someone understand at a glance what problem you're solving."
         },
         {
           "num": "04",
-          "tag": "Sessions 7–8",
+          "tag": "Sessions 7-8",
           "title": "Present and publish",
-          "lead": "Present the work publicly — stand up and explain the problem, the solution, and the highlights.",
+          "lead": "Present the work publicly. Stand up and explain the problem, the solution, and the highlights.",
           "text": "The final session is a small showcase modelled on a Silicon Valley product launch. Each student presents their project for a few minutes, witnessed by parents and classmates. This experience transfers directly to future university applications, interviews, and collaborative work.",
           "itemsLabel": "Students will",
           "items": [
@@ -478,7 +478,7 @@
           "url": ""
         },
         {
-          "tag": "Cohort two · Coolest Projects preparation",
+          "tag": "Cohort two · Coolest Projects sprint course",
           "text": "Two students completed the five-week sprint and submitted to the AI category. Study Compass, by Gloria, is exhibited in the public gallery.",
           "linkLabel": "See it on Coolest Projects",
           "url": "https://online.coolestprojects.org/projects/24694"

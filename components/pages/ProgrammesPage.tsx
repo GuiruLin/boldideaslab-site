@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Btn } from "@/components/redesign/Btn";
 import { Reveal } from "@/components/redesign/motion";
+import { Decagon } from "@/components/redesign/shapes";
 
 // 标题里的强调词染成马蒂斯红（与主页 hero 同一手法）
 function withAccent(title: string, accent?: string): ReactNode {
@@ -97,16 +98,35 @@ export function ProgrammesPage() {
         </Reveal>
       </section>
 
-      {/* ── 和学校一起做：Plymouth 案例 ─────────────────────────────────────── */}
+      {/* ── 和学校一起做：Plymouth 案例（几何面板样板） ─────────────────────── */}
       <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-6xl">
           <p className="mb-5 t-eyebrow text-gold">{programmes.schools.eyebrow}</p>
           <h2 className="t-h2 text-blue">{programmes.schools.title}</h2>
-          <div className="mt-8 max-w-3xl space-y-5 leading-8 text-ink/75">
-            {programmes.schools.paragraphs.map((p) => (
-              <p key={p}>{p}</p>
-            ))}
+
+          <div className="relative mt-10 max-w-3xl">
+            {/* 大号十边形描边：艺术锚点，淡淡地压在右上角外沿 */}
+            <Decagon className="pointer-events-none absolute -right-8 -top-12 -z-0 h-32 w-32 opacity-[0.12] sm:h-44 sm:w-44" />
+
+            {/* 文字面板：一角切平，做出编辑式的不对称 */}
+            <div
+              className="relative bg-white p-8 shadow-[0_24px_60px_rgba(26,26,26,0.06)] sm:p-12"
+              style={{ borderRadius: "28px 28px 28px 6px" }}
+            >
+              {/* 左侧金色小拱：句读级的品牌标记 */}
+              <span
+                aria-hidden
+                className="absolute -left-2.5 top-11 h-12 w-2.5 bg-gold"
+                style={{ borderRadius: "999px 0 0 999px" }}
+              />
+              <div className="space-y-5 leading-8 text-ink/75">
+                {programmes.schools.paragraphs.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </div>
+            </div>
           </div>
+
           <p className="mt-8 max-w-3xl leading-7 text-ink/60">
             <span className="mr-3 t-eyebrow text-gold">{programmes.schools.formatLabel}</span>
             {programmes.schools.formats.join(" · ")}
