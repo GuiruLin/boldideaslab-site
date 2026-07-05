@@ -562,18 +562,18 @@
       "linkLabel": "打开作品",
       "items": [
         {
-          "name": "GeoGuide",
-          "student": "Patrick · 曼彻斯特",
-          "tag": "AI 工具",
-          "quote": "To help people with geographical problems.",
-          "url": "https://workshop-gallery-peach.vercel.app/projects/5aedcc34-433b-4141-a270-826d224ebd44"
+          "name": "Guess Who",
+          "student": "Frederick · 普利茅斯",
+          "tag": "第一周游戏",
+          "quote": "A first-week Guess Who game for learning everyone's names.",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
         },
         {
-          "name": "BLOXCRAFT",
-          "student": "Harry · 曼彻斯特",
-          "tag": "游戏制作",
-          "quote": "I liked playing Roblox, so I built an app to make Roblox games.",
-          "url": "https://workshop-gallery-peach.vercel.app/projects/ecf667b1-deac-4a59-acc8-fe31f8dcd783"
+          "name": "Pumpkin Dread",
+          "student": "April · 伦敦",
+          "tag": "生存游戏",
+          "quote": "A survival farm game: plant, harvest, build a boat, and escape.",
+          "url": "https://workshop-gallery-peach.vercel.app/projects/19df993c-8984-4ebc-94ae-80a98a4dd3a3"
         },
         {
           "name": "Bullying Reporter",
