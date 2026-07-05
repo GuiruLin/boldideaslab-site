@@ -52,17 +52,20 @@ export function EduosPage() {
         </Reveal>
       </section>
 
-      {/* ── 开场陈述：金色面板 ─────────────────────────────────────────────── */}
-      <section className="bg-cream px-5 pb-24 pt-8 sm:px-6 lg:px-8">
+      {/* ── 开场陈述：蓝色几何块 + 金色拱冠（非方框） ───────────────────────── */}
+      <section className="bg-cream px-5 pb-24 pt-16 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-6xl">
-          <div
-            className="relative overflow-hidden bg-blue px-7 py-14 sm:px-14 sm:py-[4.5rem]"
-            style={{ borderRadius: "6px 28px 28px 28px" }}
-          >
-            <Arch className="absolute right-12 top-12 hidden h-10 w-20 sm:block" />
-            <Dot className="absolute bottom-12 right-14 hidden h-3 w-3 sm:block" />
-            <p className="relative mb-6 t-eyebrow text-cream/70">{eduos.hero.badge}</p>
-            <p className="relative max-w-[48ch] t-lead text-white">{eduos.hero.lead}</p>
+          <div className="relative">
+            {/* 金色拱：像升起的穹顶，压在面板上沿 */}
+            <Arch className="absolute left-10 top-0 z-10 h-14 w-28 -translate-y-[55%] sm:left-20 sm:h-20 sm:w-44" />
+            <div
+              className="relative overflow-hidden bg-blue px-7 py-14 sm:px-16 sm:py-[4.75rem]"
+              style={{ borderRadius: "130px 44px 44px 44px" }}
+            >
+              <Dot className="absolute bottom-12 right-14 hidden h-3 w-3 sm:block" />
+              <p className="relative mb-6 t-eyebrow text-cream/70">{eduos.hero.badge}</p>
+              <p className="relative max-w-[48ch] t-lead text-white">{eduos.hero.lead}</p>
+            </div>
           </div>
         </Reveal>
       </section>
