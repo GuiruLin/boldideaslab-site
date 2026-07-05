@@ -1,12 +1,12 @@
 import type { ReactNode } from "react";
 
-import { Footer } from "@/components/layout/Footer";
-import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/redesign/Footer";
+import { Header } from "@/components/redesign/Header";
 
 export default function LegacyLayout({ children }: { children: ReactNode }) {
   return (
     <>
-      <Navbar />
+      <Header />
       <main>{children}</main>
       <Footer />
     </>
