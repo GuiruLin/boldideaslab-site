@@ -124,22 +124,35 @@ export function WorkPage() {
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {work.projects.items.map((project) => (
               <a
-                className="group flex flex-col rounded-[18px] border border-ink/10 bg-cream/60 p-7 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)] sm:p-8"
+                className="group flex flex-col overflow-hidden rounded-[18px] border border-ink/10 bg-cream/60 transition duration-200 hover:-translate-y-1 hover:border-blue/30 hover:shadow-[0_10px_30px_rgba(26,26,26,0.07)]"
                 href={project.url}
                 key={project.name}
                 rel="noopener"
                 target="_blank"
               >
-                <p className="t-eyebrow text-gold">{project.tag}</p>
-                <h3 className="mt-2 t-h3 text-blue">{project.name}</h3>
-                <p className="mt-1 text-sm text-ink/55">{project.student}</p>
-                <p className="mt-4 flex-1 font-serif italic leading-7 text-ink/70">
-                  “{project.quote}”
-                </p>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm text-blue underline decoration-blue/30 underline-offset-4 transition group-hover:decoration-blue">
-                  {work.projects.linkLabel}
-                  <ExternalLink aria-hidden size={14} />
-                </span>
+                {project.image && (
+                  <div className="relative aspect-[16/10] overflow-hidden border-b border-ink/10">
+                    <Image
+                      alt={project.name}
+                      className="object-cover transition duration-300 group-hover:scale-[1.03]"
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      src={project.image}
+                    />
+                  </div>
+                )}
+                <div className="flex flex-1 flex-col p-7 sm:p-8">
+                  <p className="t-eyebrow text-gold">{project.tag}</p>
+                  <h3 className="mt-2 t-h3 text-blue">{project.name}</h3>
+                  <p className="mt-1 text-sm text-ink/55">{project.student}</p>
+                  <p className="mt-4 flex-1 font-serif italic leading-7 text-ink/70">
+                    “{project.quote}”
+                  </p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm text-blue underline decoration-blue/30 underline-offset-4 transition group-hover:decoration-blue">
+                    {work.projects.linkLabel}
+                    <ExternalLink aria-hidden size={14} />
+                  </span>
+                </div>
               </a>
             ))}
           </div>
