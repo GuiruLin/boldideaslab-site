@@ -836,8 +836,8 @@
   "insights": {
     "hero": {
       "eyebrow": "Insights",
-      "title": "Bold Ideas Insight",
-      "subtitle": "Good education deserves serious thought.",
+      "title": "Bold Ideas, thinking out loud",
+      "subtitle": "Essays, conversations, and the voices of young creators.",
       "lead": "We believe good education deserves serious discussion. Here we collect founder essays, conversations with scholars, educators, and founders, and the voices of young creators themselves.",
       "beliefLabel": "We believe",
       "beliefTitle": "Good education deserves serious thought.",
@@ -884,7 +884,7 @@
         {
           "category": "Founder essay",
           "title": "When the barrier to execution falls to zero",
-          "description": "As technology drives the cost of execution toward zero, human value is no longer about how many tools you master. Judgment becomes the new code, and expression becomes the new means of production. Machines cannot create something from nothing—what stays scarce is the ability to ask a good question.",
+          "description": "As technology drives the cost of execution toward zero, human value is no longer about how many tools you master. Judgment becomes the new code, and expression becomes the new means of production. Machines cannot create something from nothing. What stays scarce is the ability to ask a good question.",
           "author": "Jacky",
           "initial": "J",
           "status": "View on Xiaohongshu",
@@ -905,13 +905,6 @@
           "status": "Watch conversation",
           "href": "http://xhslink.com/o/ABhvRnRpE9a",
           "coverImage": "/media/insights/conversations/covers/oxford-phd-interview.webp"
-        },
-        {
-          "category": "Podcast · Jacky in conversation",
-          "title": "Conversation coming soon",
-          "description": "Jacky's podcast conversation series will be released later.",
-          "status": "Coming soon",
-          "pending": true
         }
       ]
     },
@@ -925,7 +918,7 @@
       "eyebrow": "Follow",
       "title": "Receive new work first",
       "subtitle": "Follow us to stay updated",
-      "description": "For Lynn's WeChat Official Account and Video Account, search the same profile name in WeChat. The official Bold Ideas Lab account is still being set up.",
+      "description": "For Lynn's WeChat Official Account and Video Account, search the same profile name in WeChat.",
       "channels": [
         {
           "avatar": "jacky",
@@ -946,13 +939,6 @@
           "label": "WeChat Official Account · Video Account",
           "description": "Updates under the same name; follow by searching “Lynn的敢想实验室” in WeChat (no standalone web link).",
           "status": ""
-        },
-        {
-          "avatar": "none",
-          "label": "Bold Ideas Lab (official)",
-          "description": "Substack · Xiaohongshu · WeChat Official Account",
-          "pending": true,
-          "status": "Coming soon"
         }
       ]
     },

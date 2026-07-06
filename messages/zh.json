@@ -836,8 +836,8 @@
   "insights": {
     "hero": {
       "eyebrow": "敢想观察",
-      "title": "敢想观察",
-      "subtitle": "好的教育需要被认真讨论。",
+      "title": "敢想 · 边想边说",
+      "subtitle": "创始人的文章、对话，以及年轻创作者自己的声音。",
       "lead": "我们相信好的教育需要被认真讨论。这里有创始人的思考与写作，有与学者、教育者、创始人企业家的对话，也有年轻创作者自己的声音。",
       "beliefLabel": "我们相信",
       "beliefTitle": "好的教育需要被认真讨论。",
@@ -905,13 +905,6 @@
           "status": "观看对谈",
           "href": "http://xhslink.com/o/ABhvRnRpE9a",
           "coverImage": "/media/insights/conversations/covers/oxford-phd-interview.webp"
-        },
-        {
-          "category": "Podcast · Jacky 对谈",
-          "title": "对谈内容即将更新",
-          "description": "Jacky 的播客对谈系列，即将推出。",
-          "status": "即将更新",
-          "pending": true
         }
       ]
     },
@@ -925,7 +918,7 @@
       "eyebrow": "关注我们",
       "title": "第一时间收到新内容",
       "subtitle": "关注我们，保持更新",
-      "description": "Lynn 的公众号与视频号请在微信 App 内搜索同名账号。官方账号正在完善中。",
+      "description": "Lynn 的公众号与视频号请在微信 App 内搜索同名账号。",
       "channels": [
         {
           "avatar": "jacky",
@@ -946,13 +939,6 @@
           "label": "微信公众号 · 视频号",
           "description": "同名更新；可在微信内搜索「Lynn的敢想实验室」关注（站外不设直达链接）。",
           "status": ""
-        },
-        {
-          "avatar": "none",
-          "label": "Bold Ideas Lab 官方",
-          "description": "Substack · 小红书 · 微信公众号",
-          "pending": true,
-          "status": "即将更新"
         }
       ]
     },
