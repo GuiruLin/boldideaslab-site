@@ -74,16 +74,16 @@ export function InsightsPage() {
             {/* 底层纸：叠纸的厚度感 */}
             <span
               aria-hidden
-              className="absolute inset-x-6 inset-y-2 rotate-[2deg] rounded-[8px] bg-gold/20"
+              className="absolute inset-x-6 inset-y-2 rotate-[2deg] rounded-[8px] bg-white/80"
             />
-            {/* 信纸本体 */}
-            <div className="relative -rotate-1 rounded-[8px] bg-white px-8 pb-9 pt-7 shadow-[0_24px_60px_rgba(26,26,26,0.09)]">
+            {/* 信纸本体：金色底 · 白/蓝字 */}
+            <div className="relative -rotate-1 rounded-[8px] bg-gold px-8 pb-9 pt-7 shadow-[0_24px_60px_rgba(26,26,26,0.12)]">
               {/* 信头 */}
-              <div className="flex items-center justify-between border-b-2 border-gold pb-3">
-                <p className="t-eyebrow text-gold">{insights.hero.beliefLabel}</p>
+              <div className="flex items-center justify-between border-b-2 border-white/70 pb-3">
+                <p className="t-eyebrow text-white">{insights.hero.beliefLabel}</p>
                 <span
                   aria-hidden
-                  className="h-3.5 w-7 bg-gold"
+                  className="h-3.5 w-7 bg-white"
                   style={{ borderRadius: "999px 999px 0 0" }}
                 />
               </div>
@@ -92,13 +92,13 @@ export function InsightsPage() {
                 className="mt-2"
                 style={{
                   backgroundImage:
-                    "repeating-linear-gradient(transparent, transparent calc(2.6rem - 1px), rgba(0,47,167,0.14) calc(2.6rem - 1px), rgba(0,47,167,0.14) 2.6rem)"
+                    "repeating-linear-gradient(transparent, transparent calc(2.6rem - 1px), rgba(255,255,255,0.45) calc(2.6rem - 1px), rgba(255,255,255,0.45) 2.6rem)"
                 }}
               >
-                <p className="pt-2 font-display text-[1.35rem] font-medium italic text-blue [line-height:2.6rem]">
+                <p className="pt-2 font-display text-[1.35rem] font-medium italic text-white [line-height:2.6rem]">
                   {insights.hero.beliefTitle}
                 </p>
-                <p className="italic text-ink/50 [line-height:2.6rem]">
+                <p className="italic text-blue [line-height:2.6rem]">
                   {insights.hero.beliefSubtitle}
                 </p>
                 {/* 留白的空行：一封还在写的信 */}
@@ -106,7 +106,7 @@ export function InsightsPage() {
               </div>
               {/* 署名 + 红点作封蜡 */}
               <div className="mt-4 flex items-center justify-end gap-2.5">
-                <p className="font-display text-sm italic text-blue/70">
+                <p className="font-display text-sm italic text-blue">
                   Bold Ideas Lab
                 </p>
                 <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-red" />
