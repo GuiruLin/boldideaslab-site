@@ -13,45 +13,30 @@ const articleInitialStyles = [
   "bg-blue text-cream"
 ] as const;
 
-/** 敢想观察专属造型：一盏灯泡（金色玻璃 · 蓝色灯丝与灯座 · 唯一红点作火花） */
-function Lightbulb({ className = "" }: { className?: string }) {
+/** 敢想观察专属造型：一支钢笔（蓝色笔身 · 金色笔夹与笔尖） */
+function Pen({ className = "" }: { className?: string }) {
   return (
     <svg
       aria-hidden
       className={className}
       fill="none"
-      viewBox="0 0 200 260"
+      viewBox="0 0 60 250"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* 光芒 */}
-      <g stroke="#C9A84C" strokeLinecap="round" strokeWidth="5">
-        <line x1="40" x2="53" y1="34" y2="47" />
-        <line x1="160" x2="147" y1="34" y2="47" />
-        <line x1="16" x2="34" y1="90" y2="90" />
-        <line x1="184" x2="166" y1="90" y2="90" />
-      </g>
-      {/* 玻璃泡 */}
-      <circle cx="100" cy="92" fill="#C9A84C" r="62" />
-      {/* 灯丝 */}
-      <path
-        d="M78 122 C78 94 84 80 100 80 C116 80 122 94 122 122"
-        stroke="#002FA7"
-        strokeLinecap="round"
-        strokeWidth="6"
-      />
-      <path
-        d="M91 80 C91 67 109 67 109 80"
-        stroke="#002FA7"
-        strokeLinecap="round"
-        strokeWidth="6"
-      />
-      {/* 灯颈与灯座 */}
-      <path d="M79 122 L121 122 L115 150 L85 150 Z" fill="#002FA7" />
-      <rect fill="#002FA7" height="12" rx="4" width="36" x="82" y="153" />
-      <rect fill="#002FA7" height="12" rx="4" width="32" x="84" y="169" />
-      <path d="M88 185 h24 l-5 15 h-14 z" fill="#002FA7" />
-      {/* 唯一红点：灵光一现 */}
-      <circle cx="100" cy="14" fill="#CC2936" r="8" />
+      {/* 笔帽顶 */}
+      <rect fill="#C9A84C" height="10" rx="5" width="20" x="20" y="4" />
+      {/* 笔身 */}
+      <rect fill="#002FA7" height="140" rx="12" width="28" x="16" y="12" />
+      {/* 笔夹 */}
+      <rect fill="#C9A84C" height="58" rx="3" width="6" x="44" y="22" />
+      {/* 金色环带 */}
+      <rect fill="#C9A84C" height="10" width="28" x="16" y="152" />
+      {/* 握位 */}
+      <path d="M16 162 h28 l-6 36 h-16 z" fill="#002FA7" />
+      {/* 笔尖 */}
+      <path d="M24 198 L36 198 L34 222 L30 240 L26 222 Z" fill="#C9A84C" />
+      <line stroke="#002FA7" strokeWidth="2" x1="30" x2="30" y1="204" y2="228" />
+      <circle cx="30" cy="212" fill="#002FA7" r="2.5" />
     </svg>
   );
 }
@@ -62,7 +47,7 @@ export function InsightsPage() {
 
   return (
     <>
-      {/* ── Hero：灯泡造型开场 ─────────────────────────────────────────────── */}
+      {/* ── Hero：信纸造型开场 ─────────────────────────────────────────────── */}
       <section className="bg-cream px-5 pb-20 pt-20 sm:px-6 lg:px-8 lg:pb-24 lg:pt-28">
         <Reveal className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
@@ -84,17 +69,51 @@ export function InsightsPage() {
             </div>
           </div>
 
-          {/* 灯泡 + 三条内容线索 */}
-          <div className="relative">
-            <div className="relative mx-auto flex max-w-sm flex-col items-center rounded-[28px] bg-white px-8 py-12 shadow-[0_24px_60px_rgba(26,26,26,0.06)]">
-              <Lightbulb className="h-56 w-auto" />
-              <p className="mt-6 text-center font-display text-xl font-medium leading-snug text-blue text-balance">
-                {insights.hero.beliefTitle}
-              </p>
-              <p className="mt-2 text-center text-sm italic text-ink/45">
-                {insights.hero.beliefSubtitle}
-              </p>
+          {/* 信纸 + 钢笔：我们相信的事，写在纸上 */}
+          <div className="relative mx-auto w-full max-w-sm pr-10 sm:pr-12">
+            {/* 底层纸：叠纸的厚度感 */}
+            <span
+              aria-hidden
+              className="absolute inset-x-6 inset-y-2 rotate-[2deg] rounded-[8px] bg-gold/20"
+            />
+            {/* 信纸本体 */}
+            <div className="relative -rotate-1 rounded-[8px] bg-white px-8 pb-9 pt-7 shadow-[0_24px_60px_rgba(26,26,26,0.09)]">
+              {/* 信头 */}
+              <div className="flex items-center justify-between border-b-2 border-gold pb-3">
+                <p className="t-eyebrow text-gold">{insights.hero.beliefLabel}</p>
+                <span
+                  aria-hidden
+                  className="h-3.5 w-7 bg-gold"
+                  style={{ borderRadius: "999px 999px 0 0" }}
+                />
+              </div>
+              {/* 信纸横线上的内容 */}
+              <div
+                className="mt-2"
+                style={{
+                  backgroundImage:
+                    "repeating-linear-gradient(transparent, transparent calc(2.6rem - 1px), rgba(0,47,167,0.14) calc(2.6rem - 1px), rgba(0,47,167,0.14) 2.6rem)"
+                }}
+              >
+                <p className="pt-2 font-display text-[1.35rem] font-medium italic text-blue [line-height:2.6rem]">
+                  {insights.hero.beliefTitle}
+                </p>
+                <p className="italic text-ink/50 [line-height:2.6rem]">
+                  {insights.hero.beliefSubtitle}
+                </p>
+                {/* 留白的空行：一封还在写的信 */}
+                <div aria-hidden className="h-[2.6rem]" />
+              </div>
+              {/* 署名 + 红点作封蜡 */}
+              <div className="mt-4 flex items-center justify-end gap-2.5">
+                <p className="font-display text-sm italic text-blue/70">
+                  Bold Ideas Lab
+                </p>
+                <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-red" />
+              </div>
             </div>
+            {/* 右侧的笔 */}
+            <Pen className="absolute -right-1 top-1/2 h-56 w-auto -translate-y-1/2 rotate-[24deg] drop-shadow-[0_10px_18px_rgba(26,26,26,0.18)] sm:right-0 sm:h-64" />
           </div>
         </Reveal>
       </section>
