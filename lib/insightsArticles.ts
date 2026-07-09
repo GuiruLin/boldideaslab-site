@@ -770,6 +770,14 @@ export const labArticles: InsightsArticle[] = [
           text: "Plymouth College, founded in 1877 in Devon in the south-west of England, is an independent day and boarding school known internationally for its swimming programme, which has produced Olympians and world champions."
         },
         {
+          type: "img",
+          src: "/media/insights/lab/plymouth-pilot/plymouth-college-sign.webp",
+          alt: "Plymouth College entrance sign",
+          width: 1170,
+          height: 656,
+          caption: "Plymouth College, Devon"
+        },
+        {
           type: "p",
           text: "We worked with around 30 Year 9 students. The brief: design a prototype to help the Year 7s arriving in September (around 11 to 12 years old) settle into their first week at a new school. The building tool was Google AI Studio. By the end of one lesson, the class had made 22 working prototypes, small apps you can open and use in a few clicks. One student built a tool for reporting bullying, so that a new student who is being picked on can tell their form tutor in a way that feels less frightening."
         },
@@ -793,6 +801,22 @@ export const labArticles: InsightsArticle[] = [
         {
           type: "p",
           text: "Before touching AI, students worked on paper. Each of them drew on their own real memories of starting school to write down what the true problem was. Only then did they ask the AI, set its answers against what they already knew, understand what an average answer is, and decide what to keep, what to change, and what to throw away. AI was one tool on the workbench, and the students decided when to pick it up. The AI on-off cards and the student design logs ran through the whole design process."
+        },
+        {
+          type: "img",
+          src: "/media/insights/lab/plymouth-pilot/ai-switch-card.webp",
+          alt: "The AI switch card: on, off, check. At every step, you decide.",
+          width: 1600,
+          height: 888,
+          caption: "The AI switch: ON, OFF, or CHECK. At every step, the student decides."
+        },
+        {
+          type: "img",
+          src: "/media/insights/lab/plymouth-pilot/designers-sheet.webp",
+          alt: "The First Week designer's sheet used in the lesson",
+          width: 1276,
+          height: 1702,
+          caption: "The designer's sheet. The golden rule: AI is on your bench, you decide when to pick it up."
         },
         { type: "h2", text: "How they treated the AI's answers" },
         {
@@ -846,6 +870,14 @@ export const labArticles: InsightsArticle[] = [
           text: "Plymouth College 在英格兰西南的德文郡，创校于 1877 年，是一所走读兼寄宿的独立私校，以游泳项目闻名国际，培养过奥运选手和世界冠军。"
         },
         {
+          type: "img",
+          src: "/media/insights/lab/plymouth-pilot/plymouth-college-sign.webp",
+          alt: "Plymouth College 校门",
+          width: 1170,
+          height: 656,
+          caption: "Plymouth College，德文郡"
+        },
+        {
           type: "p",
           text: "这次和我们一起工作的是约 30 名 Year 9 学生。任务是：为九月即将入学的 Year 7 新生（约 11 至 12 岁），设计一个帮助他们适应新学校第一周生活的原型作品。搭建工具是 Google AI Studio。一节课结束时，全班做出了 22 个可运行的原型，都是能直接打开、点几下就能用的小应用。比如有个学生做了一个上报霸凌的小工具，让新生遇到被欺负的情况时，可以用一种不那么可怕的方式告诉自己的班主任。"
         },
@@ -869,6 +901,22 @@ export const labArticles: InsightsArticle[] = [
         {
           type: "p",
           text: "在碰 AI 之前，学生先在纸上工作。每个人先凭自己刚入学时的真实记忆，写下真正的问题是什么；然后才去问 AI，把 AI 的答案和自己知道的对照，从而理解什么是平均值，以及最终决定留下什么、改什么、扔掉什么。AI 是工作台上的一件工具，学生自己去决定什么时候拿起来。整个设计过程，AI 开关卡和学生设计记录表贯穿始终。"
+        },
+        {
+          type: "img",
+          src: "/media/insights/lab/plymouth-pilot/ai-switch-card.webp",
+          alt: "AI 开关卡：ON / OFF / CHECK，每一步由你决定",
+          width: 1600,
+          height: 888,
+          caption: "AI 开关卡：ON / OFF / CHECK，每一步由学生自己决定"
+        },
+        {
+          type: "img",
+          src: "/media/insights/lab/plymouth-pilot/designers-sheet.webp",
+          alt: "课上使用的 First Week 学生设计记录表",
+          width: 1276,
+          height: 1702,
+          caption: "学生设计记录表。黄金法则：AI 在你的工作台上，你决定什么时候拿起它。"
         },
         { type: "h2", text: "他们怎么对待 AI 给的答案" },
         {
