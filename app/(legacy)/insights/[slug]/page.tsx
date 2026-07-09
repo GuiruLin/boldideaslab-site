@@ -2,14 +2,20 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ArticlePage } from "@/components/pages/ArticlePage";
-import { getInsightsArticle, insightsArticles } from "@/lib/insightsArticles";
+import {
+  getInsightsArticle,
+  insightsArticles,
+  labArticles
+} from "@/lib/insightsArticles";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
 };
 
 export function generateStaticParams() {
-  return insightsArticles.map((article) => ({ slug: article.slug }));
+  return [...insightsArticles, ...labArticles].map((article) => ({
+    slug: article.slug
+  }));
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

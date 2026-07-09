@@ -849,6 +849,10 @@
           "description": "我们对教育与 AI 技术的思考"
         },
         {
+          "label": "来自敢想实验室",
+          "description": "以品牌声音发布的现场记录"
+        },
+        {
           "label": "对话与访谈",
           "description": "与学者、教育者、创业者的深度对话"
         },
@@ -856,6 +860,20 @@
           "label": "学生声音",
           "description": "年轻创作者的想法与观点",
           "status": "即将更新"
+        }
+      ]
+    },
+    "lab": {
+      "eyebrow": "来自敢想实验室",
+      "title": "品牌自己的声音",
+      "subtitle": "来自学校试点与课程现场的记录",
+      "items": [
+        {
+          "category": "进校试点 · Plymouth College",
+          "title": "一堂 AI 课，我们让它从关掉 AI 开始",
+          "description": "六月，我们完成了第一次进校试点。一节课做出 22 个可运行的原型，但这是我们最不看重的部分。真正重要的，是学生走到作品的那条路径被记录了下来：判断的证据，而不只是产出的证据。",
+          "status": "阅读全文",
+          "href": "/insights/ai-lesson-that-starts-by-turning-ai-off"
         }
       ]
     },
@@ -927,6 +945,13 @@
       "subtitle": "关注我们，保持更新",
       "description": "Lynn 的公众号与视频号请在微信 App 内搜索同名账号。",
       "channels": [
+        {
+          "avatar": "none",
+          "label": "Bold Ideas Lab 官方",
+          "description": "LinkedIn（英文）· 小红书 · 微信公众号「敢想实验室」",
+          "href": "https://www.linkedin.com/company/bold-ideas-lab",
+          "status": "前往 LinkedIn"
+        },
         {
           "avatar": "jacky",
           "label": "小红书",

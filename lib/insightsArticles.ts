@@ -399,6 +399,156 @@ export const insightsArticles: InsightsArticle[] = [
   }
 ];
 
+// 品牌声音：以 Bold Ideas Lab 官方名义发布的内容（区别于创始人个人文章）
+export const labArticles: InsightsArticle[] = [
+  {
+    slug: "ai-lesson-that-starts-by-turning-ai-off",
+    author: "Bold Ideas Lab",
+    initial: "B",
+    en: {
+      category: "From Bold Ideas Lab",
+      title: "An AI lesson that starts by turning the AI off",
+      body: [
+        {
+          type: "p",
+          text: "In June we completed our first in-school pilot at Plymouth College: an AI design and technology lesson."
+        },
+        {
+          type: "p",
+          text: "Plymouth College, founded in 1877 in Devon in the south-west of England, is an independent day and boarding school known internationally for its swimming programme, which has produced Olympians and world champions."
+        },
+        {
+          type: "p",
+          text: "We worked with around 30 Year 9 students. The brief: design a prototype to help the Year 7s arriving in September (around 11 to 12 years old) settle into their first week at a new school. The building tool was Google AI Studio. By the end of one lesson, the class had made 22 working prototypes, small apps you can open and use in a few clicks. One student built a tool for reporting bullying, so that a new student who is being picked on can tell their form tutor in a way that feels less frightening."
+        },
+        {
+          type: "p",
+          text: "If the story ended there, this would be just another lesson where children made things with AI. But those 22 prototypes are the part of the lesson we value least."
+        },
+        {
+          type: "p",
+          text: "The prototypes are not the most important outcome of this pilot. The most important outcome is that the path each student took to reach their prototype was recorded."
+        },
+        { type: "h2", text: "Step one: turn the AI off" },
+        {
+          type: "p",
+          text: "Before touching AI, students worked on paper. Each of them drew on their own real memories of starting school to write down what the true problem was. Only then did they ask the AI, set its answers against what they already knew, understand what an average answer is, and decide what to keep, what to change, and what to throw away. AI was one tool on the workbench, and the students decided when to pick it up. The AI on-off cards and the student design logs ran through the whole design process."
+        },
+        { type: "h2", text: "How they treated the AI's answers" },
+        {
+          type: "p",
+          text: "What you get this way is evidence of judgement, not just evidence of output. One student rejected the AI's assumption that homework would be a new student's biggest worry in the first week; for her, it was finding someone to sit with in the dining hall. Another would not let a revision app delete the hard questions, because the difficulty is where the learning lives. A third saw the flaw in the AI's points-based scheme for making friends in welcome week: it would rush a new student into social choices."
+        },
+        { type: "h2", text: "Using AI and directing AI are two different abilities" },
+        {
+          type: "p",
+          text: "Our curriculum is built around exactly this distinction: using AI and directing AI are two different abilities. A student who can write prompts for a model may not be able to tell when the model gets their real life wrong. That second ability sits where AI literacy meets critical thinking. It is the one we most want to teach, and it can be trained."
+        },
+        {
+          type: "p",
+          text: "The same gap shows up in teachers. In the lunchtime CPD session with 11 teachers, using AI was already routine for most. Building workflows and systems with AI, and directing several AI agents at once, was much less familiar. That distance is the same for adults as it is for students."
+        },
+        { type: "h2", text: "What should a workshop leave a school?" },
+        {
+          type: "p",
+          text: "A workshop should not end with a few screenshots and a thank-you message. After the lesson, we analysed the 30 handwritten design logs and the prototypes built from them, and put together a report for the school: what the children care about most (organising homework, finding classrooms, fitting in, feeling safe), and where they made their own judgements about the AI."
+        },
+        {
+          type: "p",
+          text: "So what the day leaves behind is a record the school can actually read: what the children thought, and what they judged. It can be reviewed, shared internally, and used for later planning. Judgement should belong to the people in the classroom. What we do is make it easier to see, organise, and discuss once the lesson is over."
+        },
+        {
+          type: "p",
+          text: "The design of the student workshop, including the theme, the AI on-off cards, the student design logs, and the teacher guidance cards, was led and designed by co-founder Lynn. The in-room support for the student workshop, the facilitation of the teacher CPD, and the post-lesson report were owned and delivered by co-founder Jacky."
+        },
+        {
+          type: "p",
+          text: "If you are a school, a parent, or an educator and would like to see the student AI on-off and design log sheets we used, message us. We are happy to share them."
+        }
+      ],
+      footnotes: [
+        {
+          label: "Also published on LinkedIn",
+          href: "https://www.linkedin.com/posts/bold-ideas-lab_in-june-we-ran-our-first-in-person-school-activity-7479938001783996416-RE7y"
+        }
+      ]
+    },
+    zh: {
+      category: "来自敢想实验室",
+      title: "一堂 AI 课，我们让它从关掉 AI 开始",
+      body: [
+        {
+          type: "p",
+          text: "六月，我们在 Plymouth College 完成了第一次进校试点：AI 设计技术课程。"
+        },
+        {
+          type: "p",
+          text: "Plymouth College 在英格兰西南的德文郡，创校于 1877 年，是一所走读兼寄宿的独立私校，以游泳项目闻名国际，培养过奥运选手和世界冠军。"
+        },
+        {
+          type: "p",
+          text: "这次和我们一起工作的是约 30 名 Year 9 学生。任务是：为九月即将入学的 Year 7 新生（约 11 至 12 岁），设计一个帮助他们适应新学校第一周生活的原型作品。搭建工具是 Google AI Studio。一节课结束时，全班做出了 22 个可运行的原型，都是能直接打开、点几下就能用的小应用。比如有个学生做了一个上报霸凌的小工具，让新生遇到被欺负的情况时，可以用一种不那么可怕的方式告诉自己的班主任。"
+        },
+        {
+          type: "p",
+          text: "如果故事讲到这里，它只是又一节「孩子用 AI 做出了东西」的课。但这 22 个作品，是这节课里我们最不看重的部分。"
+        },
+        {
+          type: "p",
+          text: "原型作品不是这次试点最重要的部分。最重要的，是学生如何走到作品的那条路径被记录了下来。"
+        },
+        { type: "h2", text: "第一步，先把 AI 关掉" },
+        {
+          type: "p",
+          text: "在碰 AI 之前，学生先在纸上工作。每个人先凭自己刚入学时的真实记忆，写下真正的问题是什么；然后才去问 AI，把 AI 的答案和自己知道的对照，从而理解什么是平均值，以及最终决定留下什么、改什么、扔掉什么。AI 是工作台上的一件工具，学生自己去决定什么时候拿起来。整个设计过程，AI 开关卡和学生设计记录表贯穿始终。"
+        },
+        { type: "h2", text: "他们怎么对待 AI 给的答案" },
+        {
+          type: "p",
+          text: "这样得到的，是判断的证据，而不只是产出的证据。有学生不接受 AI 的预设，它以为作业是新生第一周最大的担忧，而对她来说是在食堂找人一起吃饭；有学生不允许复习类 app 删掉难题，因为难度本身就是学习意义所在；还有学生看出了 AI 设计的开学周交友积分制设计的弊端，它会催促一个新生仓促做出社交选择。"
+        },
+        { type: "h2", text: "会用 AI，和会指挥 AI，是两种能力" },
+        {
+          type: "p",
+          text: "我们的课程正是围绕这个区分搭建的：会用 AI 和会指挥 AI，是两种能力。能给模型写提示词的学生，未必能在模型对自己的真实生活判断出错时看出来。后面这种能力，是 AI 素养与批判性思维的交汇处。它是我们更想教的，且可以训练的。"
+        },
+        {
+          type: "p",
+          text: "同样的差距也出现在教师身上。午间与 11 位教师的 CPD（教师持续专业发展）培训里，用 AI 对多数人已是日常，但用 AI 搭建工作流和系统、指挥多个 AI agent 工作，对多数人来讲就没那么容易。这段距离，成人和学生是一样的。"
+        },
+        { type: "h2", text: "一场工作坊，该给学校留下什么" },
+        {
+          type: "p",
+          text: "一场工作坊，不该以几张截图和一条致谢信息收场。这次课后，我们分析了 30 份学生手写的设计表格和为此搭建作品，给学校整理了一份报告：孩子们最在意什么（组织作业、找教室、融入集体、安全感），以及他们在哪些地方对 AI 做出了自己的判断。"
+        },
+        {
+          type: "p",
+          text: "所以这一天留下的，是一份能读懂「孩子究竟想了什么、判断了什么」的记录，学校可以复盘，可以内部分享，可以用于后续的规划。判断应该属于教室里的人。我们做的，是让它在课后更容易被看见、被整理、被讨论。"
+        },
+        {
+          type: "p",
+          text: "整个学生工作坊的课程设计，包括主题、AI 开关卡、学生设计记录表格与教师引导卡，由联创 Lynn 主导与设计。学生工作坊的现场协助、教师 CPD 的主持，以及课后报告，由联创 Jacky 负责与交付。"
+        },
+        {
+          type: "p",
+          text: "如果你是学校、家长或教育者，想看我们这次用的学生 AI 开关-设计记录表格，欢迎私信我们，我们很乐意分享。"
+        }
+      ],
+      footnotes: [
+        {
+          label: "首发于小红书 · 微信公众号「敢想实验室」"
+        },
+        {
+          label: "LinkedIn 英文版",
+          href: "https://www.linkedin.com/posts/bold-ideas-lab_in-june-we-ran-our-first-in-person-school-activity-7479938001783996416-RE7y"
+        }
+      ]
+    }
+  }
+];
+
 export function getInsightsArticle(slug: string): InsightsArticle | undefined {
-  return insightsArticles.find((article) => article.slug === slug);
+  return [...insightsArticles, ...labArticles].find(
+    (article) => article.slug === slug
+  );
 }

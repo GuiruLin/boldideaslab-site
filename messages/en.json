@@ -849,6 +849,10 @@
           "description": "Our thinking on education and AI technology"
         },
         {
+          "label": "From Bold Ideas Lab",
+          "description": "Field notes in the lab's own voice"
+        },
+        {
           "label": "Conversations",
           "description": "Deeper dialogues with scholars, educators, and founders"
         },
@@ -856,6 +860,20 @@
           "label": "Student voices",
           "description": "Ideas and perspectives from young creators",
           "status": "Coming soon"
+        }
+      ]
+    },
+    "lab": {
+      "eyebrow": "From Bold Ideas Lab",
+      "title": "The lab, in its own voice",
+      "subtitle": "Field notes from our school pilots and programmes",
+      "items": [
+        {
+          "category": "School pilot · Plymouth College",
+          "title": "An AI lesson that starts by turning the AI off",
+          "description": "In June we ran our first in-school pilot. The class built 22 working prototypes in one lesson, and those were the part we valued least. What mattered was recording the path each student took to get there: the judgement, not just the output.",
+          "status": "Read the story",
+          "href": "/insights/ai-lesson-that-starts-by-turning-ai-off"
         }
       ]
     },
@@ -927,6 +945,13 @@
       "subtitle": "Follow us to stay updated",
       "description": "For Lynn's WeChat Official Account and Video Account, search the same profile name in WeChat.",
       "channels": [
+        {
+          "avatar": "none",
+          "label": "Bold Ideas Lab (official)",
+          "description": "LinkedIn · English updates in the lab's own voice",
+          "href": "https://www.linkedin.com/company/bold-ideas-lab",
+          "status": "Visit profile"
+        },
         {
           "avatar": "jacky",
           "label": "Xiaohongshu",
