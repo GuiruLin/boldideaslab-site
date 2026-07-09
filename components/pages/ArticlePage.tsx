@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 import { useLanguage } from "@/components/providers/LanguageProvider";
@@ -67,6 +68,25 @@ export function ArticlePage({ article }: { article: InsightsArticle }) {
                     >
                       {block.text}
                     </blockquote>
+                  );
+                }
+                if (block.type === "img") {
+                  return (
+                    <figure className="py-2" key={`${block.type}-${index}`}>
+                      <Image
+                        alt={block.alt}
+                        className="h-auto w-full rounded-[14px] border border-ink/10"
+                        height={block.height}
+                        sizes="(max-width: 768px) 100vw, 720px"
+                        src={block.src}
+                        width={block.width}
+                      />
+                      {block.caption && (
+                        <figcaption className="mt-3 text-center text-sm text-ink/50">
+                          {block.caption}
+                        </figcaption>
+                      )}
+                    </figure>
                   );
                 }
                 return (

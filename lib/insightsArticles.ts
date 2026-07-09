@@ -4,7 +4,15 @@
 export type ArticleBlock =
   | { type: "p"; text: string }
   | { type: "h2"; text: string }
-  | { type: "quote"; text: string };
+  | { type: "quote"; text: string }
+  | {
+      type: "img";
+      src: string;
+      alt: string;
+      width: number;
+      height: number;
+      caption?: string;
+    };
 
 export type ArticleFootnote = {
   label: string;
@@ -766,6 +774,14 @@ export const labArticles: InsightsArticle[] = [
           text: "We worked with around 30 Year 9 students. The brief: design a prototype to help the Year 7s arriving in September (around 11 to 12 years old) settle into their first week at a new school. The building tool was Google AI Studio. By the end of one lesson, the class had made 22 working prototypes, small apps you can open and use in a few clicks. One student built a tool for reporting bullying, so that a new student who is being picked on can tell their form tutor in a way that feels less frightening."
         },
         {
+          type: "img",
+          src: "/media/work/projects/bullying-reporter.png",
+          alt: "SPEAKUP, a student-built prototype for reporting bullying",
+          width: 1790,
+          height: 1040,
+          caption: "SPEAKUP: one of the 22 prototypes, built to report bullying in a way that feels less frightening"
+        },
+        {
           type: "p",
           text: "If the story ended there, this would be just another lesson where children made things with AI. But those 22 prototypes are the part of the lesson we value least."
         },
@@ -832,6 +848,14 @@ export const labArticles: InsightsArticle[] = [
         {
           type: "p",
           text: "这次和我们一起工作的是约 30 名 Year 9 学生。任务是：为九月即将入学的 Year 7 新生（约 11 至 12 岁），设计一个帮助他们适应新学校第一周生活的原型作品。搭建工具是 Google AI Studio。一节课结束时，全班做出了 22 个可运行的原型，都是能直接打开、点几下就能用的小应用。比如有个学生做了一个上报霸凌的小工具，让新生遇到被欺负的情况时，可以用一种不那么可怕的方式告诉自己的班主任。"
+        },
+        {
+          type: "img",
+          src: "/media/work/projects/bullying-reporter.png",
+          alt: "学生原型 SPEAKUP：上报霸凌的小工具",
+          width: 1790,
+          height: 1040,
+          caption: "22 个原型之一：SPEAKUP，用一种不那么可怕的方式上报霸凌"
         },
         {
           type: "p",
