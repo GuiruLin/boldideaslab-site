@@ -866,12 +866,12 @@
       "items": [
         {
           "category": "Founder essay",
-          "title": "When AI can do everything, what is left for education?",
+          "title": "When AI can do everything, what can education still do?",
           "description": "The biggest problem with systematic education is not what it teaches, but the hidden message it sends: life has standard answers. In the real world, there are no standard answers, and often it is not even clear what the question is.",
           "author": "Lynn",
           "initial": "L",
-          "status": "Read on WeChat",
-          "href": "https://mp.weixin.qq.com/s/vw2Kv6NsNu7bf4CyT_zyjw"
+          "status": "Read the essay",
+          "href": "/insights/when-ai-can-do-everything"
         },
         {
           "category": "Founder essay",
@@ -879,8 +879,8 @@
           "description": "The goal of education should be debated, not standardised. Different educational ideas should criticise and compete with one another, rather than using one standard to erase diversity. Once everyone optimises toward one metric, the things that cannot be measured are systematically ignored.",
           "author": "Lynn",
           "initial": "L",
-          "status": "Read on WeChat",
-          "href": "https://mp.weixin.qq.com/s/28g9xlJ8u0-KCrHv9Ob5Vg"
+          "status": "Read the essay",
+          "href": "/insights/what-algorithms-cannot-see"
         },
         {
           "category": "Founder essay",
@@ -914,6 +914,11 @@
       "title": "Ideas and perspectives from young creators",
       "body": "This section will gradually collect students' own reflections, reviews, and observations. For now, it remains a future content entry point.",
       "status": "Coming soon"
+    },
+    "article": {
+      "back": "All insights",
+      "translatedNote": "Translated from the Chinese original",
+      "sourceLink": "View"
     },
     "follow": {
       "eyebrow": "Follow",

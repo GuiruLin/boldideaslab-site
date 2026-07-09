@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+import { insightsArticles } from "@/lib/insightsArticles";
+
 const siteUrl = "https://www.boldideaslab.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/work",
     "/eduos",
     "/insights",
+    ...insightsArticles.map((article) => `/insights/${article.slug}`),
     "/contact"
   ].map((path) => ({
     url: `${siteUrl}${path}`,

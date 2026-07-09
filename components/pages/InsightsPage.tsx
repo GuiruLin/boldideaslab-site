@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
 
 import { useLanguage } from "@/components/providers/LanguageProvider";
@@ -189,14 +190,23 @@ export function InsightsPage() {
                     </span>
                     <span className="text-sm text-ink/60">{article.author}</span>
                   </div>
-                  <a
-                    className="shrink-0 text-sm font-medium text-blue underline-offset-4 hover:underline"
-                    href={article.href}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    {article.status}
-                  </a>
+                  {article.href.startsWith("/") ? (
+                    <Link
+                      className="shrink-0 text-sm font-medium text-blue underline-offset-4 hover:underline"
+                      href={article.href}
+                    >
+                      {article.status}
+                    </Link>
+                  ) : (
+                    <a
+                      className="shrink-0 text-sm font-medium text-blue underline-offset-4 hover:underline"
+                      href={article.href}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      {article.status}
+                    </a>
+                  )}
                 </div>
               </article>
             ))}

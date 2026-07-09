@@ -866,12 +866,12 @@
       "items": [
         {
           "category": "创始人文章",
-          "title": "当 AI 什么都会，教育还剩什么",
+          "title": "当 AI 什么都会，教育还能做什么？",
           "description": "系统教育最大的问题不是它教的内容，而是它传递的隐含信息：人生有标准答案。但真实世界不仅没有标准答案，甚至连什么是问题都不清楚。",
           "author": "Lynn",
           "initial": "L",
-          "status": "在公众号阅读全文",
-          "href": "https://mp.weixin.qq.com/s/vw2Kv6NsNu7bf4CyT_zyjw"
+          "status": "阅读全文",
+          "href": "/insights/when-ai-can-do-everything"
         },
         {
           "category": "创始人文章",
@@ -879,8 +879,8 @@
           "description": "教育的目标本来就应该被争论，而非统一标准。不同的教育理念应该相互批评，彼此竞争，而不是用统一标准来消灭多样性。一旦所有人朝着一个指标优化，那些测不出来的东西就会被系统性忽略。",
           "author": "Lynn",
           "initial": "L",
-          "status": "在公众号阅读全文",
-          "href": "https://mp.weixin.qq.com/s/28g9xlJ8u0-KCrHv9Ob5Vg"
+          "status": "阅读全文",
+          "href": "/insights/what-algorithms-cannot-see"
         },
         {
           "category": "创始人文章",
@@ -914,6 +914,11 @@
       "title": "年轻创作者的想法与观点",
       "body": "这一部分会逐步收录学生自己的表达、复盘和观察。现在先保留为未来内容入口。",
       "status": "即将更新"
+    },
+    "article": {
+      "back": "返回敢想观察",
+      "translatedNote": "",
+      "sourceLink": "查看"
     },
     "follow": {
       "eyebrow": "关注我们",
