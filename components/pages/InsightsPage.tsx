@@ -1,10 +1,25 @@
 "use client";
 
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 import { useLanguage } from "@/components/providers/LanguageProvider";
 import { Btn } from "@/components/redesign/Btn";
 import { Reveal } from "@/components/redesign/motion";
+
+// 标题里的强调词染成马蒂斯红（与主页 hero 同一手法）
+function withAccent(title: string, accent?: string): ReactNode {
+  if (!accent) return title;
+  const at = title.indexOf(accent);
+  if (at === -1) return title;
+  return (
+    <>
+      {title.slice(0, at)}
+      <span className="text-red">{accent}</span>
+      {title.slice(at + accent.length)}
+    </>
+  );
+}
 
 const typeDotStyles = ["bg-blue", "bg-gold", "bg-red"] as const;
 const articleInitialStyles = [
@@ -53,7 +68,7 @@ export function InsightsPage() {
           <div>
             <p className="mb-5 t-eyebrow text-gold">{insights.hero.eyebrow}</p>
             <h1 className="max-w-3xl t-display text-blue text-balance">
-              {insights.hero.title}
+              {withAccent(insights.hero.title, insights.hero.accent)}
             </h1>
             <p className="mt-5 max-w-xl t-lead text-ink/70">
               {insights.hero.subtitle}
