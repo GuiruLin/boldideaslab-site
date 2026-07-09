@@ -22,7 +22,7 @@ function withAccent(title: string, accent?: string): ReactNode {
   );
 }
 
-const typeDotStyles = ["bg-blue", "bg-gold", "bg-blue", "bg-red"] as const;
+const typeDotStyles = ["bg-blue", "bg-gold", "bg-red"] as const;
 const articleInitialStyles = [
   "bg-gold text-blue",
   "bg-gold text-blue",
@@ -136,7 +136,7 @@ export function InsightsPage() {
 
       {/* ── 四类内容速览 ───────────────────────────────────────────────────── */}
       <section className="bg-cream px-5 pb-24 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <Reveal className="mx-auto grid max-w-6xl gap-4 sm:grid-cols-3">
           {insights.hero.types.map((type, index) => (
             <article
               className="rounded-[18px] border border-ink/10 bg-white p-6 transition duration-200 hover:-translate-y-1 hover:border-blue/25 hover:shadow-[0_10px_30px_rgba(26,26,26,0.06)]"
@@ -258,61 +258,10 @@ export function InsightsPage() {
         </Reveal>
       </section>
 
-      {/* ── 深度对话 ───────────────────────────────────────────────────────── */}
+      {/* ── 学生声音（保留为未来入口） ─────────────────────────────────────── */}
       <section className="bg-white px-5 py-24 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-6xl">
-          <p className="mb-4 t-eyebrow text-gold">
-            {insights.conversations.eyebrow}
-          </p>
-          <h2 className="t-h2 text-blue">{insights.conversations.title}</h2>
-          <p className="mt-3 t-lead text-ink/60">
-            {insights.conversations.subtitle}
-          </p>
-
-          <div className="mt-12 space-y-6">
-            {insights.conversations.items.map((item) => (
-              <article
-                className="grid overflow-hidden rounded-[18px] border border-ink/10 bg-cream/60 shadow-[0_10px_30px_rgba(26,26,26,0.05)] transition duration-200 hover:-translate-y-1 hover:border-blue/25 lg:grid-cols-[1.1fr_1fr]"
-                key={item.title}
-              >
-                <div className="relative aspect-[16/9] overflow-hidden lg:aspect-auto">
-                  <Image
-                    alt={item.title}
-                    className="object-cover"
-                    fill
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                    src={item.coverImage}
-                  />
-                </div>
-                <div className="flex flex-col justify-center p-7 sm:p-10">
-                  <div className="flex flex-wrap items-center gap-3">
-                    <p className="t-eyebrow text-red">{item.category}</p>
-                    {item.language && (
-                      <span className="rounded-full bg-blue/5 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-blue/60">
-                        {item.language}
-                      </span>
-                    )}
-                  </div>
-                  <h3 className="mt-3 t-h3 text-blue">{item.title}</h3>
-                  <p className="mt-4 leading-7 text-ink/65">{item.description}</p>
-                  <Btn
-                    className="mt-7 w-fit"
-                    href={item.href}
-                    variant="secondary"
-                  >
-                    {item.status}
-                  </Btn>
-                </div>
-              </article>
-            ))}
-          </div>
-        </Reveal>
-      </section>
-
-      {/* ── 学生声音（保留为未来入口） ─────────────────────────────────────── */}
-      <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto max-w-6xl">
-          <div className="grid gap-10 rounded-[24px] border border-ink/10 bg-white p-8 sm:p-12 lg:grid-cols-[0.8fr_1fr] lg:items-center">
+          <div className="grid gap-10 rounded-[24px] border border-ink/10 bg-cream/60 p-8 sm:p-12 lg:grid-cols-[0.8fr_1fr] lg:items-center">
             <div>
               <p className="mb-4 t-eyebrow text-gold">
                 {insights.studentVoices.eyebrow}
@@ -325,7 +274,7 @@ export function InsightsPage() {
               <p className="leading-8 text-ink/70">
                 {insights.studentVoices.body}
               </p>
-              <p className="mt-5 w-fit rounded-full bg-cream px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
+              <p className="mt-5 w-fit rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.14em] text-gold">
                 {insights.studentVoices.status}
               </p>
             </div>

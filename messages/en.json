@@ -853,10 +853,6 @@
           "description": "Field notes in the lab's own voice"
         },
         {
-          "label": "Conversations",
-          "description": "Deeper dialogues with scholars, educators, and founders"
-        },
-        {
           "label": "Student voices",
           "description": "Ideas and perspectives from young creators",
           "status": "Coming soon"
@@ -908,23 +904,6 @@
           "initial": "J",
           "status": "View on Xiaohongshu",
           "href": "http://xhslink.com/o/1p3DoRzQ1KQ"
-        }
-      ]
-    },
-    "conversations": {
-      "eyebrow": "Conversations",
-      "title": "Deep conversations",
-      "subtitle": "With scholars, educators and founders",
-      "coverLabel": "Conversation cover",
-      "items": [
-        {
-          "category": "Bold Ideas Dialogue · Oxford PhD interview",
-          "language": "In Chinese",
-          "title": "Oxford Engineering PhD Dialogue | What is university still for?",
-          "description": "A deep conversation on the value of university and the relationship between academia and business.",
-          "status": "Watch conversation",
-          "href": "http://xhslink.com/o/ABhvRnRpE9a",
-          "coverImage": "/media/insights/conversations/covers/oxford-phd-interview.webp"
         }
       ]
     },

@@ -853,10 +853,6 @@
           "description": "以品牌声音发布的现场记录"
         },
         {
-          "label": "对话与访谈",
-          "description": "与学者、教育者、创业者的深度对话"
-        },
-        {
           "label": "学生声音",
           "description": "年轻创作者的想法与观点",
           "status": "即将更新"
@@ -908,23 +904,6 @@
           "initial": "J",
           "status": "在小红书查看",
           "href": "http://xhslink.com/o/1p3DoRzQ1KQ"
-        }
-      ]
-    },
-    "conversations": {
-      "eyebrow": "对话与访谈",
-      "title": "深度对话",
-      "subtitle": "与学者、教育者和创始人对谈",
-      "coverLabel": "对谈封面",
-      "items": [
-        {
-          "category": "敢想对谈 · 牛津博士专访",
-          "language": "",
-          "title": "对谈牛津工程博士｜大学现在还有什么用？",
-          "description": "关于大学价值、学术与商业关系的深度对谈。",
-          "status": "观看对谈",
-          "href": "http://xhslink.com/o/ABhvRnRpE9a",
-          "coverImage": "/media/insights/conversations/covers/oxford-phd-interview.webp"
         }
       ]
     },
