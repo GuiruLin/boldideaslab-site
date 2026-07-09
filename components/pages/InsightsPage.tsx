@@ -241,7 +241,14 @@ export function InsightsPage() {
                   />
                 </div>
                 <div className="flex flex-col justify-center p-7 sm:p-10">
-                  <p className="t-eyebrow text-red">{item.category}</p>
+                  <div className="flex flex-wrap items-center gap-3">
+                    <p className="t-eyebrow text-red">{item.category}</p>
+                    {item.language && (
+                      <span className="rounded-full bg-blue/5 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-blue/60">
+                        {item.language}
+                      </span>
+                    )}
+                  </div>
                   <h3 className="mt-3 t-h3 text-blue">{item.title}</h3>
                   <p className="mt-4 leading-7 text-ink/65">{item.description}</p>
                   <Btn
