@@ -399,6 +399,78 @@ export const insightsArticles: InsightsArticle[] = [
   }
 ];
 
+const jackyEssay: InsightsArticle = {
+  slug: "when-the-barrier-to-execution-falls-to-zero",
+  author: "Jacky",
+  initial: "J",
+  en: {
+    category: "Founder essay",
+    title: "When the barrier to execution falls to zero",
+    body: [
+      {
+        type: "p",
+        text: "Five years ago today, if I had a deadline that meant working through the night, the task was usually very clear. Write a few backend endpoints, get the tests passing, see the green light, and I could close the laptop and sleep in peace. Creation was typed out line by line, and my energy was strictly bound to physical time. Five years later, on the same kind of night, the workload has become building a complete website from zero. Far more than a rough demo: a real site, ready to go live, with full logic and all its material."
+      },
+      {
+        type: "p",
+        text: "That jump in efficiency seeped into daily life long ago. I used to lack the patience for physical books; now I photograph the contents page and the key chapters, upload them to a knowledge base, and within ten minutes I am in a deep conversation with the book's ideas. The tedious editing of my podcast has been handed over to large models too. In the process my role has completely changed, from a bricklaying programmer to a foreman who spends his strength supervising. You have to watch the machine, correct its course, deal with its hallucinations. By the end of a night, I am more drained than I ever was writing code by hand."
+      },
+      {
+        type: "p",
+        text: "Inside the industry everything feels like a headlong rush, but looking around me I have noticed a huge gap in understanding. Most people's use of AI is still stuck at the first level: one-way question and answer. In my own practice, human-machine collaboration has five levels, from basic Q&A, to self-reflection, to reverse questioning, to delegating and orchestrating execution, and on to multiple agents debating one another to spark ideas. I distilled this into the SCOPE framework. It does not ask you to teach the machine how to think. It only asks you to define, clearly, the boundaries of success. A machine will not correct muddled thinking; it will multiply it. A clear semantic container matters far more than a pile of fiddly steps."
+      },
+      {
+        type: "p",
+        text: "Push the tools to their deepest level and you meet a final question. As a child I studied Go for ten years, and inside that world I built solid coordinates for what was right and wrong. Then AlphaGo defeated the best human players, and it left me with a deep sense of weightlessness. As large models take over code and images, every leap in the technology repeats that feeling. Once a person ties their worth to a concrete executable skill, being replaced is only a matter of time. When the barrier to execution falls to zero, what is left for a human being?"
+      },
+      {
+        type: "p",
+        text: "After these years of hands-on work, I have found that the tools will keep changing, but the creator's value is kept forever. Any software skill or prompting trick you are fluent in today may be obsolete next year. What remains is what machines cannot create from nothing: whether you can observe the plain physical world and shape what you notice into a question, and whether, out of an ocean of machine-generated options, you can make the judgement that best fits what people actually need. In the future, judgement is the new code, and expression is the new means of production. Standing here and looking back, perhaps we should stop and ask: of the things we are doing, how much is real creation, and how much is just pretending to be busy?"
+      }
+    ],
+    footnotes: [
+      {
+        label: "Originally published in Chinese on Xiaohongshu",
+        href: "http://xhslink.com/o/1p3DoRzQ1KQ"
+      }
+    ]
+  },
+  zh: {
+    category: "创始人文章",
+    title: "当执行的门槛降为零",
+    body: [
+      {
+        type: "p",
+        text: "五年前的今天，如果我有一个熬夜赶工的期限，任务通常非常清晰。把几个后端接口写好，跑通测试，看到绿色的通过信号，就能安心合上电脑睡觉。创造是一行行敲出来的，精力被物理时间严格绑定。五年后的今天，同样是一个晚上，我的工作量变成了从零到一搓出一个完整的官网。它远超简单的雏形演示，是一个真实可上线、有完整逻辑和素材的实体网站。"
+      },
+      {
+        type: "p",
+        text: "这种效率提升早就渗透到了生活里。以前我缺乏耐心看实体书，现在拍下目录和核心章节上传知识库，十分钟就能和书里的思想完成深度对话。做播客的繁琐剪辑，也全交给了大模型。在这过程里，我的角色彻底改变，从垒砖的程序员变成了耗费心力的监工。你必须盯着机器，纠正方向，处理幻觉。一晚上下来，心力交瘁的程度远超当年手写代码。"
+      },
+      {
+        type: "p",
+        text: "行业内觉得一切在狂飙突进，但我观察身边却发现了一个巨大认知断层。多数人对 AI 的使用依然停留在单向问答的第一层。在我的实践里，人机协作有五个层级，从基础问答、自我反思、逆向提问，到委派调度执行，再到多智能体互相辩论激发灵感。为此我总结了 SCOPE 框架。它不要求你教机器如何思考，只需要明确定义成功的边界。机器不会修正混乱的思维，只会成倍放大它，清晰的语义容器远比琐碎的步骤更重要。"
+      },
+      {
+        type: "p",
+        text: "把工具用到最深层时，会遇到一个终极问题。小时候我学了十年围棋，在那个世界建立了关于对错的坚固坐标。直到 AlphaGo 击败人类，带给我深深的失重感。随着大模型接管代码和图像，每次技术跃升都在重复这种感觉。人一旦把价值绑定在具体的执行技能上，被替代只是时间问题。执行门槛降到零，人类还剩下什么。"
+      },
+      {
+        type: "p",
+        text: "经过这几年的实操，我发现工具会一直在变，但创作者的价值会被永远保留。任何今天熟练的软件或提示技巧，明年都可能作废。留下来的是机器无法无中生有的东西。你能不能在平淡的物理世界里观察现象并归纳成问题，能不能在海量机器生成的方案中做出最符合人性的判断。在未来，判断力就是新的代码，表达力就是新生产工具。站在这里回望，或许该停下来想想，我们正在做的事里，有多少是真正的创造，又有多少只是在假装忙碌。"
+      }
+    ],
+    footnotes: [
+      {
+        label: "首发于小红书",
+        href: "http://xhslink.com/o/1p3DoRzQ1KQ"
+      }
+    ]
+  }
+};
+
+insightsArticles.push(jackyEssay);
+
 // 品牌声音：以 Bold Ideas Lab 官方名义发布的内容（区别于创始人个人文章）
 export const labArticles: InsightsArticle[] = [
   {
