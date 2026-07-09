@@ -409,23 +409,159 @@ const jackyEssay: InsightsArticle = {
     body: [
       {
         type: "p",
-        text: "Five years ago today, if I had a deadline that meant working through the night, the task was usually very clear. Write a few backend endpoints, get the tests passing, see the green light, and I could close the laptop and sleep in peace. Creation was typed out line by line, and my energy was strictly bound to physical time. Five years later, on the same kind of night, the workload has become building a complete website from zero. Far more than a rough demo: a real site, ready to go live, with full logic and all its material."
+        text: "When I hear someone say that today's AI is a giant bubble, I usually take it as praise of the highest order. Every genuinely disruptive technology goes through this curve before it spreads everywhere: doubted by people, force-ripened by capital. Once you have personally felt your own efficiency multiplied a hundredfold, you understand that calling this moment an \"AI industrial revolution\" is no exaggeration, and there is nothing alarmist in it."
       },
       {
         type: "p",
-        text: "That jump in efficiency seeped into daily life long ago. I used to lack the patience for physical books; now I photograph the contents page and the key chapters, upload them to a knowledge base, and within ten minutes I am in a deep conversation with the book's ideas. The tedious editing of my podcast has been handed over to large models too. In the process my role has completely changed, from a bricklaying programmer to a foreman who spends his strength supervising. You have to watch the machine, correct its course, deal with its hallucinations. By the end of a night, I am more drained than I ever was writing code by hand."
+        text: "The world is now changing fast enough to cause a kind of physical vertigo."
       },
       {
         type: "p",
-        text: "Inside the industry everything feels like a headlong rush, but looking around me I have noticed a huge gap in understanding. Most people's use of AI is still stuck at the first level: one-way question and answer. In my own practice, human-machine collaboration has five levels, from basic Q&A, to self-reflection, to reverse questioning, to delegating and orchestrating execution, and on to multiple agents debating one another to spark ideas. I distilled this into the SCOPE framework. It does not ask you to teach the machine how to think. It only asks you to define, clearly, the boundaries of success. A machine will not correct muddled thinking; it will multiply it. A clear semantic container matters far more than a pile of fiddly steps."
+        text: "Five years ago today, if I had a deadline that meant working through the night, my task list was usually very clear: write a few backend APIs, run the tests, watch the screen return its green pass signal, and I could close the laptop and go to sleep in peace. Creation back then was typed out line by line, in an intensely linear rhythm, with my energy strictly bound to the passing of physical time."
       },
       {
         type: "p",
-        text: "Push the tools to their deepest level and you meet a final question. As a child I studied Go for ten years, and inside that world I built solid coordinates for what was right and wrong. Then AlphaGo defeated the best human players, and it left me with a deep sense of weightlessness. As large models take over code and images, every leap in the technology repeats that feeling. Once a person ties their worth to a concrete executable skill, being replaced is only a matter of time. When the barrier to execution falls to zero, what is left for a human being?"
+        text: "Back to today, five years later. Same kind of night, same kind of deadline, and my workload has become building a complete official website from zero."
       },
       {
         type: "p",
-        text: "After these years of hands-on work, I have found that the tools will keep changing, but the creator's value is kept forever. Any software skill or prompting trick you are fluent in today may be obsolete next year. What remains is what machines cannot create from nothing: whether you can observe the plain physical world and shape what you notice into a question, and whether, out of an ocean of machine-generated options, you can make the judgement that best fits what people actually need. In the future, judgement is the new code, and expression is the new means of production. Standing here and looking back, perhaps we should stop and ask: of the things we are doing, how much is real creation, and how much is just pretending to be busy?"
+        text: "It is far more than a simple prototype, and far beyond the kind of Vibe Coding that never leaves the demo stage. It is a real site that can go live, with complete logic and all kinds of complex material. And in the process, my role changed completely. I shed the identity of the bricklaying programmer at the bottom of the stack and became an exhaustingly attentive foreman and architect."
+      },
+      {
+        type: "p",
+        text: "Most of the actual code and material was handed to AI to generate, but today's intelligence has not yet reached full autonomy. You have to keep watching it, correcting its direction, handling its hallucinations. By the end of that one night, I was more drained than I ever was writing code by hand."
+      },
+      {
+        type: "p",
+        text: "Follow this trend and you can peer at the future. Today a human still has to watch the machine finish a website; five years from now these tools will be stronger and more autonomous, and even the act of \"watching\" can be dropped. Five years ago I could not have predicted today's way of working. But today, I can already roughly foresee how humans and machines will work together five years from now."
+      },
+      { type: "h2", text: "Time, folded flat" },
+      {
+        type: "p",
+        text: "This hundredfold gain in efficiency seeped into every corner of life long ago."
+      },
+      {
+        type: "p",
+        text: "I never used to enjoy reading books. Traditional reading demands enormous patience: you follow the author's logic page by page, hunting for the information you need. Today, the friction of acquiring knowledge has dropped close to zero."
+      },
+      {
+        type: "p",
+        text: "Take a physical book at home. My process has become extremely simple. I ask my dad to photograph the contents page and the key chapters and send them to me, and I upload the photos straight into an IMA knowledge base. Within ten minutes I am in a deep conversation with the ideas in that book, extracting exactly the understanding I need."
+      },
+      {
+        type: "p",
+        text: "The same thing happened to my podcast workflow. Editing, cutting, organising the timeline: fiddly tasks that used to consume a great deal of labour now all go to Google AI Studio. Once I have set the framework and the SOP for the process, everything that remains is pure execution. Different AI models have different strengths, some at long-text understanding, some at detailed proofreading. The human job becomes recognising each tool's strengths and snapping them together into a workflow, like building blocks."
+      },
+      { type: "h2", text: "The deep end of collaboration, and a container for thinking" },
+      {
+        type: "p",
+        text: "People inside this industry feel everything is hurtling forward. But when I turn around and look at the people near me, I see a huge gap in understanding. For 99% of people, using AI still means the first level: one-way \"human asks, AI answers.\" You give an instruction, it returns a passage of text, the conversation ends."
+      },
+      {
+        type: "p",
+        text: "If you treat it as nothing more than a substitute for a search engine, that is an enormous waste of compute. As I see it, collaboration between humans and AI divides cleanly into five levels."
+      },
+      {
+        type: "p",
+        text: "Beyond the most basic Q&A, you can enter the second level and let it help you reflect: before asking, work out what your real question actually is. At the third level you can prompt in reverse, letting the AI question you first, or audit its own output. The fourth level is delegation: like the conductor of an orchestra, you dispatch different AIs to carry out specialist tasks and report back. And at the fifth level, you can set two different AIs debating each other, and in the friction between machine and machine, ideas surface that human effort alone could never reach."
+      },
+      {
+        type: "p",
+        text: "In teaching and sharing, I have tried to distil the intuitions scattered through daily, high-frequency use. What I found is that when people fail to get good output from AI, it is mostly not because they lack technical understanding. It is because they have not worked out what they actually want."
+      },
+      {
+        type: "p",
+        text: "AI never corrects muddled human thinking. It only multiplies the muddle."
+      },
+      {
+        type: "p",
+        text: "To solve this, I distilled a prompting framework called SCOPE. It has completely outgrown the early prompt methods of two or three years ago. It no longer teaches you to feed the machine rigid step-by-step instructions; it teaches you to set up a clear semantic container."
+      },
+      {
+        type: "p",
+        text: "You no longer need to tell the AI \"how to think.\" You only need to define, clearly, the boundaries of success: what your role is, what the full context is, what the final objective is, what form the output should take, and where the lines are that must never be crossed. As AI becomes more and more agentic, clear boundary definition matters far more than fiddly operational steps."
+      },
+      { type: "h2", text: "Re-estimating human value in the age of the algorithm" },
+      {
+        type: "p",
+        text: "Use AI at its deepest level and you will, unavoidably, meet a final question. It is a question that tormented me for many years."
+      },
+      {
+        type: "p",
+        text: "As a child I studied Go for ten years. In that black-and-white world, as long as you kept training, you could build a solid set of coordinates for good and bad, right and wrong. Then in 2016, AlphaGo defeated humanity outright on the board. What I felt in that moment was not simple shock but a deep weightlessness. The coordinates of value you spent ten years building suddenly lose their anchor."
+      },
+      {
+        type: "p",
+        text: "Later I took a master's degree in AI and joined hackathons and competitions at the frontier. As large language models exploded, I watched AI take over code, painting, video. Every leap of the technology repeated the weightlessness AlphaGo first gave me."
+      },
+      {
+        type: "p",
+        text: "Once a person ties their worth to one concrete executable skill, being replaced is only a matter of time."
+      },
+      {
+        type: "p",
+        text: "If technology has driven the barrier to execution down to zero, what exactly is left for humans? After these years of practice, my conclusion is: Tools change, Creators remain. The tools will keep changing, but the value of the creator is kept forever."
+      },
+      {
+        type: "p",
+        text: "Any software interface you have mastered today, even particular prompting tricks, may be completely obsolete next year. What stays is what machines cannot create from nothing."
+      },
+      {
+        type: "p",
+        text: "Machines are superb at deduction: give one a theory and it can instantly unfold it into countless concrete cases and scenes. What is genuinely scarce in humans is induction: whether, in a plain and noisy physical world, you can notice a phenomenon and shape it into a question."
+      },
+      {
+        type: "p",
+        text: "Can you spot a real pain point in daily life? Can you raise a question that is genuinely valuable and sharp enough? And faced with an ocean of AI-generated options, can you make the judgement that is most human and most on target?"
+      },
+      { type: "h2", text: "A system that lags, and a steady handing-down" },
+      {
+        type: "p",
+        text: "Seeing these trends clearly, I have turned more of my attention to young people and begun exploring education."
+      },
+      {
+        type: "p",
+        text: "In the adult world, many people have already been set hard by the old evaluation system. We are used to hunting for standard answers, used to learning a craft along a fixed path and trading that craft for pay."
+      },
+      {
+        type: "p",
+        text: "But the young people of the next era are born into a world where \"if you can think it up, AI can help you build it.\" In a world like that, the traditional education system looks badly out of date. If schools keep grading them on execution, using a single standard answer to erase their diversity, that is not only a waste; it is stripping away, with our own hands, the cards they will need to survive the future."
+      },
+      {
+        type: "p",
+        text: "Education in China still has a long way to go. Much of the time, the biggest problem with systematic education is not what it teaches but the hidden message it sends: life has standard answers. The real world not only has no standard answers; often it is not even clear what the real question is."
+      },
+      {
+        type: "p",
+        text: "So I do not want to teach them how to use any particular AI tool. Tools are just the process; AI is just the medium. What I want to give them is an environment where they can try, fail, and experiment. In the course of building a real project, they discover the boundaries of the tools for themselves, and feel for themselves what it is like to turn a vague idea into something real."
+      },
+      {
+        type: "p",
+        text: "Good education is never about telling you what to do. It guides you to think from the inside out and to discover for yourself. Teaching a child to ask questions is really teaching them to observe things carefully and to describe what they see."
+      },
+      {
+        type: "p",
+        text: "At its heart, this kind of education is a steady handing-down."
+      },
+      {
+        type: "p",
+        text: "We hand them, early, what we ground out of countless real projects: what we learned about working with people, our instincts about taste, our understanding of how to break out of information cocoons. So that when they one day face, alone and unavoidably, a world completely reshaped by AI, they will have a steadiness inside. They will know that however the tools evolve, as long as they keep the ability to ask questions and make judgements, they will not be easily discarded."
+      },
+      {
+        type: "p",
+        text: "At a stage like this, when the old order keeps dissolving and the new rules are not yet fully written, clear-eyed observation means far more than blind anxiety. Facing algorithms that evolve by the day, I prefer to see them as a mirror: they keep stripping away the mechanical properties we thought were important, and force us to look for the purest value of being human."
+      },
+      {
+        type: "quote",
+        text: "1. When machines fully unlock the ceiling on efficiency, what is the floor that decides where things actually go?"
+      },
+      {
+        type: "quote",
+        text: "2. If the cost of execution approaches free, how should we re-price a singular, good question?"
+      },
+      {
+        type: "quote",
+        text: "3. Looking back at today from five years in the future: of what we are doing right now, how much is real creation, and how much is just pretending to be busy?"
       }
     ],
     footnotes: [
@@ -441,23 +577,159 @@ const jackyEssay: InsightsArticle = {
     body: [
       {
         type: "p",
-        text: "五年前的今天，如果我有一个熬夜赶工的期限，任务通常非常清晰。把几个后端接口写好，跑通测试，看到绿色的通过信号，就能安心合上电脑睡觉。创造是一行行敲出来的，精力被物理时间严格绑定。五年后的今天，同样是一个晚上，我的工作量变成了从零到一搓出一个完整的官网。它远超简单的雏形演示，是一个真实可上线、有完整逻辑和素材的实体网站。"
+        text: "听到有人说现在的 AI 是一个巨大的泡沫时，我通常会觉得这其实是一种最高级别的赞赏。任何真正具有颠覆性的新技术在全面铺开之前，都会经历这样一个被人质疑、被资本催熟的曲线。当你亲身体验过个人效率被成百倍地放大之后，你就会明白，把当下称为“AI 工业革命”绝对没有唬人，也没有任何危言耸听的成分。"
       },
       {
         type: "p",
-        text: "这种效率提升早就渗透到了生活里。以前我缺乏耐心看实体书，现在拍下目录和核心章节上传知识库，十分钟就能和书里的思想完成深度对话。做播客的繁琐剪辑，也全交给了大模型。在这过程里，我的角色彻底改变，从垒砖的程序员变成了耗费心力的监工。你必须盯着机器，纠正方向，处理幻觉。一晚上下来，心力交瘁的程度远超当年手写代码。"
+        text: "世界变化的速度已经快到让人产生一种生理上的眩晕感。"
       },
       {
         type: "p",
-        text: "行业内觉得一切在狂飙突进，但我观察身边却发现了一个巨大认知断层。多数人对 AI 的使用依然停留在单向问答的第一层。在我的实践里，人机协作有五个层级，从基础问答、自我反思、逆向提问，到委派调度执行，再到多智能体互相辩论激发灵感。为此我总结了 SCOPE 框架。它不要求你教机器如何思考，只需要明确定义成功的边界。机器不会修正混乱的思维，只会成倍放大它，清晰的语义容器远比琐碎的步骤更重要。"
+        text: "五年前的今天，如果我有一个需要熬夜赶工的 deadline，我的任务清单通常很明确：把几个后端的 API 写好，跑一遍测试，看到屏幕上返回绿色的通过信号，我就可以安心合上电脑去睡觉。那时候的创造是一行一行敲出来的，呈现出一种极其线性的节奏，人的精力被物理时间的流逝严格绑定。"
       },
       {
         type: "p",
-        text: "把工具用到最深层时，会遇到一个终极问题。小时候我学了十年围棋，在那个世界建立了关于对错的坚固坐标。直到 AlphaGo 击败人类，带给我深深的失重感。随着大模型接管代码和图像，每次技术跃升都在重复这种感觉。人一旦把价值绑定在具体的执行技能上，被替代只是时间问题。执行门槛降到零，人类还剩下什么。"
+        text: "回到五年后的今天。同样是一个晚上的 deadline，我的工作量变成了从零到一全部搓出一个完整的官网。"
       },
       {
         type: "p",
-        text: "经过这几年的实操，我发现工具会一直在变，但创作者的价值会被永远保留。任何今天熟练的软件或提示技巧，明年都可能作废。留下来的是机器无法无中生有的东西。你能不能在平淡的物理世界里观察现象并归纳成问题，能不能在海量机器生成的方案中做出最符合人性的判断。在未来，判断力就是新的代码，表达力就是新生产工具。站在这里回望，或许该停下来想想，我们正在做的事里，有多少是真正的创造，又有多少只是在假装忙碌。"
+        text: "它远超一个简单的 prototype，也远超那些仅仅停留在演示阶段的 Vibe Coding。它是一个真实可以上线、拥有完整逻辑、涵盖各种复杂素材的实体网站。在这个过程里，我的角色发生了彻底的改变。我褪去了底层垒砖程序员的身份，转变成了一个极其耗费心力的监工和架构师。"
+      },
+      {
+        type: "p",
+        text: "虽然大部分具体的代码和素材都交给了 AI 去生成，但目前的智能化程度还没有达到完全自治的水平。你必须一直盯着它，随时纠正它的方向，处理它的幻觉。这一个晚上下来，心力交瘁的程度甚至远超当年自己手写代码。"
+      },
+      {
+        type: "p",
+        text: "我们完全可以顺着这个趋势去窥探未来的样子。今天还需要人盯着它完成一个网站，五年后，这些工具的能力会变得更强，智能化程度会更高，人连“盯着”这个动作都可以省去了。五年前我完全无法预测到今天的生产方式，但在今天，我已经能大概预见到五年后人类与机器共事的状态。"
+      },
+      { type: "h2", text: "那些被彻底压缩的时间折叠" },
+      {
+        type: "p",
+        text: "这种百倍效率的提升，早就渗透到了生活的方方面面。"
+      },
+      {
+        type: "p",
+        text: "以前我其实挺不爱看书的。传统的阅读方式要求人具备极高的耐心，你需要顺着作者的行文逻辑，一页一页地去寻找你需要的信息。但在今天，获取知识的阻力被降到了无限低。"
+      },
+      {
+        type: "p",
+        text: "比如家里有一本实体书，我的处理流程变得极其简单。我让我爸拿手机拍下目录和核心章节的照片发给我，将这些图片直接上传到 IMA 知识库里。仅仅花十分钟时间，我就能跟这书里的思想完成一次深度的对话，直接抽取我最需要的认知。"
+      },
+      {
+        type: "p",
+        text: "同样的事情也发生在我的播客制作流程里。编辑、剪辑、梳理时间线，这些曾经需要耗费大量人工的琐碎任务，现在我都交给了 Google AI Studio。只要我把前期的框架和流程的 SOP 制定下来，剩下的事情就是纯粹的执行。不同的 AI 模型有它们各自擅长的切入点，有的擅长长文本理解，有的擅长细节校对。人的工作变成了识别不同工具的特长，然后像搭积木一样把它们拼接到工作流里。"
+      },
+      { type: "h2", text: "协作的深水区与思维的容器" },
+      {
+        type: "p",
+        text: "在这个行业里的人会觉得一切都在狂飙突进，但当我转过头去观察身边的环境时，我发现了一个巨大的认知断层。99% 的人对 AI 的使用，依然停留在第一层，也就是单向的“人问 AI 答”。你给出一个指令，它返回一段文字，对话结束。"
+      },
+      {
+        type: "p",
+        text: "如果你仅仅把它当成一个搜索引擎的替代品，那其实是对算力的极大浪费。在我的认知里，人与 AI 的协作是可以清晰划分为五个层级的。"
+      },
+      {
+        type: "p",
+        text: "当你跨越了最基础的问答，你可以进入第二层，让它帮你做自我反思，在提问前先理清自己真正的问题到底是什么。到了第三层，你可以进行逆向提示，让 AI 先向你提问，或者让它自己审计自己的输出。第四层是委派，你像交响乐团的指挥一样，调度不同的 AI 去执行专业任务并向你汇报。而到了第五层，你可以让两个不同的 AI 互相辩论，在机器与机器的摩擦中，浮现出那些你单凭人力永远无法触及的灵感。"
+      },
+      {
+        type: "p",
+        text: "在做教学和分享的过程中，我试图把这些散落在日常高频使用中的直觉提炼出来。我发现，很多人得不到好的 AI 输出，本质上不是因为不够懂技术，而是因为没有想清楚自己到底要什么。"
+      },
+      {
+        type: "p",
+        text: "AI 从来不会修正人类混乱的思维，它只会成倍地放大这种混乱。"
+      },
+      {
+        type: "p",
+        text: "为了解决这个问题，我总结出了一套 SCOPE 提示词框架。它完全脱胎于两三年前那些早期的提示法，不再是教人如何一步步给机器下达死板的指令，而是教人如何设定一个清晰的语义容器。"
+      },
+      {
+        type: "p",
+        text: "你不再需要告诉 AI“你应该怎么思考”，你只需要明确地定义出成功的边界：你的角色是什么，所有的背景上下文是什么，最终的客观目标是什么，你需要怎样的呈现形式，以及绝对不能触碰的底线在哪里。当 AI 越来越具备自主智能（Agentic）的时候，清晰的边界定义，远比琐碎的操作步骤重要得多。"
+      },
+      { type: "h2", text: "从算法降维中重估人的价值" },
+      {
+        type: "p",
+        text: "当你把 AI 用到最深层的时候，你会不可避免地遇到一个终极的问题。这其实是一个折磨了我很多年的问题。"
+      },
+      {
+        type: "p",
+        text: "小时候我学了十年的围棋。在那个黑白世界里，人只要不断训练，就能建立起一套关于好坏对错的坚固坐标。直到 2016 年，AlphaGo 在赛场上彻底击败了人类。那一刻我体会到的不是单纯的震惊，而是一种深深的失重感。你花了十年建立的价值坐标，突然失去了原本的锚点。"
+      },
+      {
+        type: "p",
+        text: "后来我去读了 AI 相关的硕士，参加了许多前沿的极客松和竞赛。随着大语言模型的爆发，我看到 AI 全面接管了代码、绘画、视频。每一次技术的跃升，都在重复当年 AlphaGo 带给我的失重感。"
+      },
+      {
+        type: "p",
+        text: "人一旦把自己的价值绑定在某一项具体的执行技能上，被替代就只是时间问题。"
+      },
+      {
+        type: "p",
+        text: "既然技术把执行的门槛降到了零，人类到底还剩下什么？经过这几年的实践，我得出的结论是：Tools change, Creators remain。工具会一直在变，但创作者的价值会被永远保留。"
+      },
+      {
+        type: "p",
+        text: "任何你今天熟练掌握的软件界面，甚至某些特定的提示词技巧，在明年可能就会彻底作废。但留下来的，是那些机器无法无中生有的东西。"
+      },
+      {
+        type: "p",
+        text: "机器极其擅长推演法，只要你给它一个理论，它能迅速推演到无数个具体的现象和场景中。但人类真正稀缺的是归纳法，是你能不能在平淡无奇、充满杂音的物理世界里，观察到一个现象，然后把它归纳成一个问题。"
+      },
+      {
+        type: "p",
+        text: "你能不能在日常生活中发现一个痛点？你能不能提出一个真正有价值、足够锐利的问题？在面对海量 AI 生成的方案时，你能不能做出那个最符合人性、最切中要害的判断？"
+      },
+      { type: "h2", text: "被滞后的系统与平稳的传承" },
+      {
+        type: "p",
+        text: "认清了这些趋势，我也把目光更多地放在了青少年身上，开始做一些教育相关的探索。"
+      },
+      {
+        type: "p",
+        text: "在成年人的世界里，很多人已经被旧的评价体系固化了。大家习惯了去寻找标准答案，习惯了按照既定的路径去学习一门手艺，依靠这门手艺去换取报酬。"
+      },
+      {
+        type: "p",
+        text: "但下一个时代的年轻人，他们一出生就面对着一个“只要你能想出来，AI 就能帮你做出来”的世界。在这样的世界里，传统的教育系统显得极其滞后。如果学校依然在用考核执行力的方式去评价他们，用唯一的标准答案去消灭他们的多样性，这不仅是一种资源浪费，更是在亲手剥夺他们在未来生存的底牌。"
+      },
+      {
+        type: "p",
+        text: "国内的教育还有很长的一段路要走。很多时候，系统教育最大的问题不是它教的内容，而是它传递的隐含信息：人生有标准答案。但真实世界不仅没有标准答案，甚至连什么是真正的问题都不清楚。"
+      },
+      {
+        type: "p",
+        text: "所以，我并不想去教他们某一个具体的 AI 工具怎么用。工具只是过程，AI 只是媒介。我更想给他们提供一个可以去试错、去实验的环境。在动手做一个真实项目的过程中，让他们自己去发现工具的边界，自己去体会把一个模糊的想法变成现实的成就感。"
+      },
+      {
+        type: "p",
+        text: "好的教育一定不是教你去做什么，而是引导你由内而外地去思考，去自己发现。培养一个孩子会提问，其实就是培养他认真观察事物现象、描述现象的能力。"
+      },
+      {
+        type: "p",
+        text: "这种教育的本质，其实是一种平稳的传承。"
+      },
+      {
+        type: "p",
+        text: "把我们在无数次项目实战中摸爬滚打得出的关于人际协作的经验，关于审美的偏好，关于如何突破信息茧房的认知，提前交给他们。当他们在未来不可避免地要独自面对那个被 AI 彻底重塑的世界时，他们心里会有一个底气。他们会知道，无论工具怎么进化，只要自己还保持着提出问题和做出判断的能力，就不会被轻易淘汰。"
+      },
+      {
+        type: "p",
+        text: "在这样一个旧秩序不断瓦解、新规则尚未完全建立的阶段，保持清醒的观察比盲目的焦虑要有意义得多。面对每天都在进化的算法，我更愿意把它看作是一面镜子，它在不断剥离掉那些我们以为很重要的机械属性，逼着我们去寻找人类本身最纯粹的价值。"
+      },
+      {
+        type: "quote",
+        text: "1. 当效率的上限被机器彻底解锁，什么才是那个决定事物走向的下限？"
+      },
+      {
+        type: "quote",
+        text: "2. 如果执行的成本趋近于免费，我们该如何重新定价一个独特的好问题？"
+      },
+      {
+        type: "quote",
+        text: "3. 站在五年后回望今天，我们现在正在做的事情里，有多少是真正的创造，又有多少只是在假装忙碌？"
       }
     ],
     footnotes: [
