@@ -963,7 +963,7 @@
       "eyebrow": "Contact",
       "accent": "Contact",
       "title": "Contact us",
-      "subtitle": "Programmes, enrolment, and partnerships—we read every message.",
+      "subtitle": "Programmes, partnerships, and enrolment questions. We read every message.",
       "lead": "Use one enquiry form and we will respond with the right next step for your context.",
       "primary": "Open the enquiry form",
       "secondary": "Explore programmes"
@@ -996,16 +996,16 @@
       "eyebrow": "Programme notes",
       "title": "Quick facts before you write",
       "items": [
-        "Coolest Projects is a five-week intensive sprint; the latest start date is confirmed on the programme page.",
         "Online small group · ages 8-14 · no programming background required.",
-        "Pricing and workshop offers follow the latest information on the programme page.",
+        "School workshops and in-school lessons are tailored to each school's context.",
+        "The Coolest Projects sprint is a five-week intensive; tell us your timing and we will confirm the next cohort.",
         "Places are limited; after you submit, we can confirm whether seats remain."
       ]
     },
     "cta": {
       "eyebrow": "Get started",
       "title": "Ready to begin?",
-      "body": "Leave a short note in the form, or review the programme page for the latest pathway and fees.",
+      "body": "Leave a short note in the form, or review the programmes page for our method and track record.",
       "primary": "Explore programmes",
       "secondary": "Open enquiry form"
     }
