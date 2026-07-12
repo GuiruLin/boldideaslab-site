@@ -58,3 +58,35 @@ Bold Ideas Lab（敢想實驗室）官網。Lynn（林桂茹）的 AI 教育品�
 
 ### 對外署名
 - 以 BIL 名義談成/交付的一切（學校、GGE、官網連到的站）對外統一署 Bold Ideas Lab；CoAI 是 Jacky 的社群品牌，兩邊分開。畫廊站 footer 從 CoAI 改 BIL 由 Jacky 那邊處理（畫廊 repo 不在本 session 授權範圍）。
+
+## 設計決議記錄（2026-07-12，insights・contact 收官與上線準備）
+
+### insights 頁定版
+- 結構順序：**創始人聲音在前，品牌聲音在後**——Founder essays → From Bold Ideas Lab（來自敢想實驗室）→ Student voices（未來入口）→ Follow → CTA。hero 內容地圖三卡。
+- 「對話與訪談」板塊整個移除：唯一的牛津對談是中文內容外鏈小紅書，英文訪客點不開，「單獨放著很形式」。以後有帶英文字幕的對談/播客再開回。
+- 頁面標題定版：「Bold Ideas, thinking out loud」／「敢想 · 邊想邊說」，紅色 accent = loud／說。
+- Follow 板塊官方帳號放第一位：LinkedIn `linkedin.com/company/bold-ideas-lab`（英文更新）；中文管道 = 小紅書 + 微信公眾號「敢想實驗室」。Lynn/Jacky 個人頻道其後。
+
+### 原生文章系統（文章不再外鏈公眾號/小紅書）
+- 內容檔 `lib/insightsArticles.ts`：`insightsArticles`（創始人文章）+ `labArticles`（品牌文章）；路由 `app/(legacy)/insights/[slug]`，generateStaticParams 兩個陣列都要含，sitemap 同步。
+- 雙語規則：**中文界面 = Lynn/Jacky 原文一字不改**（只把擠在段落中的小標題拆出來）；**英文界面 = 品牌聲音翻譯**（英式拼寫、無破折號）。EN 頁不標「Translated from…」，文末腳註寫首發處即可。
+- ArticleBlock 支援 `p / h2 / quote / img`；img 帶 width/height/caption，插在「提到它的段落」後面。
+- 已發四篇：Lynn 兩篇、Jacky 一篇（PDF 全文版，四小節 + 結尾三問作引文塊）、品牌一篇（Plymouth 試點，四張配圖）。
+- Jacky 文章的卡片摘要保留他的原句「判斷力就是新的代碼，表達力就是新生產工具」（Lynn 指定保留，即使全文裡沒有這句）。
+- 微信/小紅書/LinkedIn 對外抓取一律 403：要正文必須 Lynn 貼文字或傳 PDF；圖片版 PDF 用 poppler 渲染頁面讀。
+
+### 開場造型：「文字住進造型裡」成為定式
+- 六頁開場全套：首頁金色立場面板 / programmes 金面板 / EduOS 藍色幾何 / work 火車 / **insights 信紙鋼筆** / **contact 金色紙飛機**。後三頁都是內容寫在造型裡。
+- insights 信紙：白紙 + 莫蘭迪黃 `#C9B27C` 邊框與橫線（與反饋翻頁書同族的一次性用色）、信頭 eyebrow + 莫蘭迪小拱、標題藍 + 紅 accent、正文落在橫線上（`[line-height:2.6rem]` 對齊 repeating-linear-gradient）、右下署名 + 紅點封蠟、全藍鋼筆（米白筆夾）靠右緣、底層墊莫蘭迪淡色紙。
+- 信紙右側油畫顏料的**物理邏輯**（Lynn 明確要求）：不許有甩出的細線（顏料不會出線條）、不許花瓣狀規則波浪；正確語彙 = 不對稱潑灑塊 + 順重力往下淌一道（末端積成滴）+ 大小不一的四散墨滴。
+- contact 紙飛機：「發送」圖標剪影（左 V 形尾缺口 + 右機頭尖角），雙層同形 clip-path 做藍描邊 + 金色機身，深一號金的折痕斜面（linear-gradient 硬邊），機頭白色折面三角；標題藍 + 紅、正文白；機身下方紅點 + 藍虛線航跡。
+
+### contact 頁
+- 重建到 redesign 系統；諮詢區 = Google 表單卡 + hello@ 郵箱卡 + 「建議補充信息」清單（文案早就有、舊版從未渲染）。
+- 全站去價格與開課時間表述（與 programmes「只講方法與記錄」對齊）：不寫「價格以課程頁為準」「核實費用」這類話。
+
+### 上線與基建（2026-07-12 進行中）
+- 郵箱現狀：hello@boldideaslab.com 只是 Namecheap 免費轉發（MX = eforward*.registrar-servers.com，轉 Jacky 個人信箱）+ 一個以此為登錄名的免費 Google 帳號。方案：Google Workspace Business Starter（£7/人/月），hello 作管理員，lynn@/jacky@ 作免費別名；地址不變，網站不用改。
+- 域名與 DNS 都在 Jacky 的 Namecheap 帳號。待 Jacky 加四條記錄：① Google 驗證 TXT ② Custom MX `smtp.google.com`/1（舊轉發隨之失效，先知會）③ SPF 換 `v=spf1 include:_spf.google.com ~all` ④ `_vercel` TXT（把正式域名從 Jacky 個人 Vercel 帳號驗證轉入 guiru-s-projects）。加完在雲端用 `dig` 驗證生效再讓 Lynn 點 Verify/Refresh。
+- Vercel 兩專案：`boldideaslab-site` 的 Root Directory 曾填舊路徑 `bold-ideas-lab-web-main` 導致每次構建 1 秒失敗（已指導清空）；`boldideaslab-site-qykm` 構建正常，分支預覽用它。正式域名此前掛在 Jacky 個人帳號的專案上，官網一直由那邊服務。
+- 上線順序：域名驗證入隊 → 合併 PR #1 → 打開 www.boldideaslab.com 實際驗收 → 清理多餘 Vercel 專案。
