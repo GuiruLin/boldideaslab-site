@@ -29,7 +29,11 @@ const articleInitialStyles = [
   "bg-blue text-cream"
 ] as const;
 
-/** 敢想观察专属造型：一支钢笔（蓝色笔身 · 金色笔夹与笔尖） */
+// 信纸配色：米黄纸面 · 莫兰迪黄边框与横线（与学生反馈翻页书同族的一次性用色）
+const PAPER_BG = "#F3EBD3";
+const MORANDI = "#C9B27C";
+
+/** 敢想观察专属造型：一支蓝色钢笔（米白笔夹与环带） */
 function Pen({ className = "" }: { className?: string }) {
   return (
     <svg
@@ -40,19 +44,19 @@ function Pen({ className = "" }: { className?: string }) {
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* 笔帽顶 */}
-      <rect fill="#C9A84C" height="10" rx="5" width="20" x="20" y="4" />
+      <rect fill="#F5F2EA" height="10" rx="5" width="20" x="20" y="4" />
       {/* 笔身 */}
       <rect fill="#002FA7" height="140" rx="12" width="28" x="16" y="12" />
       {/* 笔夹 */}
-      <rect fill="#C9A84C" height="58" rx="3" width="6" x="44" y="22" />
-      {/* 金色环带 */}
-      <rect fill="#C9A84C" height="10" width="28" x="16" y="152" />
+      <rect fill="#F5F2EA" height="58" rx="3" width="6" x="44" y="22" />
+      {/* 环带 */}
+      <rect fill="#F5F2EA" height="10" width="28" x="16" y="152" />
       {/* 握位 */}
       <path d="M16 162 h28 l-6 36 h-16 z" fill="#002FA7" />
       {/* 笔尖 */}
-      <path d="M24 198 L36 198 L34 222 L30 240 L26 222 Z" fill="#C9A84C" />
-      <line stroke="#002FA7" strokeWidth="2" x1="30" x2="30" y1="204" y2="228" />
-      <circle cx="30" cy="212" fill="#002FA7" r="2.5" />
+      <path d="M24 198 L36 198 L34 222 L30 240 L26 222 Z" fill="#00227A" />
+      <line stroke="#F5F2EA" strokeWidth="2" x1="30" x2="30" y1="204" y2="228" />
+      <circle cx="30" cy="212" fill="#F5F2EA" r="2.5" />
     </svg>
   );
 }
@@ -63,73 +67,74 @@ export function InsightsPage() {
 
   return (
     <>
-      {/* ── Hero：信纸造型开场 ─────────────────────────────────────────────── */}
+      {/* ── Hero：信纸作文字框（开场文字全部写在信里，笔靠在右侧） ───────────── */}
       <section className="bg-cream px-5 pb-20 pt-20 sm:px-6 lg:px-8 lg:pb-24 lg:pt-28">
-        <Reveal className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <p className="mb-5 t-eyebrow text-gold">{insights.hero.eyebrow}</p>
-            <h1 className="max-w-3xl t-display text-blue text-balance">
-              {withAccent(insights.hero.title, insights.hero.accent)}
-            </h1>
-            <p className="mt-5 max-w-xl t-lead text-ink/70">
-              {insights.hero.subtitle}
-            </p>
-            <p className="mt-6 max-w-2xl border-l-2 border-gold pl-5 leading-8 text-ink/65">
-              {insights.hero.lead}
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Btn href="#articles">{insights.articles.eyebrow}</Btn>
-              <Btn href="/work" variant="secondary">
-                {dictionary.actions.work}
-              </Btn>
-            </div>
-          </div>
-
-          {/* 信纸 + 钢笔：我们相信的事，写在纸上 */}
-          <div className="relative mx-auto w-full max-w-sm pr-10 sm:pr-12">
+        <Reveal className="mx-auto max-w-6xl">
+          <div className="relative">
             {/* 底层纸：叠纸的厚度感 */}
             <span
               aria-hidden
-              className="absolute inset-x-6 inset-y-2 rotate-[2deg] rounded-[8px] bg-white/80"
+              className="absolute inset-x-8 -bottom-2.5 top-3 rotate-[0.8deg] rounded-[10px] bg-white/85"
             />
-            {/* 信纸本体：金色底 · 白/蓝字 */}
-            <div className="relative -rotate-1 rounded-[8px] bg-gold px-8 pb-9 pt-7 shadow-[0_24px_60px_rgba(26,26,26,0.12)]">
+            {/* 信纸本体：米黄纸面 · 莫兰迪黄边框 */}
+            <div
+              className="relative rounded-[10px] border-[3px] p-8 shadow-[0_24px_60px_rgba(26,26,26,0.08)] sm:p-12 sm:pr-36"
+              style={{ backgroundColor: PAPER_BG, borderColor: MORANDI }}
+            >
               {/* 信头 */}
-              <div className="flex items-center justify-between border-b-2 border-white/70 pb-3">
-                <p className="t-eyebrow text-white">{insights.hero.beliefLabel}</p>
+              <div
+                className="flex items-center justify-between border-b-2 pb-3"
+                style={{ borderColor: MORANDI }}
+              >
+                <p className="t-eyebrow" style={{ color: "#9D8752" }}>
+                  {insights.hero.eyebrow}
+                </p>
                 <span
                   aria-hidden
-                  className="h-3.5 w-7 bg-white"
-                  style={{ borderRadius: "999px 999px 0 0" }}
+                  className="h-3.5 w-7"
+                  style={{ background: MORANDI, borderRadius: "999px 999px 0 0" }}
                 />
               </div>
-              {/* 信纸横线上的内容 */}
+
+              {/* 标题 */}
+              <h1 className="mt-7 max-w-3xl t-display text-blue text-balance">
+                {withAccent(insights.hero.title, insights.hero.accent)}
+              </h1>
+
+              {/* 信纸横线上的正文 */}
               <div
-                className="mt-2"
+                className="mt-5 max-w-2xl"
                 style={{
-                  backgroundImage:
-                    "repeating-linear-gradient(transparent, transparent calc(2.6rem - 1px), rgba(255,255,255,0.45) calc(2.6rem - 1px), rgba(255,255,255,0.45) 2.6rem)"
+                  backgroundImage: `repeating-linear-gradient(transparent, transparent calc(2.6rem - 1px), ${MORANDI}99 calc(2.6rem - 1px), ${MORANDI}99 2.6rem)`
                 }}
               >
-                <p className="pt-2 font-display text-[1.35rem] font-medium italic text-white [line-height:2.6rem]">
-                  {insights.hero.beliefTitle}
+                <p className="t-lead text-ink/75 [line-height:2.6rem]">
+                  {insights.hero.subtitle}
                 </p>
-                <p className="italic text-blue [line-height:2.6rem]">
-                  {insights.hero.beliefSubtitle}
+                <p className="text-ink/65 [line-height:2.6rem]">
+                  {insights.hero.lead}
                 </p>
                 {/* 留白的空行：一封还在写的信 */}
                 <div aria-hidden className="h-[2.6rem]" />
               </div>
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Btn href="#articles">{insights.articles.eyebrow}</Btn>
+                <Btn href="/work" variant="secondary">
+                  {dictionary.actions.work}
+                </Btn>
+              </div>
+
               {/* 署名 + 红点作封蜡 */}
-              <div className="mt-4 flex items-center justify-end gap-2.5">
+              <div className="mt-6 flex items-center justify-end gap-2.5 sm:mt-2">
                 <p className="font-display text-sm italic text-blue">
                   Bold Ideas Lab
                 </p>
                 <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-red" />
               </div>
             </div>
-            {/* 右侧的笔 */}
-            <Pen className="absolute -right-1 top-1/2 h-56 w-auto -translate-y-1/2 rotate-[24deg] drop-shadow-[0_10px_18px_rgba(26,26,26,0.18)] sm:right-0 sm:h-64" />
+            {/* 右侧的蓝色钢笔 */}
+            <Pen className="absolute -right-3 top-1/2 hidden h-64 w-auto -translate-y-1/2 rotate-[24deg] drop-shadow-[0_10px_18px_rgba(26,26,26,0.18)] sm:block lg:h-72" />
           </div>
         </Reveal>
       </section>
