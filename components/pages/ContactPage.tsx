@@ -20,9 +20,10 @@ function withAccent(title: string, accent?: string): ReactNode {
   );
 }
 
-// 纸飞机机身的轮廓：右侧收成机头尖角（外层蓝描边、内层白纸，双层同形裁切）
+// 纸飞机轮廓：右侧机头尖角 + 左侧尾部 V 形缺口（“发送”图标的经典剪影）
+// 外层蓝描边、内层金色机身，双层同形裁切
 const planeClip =
-  "polygon(0 0, calc(100% - 88px) 0, 100% 50%, calc(100% - 88px) 100%, 0 100%)";
+  "polygon(0% 0%, calc(100% - 110px) 10%, 100% 50%, calc(100% - 110px) 90%, 0% 100%, 6% 50%)";
 
 export function ContactPage() {
   const { dictionary } = useLanguage();
@@ -36,25 +37,29 @@ export function ContactPage() {
         <Reveal className="mx-auto max-w-6xl">
           {/* 外层：蓝色描边（同形裁切） */}
           <div className="bg-blue" style={{ clipPath: planeClip }}>
-            {/* 内层：白纸机身，文字写在里面 */}
+            {/* 内层：金色机身，上翼用深一号的金色斜面表现折痕 */}
             <div
-              className="relative m-[3px] bg-white p-8 pr-24 sm:p-12 sm:pr-36"
-              style={{ clipPath: planeClip }}
+              className="relative m-[3px] bg-gold py-10 pl-14 pr-28 sm:py-14 sm:pl-24 sm:pr-40"
+              style={{
+                clipPath: planeClip,
+                backgroundImage:
+                  "linear-gradient(169deg, rgba(26,26,26,0.12) 0%, rgba(26,26,26,0.12) 33%, transparent 33.3%)"
+              }}
             >
-              {/* 机头里的金色折面 */}
+              {/* 机头里的白色折面 */}
               <span
                 aria-hidden
-                className="absolute right-5 top-1/2 hidden h-10 w-14 -translate-y-1/2 bg-gold sm:block"
+                className="absolute right-6 top-1/2 hidden h-10 w-14 -translate-y-1/2 bg-white/90 sm:block"
                 style={{ clipPath: "polygon(0 0, 100% 50%, 0 100%)" }}
               />
-              <p className="mb-5 t-eyebrow text-gold">{contact.hero.eyebrow}</p>
+              <p className="mb-5 t-eyebrow text-white/80">{contact.hero.eyebrow}</p>
               <h1 className="max-w-3xl t-display text-blue text-balance">
                 {withAccent(contact.hero.title, contact.hero.accent)}
               </h1>
-              <p className="mt-5 max-w-xl t-lead text-ink/70">
+              <p className="mt-5 max-w-xl t-lead text-white">
                 {contact.hero.subtitle}
               </p>
-              <p className="mt-6 max-w-2xl border-l-2 border-gold pl-5 leading-8 text-ink/65">
+              <p className="mt-6 max-w-2xl border-l-2 border-white/60 pl-5 leading-8 text-white/90">
                 {contact.hero.lead}
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
