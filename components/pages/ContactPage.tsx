@@ -20,36 +20,9 @@ function withAccent(title: string, accent?: string): ReactNode {
   );
 }
 
-/** 联系页专属造型：一只纸飞机（蓝色机身 · 金色折面），从红点起飞，沿虚线航迹飞来 */
-function PaperPlane({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      aria-hidden
-      className={className}
-      fill="none"
-      viewBox="0 0 220 170"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* 起点：唯一红点 */}
-      <circle cx="14" cy="152" fill="#CC2936" r="6" />
-      {/* 虚线航迹 */}
-      <path
-        d="M22 150 C70 155 40 105 88 100"
-        stroke="#002FA7"
-        strokeDasharray="7 8"
-        strokeLinecap="round"
-        strokeWidth="3"
-        opacity="0.45"
-      />
-      {/* 纸飞机：上翼（蓝） */}
-      <path d="M204 22 L96 66 L138 84 Z" fill="#002FA7" />
-      {/* 纸飞机：下折面（金） */}
-      <path d="M204 22 L138 84 L146 112 Z" fill="#C9A84C" />
-      {/* 纸飞机：内侧阴影（深一号的蓝） */}
-      <path d="M204 22 L138 84 L128 76 Z" fill="#00227A" />
-    </svg>
-  );
-}
+// 纸飞机机身的轮廓：右侧收成机头尖角（外层蓝描边、内层白纸，双层同形裁切）
+const planeClip =
+  "polygon(0 0, calc(100% - 88px) 0, 100% 50%, calc(100% - 88px) 100%, 0 100%)";
 
 export function ContactPage() {
   const { dictionary } = useLanguage();
@@ -58,31 +31,45 @@ export function ContactPage() {
 
   return (
     <>
-      {/* ── Hero：纸飞机造型开场 ───────────────────────────────────────────── */}
+      {/* ── Hero：纸飞机机身作文字框（与作品页火车同一手法） ─────────────────── */}
       <section className="bg-cream px-5 pb-20 pt-20 sm:px-6 lg:px-8 lg:pb-24 lg:pt-28">
-        <Reveal className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <p className="mb-5 t-eyebrow text-gold">{contact.hero.eyebrow}</p>
-            <h1 className="max-w-3xl t-display text-blue text-balance">
-              {withAccent(contact.hero.title, contact.hero.accent)}
-            </h1>
-            <p className="mt-5 max-w-xl t-lead text-ink/70">
-              {contact.hero.subtitle}
-            </p>
-            <p className="mt-6 max-w-2xl border-l-2 border-gold pl-5 leading-8 text-ink/65">
-              {contact.hero.lead}
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Btn href="#enquiry">{contact.hero.primary}</Btn>
-              <Btn href="/programmes" variant="secondary">
-                {contact.hero.secondary}
-              </Btn>
+        <Reveal className="mx-auto max-w-6xl">
+          {/* 外层：蓝色描边（同形裁切） */}
+          <div className="bg-blue" style={{ clipPath: planeClip }}>
+            {/* 内层：白纸机身，文字写在里面 */}
+            <div
+              className="relative m-[3px] bg-white p-8 pr-24 sm:p-12 sm:pr-36"
+              style={{ clipPath: planeClip }}
+            >
+              {/* 机头里的金色折面 */}
+              <span
+                aria-hidden
+                className="absolute right-5 top-1/2 hidden h-10 w-14 -translate-y-1/2 bg-gold sm:block"
+                style={{ clipPath: "polygon(0 0, 100% 50%, 0 100%)" }}
+              />
+              <p className="mb-5 t-eyebrow text-gold">{contact.hero.eyebrow}</p>
+              <h1 className="max-w-3xl t-display text-blue text-balance">
+                {withAccent(contact.hero.title, contact.hero.accent)}
+              </h1>
+              <p className="mt-5 max-w-xl t-lead text-ink/70">
+                {contact.hero.subtitle}
+              </p>
+              <p className="mt-6 max-w-2xl border-l-2 border-gold pl-5 leading-8 text-ink/65">
+                {contact.hero.lead}
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Btn href="#enquiry">{contact.hero.primary}</Btn>
+                <Btn href="/programmes" variant="secondary">
+                  {contact.hero.secondary}
+                </Btn>
+              </div>
             </div>
           </div>
 
-          {/* 纸飞机：想法从一颗红点起飞 */}
-          <div className="relative mx-auto hidden w-full max-w-sm lg:block">
-            <PaperPlane className="h-auto w-full -rotate-3" />
+          {/* 航迹：从一颗红点飞来 */}
+          <div aria-hidden className="mt-5 flex items-center gap-3 pl-1">
+            <span className="h-2.5 w-2.5 rounded-full bg-red" />
+            <span className="h-0 w-44 border-t-[3px] border-dashed border-blue/35 sm:w-72" />
           </div>
         </Reveal>
       </section>
