@@ -33,63 +33,56 @@ const articleInitialStyles = [
 const PAPER_BG = "#FFFFFF";
 const MORANDI = "#C9B27C";
 
-/** 信纸右侧的油画颜料：不规则的涂抹 + 飞溅的墨点 + 甩出的细痕 */
+/** 信纸右侧的油画颜料：不对称的泼洒 + 往下淌的颜料 + 飞溅的墨滴 */
 function PaintBlot({ className = "" }: { className?: string }) {
   return (
     <svg
       aria-hidden
       className={className}
       fill="none"
-      viewBox="0 0 260 240"
+      viewBox="0 0 260 250"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* 金色大抹：带拖尾的不规则涂痕 */}
+      {/* 金色泼洒：左低右高的不对称大块 */}
       <path
-        d="M62 152 C28 146 20 108 48 92 C34 62 74 34 108 50 C120 22 170 18 186 50 C222 42 244 82 220 108 C246 130 222 170 186 162 C186 194 138 208 116 182 C92 204 60 190 62 152 Z"
+        d="M28 132 C6 106 22 74 64 88 C68 54 120 44 142 72 C158 40 212 48 214 84 C250 94 252 132 216 140 C234 164 202 186 176 168 C168 192 126 194 116 168 C84 188 42 172 28 132 Z"
         fill="#C9A84C"
         opacity="0.85"
       />
-      {/* 蓝色一坨压在上面：边缘带尖角的溅开感 */}
+      {/* 金色往下淌的一道，末端积成滴 */}
       <path
-        d="M98 108 C80 82 110 56 138 68 C148 44 190 52 186 84 C214 84 220 120 192 130 C204 156 164 178 140 158 C118 176 86 150 98 108 Z"
+        d="M148 170 C150 190 144 204 148 220 C149 232 162 232 162 220 C162 204 156 190 160 172 Z"
+        fill="#C9A84C"
+        opacity="0.85"
+      />
+      <circle cx="156" cy="243" fill="#C9A84C" r="3.5" />
+      {/* 蓝色一坨压在上面：偏右上，不对称 */}
+      <path
+        d="M104 100 C94 68 136 50 160 70 C174 48 210 60 202 90 C230 100 224 136 194 136 C200 162 162 174 144 152 C114 164 94 134 104 100 Z"
         fill="#002FA7"
         opacity="0.92"
       />
-      {/* 蓝色甩出的两道细痕 */}
+      {/* 蓝色单独溅开的一小块 */}
       <path
-        d="M196 72 C210 62 222 50 230 36"
-        stroke="#002FA7"
-        strokeLinecap="round"
-        strokeWidth="5"
-      />
-      <path
-        d="M204 130 C220 136 234 138 248 136"
-        stroke="#002FA7"
-        strokeLinecap="round"
-        strokeWidth="4"
+        d="M58 152 C50 138 68 128 78 138 C90 144 78 162 66 160 C60 158 56 156 58 152 Z"
+        fill="#002FA7"
       />
       {/* 红色小溅斑 + 卫星小滴 */}
       <path
-        d="M82 58 C74 44 94 34 104 44 C116 40 120 58 108 64 C112 76 92 82 88 70 C80 72 78 64 82 58 Z"
+        d="M92 52 C84 36 108 28 116 42 C128 42 126 60 112 60 C110 70 92 66 92 52 Z"
         fill="#CC2936"
       />
-      <circle cx="120" cy="28" fill="#CC2936" r="3" />
-      <circle cx="64" cy="42" fill="#CC2936" r="2" />
-      {/* 四散的墨点：大小不一 */}
-      <circle cx="238" cy="150" fill="#C9A84C" r="6" />
-      <circle cx="216" cy="182" fill="#C9A84C" r="3" />
-      <circle cx="46" cy="64" fill="#002FA7" r="4" />
-      <circle cx="150" cy="212" fill="#002FA7" r="3.5" />
-      <circle cx="34" cy="182" fill="#002FA7" r="2.5" />
-      <circle cx="252" cy="60" fill="#C9A84C" r="2.5" />
-      <circle cx="176" cy="24" fill="#002FA7" r="2" />
-      {/* 金色甩出的一道细痕 */}
-      <path
-        d="M52 200 C42 210 30 216 16 220"
-        stroke="#C9A84C"
-        strokeLinecap="round"
-        strokeWidth="4"
-      />
+      <circle cx="130" cy="30" fill="#CC2936" r="2.5" />
+      <circle cx="76" cy="38" fill="#CC2936" r="2" />
+      {/* 四散的墨滴：大小不一 */}
+      <circle cx="238" cy="152" fill="#C9A84C" r="5.5" />
+      <circle cx="222" cy="184" fill="#C9A84C" r="3" />
+      <circle cx="44" cy="66" fill="#002FA7" r="4" />
+      <circle cx="128" cy="212" fill="#002FA7" r="3" />
+      <circle cx="36" cy="184" fill="#002FA7" r="2.5" />
+      <circle cx="248" cy="64" fill="#C9A84C" r="2.5" />
+      <circle cx="182" cy="26" fill="#002FA7" r="2" />
+      <circle cx="206" cy="206" fill="#002FA7" r="2" />
     </svg>
   );
 }
