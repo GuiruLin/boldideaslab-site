@@ -17,6 +17,9 @@ const items = [
   { href: "/contact", label: nav.contact, accent: true }
 ] as const;
 
+// 移动端抽屉多一个 Home：手机上「点 Logo 回首页」的习惯更弱
+const mobileItems = [{ href: "/", label: nav.home }, ...items] as const;
+
 export function Header() {
   const [open, setOpen] = useState(false);
 
@@ -81,7 +84,7 @@ export function Header() {
         aria-hidden={!open}
         className="absolute right-4 top-[4.25rem] z-50 flex flex-col items-end gap-2 lg:hidden"
       >
-        {items.map((item, index) => {
+        {mobileItems.map((item, index) => {
           // 积木语言：与 footer 想法展架同一套形状（拱窗/块/翻角/单边拱）
           const radii = [
             "999px 999px 10px 10px",
@@ -89,6 +92,7 @@ export function Header() {
             "10px 10px 28px 10px",
             "0 999px 10px 10px",
             "10px",
+            "999px 999px 10px 10px",
             "999px 999px 10px 10px"
           ];
           return (
@@ -115,7 +119,7 @@ export function Header() {
           className={`mr-6 mt-1 flex items-end gap-2.5 transition-all duration-300 ${
             open ? "translate-y-0 opacity-100" : "-translate-y-3 opacity-0"
           }`}
-          style={{ transitionDelay: open ? `${items.length * 50 + 50}ms` : "0ms" }}
+          style={{ transitionDelay: open ? `${mobileItems.length * 50 + 50}ms` : "0ms" }}
         >
           <span className="block h-3.5 w-7 bg-gold" style={{ borderRadius: "999px 999px 0 0" }} />
           <span className="block h-2 w-2 rounded-full bg-red" />

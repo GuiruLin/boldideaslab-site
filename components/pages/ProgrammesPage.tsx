@@ -115,7 +115,7 @@ export function ProgrammesPage() {
       </section>
 
       {/* ── 和学校一起做：Plymouth 案例（几何面板样板） ─────────────────────── */}
-      <section className="bg-cream px-5 py-24 sm:px-6 lg:px-8">
+      <section className="overflow-hidden bg-cream px-5 py-24 sm:px-6 lg:px-8">
         <Reveal className="mx-auto max-w-6xl">
           <p className="mb-5 t-eyebrow text-gold">{programmes.schools.eyebrow}</p>
           <h2 className="t-h2 text-blue">{programmes.schools.title}</h2>

@@ -1012,6 +1012,7 @@
   },
   "redesign": {
     "nav": {
+      "home": "Home",
       "about": "About",
       "programmes": "Programmes",
       "work": "Student Work",
