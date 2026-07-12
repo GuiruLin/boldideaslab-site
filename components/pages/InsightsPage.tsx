@@ -29,9 +29,40 @@ const articleInitialStyles = [
   "bg-blue text-cream"
 ] as const;
 
-// 信纸配色：米黄纸面 · 莫兰迪黄边框与横线（与学生反馈翻页书同族的一次性用色）
-const PAPER_BG = "#F3EBD3";
+// 信纸配色：白色纸面 · 莫兰迪黄边框与横线（与学生反馈翻页书同族的一次性用色）
+const PAPER_BG = "#FFFFFF";
 const MORANDI = "#C9B27C";
+
+/** 信纸右侧的一坨彩色油画颜料：蓝金相叠，红色一小滴 */
+function PaintBlot({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      aria-hidden
+      className={className}
+      fill="none"
+      viewBox="0 0 220 200"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* 金色一抹 */}
+      <path
+        d="M42 118 C18 82 62 38 112 54 C158 22 206 66 186 108 C208 148 152 186 110 164 C66 190 26 158 42 118 Z"
+        fill="#C9A84C"
+        opacity="0.85"
+      />
+      {/* 蓝色一坨压在上面 */}
+      <path
+        d="M84 96 C72 62 122 42 148 66 C184 56 202 98 176 118 C188 148 138 168 114 146 C82 156 68 122 84 96 Z"
+        fill="#002FA7"
+        opacity="0.92"
+      />
+      {/* 红色一小滴 */}
+      <path
+        d="M58 62 C52 48 68 40 76 50 C84 58 74 74 62 70 C58 68 56 66 58 62 Z"
+        fill="#CC2936"
+      />
+    </svg>
+  );
+}
 
 /** 敢想观察专属造型：一支蓝色钢笔（米白笔夹与环带） */
 function Pen({ className = "" }: { className?: string }) {
@@ -74,7 +105,8 @@ export function InsightsPage() {
             {/* 底层纸：叠纸的厚度感 */}
             <span
               aria-hidden
-              className="absolute inset-x-8 -bottom-2.5 top-3 rotate-[0.8deg] rounded-[10px] bg-white/85"
+              className="absolute inset-x-8 -bottom-2.5 top-3 rotate-[0.8deg] rounded-[10px]"
+              style={{ backgroundColor: "#C9B27C55" }}
             />
             {/* 信纸本体：米黄纸面 · 莫兰迪黄边框 */}
             <div
@@ -132,6 +164,9 @@ export function InsightsPage() {
                 </p>
                 <span aria-hidden className="h-2.5 w-2.5 rounded-full bg-red" />
               </div>
+
+              {/* 右侧空白处的一坨油画颜料（避开文字区） */}
+              <PaintBlot className="pointer-events-none absolute right-36 top-16 hidden h-44 w-auto rotate-6 lg:block" />
             </div>
             {/* 右侧的蓝色钢笔 */}
             <Pen className="absolute -right-3 top-1/2 hidden h-64 w-auto -translate-y-1/2 rotate-[24deg] drop-shadow-[0_10px_18px_rgba(26,26,26,0.18)] sm:block lg:h-72" />
