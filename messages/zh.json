@@ -1,0 +1,1167 @@
+{
+  "meta": {
+    "siteName": "敢想实验室",
+    "description": "面向国际家庭的高品质青少年创造力与 AI 教育。"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "programmes": "课程项目",
+    "work": "学生作品",
+    "eduos": "教育系统",
+    "insights": "敢想观察",
+    "contact": "联系我们",
+    "menu": "菜单",
+    "close": "关闭"
+  },
+  "language": {
+    "label": "语言",
+    "english": "EN",
+    "chinese": "中文"
+  },
+  "actions": {
+    "programmes": "查看课程",
+    "about": "了解我们",
+    "work": "查看作品",
+    "contact": "开始咨询",
+    "eduos": "了解教育系统",
+    "insights": "阅读观察",
+    "apply": "咨询报名",
+    "email": "邮件联系",
+    "partners": "合作咨询"
+  },
+  "common": {
+    "nowOpen": "开放报名中",
+    "forParents": "面向家庭",
+    "forStudents": "面向年轻创作者",
+    "forPartners": "面向合作伙伴",
+    "sectionMarker": "敢想实验室",
+    "comingSoon": "即将发布",
+    "launchPreview": "上线预览",
+    "selected": "精选"
+  },
+  "footer": {
+    "tagline": "帮助青少年以更有判断力的方式学习 AI 与创造。",
+    "copyright": "© 2026 敢想实验室。保留所有权利。",
+    "ctaTitle": "用更从容的方式开始 AI 学习。",
+    "ctaText": "告诉我们学生的兴趣、基础和想完成的作品，我们会一起判断合适的开始方式。"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "青少年全人素养 + AI 创造力教育",
+      "positioning": "",
+      "title": "「敢想」，是任何可能性的第一步。",
+      "titleAccent": "「敢想」",
+      "lead": "为主动思考、敢于把想法和创意拿去跟世界交互与碰撞的青少年而建。这里是创造者的起点。",
+      "primary": "探索我们的课程",
+      "secondary": "了解 Bold Ideas Lab",
+      "beliefLabel": "",
+      "beliefText": "Tools change.\nCreators remain.",
+      "beliefNote": ""
+    },
+    "intro": {
+      "eyebrow": "关于我们",
+      "title": "关于敢想实验室 Bold Ideas Lab",
+      "subtitle": "年轻创作者的起点。",
+      "paragraphs": [
+        "Bold Ideas Lab 从伦敦起步，服务来自英国、欧洲、亚洲和北美的青少年。",
+        "「敢想」强调的是主动思考、创造，并拒绝被动吸收和随波逐流的主体性。",
+        "敢想实验室不是教室，不是课堂。它是一个我们想跟青少年一起发挥想象力、创造和可能性的空间。"
+      ],
+      "pillLabel": "全人素养框架",
+      "pills": [
+        "主体性",
+        "思维力",
+        "创造力",
+        "表达力",
+        "社会力",
+        "数字素养"
+      ],
+      "foundersLabel": "联合创始人",
+      "founders": [
+        {
+          "name": "Guiru (Lynn) Lin",
+          "role": "联合创始人",
+          "blurb": "音乐教育与数字人文背景，从创作与教育双线理解「敢想」。"
+        },
+        {
+          "name": "Jujie (Jacky) Yang",
+          "role": "联合创始人",
+          "blurb": "AI 与产品背景，把前沿工具转化为青少年可完成的项目路径。"
+        }
+      ]
+    },
+    "proof": {
+      "eyebrow": "历程与成果",
+      "title": "我们做过什么",
+      "subtitle": "从工作坊到课程与公开展示。",
+      "records": [
+        {
+          "number": "01",
+          "title": "线下工作坊",
+          "text": "伦敦 & 曼彻斯特两个城市，面向英国华人青少年举办创造力工作坊。"
+        },
+        {
+          "number": "02",
+          "title": "2 部作品入选「AI 少儿春晚」",
+          "text": "学生 AI 动画作品入选 WaytoAGI 主办的「AI 少儿春晚」。"
+        },
+        {
+          "number": "03",
+          "title": "青少年 AI × 全人素养课程",
+          "text": "完成首期线上春季课程，服务来自英国、亚洲和北美的青少年学员。"
+        },
+        {
+          "number": "04",
+          "title": "受邀「北京 AI 不神秘」分享",
+          "text": "受邀为北京 AI 不神秘青少年社区进行线上分享，探讨 AI 创作与教育。"
+        }
+      ],
+      "galleryTitle": "学生作品精选",
+      "galleryText": "官网收录精选项目与现场记录；更完整的学习档案在学习平台中沉淀。",
+      "galleryCta": "前往学生作品"
+    },
+    "programme": {
+      "eyebrow": "课程项目",
+      "title": "本期开放咨询与报名",
+      "subtitle": "小班项目制，面向 8-14 岁。",
+      "tag": "主推课程",
+      "cardTitle": "青少年 AI 创造力项目小班",
+      "details": [
+        "线上小班",
+        "8-14 岁",
+        "发现问题、技术实现、设计打磨、表达发布",
+        "以真实作品和国际展示为目标"
+      ],
+      "narrativeTitle": "从一个想法到一个可以参加国际展示的 AI 作品。",
+      "body": "在项目制学习里，学生把想法做成作品，并练习向外界清晰表达。完整学习路径、模块与定价见课程页。"
+    },
+    "voice": {
+      "eyebrow": "反馈与评价",
+      "title": "真实的声音",
+      "subtitle": "来自家长、学生与社区伙伴。",
+      "items": [
+        {
+          "quote": "你的课程真的非常好，应该没有同质化课程。我们肯定是希望孩子能找到自己爱好和想法，多去实践。",
+          "source": "家长 · 线上课程"
+        },
+        {
+          "quote": "谢谢你们细致的作品点评！非常感谢你们组织的课程，大朋友和小朋友都非常有收获。",
+          "source": "家长 · 工作坊"
+        },
+        {
+          "quote": "老师讲的真太全面了，就是感觉把我之前那些零零散散的知识都串起来的感觉。真的特别特别感谢你，昨天我听完感觉很有用很好玩，所以就画了 Lynn 老师！",
+          "source": "学生 · 线上课程"
+        },
+        {
+          "quote": "你讲到把个人经历融入 AI 创作这个视角，给了我们特别大的启发。手动 + AI，先有思考再有生成，确实是当下最难得的创作状态。",
+          "source": "家长 · 北京 AI 不神秘青少年社区分享"
+        }
+      ]
+    },
+    "finalCta": {
+      "eyebrow": "开始行动",
+      "title": "准备好了吗？",
+      "body": "从课程开始，或先联系我们，一起找到适合孩子的项目入口。"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "关于",
+      "title": "关于敢想实验室",
+      "subtitle": "年轻创作者开始的地方。",
+      "lead": "在接触过亚洲、英国、欧洲和北美不同背景的青少年之后，我们发现：他们的声音和想法，常常因为「叛逆期」和「不成熟」这些标签而被忽略。",
+      "imageLabel": "实验室影像",
+      "note": "但在一线教育的长期接触里，他们的创意和想法一次次让我们惊喜。"
+    },
+    "story": {
+      "eyebrow": "品牌故事",
+      "title": "为什么会有敢想实验室",
+      "timelineHint": "四段叙事，从轻到重：起点、看见、理念、空间。",
+      "paragraphs": [
+        "敢想实验室从伦敦起步。在接触过亚洲、英国、欧洲和北美不同背景的青少年之后，我们发现：他们的声音和想法，常常因为「叛逆期」和「不成熟」这些标签而被忽略。",
+        "也正是在更久的陪伴里，我们更在意：他们的声音有没有被听见、被认真对待。",
+        "「敢想」强调的是自己的「敢」与「想」，一种主动思考、创造，并拒绝被动吸收和随波逐流的主体性。",
+        "所以敢想实验室不是教室，不是课堂。它是一个我们想跟青少年一起发挥想象力、创造和可能性的空间。"
+      ]
+    },
+    "philosophy": {
+      "eyebrow": "教育理念",
+      "title": "全人素养框架",
+      "subtitle": "在 AI 时代，教育仍要回到「人」本身",
+      "lead": "六大素养板块彼此支撑，帮助青少年在判断力、创造力与表达力上持续生长。",
+      "items": [
+        {
+          "number": "01",
+          "title": "主体性",
+          "en": "Agency",
+          "tags": [
+            "自信",
+            "自我认知",
+            "情绪管理",
+            "内在驱动",
+            "主动选择"
+          ]
+        },
+        {
+          "number": "02",
+          "title": "思维力",
+          "en": "Thinking",
+          "tags": [
+            "分析",
+            "推理",
+            "解决问题",
+            "批判性思维",
+            "逻辑"
+          ]
+        },
+        {
+          "number": "03",
+          "title": "创造力",
+          "en": "Creativity",
+          "tags": [
+            "想象",
+            "创作",
+            "实验",
+            "跨学科整合",
+            "原创性"
+          ]
+        },
+        {
+          "number": "04",
+          "title": "表达力",
+          "en": "Expression",
+          "tags": [
+            "沟通",
+            "演讲",
+            "影响力",
+            "叙事",
+            "公开表达"
+          ]
+        },
+        {
+          "number": "05",
+          "title": "社会力",
+          "en": "Social",
+          "tags": [
+            "同理心",
+            "协作",
+            "跨文化理解",
+            "领导力",
+            "团队合作"
+          ]
+        },
+        {
+          "number": "06",
+          "title": "数字素养",
+          "en": "Digital Literacy",
+          "tags": [
+            "AI 工具",
+            "计算思维",
+            "技术实践",
+            "数据理解",
+            "数字创作"
+          ]
+        }
+      ]
+    },
+    "approach": {
+      "eyebrow": "我们的方式",
+      "title": "不是工具驱动，而是真实问题驱动。",
+      "body": "真正驱动一个人学习和创造的，从来不是工具，而是一个跟自己真实相关的问题。在这个过程中，如何调用自己的思维、技能和个人特质，做出属于自己的解法。",
+      "items": [
+        "从一个跟自己真实相关的问题开始",
+        "调用自己的思维、技能和个人特质",
+        "做出属于自己的解法"
+      ]
+    },
+    "founders": {
+      "eyebrow": "创始人",
+      "title": "我们的创始人",
+      "subtitle": "敢想实验室背后的人",
+      "lynn": {
+        "initial": "L",
+        "name": "Guiru (Lynn) Lin",
+        "role": "联合创始人",
+        "story": [
+          "Lynn 教了八年音乐，写第一行代码之前从没碰过编程。零基础，她用十二天把一个项目从头做到尾，拿下 Notion 黑客松亚军。",
+          "这件事印证了她当老师时早就隐约知道的：真正驱动一个年轻人的，是一个真正属于他自己的问题，以及把它想透所需要的深度思考。"
+        ],
+        "points": [
+          "Bold Ideas Lab 联合创始人；伦敦 Echo Music and Art Education 创始人",
+          "跨学科背景：Kingston 音乐教育 × 牛津数字人文 × 哥本哈根商学院 AI 商业",
+          "皇家音乐学院（RCM）及皇家艺术学院（RCA）常邀演讲嘉宾",
+          "指导多位学生在青少年黑客松获奖和全球青少年科技平台展示，2 部动画作品入选「AI 少儿春晚」",
+          "Notion 黑客松亚军、Tech London Advocates 最佳创意奖；曾参与 Gemini、Claude、Notion 等黑客松"
+        ]
+      },
+      "jacky": {
+        "initial": "J",
+        "name": "Jujie (Jacky) Yang",
+        "role": "联合创始人",
+        "story": [
+          "6 年 AI 背景，从算法研究到高频 AI 创作与项目实践，我越来越确定：真正重要的，不是孩子多早学会某个工具，而是多早开始提出自己的问题，并把想法变成真实作品。",
+          "这也是我做 Bold Ideas Lab 的原因。我们希望带孩子进入的不只是 AI 的使用，而是创造、判断、表达和发布的完整过程。"
+        ],
+        "points": [
+          "CoAI 品牌创始人 & Bold Ideas Lab 联合创始人",
+          "帝国理工学院 AI & Machine Learning 硕士，杜伦大学计算机科学学士",
+          "具备 AI 算法研究、产品实践与创作项目经验，长期高频使用 AI 进行开发与内容创作",
+          "多次参加 Google、Cursor、Notion 等 AI 大厂黑客松，获 UK AI Agent 黑客松 2026 第二、加密货币量化黑客松（AlgoWars 2025）第一",
+          "Kaggle 竞赛专家（1 银 1 铜）：Google 大语言模型提示词恢复（银牌，Top 1%）、LMSYS Chatbot Arena 人类偏好赛（铜牌）",
+          "专注把前沿 AI 转化为青少年可理解、可实践、可展示的项目路径"
+        ]
+      }
+    },
+    "whyNow": {
+      "eyebrow": "为什么现在",
+      "title": "AI 时代更需要完整的人。",
+      "body": "当工具变得越来越强，教育更需要回到人本身：一个学生是否能提出自己的问题，是否能把想法做出来，是否能理解自己的选择并向世界表达。"
+    },
+    "cta": {
+      "title": "看看这套理念如何落到课程中。",
+      "body": "课程项目会把真实问题、创造过程和公开表达连接起来，帮助学生从想法走向作品。"
+    }
+  },
+  "programmes": {
+    "hero": {
+      "eyebrow": "课程",
+      "accent": "真实作品",
+      "title": "课程从真实问题开始，以真实作品结束。",
+      "lead": "敢想实验室的课程建立在三力框架上：思维力、创作力、表达力。学校工作坊、线下工作坊和线上项目课，是同一套方法在不同场景的展开。",
+      "note": "下一期课程时间未定，想了解适合孩子或学校的开始方式，写信给我们。"
+    },
+    "trackRecord": {
+      "title": "我们做过的项目",
+      "cards": [
+        {
+          "label": "私校合作",
+          "title": "Plymouth College · Year 9 AI Workshop",
+          "text": [
+            {
+              "t": "一个上午，22 个 AI 原型，命题来自真实校园问题。",
+              "red": false
+            }
+          ],
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
+        },
+        {
+          "label": "线下工作坊",
+          "title": "Youth Creator Workshop · 曼彻斯特 / 伦敦",
+          "text": [
+            {
+              "t": "31 件作品，8-15 岁，从想法到可玩的成品。",
+              "red": false
+            }
+          ],
+          "url": "https://workshop-gallery-peach.vercel.app/gallery"
+        },
+        {
+          "label": "线上竞技课程",
+          "title": "Coolest Projects 冲刺课程",
+          "text": [
+            {
+              "t": "代表作品：Study Compass（Gloria）。",
+              "red": false
+            }
+          ],
+          "url": "https://online.coolestprojects.org/projects/24694"
+        },
+        {
+          "label": "线上课程",
+          "title": "AI for Art",
+          "text": [
+            {
+              "t": "两部动画电影",
+              "red": false
+            },
+            {
+              "t": "入选",
+              "red": true
+            },
+            {
+              "t": "「AI 少儿春晚」。",
+              "red": false
+            }
+          ],
+          "url": ""
+        }
+      ]
+    },
+    "schools": {
+      "eyebrow": "私校合作",
+      "title": "和学校一起做",
+      "paragraphs": [
+        "2026 年 6 月的一个上午，Plymouth College 约 30 名 Year 9 学生用两小时做出 22 个可以点开的 AI 原型。命题只有一个：为新 Year 7 的第一周设计一个数字产品。",
+        "学生先不碰 AI，写下自己两年前入学的真实记忆，再对照 AI 给出的普遍答案。判断从这个落差开始：他们改掉 AI 不对的颜色，删掉无关的功能，质疑太普遍的方案。",
+        "课后，学校提出再做一次，并把培训扩展到教职工。"
+      ],
+      "formatLabel": "形态",
+      "formats": [
+        "半天工作坊，两组并行",
+        "贴合学校正在教的单元",
+        "校方教职员全程在场",
+        "可附加教师培训（CPD）"
+      ],
+      "cta": "合作咨询"
+    },
+    "arc": {
+      "eyebrow": "方法",
+      "title": "四个阶段",
+      "lead": "四个阶段是所有课程形态共用的骨架。在学校里压缩成一个上午，在线上展开为五周。",
+      "phases": [
+        {
+          "num": "01",
+          "tag": "第 1-2 节",
+          "title": "发现问题",
+          "lead": "训练你的孩子问一个好问题：我想解决什么，为什么这件事值得做。",
+          "text": "这是整个项目的起点。一个有洞察力的问题，比任何技术都难得，也最能拉开差距。我们不急着动手，而是花时间找到真正值得做的方向。",
+          "itemsLabel": "学生会做什么",
+          "items": [
+            "从自己的生活、兴趣或学习出发，找到一个真实的问题",
+            "把模糊的想法变成清晰的项目方向",
+            "完成项目提案，说清楚「我想解决什么，为什么值得做」"
+          ],
+          "note": ""
+        },
+        {
+          "num": "02",
+          "tag": "第 3-4 节",
+          "title": "技术实现",
+          "lead": "了解机器学习原理，用 AI 工具把想法变成一个真实可以跑起来的作品。",
+          "text": "两节课从「能跑起来」到「做得更深」，先建立信心，再增加复杂度。工具优先用低门槛选择，让技术不挡住创意。",
+          "itemsLabel": "学生会做什么",
+          "items": [
+            "了解机器学习的基本原理和逻辑",
+            "选择合适的 AI 工具（no-code / Google AI Studio / vibe coding）",
+            "完成作品的第一个可运行版本"
+          ],
+          "note": ""
+        },
+        {
+          "num": "03",
+          "tag": "第 5-6 节",
+          "title": "设计打磨",
+          "lead": "让作品好看、好用、真的有人愿意用。",
+          "text": "这个模块最容易被忽略，但对作品最终的呈现质量影响最大。我们专门用两节课来做，因为一个能被真实用户接受的作品，远比一个技术复杂但难用的作品更有说服力。",
+          "itemsLabel": "学生会做什么",
+          "items": [
+            "学习 UI/UX 基本审美原则",
+            "找真实用户测试，收集反馈",
+            "根据反馈迭代，让作品讲得清楚也经得起问"
+          ],
+          "note": "好的设计不是让作品「好看」，而是让别人一眼看懂你在解决什么问题。"
+        },
+        {
+          "num": "04",
+          "tag": "第 7-8 节",
+          "title": "表达发布",
+          "lead": "把作品向公众表达，站在台上讲清楚自己的问题、方案和作品亮点。",
+          "text": "最后一节课是一场模仿硅谷科技发布会的小型展示。每位学生用几分钟介绍自己的项目，家长和同学一起见证。这段经历会直接迁移到日后的大学申请、面试和团队合作中。",
+          "itemsLabel": "学生会做什么",
+          "items": [
+            "准备并完成小型项目发布会演讲",
+            "整理提交材料，完成 Coolest Projects 线上作品展示页",
+            "获得公开作品页面、参与证书和评审反馈"
+          ],
+          "note": ""
+        }
+      ]
+    },
+    "online": {
+      "title": "线上课程",
+      "cohorts": [
+        {
+          "tag": "第一期 · AI for Art",
+          "text": "8 名学生提交 10 件作品，两部动画入选「AI 少儿春晚」（WaytoAGI 主办）。",
+          "linkLabel": "",
+          "url": ""
+        },
+        {
+          "tag": "第二期 · Coolest Projects 冲刺课程",
+          "text": "两名学生完成五周冲刺，作品提交至 Coolest Projects 的 AI 类别。Study Compass（Gloria）在公开画廊展出。",
+          "linkLabel": "在 Coolest Projects 查看",
+          "url": "https://online.coolestprojects.org/projects/24694"
+        }
+      ]
+    },
+    "fit": {
+      "eyebrow": "适合谁",
+      "title": "适合想认真做出作品的学生。",
+      "lead": "如果学生希望把想法落地成可展示作品，这门课会更有价值。",
+      "items": [
+        "有真正好奇心、但还不确定从哪里开始的学生",
+        "喜欢写作、设计、叙事、研究或创造的年轻人",
+        "希望获得比参与证书更丰富成长证据的家庭",
+        "8-14 岁、适应线上小班学习的学生"
+      ],
+      "context": "不需要编程基础。技术深度会根据每位学生的起点调整。"
+    },
+    "faq": {
+      "eyebrow": "实际问题",
+      "title": "常见问题（Q&A）",
+      "lead": "先看高频问题，再决定是否需要一对一沟通。",
+      "questionLabel": "问题",
+      "answerLabel": "回答",
+      "items": [
+        {
+          "q": "孩子需要编程基础吗？",
+          "a": "不需要。我们会根据每位学生的背景调整技术深度。好奇心和愿意修改的态度比编程经验更重要。"
+        },
+        {
+          "q": "适合哪个年龄段？",
+          "a": "主要面向 8-14 岁。节奏和项目复杂度会在这个范围内调整，可以来信讨论孩子的具体情况。"
+        },
+        {
+          "q": "这只是学 AI 工具吗？",
+          "a": "不是。工具只是过程的一部分。核心重点是创意思维、项目判断力和清晰表达想法的能力。AI 是媒介，不是主题。"
+        },
+        {
+          "q": "费用怎么算？",
+          "a": "按形态和人数来信商定，学校合作与家庭课程分开报价。"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "联系",
+      "title": "聊聊孩子，或者你的学校。",
+      "body": "下一期课程时间未定。来信告诉我们学生的兴趣，或学校的情况。",
+      "button": "给我们写信"
+    }
+  },
+  "work": {
+    "hero": {
+      "eyebrow": "学生作品",
+      "title": "他们做出了什么",
+      "accent": "什么",
+      "subtitle": "年轻创作者做出来的真实项目",
+      "lead": "每一个从「想」出发，并从「敢」做出来的作品。",
+      "stats": [
+        {
+          "number": "50+",
+          "label": "学生 AI 项目",
+          "text": "线上课程与线下工作坊累计真实项目"
+        },
+        {
+          "number": "2",
+          "label": "入选「AI 少儿春晚」",
+          "text": "WaytoAGI 主办 · 成员超 900 万"
+        },
+        {
+          "number": "∞",
+          "label": "持续成长的作品集",
+          "text": "每一届学生的作品都会被收录展示"
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "学生作品",
+      "title": "他们用 AI 做出了这些",
+      "subtitle": "年轻人真正做出来的项目",
+      "screenshotLabel": "作品预览",
+      "linkLabel": "打开作品",
+      "groups": [
+        {
+          "label": "Plymouth College · 私校合作",
+          "items": [
+            {
+              "name": "Bullying Reporter",
+              "student": "Lexi · 普利茅斯",
+              "tag": "校园关怀",
+              "quote": "An app to help Year 7 pupils report problems and bullying to their teacher in a safe, non scary way.",
+              "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
+              "image": "/media/work/projects/bullying-reporter.png"
+            },
+            {
+              "name": "Guess Who",
+              "student": "Frederick · 普利茅斯",
+              "tag": "第一周游戏",
+              "quote": "A first-week Guess Who game for learning everyone's names.",
+              "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9",
+              "image": "/media/work/projects/guess-who.png"
+            }
+          ]
+        },
+        {
+          "label": "线下工作坊 · 曼彻斯特与伦敦",
+          "items": [
+            {
+              "name": "CogniQuest",
+              "student": "Owen · 曼彻斯特",
+              "tag": "认知实验室",
+              "quote": "A cognitive agility lab: optical illusions, logic puzzles, and memory challenges.",
+              "url": "https://workshop-gallery-peach.vercel.app/projects/37400f1a-6969-400f-958a-cd48baf7712a",
+              "image": "/media/work/projects/cogniquest.webp"
+            },
+            {
+              "name": "Pumpkin Dread",
+              "student": "April · 伦敦",
+              "tag": "生存游戏",
+              "quote": "A survival farm game: plant, harvest, build a boat, and escape.",
+              "url": "https://workshop-gallery-peach.vercel.app/projects/19df993c-8984-4ebc-94ae-80a98a4dd3a3",
+              "image": "/media/work/projects/pumpkin-dread/cover.webp"
+            }
+          ]
+        }
+      ]
+    },
+    "recognition": {
+      "badge": "入选荣誉",
+      "workBadge": "入选作品",
+      "title": "2 部动画作品入选「AI 少儿春晚」",
+      "subtitle": "AI 少儿春晚入选作品",
+      "description": "我们的学生用 AI 创作的动画短片，入选由 WaytoAGI 主办的「AI 少儿春晚」年度展映。能站上这个舞台，对每一位年轻创作者都是一次真实且公开的认可。",
+      "platformName": "WaytoAGI",
+      "platformStat": "成员超 900 万",
+      "platformText": "成员超 900 万 · 中国最大 AI 社区之一",
+      "screenshotLabel": "入选作品画面",
+      "films": [
+        {
+          "title": "《Yulun 春晚故事》",
+          "author": "Yulun · 8 岁"
+        },
+        {
+          "title": "《星际流浪救援》",
+          "author": "Nicole · 8 岁"
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "在线展览",
+      "title": "青少年AI创造力工作坊 · 数字展览",
+      "subtitle": "真实项目持续更新",
+      "description": "这里持续收录学生完成的真实项目。每个作品都可以被查看、分享，也能成为学生自己的长期成长记录。",
+      "cta": "进入作品集",
+      "url": "https://workshop-gallery-peach.vercel.app/gallery",
+      "previewTitle": "Tools change.\nCreators remain.",
+      "previewSub": "AI创造力工作坊"
+    },
+    "feedback": {
+      "eyebrow": "真实反馈",
+      "title": "家长和学生怎么说",
+      "subtitle": "来自真实参与者的反馈摘录",
+      "screenshotLabel": "",
+      "items": [
+        {
+          "tag": "线上课程",
+          "quote": "你的课程真的非常好，应该没有同质化课程。我们肯定是希望孩子能找到自己爱好和想法，多去实践。",
+          "author": "家长",
+          "context": "线上课程"
+        },
+        {
+          "tag": "线上课程",
+          "quote": "老师讲的真太全面了，就是感觉把我之前那些零零散散的知识都串起来的感觉。真的特别特别感谢你，所以就画了 Lynn 老师！",
+          "author": "学生",
+          "context": "线上课程"
+        },
+        {
+          "tag": "线上课程",
+          "quote": "不只是在学一个 AI 技能，而是在做的过程中也在学习一种新的学习技能。资料都是过程中去查找的，短短两周，收获体验很大。",
+          "author": "家长",
+          "context": "备赛少儿春晚期间"
+        },
+        {
+          "tag": "线上课程",
+          "quote": "这个学习过程真是受益匪浅！",
+          "author": "学员",
+          "context": "线上课程"
+        },
+        {
+          "tag": "工作坊",
+          "quote": "谢谢你们细致的作品点评！非常感谢你们组织的课程，大朋友和小朋友都非常有收获。",
+          "author": "家长",
+          "context": "工作坊"
+        },
+        {
+          "tag": "社区分享",
+          "quote": "你讲到把个人经历融入 AI 创作这个视角，给了我们特别大的启发。手动 + AI，先有思考再有生成，确实是当下最难得的创作状态。",
+          "author": "家长",
+          "context": "北京 AI 不神秘青少年社区分享"
+        }
+      ]
+    },
+    "photos": {
+      "eyebrow": "现场照片",
+      "title": "真实发生的现场",
+      "subtitle": "年轻人做东西时的样子",
+      "groups": [
+        {
+          "title": "工作坊现场",
+          "items": [
+            "导师一对一带学生打磨作品",
+            "学生向全场展示 Color Theory 和 Pumpkin Dread",
+            "导师带学生做小型 AI 工具",
+            "学生记录并梳理自己的思路",
+            "学生在 Google AI Studio 动手搭建"
+          ]
+        },
+        {
+          "title": "线上课程",
+          "items": [
+            "小组讨论：学生分享画画和 AI 生图的感受",
+            "学生分享自己作曲和用 AI 作曲的思考"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "加入我们",
+      "title": "你的孩子也可以做出来。",
+      "body": "从一个想法到一个可以参加国际展示的 AI 作品。",
+      "primary": "了解课程",
+      "secondary": "进入作品集"
+    },
+    "showcase": {
+      "badge": "国际展示",
+      "name": "Study Compass",
+      "student": "Gloria",
+      "text": "在 Coolest Projects（Raspberry Pi Foundation 发起的全球青少年数字创作展示）公开展出的学习助手。",
+      "cta": "在 Coolest Projects 查看",
+      "url": "https://online.coolestprojects.org/projects/24694"
+    }
+  },
+  "eduos": {
+    "hero": {
+      "eyebrow": "教育系统",
+      "accent": "教育操作系统",
+      "title": "为项目制学习打造的教育操作系统",
+      "subtitle": "AI时代下的学习基础设施。",
+      "lead": "EduOS 聚焦项目制学习的关键连接：把项目过程、反思、导师反馈与家长理解放到同一条连续路径里，支持学校、机构与家庭围绕学习证据协同。",
+      "badge": "系统完善中",
+      "primary": "为什么需要它",
+      "secondary": "聊聊这个愿景"
+    },
+    "notice": {
+      "title": "面向合作落地的系统框架",
+      "body": "我们正在持续打磨 EduOS 的学习流程、证据结构与协作机制，目标是让项目制学习可追踪、可沟通、可扩展。"
+    },
+    "why": {
+      "eyebrow": "为什么需要它",
+      "title": "项目制学习需要连续性，而不只是上完一节课。",
+      "body": "一节课可以点燃一个想法，但真正有意义的创造力成长，发生在课堂周围：学生如何记录选择，导师如何给出反馈，家长如何理解进展，完成的作品如何成为更长学习故事的一部分。",
+      "points": [
+        "学生需要看见一个想法如何变化，而不只是最后的文件能不能运行。",
+        "家长需要比出勤、分数和工具名更丰富的进展语言。",
+        "导师需要上下文，让反馈能够从一次项目时刻延续到下一次。",
+        "合作方需要有人味的学习证据，而不只是行政化记录。"
+      ]
+    },
+    "layers": {
+      "eyebrow": "系统层次",
+      "title": "架构需要把哪些层次接上。",
+      "lead": "以学习过程为核心，把教学、反馈、家庭沟通与展示路径串成一个体系。",
+      "items": [
+        {
+          "kicker": "路径",
+          "title": "学生学习路径",
+          "text": "让每个项目都能连接好奇心、选择、实验和下一步。"
+        },
+        {
+          "kicker": "证据",
+          "title": "项目作品档案",
+          "text": "有秩序地保存作品、草稿、反思和可以展示的成果。"
+        },
+        {
+          "kicker": "指导",
+          "title": "导师反馈循环",
+          "text": "通过结构化反馈，帮助学生持续提升判断力、作品力和表达。"
+        },
+        {
+          "kicker": "家庭",
+          "title": "家长可见性",
+          "text": "把创造过程转译成家庭能够理解、也能信任的进展。"
+        },
+        {
+          "kicker": "表达",
+          "title": "展示路径",
+          "text": "支持公开分享、提交、作品集准备，以及解释作品的信心。"
+        }
+      ]
+    },
+    "flow": {
+      "eyebrow": "关系流动",
+      "title": "系统首先从关系开始。",
+      "caption": "项目证据让学生、家长和导师持续对齐。",
+      "centerTitle": "项目证据",
+      "centerText": "围绕一个学生项目产生的作品、选择、草稿和反思。",
+      "nodes": [
+        {
+          "label": "学生",
+          "text": "创造、复盘、修改，并学习解释自己的选择。"
+        },
+        {
+          "label": "导师",
+          "text": "给出下一步指导，但不拿走学生对作品的所有权。"
+        },
+        {
+          "label": "家长",
+          "text": "用清晰语言看见进展，而不只看最终成果。"
+        }
+      ],
+      "steps": [
+        "想法成为项目",
+        "项目成为证据",
+        "证据成为反思",
+        "反思进入下一个项目"
+      ]
+    },
+    "future": {
+      "eyebrow": "未来方向",
+      "title": "从一门课程，走向更长期的学习基础设施。",
+      "presentLabel": "现在能做",
+      "body": "EduOS 的目标是把课程经验沉淀为长期学习基础设施：让教学过程、复盘机制与合作协同可以稳定复用。",
+      "items": [
+        {
+          "title": "当前可落地",
+          "text": "项目制教学、导师反馈、学生复盘，以及家庭可讨论的真实作品。"
+        },
+        {
+          "title": "持续完善中",
+          "text": "更完整的学习记录、更清晰的协作流程，以及跨项目连续性。"
+        },
+        {
+          "title": "合作价值",
+          "text": "为学校与机构提供可对接的学习证据结构与成长追踪框架。"
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "低压力下一步",
+      "title": "对课程背后的系统感兴趣？",
+      "body": "家庭可以先从当前课程开始了解。合作伙伴也可以联系我们，围绕项目制 AI 学习与未来教育基础设施进行具体而诚实的讨论。",
+      "primary": "了解课程",
+      "secondary": "联系实验室"
+    }
+  },
+  "insights": {
+    "hero": {
+      "eyebrow": "敢想观察",
+      "title": "敢想 · 边想边说",
+      "accent": "说",
+      "subtitle": "创始人的文章、对话，以及年轻创作者自己的声音。",
+      "lead": "我们相信好的教育需要被认真讨论。这里有创始人的思考与写作，有与学者、教育者、创始人企业家的对话，也有年轻创作者自己的声音。",
+      "beliefLabel": "我们相信",
+      "beliefTitle": "好的教育需要被认真讨论。",
+      "beliefSubtitle": "认真思考，慢慢写下。",
+      "types": [
+        {
+          "label": "创始人文章",
+          "description": "我们对教育与 AI 技术的思考"
+        },
+        {
+          "label": "来自敢想实验室",
+          "description": "以品牌声音发布的现场记录"
+        },
+        {
+          "label": "学生声音",
+          "description": "年轻创作者的想法与观点",
+          "status": "即将更新"
+        }
+      ]
+    },
+    "lab": {
+      "eyebrow": "来自敢想实验室",
+      "title": "品牌自己的声音",
+      "subtitle": "来自学校试点与课程现场的记录",
+      "items": [
+        {
+          "category": "进校试点 · Plymouth College",
+          "title": "一堂 AI 课，我们让它从关掉 AI 开始",
+          "description": "六月，我们完成了第一次进校试点。一节课做出 22 个可运行的原型，但这是我们最不看重的部分。真正重要的，是学生走到作品的那条路径被记录了下来：判断的证据，而不只是产出的证据。",
+          "status": "阅读全文",
+          "href": "/insights/ai-lesson-that-starts-by-turning-ai-off"
+        }
+      ]
+    },
+    "articles": {
+      "eyebrow": "创始人文章",
+      "title": "我们的思考与写作",
+      "subtitle": "教育、AI 与创造力",
+      "items": [
+        {
+          "category": "创始人文章",
+          "title": "当 AI 什么都会，教育还能做什么？",
+          "description": "系统教育最大的问题不是它教的内容，而是它传递的隐含信息：人生有标准答案。但真实世界不仅没有标准答案，甚至连什么是问题都不清楚。",
+          "author": "Lynn",
+          "initial": "L",
+          "status": "阅读全文",
+          "href": "/insights/when-ai-can-do-everything"
+        },
+        {
+          "category": "创始人文章",
+          "title": "教育里那些算法看不见的东西",
+          "description": "教育的目标本来就应该被争论，而非统一标准。不同的教育理念应该相互批评，彼此竞争，而不是用统一标准来消灭多样性。一旦所有人朝着一个指标优化，那些测不出来的东西就会被系统性忽略。",
+          "author": "Lynn",
+          "initial": "L",
+          "status": "阅读全文",
+          "href": "/insights/what-algorithms-cannot-see"
+        },
+        {
+          "category": "创始人文章",
+          "title": "当执行的门槛降为零",
+          "description": "技术将执行的门槛降到了零，人类的价值就不再是掌握多少熟练的工具。在未来，判断力就是新的代码，表达力就是新的生产工具。机器无法无中生有，真正稀缺的是提出一个好问题的能力。",
+          "author": "Jacky",
+          "initial": "J",
+          "status": "阅读全文",
+          "href": "/insights/when-the-barrier-to-execution-falls-to-zero"
+        }
+      ]
+    },
+    "studentVoices": {
+      "eyebrow": "学生声音",
+      "title": "年轻创作者的想法与观点",
+      "body": "这一部分会逐步收录学生自己的表达、复盘和观察。现在先保留为未来内容入口。",
+      "status": "即将更新"
+    },
+    "article": {
+      "back": "返回敢想观察",
+      "translatedNote": "",
+      "sourceLink": "查看"
+    },
+    "follow": {
+      "eyebrow": "关注我们",
+      "title": "第一时间收到新内容",
+      "subtitle": "关注我们，保持更新",
+      "description": "Lynn 的公众号与视频号请在微信 App 内搜索同名账号。",
+      "channels": [
+        {
+          "avatar": "none",
+          "label": "Bold Ideas Lab 官方",
+          "description": "LinkedIn（英文）· 小红书 · 微信公众号「敢想实验室」",
+          "href": "https://www.linkedin.com/company/bold-ideas-lab",
+          "status": "前往 LinkedIn"
+        },
+        {
+          "avatar": "jacky",
+          "label": "小红书",
+          "description": "Jacky学AI",
+          "href": "https://xhslink.com/m/3x9I1pirNEv",
+          "status": "前往主页"
+        },
+        {
+          "avatar": "lynn",
+          "label": "小红书",
+          "description": "Lynn的敢想实验室",
+          "href": "https://xhslink.com/m/6SgM2srKEMm",
+          "status": "前往主页"
+        },
+        {
+          "avatar": "lynn",
+          "label": "微信公众号 · 视频号",
+          "description": "同名更新；可在微信内搜索「Lynn的敢想实验室」关注（站外不设直达链接）。",
+          "status": ""
+        }
+      ]
+    },
+    "cta": {
+      "title": "持续靠近这些思考。",
+      "body": "课程咨询、合作或未来文章交流，都可以联系实验室。"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow": "联系我们",
+      "accent": "联系",
+      "title": "联系我们",
+      "subtitle": "课程、合作与报名疑问，我们会认真阅读每一条留言。",
+      "lead": "通过统一咨询表单，我们会根据你的需求给出对应回复与下一步建议。",
+      "primary": "填写咨询表单",
+      "secondary": "了解课程"
+    },
+    "enquiry": {
+      "eyebrow": "咨询与报名",
+      "title": "在线提交",
+      "lead": "点击下方按钮即可填写 Google 表单。提交后我们会在工作日尽快回复。",
+      "audiencesIntro": "适用对象：",
+      "audiences": [
+        "学生与家长（含国际化家庭）",
+        "学校与教育机构",
+        "企业与公益合作方",
+        "媒体与内容合作方"
+      ],
+      "formLabel": "Google 表单",
+      "formStatus": "统一入口 · 面向公众",
+      "formUrl": "https://forms.gle/tHuY94cyJVd7JkxM9",
+      "button": "打开表单",
+      "tipsTitle": "建议补充信息",
+      "tips": [
+        "学生年龄与大致学习背景",
+        "创意兴趣或项目方向",
+        "时间与节奏上的限制",
+        "是否在意展示、国际提交或作品集成果"
+      ],
+      "emailLead": "或直接发邮件至"
+    },
+    "guidance": {
+      "eyebrow": "课程侧参考",
+      "title": "你可能还想先了解",
+      "items": [
+        "线上小班 · 8-14 岁 · 无需编程基础",
+        "学校工作坊与进校课程可按学校情况定制",
+        "Coolest Projects 冲刺营为 5 周密集节奏；告诉我们你的时间，我们会确认最近一期安排",
+        "名额有限；提交后我们会确认是否仍有席位"
+      ]
+    },
+    "cta": {
+      "eyebrow": "开始行动",
+      "title": "准备好开始了吗？",
+      "body": "可先打开表单留下基本信息，或先浏览课程页了解我们的方法与过往记录。",
+      "primary": "了解课程",
+      "secondary": "打开咨询表单"
+    }
+  },
+  "redesign": {
+    "nav": {
+      "home": "首页",
+      "about": "关于",
+      "programmes": "课程",
+      "work": "学生作品",
+      "eduos": "EduOS",
+      "insights": "敢想观察",
+      "contact": "联系",
+      "menu": "菜单",
+      "close": "关闭"
+    },
+    "hero": {
+      "slogan": "一切可能，始于敢想。",
+      "sub": "AI 在教育里的第三种声音。",
+      "primary": "怎么教",
+      "secondary": "学生做出了什么"
+    },
+    "stance": {
+      "p1": "三件事同时发生：AI 进入了课堂，学校还没想好规则，孩子已经每天在用。",
+      "p2": "禁止和全面引入，回答的是同一个问题：该不该让孩子用 AI。还有一个更早的问题没被回答：孩子知不知道 AI 在做什么。",
+      "end": "我们的课从这个问题开始。",
+      "link": "我们为什么叫敢想",
+      "eyebrow": "AI 在教育里的第三种声音"
+    },
+    "forces": {
+      "title": "我们教什么",
+      "items": [
+        {
+          "name": "思维力",
+          "text": "知道 AI 在做什么、不能做什么。"
+        },
+        {
+          "name": "创作力",
+          "text": "把想法做成作品，在人机协作里反复修改。"
+        },
+        {
+          "name": "表达力",
+          "text": "把作品讲清楚，也经得起追问。"
+        }
+      ],
+      "footnote": "基于 UNESCO（2024）、OECD 与 EU DigComp 框架本地化。"
+    },
+    "gallery": {
+      "title": "学生作品画廊",
+      "cards": [
+        {
+          "name": "Bullying Reporter",
+          "student": "Lexi · 普利茅斯",
+          "quote": "built an app to help year 7 or all pupils report problems and bullying to their class teacher in a safe non scary way",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/plymouth-year9"
+        },
+        {
+          "name": "MotionLab",
+          "student": "Owen · 曼彻斯特",
+          "quote": "I think that animations are hard to make, so I tried to make it easier (did'nt go as planned though)",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
+        },
+        {
+          "name": "Music Theory Visualiser",
+          "student": "Summer · 曼彻斯特",
+          "quote": "To visualization of scales and chords",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/manchester"
+        },
+        {
+          "name": "Magic Story Box",
+          "student": "Rachel · 伦敦",
+          "quote": "giving me book ideas",
+          "url": "https://workshop-gallery-peach.vercel.app/gallery/london"
+        }
+      ],
+      "featured": {
+        "name": "Study Compass",
+        "student": "Gloria · 线上冲刺营",
+        "text": "在 Coolest Projects（Raspberry Pi Foundation 发起的全球青少年数字创作展示）公开展出。",
+        "cta": "在 Coolest Projects 查看",
+        "url": "https://online.coolestprojects.org/projects/24694"
+      },
+      "numbers": [
+        {
+          "value": "50+",
+          "label": "学生作品"
+        },
+        {
+          "value": "3",
+          "label": "座城市"
+        },
+        {
+          "value": "4",
+          "label": "种课程形态"
+        }
+      ],
+      "cta": "进入完整画廊",
+      "ctaUrl": "https://workshop-gallery-peach.vercel.app/gallery"
+    },
+    "endcta": {
+      "text": "想聊聊孩子的情况，或者学校的合作，写信给我们。",
+      "button": "给我们写信"
+    },
+    "footer": {
+      "tagline": "伦敦的青少年 AI 教育实验室。",
+      "colophon": "这个网站如何使用 AI：代码有 AI 参与，照片全部真实，每一句话由人定稿。",
+      "copyright": "© 2026 敢想实验室。",
+      "ideasTitle": "被做出来的想法",
+      "ideas": [
+        {
+          "label": "Color Theory",
+          "href": "/work"
+        },
+        {
+          "label": "Pumpkin Dread",
+          "href": "/work"
+        },
+        {
+          "label": "Magic Story Box",
+          "href": "/work"
+        },
+        {
+          "label": "Everyday Magic",
+          "href": "/work"
+        },
+        {
+          "label": "Study Compass",
+          "href": "https://online.coolestprojects.org/projects/24694"
+        }
+      ],
+      "more": {
+        "label": "还有 50 多个",
+        "href": "/work"
+      }
+    },
+    "about": {
+      "title": "我们为什么叫敢想",
+      "story": [
+        "敢想实验室从伦敦起步。在和英国、欧洲、亚洲、北美的青少年一起工作的过程里，我们一再看到同一件事：他们带着大胆的想法来，这些想法却常被挥手带过，太小、太叛逆、还没准备好。可他们的创意和想法，一次次让我们惊喜。我们办这间实验室，就是为了认真对待这些想法。",
+        "后来 AI 进了课堂，大人又来了一次。一边说别让孩子碰，一边说全都给他们。两边都在替年轻人争论，却没问过他们，也都跳过了孩子真正要面对的那个问题。",
+        "这场争论恰恰漏掉了站在中间的那个年轻人。一个大胆的想法，只有当有人学会把它想透：做出选择、为选择辩护、在难的时候不放手，它才会变成真的。这种思考正是我们教的。没有哪个工具能替一个孩子长出它。"
+      ],
+      "flatten": {
+        "title": "教育不可压扁。",
+        "body": "我们知道怎么驱动、怎么优化，怎么照着计划把人生过得更好。我们也知道，有些东西计划够不着：怎么跟无聊相处，怎么跟孤独相处，以及伟大和美好很少是计划出来的。教育应该发生在这两者之间。"
+      },
+      "foundersTitle": "这背后是谁",
+      "foundersLead": "敢想实验室是两个人。",
+      "foundersBridge": "一个来自音乐与人文，一个来自 AI 研究。实验室就在这两者相遇的地方。",
+      "quote": "Tools change. Creators remain.",
+      "schools": {
+        "title": "写给学校与研究者",
+        "body": "如果你正在制定一份 AI 政策、质疑一份政策，或者研究孩子实际怎么用这些工具，欢迎来交换看法。我们教课，记录学习如何发生，并把看到的写下来。",
+        "cta": "聊聊"
+      },
+      "nameLine": "「敢想」强调的是「敢」与「想」，一种主动思考、拒绝随波逐流的主体性。"
+    }
+  }
+}
