@@ -90,3 +90,9 @@ Bold Ideas Lab（敢想實驗室）官網。Lynn（林桂茹）的 AI 教育品�
 - 域名與 DNS 都在 Jacky 的 Namecheap 帳號。待 Jacky 加四條記錄：① Google 驗證 TXT ② Custom MX `smtp.google.com`/1（舊轉發隨之失效，先知會）③ SPF 換 `v=spf1 include:_spf.google.com ~all` ④ `_vercel` TXT（把正式域名從 Jacky 個人 Vercel 帳號驗證轉入 guiru-s-projects）。加完在雲端用 `dig` 驗證生效再讓 Lynn 點 Verify/Refresh。
 - Vercel 兩專案：`boldideaslab-site` 的 Root Directory 曾填舊路徑 `bold-ideas-lab-web-main` 導致每次構建 1 秒失敗（已指導清空）；`boldideaslab-site-qykm` 構建正常，分支預覽用它。正式域名此前掛在 Jacky 個人帳號的專案上，官網一直由那邊服務。
 - 上線順序：域名驗證入隊 → 合併 PR #1 → 打開 www.boldideaslab.com 實際驗收 → 清理多餘 Vercel 專案。
+
+## 上線記錄（2026-07-12 晚，正式發布）
+- 新官網已上線 www.boldideaslab.com。**部署鏈路（Jacky 方案）**：正式域名與 Vercel 專案在 Jacky 個人帳號，構建自 **他的 repo `Jujie-YANG/bold-ideas-lab-web`**（Lynn 是 collaborator）；Lynn 的 `GuiruLin/boldideaslab-site` 是**唯一源頭與完整歷史檔案**（PR #1 已合併，main = 上線版）。
+- **日常更新流程**：在授權 GuiruLin/boldideaslab-site 的會話裡改 → `git archive` 打 zip 發給 Lynn → Lynn 在授權 Jujie-YANG/bold-ideas-lab-web 的搬運會話上傳 zip → 該會話替換代碼 push main → 他的 Vercel 自動部署。兩 repo 內容一致性靠這條人工鏈，改完必須跑完整條。
+- 此路線是兩位創始人的共同決定（Lynn 顧慮「退役」措辭傷感情，選擇保留 Jacky 的部署鏈路）。備選路線仍有效：Namecheap 加 `_vercel` TXT（值見上節）即可把域名驗證進 Lynn 的 guiru-s-projects，改為單 repo 直推。
+- 待辦：郵箱三條 DNS（Jacky）→ Google Workspace 激活 + DKIM/DMARC + 別名；Lynn 團隊裡兩個 Vercel 專案（boldideaslab-site / -qykm）已無域名職責，可擇日清理；長期把域名/repo/部署歸公司化帳號，關鍵帳號共享登錄。
